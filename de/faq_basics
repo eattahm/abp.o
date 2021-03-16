@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html 
+lang="de"
+data-siteurl="https://adblockplus.org"
+dir="ltr"
+class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>FAQ - Grundfunktionen</title>
+
+<link rel="canonical" href="https://adblockplus.org/faq_basics">
+
+
+
+    
+<meta property="og:image" content="/img/adblockplus_promo.png">
+<meta property="og:title" content="FAQ - Grundfunktionen">
+
+<meta property="og:locale" content="de_DE">
+
+  
+
+  
+    <meta property="og:locale:alternate" content="en_US">
+  
+
+  
+    <meta property="og:locale:alternate" content="es_ES">
+  
+
+  
+    <meta property="og:locale:alternate" content="fr_FR">
+  
+
+  
+    <meta property="og:locale:alternate" content="ko_KR">
+  
+
+  
+    <meta property="og:locale:alternate" content="nl_NL">
+  
+
+  
+    <meta property="og:locale:alternate" content="ru_RU">
+  
+
+  
+    <meta property="og:locale:alternate" content="sk_SK">
+  
+
+  
+    <meta property="og:locale:alternate" content="zh_CN">
+  
+
+  
+    <meta property="og:locale:alternate" content="zh_TW">
+  
+
+<meta property="og:url" content="https://adblockplus.org/de/faq_basics">
+
+
+<meta name="twitter:site" content="@AdblockPlus">
+<meta name="twitter:creator" content="@AdblockPlus">
+    
+  <link rel="stylesheet" href="/css/defaults.css?497448554">
+  <link rel="stylesheet" href="/css/fonts.css?497448554">
+  <link rel="stylesheet" href="/css/main.css?497448554">
+  <link rel="stylesheet" href="/css/cookies.css?497448554">
+
+
+
+
+
+    
+    <script>
+  window.eyeo = {
+    
+    
+    preventCookiePrompt: false,
+    userTesting: false
+  }
+</script>
+
+    <!--[if IE 9]>
+  <script src="/js/vendor/es5-shim.js?849561009"></script>
+  <script src="/js/vendor/dom4.js?849561009"></script>
+<![endif]-->
+
+    
+      
+  <link rel="index" href="/de/faq?497448554" hreflang="de">
+
+    
+  </head>
+
+  <body>
+    
+
+
+
+<nav id="navbar">
+  <div class="container">
+    <a href="/de/" hreflang="de" id="navbar-logo">
+      <img
+        src="/img/navbar-logo.svg?3869325427"
+        alt="">
+      <span>Adblock <strong>Plus</strong></span>
+    </a>
+    <a href="#" id="navbar-menu-toggle">
+      <img
+        src="/img/menu-toggle.svg?3869325427"
+        alt="">
+    </a>
+    <ul id="navbar-menu">
+      
+        <li class="uppercase ">
+          <a href="/de/download" hreflang="de">Herunterladen</a>
+        </li>
+      
+        <li class="uppercase ">
+          <a href="/de/about" hreflang="de">Über</a>
+        </li>
+      
+      <li class="uppercase">
+        <a href="https://help.eyeo.com" target="_blank">Hilfe</a>
+      </li>
+      <li class="uppercase ">
+        <a href="/de/donate" hreflang="de">Spenden</a>
+      </li>
+      <li id="navbar-locale-menubar">
+        <a id="navbar-locale-selected">
+          Deutsch (DE)
+        </a>
+        <ul id="navbar-locale-menu">
+          
+            <li>
+              <a href="/de/faq_basics" hreflang="de">
+                Deutsch (DE)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/en/faq_basics" hreflang="en">
+                English (US)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/es/faq_basics" hreflang="es">
+                Español (España) (ES)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/fr/faq_basics" hreflang="fr">
+                Français (FR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ko/faq_basics" hreflang="ko">
+                한국어 (KR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/nl/faq_basics" hreflang="nl">
+                Nederlands (NL)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ru/faq_basics" hreflang="ru">
+                Русский (RU)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/sk/faq_basics" hreflang="sk">
+                Slovenčina (SK)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_CN/faq_basics" hreflang="zh-CN">
+                中文(简体) (CN)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_TW/faq_basics" hreflang="zh-TW">
+                中文(台灣) (TW)
+              </a>
+            </li>
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+    <div id="content" class="container content False">
+      
+        <h1>FAQ - Grundfunktionen</h1>
+      
+
+      
+        
+
+        
+        
+          <div class="toc">
+            
+          <ul>
+            
+              <li>
+                <a href="#blocking">Wie blockiere ich ein Werbebanner?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#disable">Ich möchte Adblock Plus kurzzeitig deaktivieren. Wie geht das am schnellsten?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#hide-support">Can I support my favorite website by downloading but hiding ads?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#update-filterlists">Wie kann ich die Filterliste manuell aktualisieren?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#remove-subscription">Wie kann ich eine Filterliste entfernen?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#objects">Das Banner ist ein Objekt (Flash oder Java) und hat kein Kontextmenü. Was nun?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#checking">Die Liste blockierbarer Elemente zeigt sehr viele Adressen an. Woher weiß ich, welches das Banner ist?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#ordering">Ist die Reihenfolge der Filter wichtig für die Verarbeitungsgeschwindigkeit?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#regexps">Sind reguläre Ausdrücke schneller als &#34;normale&#34; Filter?</a>
+                
+              </li>
+            
+          </ul>
+        
+          </div>
+        
+      
+
+      
+        
+
+
+
+<main itemscope itemtype="https://schema.org/FAQPage">
+
+  <article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h2 id="blocking" itemprop="name">Wie blockiere ich ein Werbebanner?</h2>
+
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text">
+        <p>Man kann einfach auf einem Bild oder einem Frame mir der rechten Maustaste klicken und &quot;Adblock Plus&quot; im Kontextmenü auswählen. Dann öffnet sich ein Dialogfenster, in dem man den Filter anpassen kann, bevor man ihn seiner Filterliste hinzufügt. Man kann Teile der Adresse durch Joker-Zeichen (* — das Stern-Symbol) ersetzen, um auch Banner mit ähnlichen Adressen zu blockieren. Mehr Informationen zur Erstellung von Filtern findet man in <a href="/de/filters" hreflang="de">Filter für Adblock Plus erstellen</a>.</p>
+
+        <animation label="Zeigen, wie das gemacht wird" name="blockbanner" xmlns="https://adblockplus.org/animation"></animation>
+      </div>
+    </div>
+  </article>
+
+  <article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h2 id="disable" itemprop="name">Ich möchte Adblock Plus kurzzeitig deaktivieren. Wie geht das am schnellsten?</h2>
+
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text">
+        <p>Man kann auf das Adblock Plus Icon in der Symbolleiste klicken, um ein Menü hervorzubringen. Dort kann man dann Adblock Plus für die gesamte besuchte Domain, oder auch nur einzelne Unterwebseiten derselben, deaktivieren und wieder aktivieren. Klicken Sie dazu einfach auf den entsprechenden An/Aus Schalter im Menü und dann auf „Aktualisieren“.</p>
+
+        <p>Wählt man diesen Menüpunkt aus, wird ein Filter wie zum Beispiel <code>@@||adblockplus.org^$document</code> in die Filterliste aufgenommen. Mehr Informationen über solche Ausnahmeregeln findet man in <a href="/de/filters#whitelist" hreflang="de">Filter für Adblock Plus erstellen</a>..</p>
+
+        <p>Sie können Adblock Plus auch auf allen Domains grundsätzlich deaktivieren oder reaktivieren. Die Anleitung dazu finden Sie hier: <a href="https://adblockplus.org/getting_started#disable-reenable">Adblock Plus auf allen Webseiten aus und wieder einschalten</a>.</p>
+
+        <animation label="Zeigen, wie das gemacht wird" name="disable" xmlns="https://adblockplus.org/animation"></animation>
+      </div>
+    </div>
+  </article>
+
+  <article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h2 id="hide-support" itemprop="name">Can I support my favorite website by downloading but hiding ads?</h2>
+
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text">
+        <p>No. Most advertisers pay per-click, so if you hide ads, you won&#39;t actually support the site in question. Even in the off-chance of payouts per-view, it&#39;s trivial for advertisers to use JavaScript to check if the ads are visible. Additionally, downloading but hiding ads to trick advertisers into paying would be akin to fraud.</p>
+
+        <p>In short, if you want to support your favorite websites, you&#39;ll have to whitelist them to disable Adblock Plus on those sites.</p>
+      </div>
+    </div>
+  </article>
+
+  <article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h2 id="update-filterlists" itemprop="name">Wie kann ich die Filterliste manuell aktualisieren?</h2>
+
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text">
+        <h3>In Firefox:</h3>
+
+        <ol>
+          <li>
+            Klicken Sie oben links auf Firefox &gt;&gt; Add-ons (unter Mac OS X / Linux, gehen Sie zu &quot;Extras&quot; in der Menüleiste &gt;&gt; &quot;Add-Ons&quot;), dies öffnet den Add-on-Manager in Firefox.
+          </li>
+          <li>
+            Klicken Sie auf &quot;Erweiterungen&quot;, finden Sie Adblock Plus, klicken dann auf &quot;Einstellungen&quot; und danach auf &quot;Filtereinstellungen...&quot;.
+          </li>
+          <li>
+            Drücken Sie diese Tastenkombination um alle Filterlisten zu aktualisieren: Strg+Umschalt+T oder rechtsklicken Sie die Filterliste und wählen dann &quot;Filter aktualisieren&quot;.
+          </li>
+        </ol>
+
+        <h3>In Chrome:</h3>
+
+        <ol>
+          <li>
+            Klicken Sie auf den Menü-Button, gehen dann zu &quot;Tools&quot; und wählen &quot;Erweiterungen&quot;.
+          </li>
+          <li>
+            Bei Adblock Plus klicken Sie dann auf &quot;Optionen&quot; unter der Beschreibung.
+          </li>
+          <li>
+            Klicken Sie auf &quot;Jetzt aktualisieren&quot;.
+          </li>
+        </ol>
+
+        <h3>In Opera:</h3>
+
+        <ol>
+          <li>
+            Klicken Sie auf den Menü-Button (unter Mac OS X / Linux, &quot;Extras&quot;), wählen Sie dann &quot;Erweiterungen&quot; &gt;&gt; &quot;Erweiterungen verwalten...&quot;.
+          </li>
+          <li>
+            Klicken Sie dort bei Adblock Plus auf das kleine Schraubenschlüssel-Symbol und dann auf &quot;Einstellungen&quot;.
+          </li>
+          <li>
+            Klicken Sie auf &quot;Jetzt aktualisieren&quot;.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </article>
+
+  <article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h2 id="remove-subscription" itemprop="name">Wie kann ich eine Filterliste entfernen?</h2>
+
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text">
+        <h3>In Firefox</h3>
+
+        <p>
+          Gehen Sie zu Extras &gt;&gt; Add-ons &gt;&gt; Einstellungen (neben Adblock Plus) &gt;&gt; Filtereinstellungen. Wählen Sie die Filterliste aus, die entfernen möchten, klicken Sie auf &quot;Aktionen&quot; und dann auf &quot;Löschen...&quot;. Bestätigen Sie mit &quot;OK&quot;.
+        </p>
+
+        <h3>In Google Chrome</h3>
+
+        <p>
+          Wählen Sie Fenster &gt;&gt; Erweiterungen &gt;&gt; Optionen (der Adblock Plus-Erweiterung).Klicken Sie auf das rote &quot;X&quot; neben der Filterliste, die Sie entfernen möchten und bestätigen Sie mit &quot;OK&quot;.
+        </p>
+
+        <h3>In Opera (unter Windows/Ubuntu)</h3>
+
+        <p>
+          Klicken Sie auf den Menü-Button und navigieren Sie zu Erweiterungen &gt;&gt; Erweiterungen verwalten &gt;&gt; klicken Sie auf das Schraubenschlüssel-Symbol &gt;&gt; Einstellungen. Klicken Sie auf das rote &quot;X&quot; neben der Filterliste, die Sie entfernen möchten und bestätigen Sie mit &quot;OK&quot;.
+        </p>
+
+        <h3>In Opera (unter Mac OSX)</h3>
+
+        <p>
+          Navigieren Sie zu Extras &gt;&gt; Erweiterungen verwalten &gt;&gt; klicken Sie auf das Schraubenschlüssel-Symbol &gt;&gt; Einstellungen. Klicken Sie auf das rote &quot;X&quot; neben der Filterliste, die Sie entfernen möchten und bestätigen Sie mit &quot;OK&quot;.
+        </p>
+      </div>
+    </div>
+  </article>
+
+  <article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h2 id="objects" itemprop="name">Das Banner ist ein Objekt (Flash oder Java) und hat kein Kontextmenü. Was nun?</h2>
+
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text">
+        <p>In Adblock Plus hat man die Option &quot;Tab zum Blockieren von Flash und Java anzeigen&quot;. Wenn diese aktiviert ist, wird rechts über (manchmal auch unter) dem Objekt eine Schaltfläche &quot;Blockieren&quot; angezeigt. Durch Anklicken dieser Schaltfläche kann das Objekt blockiert werden.</p>
+
+        <animation label="Zeigen, wie das gemacht wird" name="blockobject" xmlns="https://adblockplus.org/animation"></animation>
+
+        <p>Alternativ kann man die Liste der blockierbaren Elemente öffnen (Strg+Umschalt+V drücken oder den kleinen Pfeil reichts neben dem ABP-Symbol in der Symbolleiste anclicken und &quot;Blockierbare Elemente öffnen&quot; auswählen) und dort nach einem Objekt suchen.</p>
+
+        <animation label="Zeigen, wie das gemacht wird" name="blockobject2" xmlns="https://adblockplus.org/animation"></animation>
+
+        <p>Man kann die Überschrift der Typ-Spalte anklicken — das wird die Liste nach Typ sortieren und die Suche erleichtern.</p>
+      </div>
+    </div>
+  </article>
+
+  <article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h2 id="checking" itemprop="name">Die Liste blockierbarer Elemente zeigt sehr viele Adressen an. Woher weiß ich, welches das Banner ist?</h2>
+
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">
+        Man kann erstmal den Anfang der Adressen betrachten — meistens unterscheidet sich dieser bei Werbung vom Anfang der Adresse der Seite, die man gerade betrachtet. Außerdem enthalten Adressen von Werbung oft Wörter wie &quot;ad&quot;, &quot;banner&quot;, &quot;sponsor&quot;, &quot;affliate&quot;, etc. Klickt man eine dieser Adressen an, sollte das dazugehörige Element auf der Seite blinken (leider funktioniert das nicht bei allen Elementen). Wenn man sich noch immer unsicher ist, dann kann man auf die Adresse mit dem mittleren Maustaste klicken, dann öffnet sich das Element in einem neuen Tab. Nun sollte man definitiv erkennen, ob es sich um die Werbung handelt.
+      </p>
+    </div>
+  </article>
+
+  <article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h2 id="ordering" itemprop="name">Ist die Reihenfolge der Filter wichtig für die Verarbeitungsgeschwindigkeit?</h2>
+
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">
+        Nein. Wenn Adblock Plus eine Adresse testet, wird automatisch die beste Reihenfolge bestimmt, in der Ihre Filter getestet werden. Tatsächlich werden die meisten Filter bei den Tests gar nicht erst berücksichtigt. Die Reihenfolge der Filter in den Einstellungen ist somit nur dazu da, Ihnen einen Überblick zu verschaffen. Auf die Geschwindigkeit von Adblock Plus hat sie keinerlei Einfluß.
+      </p>
+    </div>
+  </article>
+
+  <article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h2 id="regexps" itemprop="name">Sind reguläre Ausdrücke schneller als &quot;normale&quot; Filter?</h2>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text">
+        <p>Normalerweise ist dies nicht der Fall. Adblock Plus wandelt intern jeden &quot;normalen&quot; Filter in einen regulären Ausdruck um und arbeitet dann nur noch mit regulären Ausdrücken. Daher sich die Filter <code>banner</code> und <code>/banner/</code> absolut gleichwertig.</p>
+
+        <p>Reguläre Ausdrücke werden häufig zum &quot;Komprimieren&quot; von Filterlisten verwendet; dabei werden mehrere Filter durch einen regulären Audruck ersetzt. Die Faustregel besagt, daß weniger Filter schneller sind, in diesem Fall trifft sie in der Regel nicht zu. Die Verarbeitung von komplizierten regulären Ausdrücken benötigt viel Zeit. Daher sollte es besser sein, bei mehreren Filtern zu bleiben.</p>
+
+        <p>Reguläre Ausdrücke geben allerdings mehr Flexibilität, wodurch ihr Einsatz gerechtfertigt sein könnte. Beispiel: Der reguläre Ausdruck <code>/adv(?!ice)/</code> blockiert <code>adv</code>, <code>advert</code> und <code>advertisement</code>, aber nicht <code>advice</code>. Mit &quot;normalen&quot; Filtern ließe sich das nicht machen.</p>
+      </div>
+    </div>
+  </article>
+</main>
+
+<script src="/js/animation.js?849561009"></script>
+
+      
+    </div>
+
+    
+
+<footer id="footer" class="content">
+  <div class="container">
+    <div class="row">
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Herunterladen</h5>
+        <ul>
+          <li><a href="/en/adblock-plus-chrome" hreflang="en">Adblock Plus für Chrome</a></li>
+          <li><a href="/en/adblock-plus-firefox" hreflang="en">Adblock Plus für Firefox</a></li>
+          <li><a href="/en/ad-blocker-safari" hreflang="en">Adblock Plus für Safari</a></li>
+          <li><a href="/en/adblock-plus-opera" hreflang="en">Adblock Plus für Opera</a></li>
+          <li><a href="/en/android-install" hreflang="en">Adblock Browser for Android</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Ressourcen</h5>
+        <ul>
+          
+            <li><a href="/de/acceptable-ads" hreflang="de">Acceptable Ads</a></li>
+          
+            <li><a href="/de/documentation" hreflang="de">Dokumentation</a></li>
+          
+            <li><a href="/de/deployments" hreflang="de">Für Administratoren</a></li>
+          
+            <li><a href="/de/bugs" hreflang="de">Problem melden</a></li>
+          
+          
+            <li><a href="/de/faq-privacy" hreflang="de">FAQ zum Datenschutz</a></li>
+          
+          <li><a href="https://help.eyeo.com/en/adblockplus/how-to-write-filters" target="_blank" hreflang="en">Filter für Adblock Plus erstellen</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Community</h5>
+        <ul>
+          <li><a href="/de/contribute" hreflang="de">Beitragen</a></li>
+          <li><a href="https://adblockplus.org/releases/" hreflang="en">Bekanntmachungen</a></li>
+          <li><a href="https://adblockplus.org/blog/" hreflang="en">Blog</a></li>
+          <li><a href="https://adblockplus.org/forum/" hreflang="en">Forum</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Entwicklung</h5>
+        <ul>
+          <li><a href="https://gitlab.com/eyeo/adblockplus">Quellcode</a></li>
+          
+  
+    <li><a href="/de/tools" hreflang="de">Tools</a></li>
+  
+
+          <li><a href="https://eyeo.com/jobs/" hreflang="en">Stellen</a></li>
+          <li><a href="/en/partner-integrations" hreflang="en">Partner Integrations</a></li>
+        </ul>
+      </nav>
+
+      <nav id="social-list" class="column">
+        <h5 class="footer-social-heading">Folge uns auf</h5>
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/AdblockPlus"
+              title="Adblock Plus auf Twitter folgen"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-twitter-glyphicon.png?3869325427"
+                alt="Twitter-Icon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/user/AdblockPlusOfficial"
+              title="Adblock Plus auf YouTube abonnieren"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-youtube-glyphicon.png?3869325427"
+                alt="YouTube-Icon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/adblockplus"
+              title="Adblock Plus auf Facebook folgen"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-facebook-glyphicon.png?3869325427"
+                alt="Facebook-Icon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/adblockplus/"
+              title="Adblock Plus auf Instagram folgen"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-instagram-glyphicon.png?3869325427"
+                alt="Instagram-Icon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://vk.com/adblockplusofficial"
+              title="Adblock Plus auf VK folgen"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-vk-glyphicon.png?3869325427"
+                alt="VK-Icon">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div> 
+
+    <div id="footer-legal">
+      <p id="copyright-notice">Copyright © 2020 Alle Rechte vorbehalten. Adblock Plus<sup>®</sup> ist eine eingetragene Marke der <a href="https://eyeo.com">eyeo GmbH</a>.</p>
+      <ul id="legal-list">
+        
+          
+            <li><a href="/de/terms" hreflang="de">Nutzungsbedingungen</a></li>
+          
+            <li><a href="/de/privacy" hreflang="de">Datenschutzerklärung</a></li>
+          
+            <li><a href="/de/imprint" hreflang="de">Impressum</a></li>
+          
+        
+      </ul>
+    </div> 
+  </div> 
+</footer> 
+    <div id="cookiebar" class="cookie cookiebar">
+  <div class="container">
+    <div class="row">
+
+      <div class="column two-thirds">
+        <p class="cookiebar-text">
+          <svg viewBox="0 0 37.796 41.279" width="38" height="42">
+            <title>Cookie-Benachrichtigung</title>
+            <g transform="translate(-14.904 0)">
+              <g transform="translate(14.904 0)">
+                <path d="M52.468,31.165a6.029,6.029,0,0,1-1.514-4.908.935.935,0,0,0-.626-1.019,6.029,6.029,0,0,1-3.244-8.8A.935.935,0,0,0,47,15.368a6.039,6.039,0,0,1-1.112-5.609A.935.935,0,0,0,45.4,8.647,6.029,6.029,0,0,1,42.129,2.01.935.935,0,0,0,41.484.935a20.682,20.682,0,1,0,11.049,31.38A.935.935,0,0,0,52.468,31.165Zm-3.739,2.814A18.759,18.759,0,1,1,40.148,2.524,7.9,7.9,0,0,0,43.887,10a7.889,7.889,0,0,0,1.281,6.029A7.917,7.917,0,0,0,46.682,25.1a7.823,7.823,0,0,0,2.346,1.617,7.889,7.889,0,0,0,1.57,5.123A18.6,18.6,0,0,1,48.729,33.979Z" transform="translate(-14.904 0)"/>
+              </g>
+              <g transform="translate(24.556 12.199)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(34.81 18.817)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(33.212 32.212)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(36.652 9.03)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(23.509 25.912)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(42.765 27.23)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+            </g>
+          </svg>
+          <span>
+            Wir verwenden einige Cookies, um dir das optimale Erlebnis bei der Nutzung unserer Website zu bieten. Wenn du unsere Website benutzt, bedeutet das, du bist dir bewusst, dass wir Cookies verwenden und dass du dies jederzeit unterbinden kannst. <a href="/de/cookie-information" hreflang="de">Mehr erfahren</a>
+          </span>
+        </p>
+      </div>
+
+      <div class="column one-third text-end">
+        <ul class="cookiebar-nav">
+          <li>
+            <button
+              type="button"
+              class="cookies-submit button"
+              title="Cookie-Benachrichtigung ausblenden">
+              OK, verstanden
+            </button>
+          </li>
+          <li class="dropup cookies-dropup">
+            <button
+              type="button"
+              class="cookies-settings button"
+              title="Cookie-Einstellungen anpassen">
+              Einstellungen &nbsp;
+              <svg viewBox="0 0 16.509 16.993" width="18" height="18">
+                <title>Einstellungen-Symbol</title>
+                <path d="M175.051,8.283V.478a.478.478,0,1,0-.955,0v7.8a2.425,2.425,0,0,0,0,4.755v3.474a.478.478,0,1,0,.955,0V13.038a2.425,2.425,0,0,0,0-4.755Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,174.574,12.129Z" transform="translate(-166.302 0)"/>
+                <path d="M9.751,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.479a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752ZM9.274,8.123a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,9.274,8.123Z" transform="translate(-6.85 0)"/>
+                <path d="M339.351,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.483a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,338.874,8.123Z" transform="translate(-324.789 0)"/>
+              </svg>
+            </button>
+            <div class="cookies-dropup-menu text-start" tabindex="1">
+               <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Notwendige Cookies</p>
+      <p>Werden verwendet, um deine Datenschutzeinstellungen zu speichern. Sie können nicht ausgeschaltet werden.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking Cookies</p>
+      <p>Wir verwenden diese, um den Website-Traffic zu analysieren.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B-Test-Cookies</p>
+      <p>Wir nutzen diese Google Optimize-Cookies für A/B-Tests basierend auf den Analysedaten.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Cookie-Präferenzen speichern">
+    Präferenzen speichern
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+              <span class="arrow"></span>
+            </div>
+          </li>
+        </ul>
+      </div><!-- .column -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+
+</div><!-- #cookies-large-bar -->
+  <form class="cookie cookieprompt">
+
+  <fieldset class="container">
+
+    <legend class="cookie-heading">
+      Cookie-Präferenzen
+    </legend>
+
+    <button
+      type="button"
+      class="cookies-close"
+      title="Cookie-Benachrichtigung ausblenden">
+      <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+        <title>Schließen-Symbol</title>
+        <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+      </svg>
+    </button>
+
+    <p>
+      Wir verwenden einige Cookies, um dir das optimale Erlebnis bei der Nutzung unserer Website zu bieten.
+      <a
+        href="/de/cookie-information" hreflang="de"
+        title="Mehr Informationen über Cookies"
+        target="_blank">Mehr lesen</a>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-submit"
+        title="Cookie-Benachrichtigung ausblenden">
+        OK, verstanden
+      </button>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-settings"
+        title="Cookie-Einstellungen anpassen">
+        Einstellungen ändern
+      </button>
+    </p>
+
+  </fieldset>
+
+</form>
+  <form class="cookie cookiepage">
+
+  <header class="bg-dark">
+    <div class="container">
+
+      <h4 class="cookie-heading">
+        Cookie-Präferenzen
+      </h4>
+
+      <button
+        type="button"
+        class="cookies-close"
+        title="Cookie-Benachrichtigung ausblenden">
+        <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+          <title>Schließen-Symbol</title>
+          <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="bg-light">
+    <div class="container section">
+        Wir verwenden einige Cookies, um dir das optimale Erlebnis bei der Nutzung unserer Website zu bieten. Wenn du unsere Website benutzt, bedeutet das, du bist dir bewusst, dass wir Cookies verwenden und dass du dies jederzeit unterbinden kannst. <a href="/de/cookie-information" hreflang="de">Mehr erfahren</a>
+    </div>
+  </div>
+
+  <div class="container section">
+     <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Notwendige Cookies</p>
+      <p>Werden verwendet, um deine Datenschutzeinstellungen zu speichern. Sie können nicht ausgeschaltet werden.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking Cookies</p>
+      <p>Wir verwenden diese, um den Website-Traffic zu analysieren.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B-Test-Cookies</p>
+      <p>Wir nutzen diese Google Optimize-Cookies für A/B-Tests basierend auf den Analysedaten.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Cookie-Präferenzen speichern">
+    Präferenzen speichern
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+  </div>
+
+</form>
+    <script src="/js/testing/setup.js?849561009"></script>
+    
+  <script src="/js/main.js?849561009"></script>
+
+
+
+  </body>
+</html>

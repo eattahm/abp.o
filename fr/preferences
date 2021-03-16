@@ -1,0 +1,1770 @@
+<!DOCTYPE html>
+<html 
+lang="fr"
+data-siteurl="https://adblockplus.org"
+dir="ltr"
+class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Préférences d&#39;Adblock Plus</title>
+
+<link rel="canonical" href="https://adblockplus.org/preferences">
+
+
+
+    
+<meta property="og:image" content="/img/adblockplus_promo.png">
+<meta property="og:title" content="Préférences d&#39;Adblock Plus">
+
+<meta property="og:locale" content="fr_FR">
+
+  
+    <meta property="og:locale:alternate" content="de_DE">
+  
+
+  
+    <meta property="og:locale:alternate" content="en_US">
+  
+
+  
+    <meta property="og:locale:alternate" content="es_ES">
+  
+
+  
+
+  
+    <meta property="og:locale:alternate" content="ko_KR">
+  
+
+  
+    <meta property="og:locale:alternate" content="nl_NL">
+  
+
+  
+    <meta property="og:locale:alternate" content="ru_RU">
+  
+
+  
+    <meta property="og:locale:alternate" content="zh_CN">
+  
+
+  
+    <meta property="og:locale:alternate" content="zh_TW">
+  
+
+<meta property="og:url" content="https://adblockplus.org/fr/preferences">
+
+
+<meta name="twitter:site" content="@AdblockPlus">
+<meta name="twitter:creator" content="@AdblockPlus">
+    
+  <link rel="stylesheet" href="/css/defaults.css?2084874740">
+  <link rel="stylesheet" href="/css/fonts.css?2084874740">
+  <link rel="stylesheet" href="/css/main.css?2084874740">
+  <link rel="stylesheet" href="/css/cookies.css?2084874740">
+
+
+
+
+
+    
+    <script>
+  window.eyeo = {
+    
+    
+    preventCookiePrompt: false,
+    userTesting: false
+  }
+</script>
+
+    <!--[if IE 9]>
+  <script src="/js/vendor/es5-shim.js?3597732194"></script>
+  <script src="/js/vendor/dom4.js?3597732194"></script>
+<![endif]-->
+
+    
+      
+    
+  </head>
+
+  <body>
+    
+
+
+
+<nav id="navbar">
+  <div class="container">
+    <a href="/fr/" hreflang="fr" id="navbar-logo">
+      <img
+        src="/img/navbar-logo.svg?3965502626"
+        alt="">
+      <span>Adblock <strong>Plus</strong></span>
+    </a>
+    <a href="#" id="navbar-menu-toggle">
+      <img
+        src="/img/menu-toggle.svg?3965502626"
+        alt="">
+    </a>
+    <ul id="navbar-menu">
+      
+        <li class="uppercase ">
+          <a href="/fr/download" hreflang="fr">Téléchargez</a>
+        </li>
+      
+        <li class="uppercase ">
+          <a href="/fr/about" hreflang="fr">À propos</a>
+        </li>
+      
+      <li class="uppercase">
+        <a href="https://help.eyeo.com" target="_blank">Aide</a>
+      </li>
+      <li class="uppercase ">
+        <a href="/fr/donate" hreflang="fr">Faire un don</a>
+      </li>
+      <li id="navbar-locale-menubar">
+        <a id="navbar-locale-selected">
+          Français (FR)
+        </a>
+        <ul id="navbar-locale-menu">
+          
+            <li>
+              <a href="/de/preferences" hreflang="de">
+                Deutsch (DE)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/en/preferences" hreflang="en">
+                English (US)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/es/preferences" hreflang="es">
+                Español (España) (ES)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/fr/preferences" hreflang="fr">
+                Français (FR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ko/preferences" hreflang="ko">
+                한국어 (KR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/nl/preferences" hreflang="nl">
+                Nederlands (NL)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ru/preferences" hreflang="ru">
+                Русский (RU)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_CN/preferences" hreflang="zh-CN">
+                中文(简体) (CN)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_TW/preferences" hreflang="zh-TW">
+                中文(台灣) (TW)
+              </a>
+            </li>
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+    <div id="content" class="container content False">
+      
+        <h1>Préférences d&#39;Adblock Plus</h1>
+      
+
+      
+        
+
+        
+        
+      
+
+      
+        
+
+<style type="text/css">
+#preftable th, #preftable td
+{
+  background-color: #fff;
+}
+
+#preftable td span
+{
+  display: block;
+}
+
+#preftable
+{
+  table-layout: fixed;
+  width: 99%;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+#preftable .section
+{
+  text-align: center;
+  font-weight: bold;
+}
+
+#preftable td, #preftable th
+{
+  border: 1px solid #ccc;
+  padding: 2px;
+  vertical-align: top;
+}
+
+.prefname
+{
+  font-weight: bold;
+}
+</style>
+
+<p>Le tableau suivant donne des indications sur les différentes préférences utilisées par Adblock Plus. Ces préférences peuvent être affichées et modifiées dans <a href="http://kb.mozillazine.org/About:config">about:config</a> (tapez dans la barre d&#39;adresse de votre navigateur &quot;about:config&quot; pour y accéder).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <table id="preftable">
+    <tbody>
+      <tr>
+        <th width="30%">Nom de l&#39;option</th>
+        <th width="20%">Valeur par défaut</th>
+        <th width="50%">Commentaires</th>
+      </tr>
+      
+        <tr id="visible_options">
+          <td class="section" colspan="3">Options visibles</td>
+        </tr>
+        
+          <tr id="enabled">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">enabled</span>
+            </td>
+            
+              <td>true</td>
+            
+            <td>
+Valeur de l&#39;option &quot;Activer Adblock Plus&quot;
+</td>
+          </tr>
+        
+          <tr id="frameobjects">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">frameobjects</span>
+            </td>
+            
+              <td>true</td>
+            
+            <td>
+Valeur de l&#39;option &quot;Afficher une étiquette pour Flash et Java&quot;
+</td>
+          </tr>
+        
+          <tr id="savestats">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">savestats</span>
+            </td>
+            
+              <td>false</td>
+            
+            <td>
+Valeur de l&#39;option &quot;Compter la fréquence d&#39;utilisation de filtre&quot;
+</td>
+          </tr>
+        
+          <tr id="showinstatusbar">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">showinstatusbar</span>
+            </td>
+            
+              <td>false</td>
+            
+            <td>
+Valeur de l&#39;option &quot;Afficher dans la barre d&#39;état&quot;
+</td>
+          </tr>
+        
+      
+        <tr id="hidden_options">
+          <td class="section" colspan="3">Options cachées</td>
+        </tr>
+        
+          <tr id="clearStatsOnHistoryPurge">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">clearStatsOnHistoryPurge</span>
+            </td>
+            
+              <td>true</td>
+            
+            <td>
+Si définie à <code>true</code>, le nettoyage de l&#39;historique de navigation effacera également les statistiques d&#39;utilisation pour les filtres  Adblock Plus. Veuillez prendre note que ces statistiques d&#39;utilisations permettent souvent de déduire quel site a été visité par un utilisateur, quand et combien de fois.
+</td>
+          </tr>
+        
+          <tr id="composer_default">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">composer_default</span>
+            </td>
+            
+              <td>2</td>
+            
+            <td>
+Détermine la suggestion à choisir par défaut dans le composeur de filtre :<br>
+
+ <br>
+
+0 — motif personnalisé<br>
+
+1 — uniquement l&#39;adresse exacte<br>
+
+2 — répertoire entier<br>
+
+3 — site entier
+</td>
+          </tr>
+        
+          <tr id="data_directory">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">data_directory</span>
+            </td>
+            
+              <td>adblockplus</td>
+            
+            <td>
+Unused in Adblock Plus 2.9 and higher.
+</td>
+          </tr>
+        
+          <tr id="defaultstatusbaraction">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">defaultstatusbaraction</span>
+            </td>
+            
+              <td>0</td>
+            
+            <td>
+Définit l&#39;action exécutée lors du clic sur l&#39;icône de la barre d&#39;état. Pour la liste des valeurs possibles, veuillez voir l&#39;option <a href="#defaulttoolbaraction">defaulttoolbaraction</a>.
+</td>
+          </tr>
+        
+          <tr id="defaulttoolbaraction">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">defaulttoolbaraction</span>
+            </td>
+            
+              <td>0</td>
+            
+            <td>
+Définit l&#39;action réalisée lors du clic sur l&#39;icône de la barre d&#39;outils. Les valeurs possibles sont :<br>
+
+ <br>
+
+0 — Afficher le menu<br>
+
+1 — Afficher/fermer la liste des éléments filtrables<br>
+
+2 — Afficher la boîte de dialogue des préférences<br>
+
+3 — Activer/désactiver Adblock Plus<br>
+
+Toute autre valeur — ne fait rien
+</td>
+          </tr>
+        
+          <tr id="enable_key">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">enable_key</span>
+            </td>
+            
+              <td><em>vide</em></td>
+            
+            <td>
+Définit la touche de raccourci permettant d&#39;activer/désactiver Adblock Plus. Pour connaître les valeurs possibles, veuillez vous référer à l&#39;option <a href="#sidebar_key">sidebar_key</a> ci-dessus.<br>
+
+ <br>
+
+ <em>Remarque</em> : Ce paramètre ne s&#39;appliquera qu&#39;après le redémarrage du navigateur.
+</td>
+          </tr>
+        
+          <tr id="fastcollapse">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">fastcollapse</span>
+            </td>
+            
+              <td>false</td>
+            
+            <td>
+If set to <code>true</code> blocked elements will no longer be hidden. This might have the effect that
+placeholders will show up for blocked images for example, unless hidden by other means. This functionality was available
+as &quot;Hide placeholders of blocked elements&quot; before Adblock Plus 2.6.7.
+</td>
+          </tr>
+        
+          <tr id="filters_key">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">filters_key</span>
+            </td>
+            
+              <td>Accel Shift E, Accel Shift F, Accel Shift O</td>
+            
+            <td>
+Définit le raccourci clavier permettant d&#39;afficher la fenêtre des préférences de filtre. Pour la description des valeurs possibles voir l&#39;option <a href="#sidebar_key">sidebar_key</a> ci-dessus.<br>
+
+ <br>
+
+ <em>Remarque</em> : Ce paramètre ne s&#39;appliquera qu&#39;après le redémarrage du navigateur.
+</td>
+          </tr>
+        
+          <tr id="flash_scrolltoitem">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">flash_scrolltoitem</span>
+            </td>
+            
+              <td>true</td>
+            
+            <td>
+Définit si &quot;Faire clignoter les bordures de l&#39;élément&quot; dans la liste des éléments filtrables doit essayer de faire défiler la page pour afficher l&#39;élément recherché.
+</td>
+          </tr>
+        
+          <tr id="patternsbackupinterval">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">patternsbackupinterval</span>
+            </td>
+            
+              <td>24</td>
+            
+            <td>
+Intervalle minimum entre deux sauvegardes du fichier patterns.ini (en heures).
+</td>
+          </tr>
+        
+          <tr id="patternsbackups">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">patternsbackups</span>
+            </td>
+            
+              <td>5</td>
+            
+            <td>
+Nombre de sauvegardes du fichier patterns.ini devant être conservées. Si l&#39;option vaut 0, aucune sauvegarde ne sera effectuée.
+</td>
+          </tr>
+        
+          <tr id="patternsfile">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">patternsfile</span>
+            </td>
+            
+              <td><em>vide</em></td>
+            
+            <td>
+Nom du fichier utilisé pour stocker la liste de filtres. Le chemin d&#39;accès peut être soit absolu, soit relatif par rapport au dossier du profil utilisateur.
+</td>
+          </tr>
+        
+          <tr id="please_kill_startup_performance">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">please_kill_startup_performance</span>
+            </td>
+            
+              <td>false</td>
+            
+            <td>
+Unused in Adblock Plus 2.9 and higher.
+</td>
+          </tr>
+        
+          <tr id="previewimages">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">previewimages</span>
+            </td>
+            
+              <td>true</td>
+            
+            <td>
+Defini si l&#39;infobulle de la liste des éléments filtrables doit afficher l&#39;image représentant l&#39;élément.
+</td>
+          </tr>
+        
+          <tr id="sendReport_key">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">sendReport_key</span>
+            </td>
+            
+              <td><em>vide</em></td>
+            
+            <td>
+Définit la touche de raccourci utilisée pour envoyer les signalements de bogues. Pour la description des valeurs possibles référez-vous à l&#39;option <a href="#sidebar_key">sidebar_key</a>.
+<br><br>
+
+<em>Remarque</em> : Ce paramètre ne s&#39;appliquera qu&#39;après le redémarrage du navigateur.
+</td>
+          </tr>
+        
+          <tr id="sidebar_key">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">sidebar_key</span>
+            </td>
+            
+              <td>Accel Shift V, Accel Shift U</td>
+            
+            <td>
+Définit la touche de raccourci permettant d&#39;afficher la liste des éléments filtrables. Cette préférence peut être laissée vide ou prendre la forme <em>modifieur1 modifieur2 touche</em>. Les modifieurs reconnus sont : Shift, Accel (Touche d&#39;accélération par défaut, ex. Ctrl sur Windows, Command sur Mac OS X), Ctrl/Control, Alt, Meta. la touche peut peut être une lettre ou une touche spéciale telle que F7 ou DROITE (Consultez <a href="http://mxr.mozilla.org/mozilla/source/dom/public/idl/events/nsIDOMKeyEvent.idl">l&#39;interface nsIDOMKeyEvent</a> pour trouver une liste de touches spéciales). Depuis la version 1.3.5 d&#39;Adblock Plus plusieurs raccourcis peuvent être spécifiés en les séparant par des virgules, le premier raccourci disponible de la liste étant celui qui sera utilisé.<br>
+
+ <br>
+
+ <em>Remarque</em> : Ce paramètre ne s&#39;appliquera qu&#39;après le redémarrage du navigateur.
+</td>
+          </tr>
+        
+          <tr id="subscriptions_autoupdate">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">subscriptions_autoupdate</span>
+            </td>
+            
+              <td>true</td>
+            
+            <td>
+Définit si les listes de filtres auxquelles l&#39;utilisateur a souscrit doivent être mises à jour automatiquement.<br><br>
+
+<em>Remarque</em> : Désactiver cette option est déconseillé
+</td>
+          </tr>
+        
+          <tr id="subscriptions_exceptionscheckbox">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">subscriptions_exceptionscheckbox</span>
+            </td>
+            
+              <td>true</td>
+            
+            <td>
+Si la préférence vaut <code>true</code>, alors la liste de filtres utilisée pour les <a href="/fr/acceptable-ads" hreflang="fr">publicités non-intrusives</a> sera traitée d&#39;une façon particulière en étant affichée sous la forme d&#39;une case à cocher dans l&#39;interface utilisateur.
+</td>
+          </tr>
+        
+      
+        <tr id="remembered_actions">
+          <td class="section" colspan="3">Actions mémorisées</td>
+        </tr>
+        
+          <tr id="blockableItemsSize">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">blockableItemsSize</span>
+            </td>
+            
+              <td>{width: 200, height: 200}</td>
+            
+            <td>
+Sauvegarde la taille de la fenêtre des Éléments Filtrables (le paramètre de largeur n&#39;est pertinent que lorsque la fenêtre est affichée comme un encadré).
+</td>
+          </tr>
+        
+          <tr id="currentVersion">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">currentVersion</span>
+            </td>
+            
+              <td>0.0</td>
+            
+            <td>
+Stocke la dernière version d&#39;Adblock Plus, cela lancera les actions devant être réalisées lors d&#39;une mise à jour ou d&#39;une première installation
+</td>
+          </tr>
+        
+          <tr id="detachsidebar">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">detachsidebar</span>
+            </td>
+            
+              <td>false</td>
+            
+            <td>
+Sauvegarde l&#39;état de la liste des éléments filtrables — <code>true</code> signifie détaché
+</td>
+          </tr>
+        
+          <tr id="hideContributeButton">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">hideContributeButton</span>
+            </td>
+            
+              <td>false</td>
+            
+            <td>
+Vaut <code>true</code> si l&#39;utilisateur a choisi de masquer le bouton &quot;Contribuer&quot;.
+</td>
+          </tr>
+        
+          <tr id="notifications_ignoredcategories">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">notifications_ignoredcategories</span>
+            </td>
+            
+              <td>[]</td>
+            
+            <td>
+List of notification categories that the user opted out of.
+</td>
+          </tr>
+        
+          <tr id="notifications_showui">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">notifications_showui</span>
+            </td>
+            
+              <td>false</td>
+            
+            <td>
+Determines whether notification management UI should be displayed (only if the user opted out of notifications before).
+</td>
+          </tr>
+        
+          <tr id="recentReports">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">recentReports</span>
+            </td>
+            
+              <td>[]</td>
+            
+            <td>
+Données encodées au format JSON sur des signalements de problèmes récemment soumis (adresse du signalement, sites Web signalés et date de soumission)
+</td>
+          </tr>
+        
+      
+        <tr id="internal_preferences">
+          <td class="section" colspan="3">Préférences internes (à ne pas modifier tant que l&#39;on ne sait pas ce que l&#39;on fait)</td>
+        </tr>
+        
+          <tr id="analytics">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">analytics</span>
+            </td>
+            
+              <td>{
+          trustedHosts: [&#34;adblockplus.org&#34;, &#34;notification.adblockplus.org&#34;,
+                         &#34;easylist-downloads.adblockplus.org&#34;]
+        }</td>
+            
+            <td>
+Contains analytics data, for example the version of the first fetched resource, and a list of trusted hosts which that data can be shared with.
+</td>
+          </tr>
+        
+          <tr id="documentation_link">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">documentation_link</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Adresse sur adblockplus.org qui doit être ouverte pour des liens de documentation. Redirigera vers le véritable emplacement de la documentation en prenant en compte la langue utilisée.
+</td>
+          </tr>
+        
+          <tr id="notificationdata">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">notificationdata</span>
+            </td>
+            
+              <td>{}</td>
+            
+            <td>
+Current emergency notification data.
+</td>
+          </tr>
+        
+          <tr id="notificationurl">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">notificationurl</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Location of the file containing emergency notifications.
+</td>
+          </tr>
+        
+          <tr id="report_submiturl">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">report_submiturl</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Adresse sur adblockplus.org vers laquelle les signalements de problèmes devront être soumis.
+</td>
+          </tr>
+        
+          <tr id="subscriptions_antiadblockurl">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">subscriptions_antiadblockurl</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Location of the subscription that hides anti adblock messages.
+</td>
+          </tr>
+        
+          <tr id="subscriptions_exceptionsurl">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">subscriptions_exceptionsurl</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Emplacement de la liste de filtres utilisée pour les 
+<a href="/fr/acceptable-ads" hreflang="fr">publicités non-intrusives</a>.
+</td>
+          </tr>
+        
+          <tr id="subscriptions_exceptionsurl_privacy">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">subscriptions_exceptionsurl_privacy</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Location of the filter list used to allow only nonintrusive ads that are privacy-friendly.
+</td>
+          </tr>
+        
+          <tr id="subscriptions_fallbackerrors">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">subscriptions_fallbackerrors</span>
+            </td>
+            
+              <td>5</td>
+            
+            <td>
+Définit le nombre nécessaire de téléchargements d&#39;abonnement ayant échoués avant que le script d&#39;erreur (voyez <a href="#subscriptions_fallbackurl">subscriptions_fallbackurl</a> ci-dessus) soit exécuté afin d&#39;obtenir la nouvelle adresse de l&#39;abonnement. Veuillez prendre note qu&#39;Adblock Plus essaiera toujours de procéder à un nouveau téléchargement un jour après le dernier téléchargement ayant échoué.
+</td>
+          </tr>
+        
+          <tr id="subscriptions_fallbackurl">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">subscriptions_fallbackurl</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Adresse du script devant être consulté si un téléchargement de liste de filtre échoue à plusieurs reprises (veuillez vous référer aux <a href="#subscriptions_fallbackerrors">subscriptions_fallbackerrors</a> ci-dessous). %s est remplacé par l&#39;adresse  de l&#39;abonnement en question. Le script devrait imprimer quelque chose comme &quot;301 http://example.com/nouvelle_list.txt&quot; si le nouvel emplacement de l&#39;abonnement est connu.
+</td>
+          </tr>
+        
+          <tr id="subscriptions_listurl">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">subscriptions_listurl</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Adresse utilisée pour télécharger la liste complète des abonnements de filtres.
+</td>
+          </tr>
+        
+          <tr id="whitelistschemes">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">whitelistschemes</span>
+            </td>
+            
+              <td>about chrome file irc moz-extension moz-safe-about news resource snews x-jsd addbook cid imap mailbox nntp pop data javascript moz-icon</td>
+            
+            <td>
+Liste de modèles d&#39;URL ne devant pas être bloquées (appliqué à des documents entiers ou à des localisations d&#39;éléments)
+</td>
+          </tr>
+        
+      
+        <tr id="removed_preferences">
+          <td class="section" colspan="3">Préférences supprimées</td>
+        </tr>
+        
+          <tr id="blocklocalpages">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">blocklocalpages</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Non utilisé dans Adblock Plus 0.7.5 et supérieur
+</td>
+          </tr>
+        
+          <tr id="blocktypes">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">blocktypes</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Non utilisé dans Adblock Plus 0.7.5 et supérieur
+</td>
+          </tr>
+        
+          <tr id="checkedadblockinstalled">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">checkedadblockinstalled</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Non utilisé dans Adblock Plus 1.0 et supérieur
+</td>
+          </tr>
+        
+          <tr id="checkedadblockprefs">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">checkedadblockprefs</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Non utilisé dans Adblock Plus 0.7.5 et supérieur
+</td>
+          </tr>
+        
+          <tr id="checkedadblocksync">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">checkedadblocksync</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Non utilisé dans Adblock Plus 0.7.5 et supérieur
+</td>
+          </tr>
+        
+          <tr id="checktoolbar">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">checktoolbar</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Non utilisé dans Adblock Plus 1.0 et supérieur
+</td>
+          </tr>
+        
+          <tr id="correctTypos">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">correctTypos</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Unused in Adblock Plus 2.3 and higher
+</td>
+          </tr>
+        
+          <tr id="correctTyposAsked">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">correctTyposAsked</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Unused in Adblock Plus 2.3 and higher
+</td>
+          </tr>
+        
+          <tr id="grouporder">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">grouporder</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Non utilisé dans Adblock Plus 0.7.5 et supérieur
+</td>
+          </tr>
+        
+          <tr id="hideimagemanager">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">hideimagemanager</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Non utilisé dans Adblock Plus 2.1 et supérieur
+</td>
+          </tr>
+        
+          <tr id="lastRuleUpdate">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">lastRuleUpdate</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Unused in Adblock Plus 2.3 and higher
+</td>
+          </tr>
+        
+          <tr id="linkcheck">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">linkcheck</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Non utilisé dans Adblock Plus 0.7.5.4 et supérieur
+</td>
+          </tr>
+        
+          <tr id="linktypes">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">linktypes</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Non utilisé dans Adblock Plus 0.7.5 et supérieur
+</td>
+          </tr>
+        
+          <tr id="localschemes">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">localschemes</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Non utilisé dans Adblock Plus 0.7.5 et supérieur
+</td>
+          </tr>
+        
+          <tr id="noncollapsabletypes">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">noncollapsabletypes</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Non utilisé dans Adblock Plus 0.7.5 et supérieur
+</td>
+          </tr>
+        
+          <tr id="patterns">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">patterns</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Non utilisé dans Adblock Plus 0.7.5 et supérieur
+</td>
+          </tr>
+        
+          <tr id="protectchrome.*">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">protectchrome.*</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Non utilisé dans Adblock Plus 1.0 et supérieur
+</td>
+          </tr>
+        
+          <tr id="settings_key">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">settings_key</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Non utilisé dans Adblock Plus 2.0 et supérieur
+</td>
+          </tr>
+        
+          <tr id="showintoolbar">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">showintoolbar</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Non utilisé dans Adblock Plus 2.0 et supérieur
+</td>
+          </tr>
+        
+          <tr id="showsubscriptions">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">showsubscriptions</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Non utilisé dans Adblock Plus 1.0 et supérieur
+</td>
+          </tr>
+        
+          <tr id="synchronizationinterval">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">synchronizationinterval</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Non utilisé dans Adblock Plus 2.0 et supérieur
+</td>
+          </tr>
+        
+          <tr id="warnregexp">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">warnregexp</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Non utilisé dans Adblock Plus 1.0 et supérieur
+</td>
+          </tr>
+        
+          <tr id="whitelist">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">whitelist</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Unused in Adblock Plus 2.3 and higher
+</td>
+          </tr>
+        
+      
+        <tr id="preferences_for_administrators">
+          <td class="section" colspan="3">Preferences for administrators</td>
+        </tr>
+        
+          <tr id="suppress_first_run_page">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">suppress_first_run_page</span>
+            </td>
+            
+              <td>false</td>
+            
+            <td>
+Suppresses the first run page Adblock Plus opens after the installation.
+</td>
+          </tr>
+        
+      
+    </tbody>
+  </table>
+
+      
+    </div>
+
+    
+
+<footer id="footer" class="content">
+  <div class="container">
+    <div class="row">
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Téléchargez</h5>
+        <ul>
+          <li><a href="/en/adblock-plus-chrome" hreflang="en">Adblock Plus pour Chrome</a></li>
+          <li><a href="/en/adblock-plus-firefox" hreflang="en">Adblock Plus pour Firefox</a></li>
+          <li><a href="/en/ad-blocker-safari" hreflang="en">Adblock Plus pour Safari</a></li>
+          <li><a href="/en/adblock-plus-opera" hreflang="en">Adblock Plus pour Opera</a></li>
+          <li><a href="/en/android-install" hreflang="en">Adblock Browser for Android</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Ressources</h5>
+        <ul>
+          
+            <li><a href="/fr/acceptable-ads" hreflang="fr">Publicité Acceptable</a></li>
+          
+            <li><a href="/fr/documentation" hreflang="fr">Documentation</a></li>
+          
+            <li><a href="/en/deployments" hreflang="en">Pour les administrateurs</a></li>
+          
+            <li><a href="/fr/bugs" hreflang="fr">Signaler un problème</a></li>
+          
+          
+            <li><a href="/fr/faq-privacy" hreflang="fr">Confidentialité FAQ</a></li>
+          
+          <li><a href="https://help.eyeo.com/en/adblockplus/how-to-write-filters" target="_blank" hreflang="en">Créer des filtres Adblock Plus</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Communauté</h5>
+        <ul>
+          <li><a href="/fr/contribute" hreflang="fr">Participer</a></li>
+          <li><a href="https://adblockplus.org/releases/" hreflang="en">Annonces</a></li>
+          <li><a href="https://adblockplus.org/blog/" hreflang="en">Blog</a></li>
+          <li><a href="https://adblockplus.org/forum/" hreflang="en">Forum</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Développement</h5>
+        <ul>
+          <li><a href="https://gitlab.com/eyeo/adblockplus">Code source</a></li>
+          
+  
+    <li><a href="/fr/tools" hreflang="fr">Outils</a></li>
+  
+
+          <li><a href="https://eyeo.com/jobs/" hreflang="en">Emplois</a></li>
+          <li><a href="/en/partner-integrations" hreflang="en">Partner Integrations</a></li>
+        </ul>
+      </nav>
+
+      <nav id="social-list" class="column">
+        <h5 class="footer-social-heading">Suivez-nous sur</h5>
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/AdblockPlus"
+              title="Suivre Adblock Plus sur Twitter"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-twitter-glyphicon.png?3965502626"
+                alt="Icône Twitter">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/user/AdblockPlusOfficial"
+              title="S’abonner à Adblock Plus sur YouTube"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-youtube-glyphicon.png?3965502626"
+                alt="Icône YouTube">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/adblockplus"
+              title="Suivre Adblock Plus sur Facebook"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-facebook-glyphicon.png?3965502626"
+                alt="Icône Facebook">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/adblockplus/"
+              title="Suivre Adblock Plus sur Instagram"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-instagram-glyphicon.png?3965502626"
+                alt="Icône Instagram">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://vk.com/adblockplusofficial"
+              title="Suivre Adblock Plus sur VK"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-vk-glyphicon.png?3965502626"
+                alt="Icône VK">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div> 
+
+    <div id="footer-legal">
+      <p id="copyright-notice">Copyright © 2020 Tous droits réservés. Adblock Plus<sup>®</sup> est une marque déposée d’<a href="https://eyeo.com">eyeo GmbH</a>.</p>
+      <ul id="legal-list">
+        
+          
+            <li><a href="/fr/terms" hreflang="fr">Conditions d’utilisation</a></li>
+          
+            <li><a href="/fr/privacy" hreflang="fr">Politique de protection de la vie privée</a></li>
+          
+            <li><a href="/en/imprint" hreflang="en">Contact</a></li>
+          
+        
+      </ul>
+    </div> 
+  </div> 
+</footer> 
+    <div id="cookiebar" class="cookie cookiebar">
+  <div class="container">
+    <div class="row">
+
+      <div class="column two-thirds">
+        <p class="cookiebar-text">
+          <svg viewBox="0 0 37.796 41.279" width="38" height="42">
+            <title>Notification de cookies</title>
+            <g transform="translate(-14.904 0)">
+              <g transform="translate(14.904 0)">
+                <path d="M52.468,31.165a6.029,6.029,0,0,1-1.514-4.908.935.935,0,0,0-.626-1.019,6.029,6.029,0,0,1-3.244-8.8A.935.935,0,0,0,47,15.368a6.039,6.039,0,0,1-1.112-5.609A.935.935,0,0,0,45.4,8.647,6.029,6.029,0,0,1,42.129,2.01.935.935,0,0,0,41.484.935a20.682,20.682,0,1,0,11.049,31.38A.935.935,0,0,0,52.468,31.165Zm-3.739,2.814A18.759,18.759,0,1,1,40.148,2.524,7.9,7.9,0,0,0,43.887,10a7.889,7.889,0,0,0,1.281,6.029A7.917,7.917,0,0,0,46.682,25.1a7.823,7.823,0,0,0,2.346,1.617,7.889,7.889,0,0,0,1.57,5.123A18.6,18.6,0,0,1,48.729,33.979Z" transform="translate(-14.904 0)"/>
+              </g>
+              <g transform="translate(24.556 12.199)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(34.81 18.817)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(33.212 32.212)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(36.652 9.03)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(23.509 25.912)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(42.765 27.23)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+            </g>
+          </svg>
+          <span>
+            Nous utilisons des cookies pour vous offrir la meilleure expérience sur notre site web. Lorsque vous utilisez notre site, vous êtes informé que nous utilisons des cookies et que vous pouvez modifier cette utilisation à tout moment. <a href="/fr/cookie-information" hreflang="fr">En savoir plus</a>
+          </span>
+        </p>
+      </div>
+
+      <div class="column one-third text-end">
+        <ul class="cookiebar-nav">
+          <li>
+            <button
+              type="button"
+              class="cookies-submit button"
+              title="Rejeter la notification de cookies">
+              OK, compris
+            </button>
+          </li>
+          <li class="dropup cookies-dropup">
+            <button
+              type="button"
+              class="cookies-settings button"
+              title="Modifier les paramètres des cookies">
+              Paramètres &nbsp;
+              <svg viewBox="0 0 16.509 16.993" width="18" height="18">
+                <title>Icône de paramètres</title>
+                <path d="M175.051,8.283V.478a.478.478,0,1,0-.955,0v7.8a2.425,2.425,0,0,0,0,4.755v3.474a.478.478,0,1,0,.955,0V13.038a2.425,2.425,0,0,0,0-4.755Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,174.574,12.129Z" transform="translate(-166.302 0)"/>
+                <path d="M9.751,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.479a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752ZM9.274,8.123a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,9.274,8.123Z" transform="translate(-6.85 0)"/>
+                <path d="M339.351,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.483a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,338.874,8.123Z" transform="translate(-324.789 0)"/>
+              </svg>
+            </button>
+            <div class="cookies-dropup-menu text-start" tabindex="1">
+               <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Cookies nécessaires</p>
+      <p>Utilisés pour mémoriser vos préférences en matière de confidentialité. Ils ne peuvent pas être désactivés.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Suivre les cookies</p>
+      <p>Nous les utilisons pour analyser le trafic sur le site web.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Cookies test A/B</p>
+      <p>Nous utilisons ces cookies Google Optimize pour les tests A/B basés sur les données d’analyse.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Enregistrer les préférences pour les cookies">
+    Enregistrer les préférences
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+              <span class="arrow"></span>
+            </div>
+          </li>
+        </ul>
+      </div><!-- .column -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+
+</div><!-- #cookies-large-bar -->
+  <form class="cookie cookieprompt">
+
+  <fieldset class="container">
+
+    <legend class="cookie-heading">
+      Préférences pour les cookies
+    </legend>
+
+    <button
+      type="button"
+      class="cookies-close"
+      title="Rejeter la notification de cookies">
+      <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+        <title>Icône de fermeture</title>
+        <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+      </svg>
+    </button>
+
+    <p>
+      Nous utilisons des cookies pour vous offrir la meilleure expérience sur notre site web.
+      <a
+        href="/fr/cookie-information" hreflang="fr"
+        title="Plus d&#39;informations sur les cookies"
+        target="_blank">Plus d&#39;infos</a>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-submit"
+        title="Rejeter la notification de cookies">
+        OK, compris
+      </button>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-settings"
+        title="Modifier les paramètres des cookies">
+        Modifier les paramètres
+      </button>
+    </p>
+
+  </fieldset>
+
+</form>
+  <form class="cookie cookiepage">
+
+  <header class="bg-dark">
+    <div class="container">
+
+      <h4 class="cookie-heading">
+        Préférences pour les cookies
+      </h4>
+
+      <button
+        type="button"
+        class="cookies-close"
+        title="Rejeter la notification de cookies">
+        <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+          <title>Icône de fermeture</title>
+          <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="bg-light">
+    <div class="container section">
+        Nous utilisons des cookies pour vous offrir la meilleure expérience sur notre site web. Lorsque vous utilisez notre site, vous êtes informé que nous utilisons des cookies et que vous pouvez modifier cette utilisation à tout moment. <a href="/fr/cookie-information" hreflang="fr">En savoir plus</a>
+    </div>
+  </div>
+
+  <div class="container section">
+     <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Cookies nécessaires</p>
+      <p>Utilisés pour mémoriser vos préférences en matière de confidentialité. Ils ne peuvent pas être désactivés.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Suivre les cookies</p>
+      <p>Nous les utilisons pour analyser le trafic sur le site web.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Cookies test A/B</p>
+      <p>Nous utilisons ces cookies Google Optimize pour les tests A/B basés sur les données d’analyse.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Enregistrer les préférences pour les cookies">
+    Enregistrer les préférences
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+  </div>
+
+</form>
+    <script src="/js/testing/setup.js?3597732194"></script>
+    
+  <script src="/js/main.js?3597732194"></script>
+
+
+
+  </body>
+</html>

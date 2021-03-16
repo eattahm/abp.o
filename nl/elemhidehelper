@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html 
+lang="nl"
+data-siteurl="https://adblockplus.org"
+dir="ltr"
+class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Element Hiding Helper</title>
+
+<link rel="canonical" href="https://adblockplus.org/elemhidehelper">
+
+
+
+    
+<meta property="og:image" content="/img/adblockplus_promo.png">
+<meta property="og:title" content="Element Hiding Helper">
+
+<meta property="og:locale" content="nl_NL">
+
+  
+    <meta property="og:locale:alternate" content="de_DE">
+  
+
+  
+    <meta property="og:locale:alternate" content="en_US">
+  
+
+  
+    <meta property="og:locale:alternate" content="es_ES">
+  
+
+  
+    <meta property="og:locale:alternate" content="fr_FR">
+  
+
+  
+    <meta property="og:locale:alternate" content="he_HE">
+  
+
+  
+    <meta property="og:locale:alternate" content="ko_KR">
+  
+
+  
+    <meta property="og:locale:alternate" content="lt_LT">
+  
+
+  
+
+  
+    <meta property="og:locale:alternate" content="ru_RU">
+  
+
+  
+    <meta property="og:locale:alternate" content="sk_SK">
+  
+
+  
+    <meta property="og:locale:alternate" content="zh_CN">
+  
+
+  
+    <meta property="og:locale:alternate" content="zh_TW">
+  
+
+<meta property="og:url" content="https://adblockplus.org/nl/elemhidehelper">
+
+
+<meta name="twitter:site" content="@AdblockPlus">
+<meta name="twitter:creator" content="@AdblockPlus">
+    
+  <link rel="stylesheet" href="/css/defaults.css?892311190">
+  <link rel="stylesheet" href="/css/fonts.css?892311190">
+  <link rel="stylesheet" href="/css/main.css?892311190">
+  <link rel="stylesheet" href="/css/cookies.css?892311190">
+
+
+
+
+
+    
+    <script>
+  window.eyeo = {
+    
+    
+    preventCookiePrompt: false,
+    userTesting: false
+  }
+</script>
+
+    <!--[if IE 9]>
+  <script src="/js/vendor/es5-shim.js?4048046814"></script>
+  <script src="/js/vendor/dom4.js?4048046814"></script>
+<![endif]-->
+
+    
+      
+    
+  </head>
+
+  <body>
+    
+
+
+
+<nav id="navbar">
+  <div class="container">
+    <a href="/nl/" hreflang="nl" id="navbar-logo">
+      <img
+        src="/img/navbar-logo.svg?2889300452"
+        alt="">
+      <span>Adblock <strong>Plus</strong></span>
+    </a>
+    <a href="#" id="navbar-menu-toggle">
+      <img
+        src="/img/menu-toggle.svg?2889300452"
+        alt="">
+    </a>
+    <ul id="navbar-menu">
+      
+        <li class="uppercase ">
+          <a href="/nl/download" hreflang="nl">Downloaden</a>
+        </li>
+      
+        <li class="uppercase ">
+          <a href="/en/about" hreflang="en">Over</a>
+        </li>
+      
+      <li class="uppercase">
+        <a href="https://help.eyeo.com" target="_blank">Help</a>
+      </li>
+      <li class="uppercase ">
+        <a href="/nl/donate" hreflang="nl">Doneer</a>
+      </li>
+      <li id="navbar-locale-menubar">
+        <a id="navbar-locale-selected">
+          Nederlands (NL)
+        </a>
+        <ul id="navbar-locale-menu">
+          
+            <li>
+              <a href="/de/elemhidehelper" hreflang="de">
+                Deutsch (DE)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/en/elemhidehelper" hreflang="en">
+                English (US)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/es/elemhidehelper" hreflang="es">
+                Español (España) (ES)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/fr/elemhidehelper" hreflang="fr">
+                Français (FR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/he/elemhidehelper" hreflang="he">
+                עברית (HE)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ko/elemhidehelper" hreflang="ko">
+                한국어 (KR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/lt/elemhidehelper" hreflang="lt">
+                Lietuvių (LT)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/nl/elemhidehelper" hreflang="nl">
+                Nederlands (NL)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ru/elemhidehelper" hreflang="ru">
+                Русский (RU)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/sk/elemhidehelper" hreflang="sk">
+                Slovenčina (SK)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_CN/elemhidehelper" hreflang="zh-CN">
+                中文(简体) (CN)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_TW/elemhidehelper" hreflang="zh-TW">
+                中文(台灣) (TW)
+              </a>
+            </li>
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+    <div id="content" class="container content False">
+      
+        <h1>Element Hiding Helper</h1>
+      
+
+      
+        
+
+        
+        
+          <div class="toc">
+            
+          <ul>
+            
+              <li>
+                <a href="#general">Algemene opmerkingen</a>
+                
+              </li>
+            
+              <li>
+                <a href="#installation">Installatie</a>
+                
+              </li>
+            
+              <li>
+                <a href="#using">Het gebruik van de Element Hiding Helper extensie</a>
+                
+              </li>
+            
+          </ul>
+        
+          </div>
+        
+      
+
+      
+        
+
+<p class="alert">Deprecated since ABP 3.0. Although it might still work with some extensions, it could become obsolete at any time.</p>
+
+<h2 id="general">Algemene opmerkingen</h2>
+
+        <p>De Element Hiding Helper is een aanvullende extensie voor Adblock Plus, bedoeld om het maken van regels om elementen te verbergen te vergemakkelijken. Je selecteert gewoon het element dat je wilt verbergen en kiest dan welke attributen van dit element waaraan dit element herkend in de toekomst kan worden. De element verbergende regel wordt dan gegenereerd en automatisch toegevoegd. De code is gedeeltelijk gebaseerd op de <a href="http://karmatics.com/aardvark/">Aardvark extensie</a>.</p>
+
+<p>
+  De Element Hiding Helper extensie vereist <a href="/en/requirements" hreflang="en">dezelfde browser versie als Adblock Plus</a>. Adblock Plus 1.3 of hoger is vereist, de extensie doet niets zonder Adblock Plus.
+</p>
+
+        <h2 id="installation">Installatie</h2>
+
+        <p><a href="https://update.adblockplus.org/latest/elemhidehelper.xpi">Installeer de Element Hiding Helper</a></p>
+
+        
+
+        <h2 id="using">Het gebruik van de Element Hiding Helper extensie</h2>
+
+        <p>Je start Element Hiding Helper door naar het menu van ABP&#39;s werkbalk pictogram te gaan en &quot;Selecteer elementen om te verbergen&quot;  te kiezen.</p>
+
+        <p style="text-align: center;"><img src="/en/images/ehh-start.png?2889300452"></p>
+
+        <p>Je kan nu met de muis het element kiezen wat je wilt verbergen. Als je meer dan een element wilt verbergen, probeer dan op W te drukken. Door op N te drukken, wordt de selectie weer kleiner. Andere commando&#39;s die in de helptekst beschreven staan kunnen ook nuttig zijn om er voor te zorgen dat je precies dat selecteert wat je wilt verbergen.</p>
+
+        <p style="text-align: center;"><img src="/en/images/ehh-select.png?2889300452"></p>
+
+        <p>Als je eenmaal op het element hebt geklikt om aan te geven dat je klaar bent met de selectie, verschijnt het compositie scherm. Je kan nu kiezen bij welk domein de regel actief moet worden en met welke attributen van het element rekening gehouden moet worden (als de attributen die je selecteer te algemeen zijn, kan je ook nuttige elementen verbergen). Voorbeeld zal de resukterende regel meteen toepassen, zodat je kan zien hoe de pagina er uit ziet. Als je geavanceerdere regels wilt maken, kan je overschakelen op Geavanceerde mode. Ten slotte zal een klik op &quot;Voeg filterregel toe&quot; de regel aan je lijst met Adblock Plus filters toevoegen en het toepassen op de huidige pagina.</p>
+
+        <p style="text-align: center;"><img src="/en/images/ehh-addrule.png?2889300452"></p>
+
+      
+    </div>
+
+    
+
+<footer id="footer" class="content">
+  <div class="container">
+    <div class="row">
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Downloaden</h5>
+        <ul>
+          <li><a href="/en/adblock-plus-chrome" hreflang="en">Adblock Plus voor Chrome</a></li>
+          <li><a href="/en/adblock-plus-firefox" hreflang="en">Adblock Plus voor Firefox</a></li>
+          <li><a href="/en/ad-blocker-safari" hreflang="en">Adblock Plus voor Safari</a></li>
+          <li><a href="/en/adblock-plus-opera" hreflang="en">Adblock Plus voor Opera</a></li>
+          <li><a href="/en/android-install" hreflang="en">Adblock Browser for Android</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Resources</h5>
+        <ul>
+          
+            <li><a href="/nl/acceptable-ads" hreflang="nl">Acceptabele advertenties</a></li>
+          
+            <li><a href="/nl/documentation" hreflang="nl">Documentatie</a></li>
+          
+            <li><a href="/en/deployments" hreflang="en">Voor beheerders</a></li>
+          
+            <li><a href="/nl/bugs" hreflang="nl">Rapporteer een probleem</a></li>
+          
+          
+          <li><a href="https://help.eyeo.com/en/adblockplus/how-to-write-filters" target="_blank" hreflang="en">Het schrijven van Adblock Plus-filters</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Gemeenschap</h5>
+        <ul>
+          <li><a href="/nl/contribute" hreflang="nl">Bijdragen</a></li>
+          <li><a href="https://adblockplus.org/releases/" hreflang="en">Mededelingen</a></li>
+          <li><a href="https://adblockplus.org/blog/" hreflang="en">Blog</a></li>
+          <li><a href="https://adblockplus.org/forum/" hreflang="en">Forum</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Ontwikkeling</h5>
+        <ul>
+          <li><a href="https://gitlab.com/eyeo/adblockplus">Broncode</a></li>
+          
+  
+    <li><a href="/nl/tools" hreflang="nl">Tools</a></li>
+  
+
+          <li><a href="https://eyeo.com/jobs/" hreflang="en">Jobs</a></li>
+          <li><a href="/en/partner-integrations" hreflang="en">Partner Integrations</a></li>
+        </ul>
+      </nav>
+
+      <nav id="social-list" class="column">
+        <h5 class="footer-social-heading">Volg ons op</h5>
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/AdblockPlus"
+              title="Volg Adblock Plus op Twitter"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-twitter-glyphicon.png?2889300452"
+                alt="Twitter icon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/user/AdblockPlusOfficial"
+              title="Volg Adblock Plus op YouTube"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-youtube-glyphicon.png?2889300452"
+                alt="YouTube icon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/adblockplus"
+              title="Volg Adblock Plus op Facebook"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-facebook-glyphicon.png?2889300452"
+                alt="Facebook icon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/adblockplus/"
+              title="Volg Adblock Plus op Instagram"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-instagram-glyphicon.png?2889300452"
+                alt="Instagram icon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://vk.com/adblockplusofficial"
+              title="Volg Adblock Plus op VK"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-vk-glyphicon.png?2889300452"
+                alt="VK icon">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div> 
+
+    <div id="footer-legal">
+      <p id="copyright-notice">Copyright © 2020 Alle rechten voorbehouden. Adblock Plus<sup>®</sup> is een geregistreerd handelsmerk van <a href="https://eyeo.com">eyeo GmbH</a>.</p>
+      <ul id="legal-list">
+        
+          
+            <li><a href="/en/terms" hreflang="en">Gebruiksvoorwaarden</a></li>
+          
+            <li><a href="/en/privacy" hreflang="en">Privacybeleid</a></li>
+          
+            <li><a href="/en/imprint" hreflang="en">Imprint</a></li>
+          
+        
+      </ul>
+    </div> 
+  </div> 
+</footer> 
+    <div id="cookiebar" class="cookie cookiebar">
+  <div class="container">
+    <div class="row">
+
+      <div class="column two-thirds">
+        <p class="cookiebar-text">
+          <svg viewBox="0 0 37.796 41.279" width="38" height="42">
+            <title>Cookiemelding</title>
+            <g transform="translate(-14.904 0)">
+              <g transform="translate(14.904 0)">
+                <path d="M52.468,31.165a6.029,6.029,0,0,1-1.514-4.908.935.935,0,0,0-.626-1.019,6.029,6.029,0,0,1-3.244-8.8A.935.935,0,0,0,47,15.368a6.039,6.039,0,0,1-1.112-5.609A.935.935,0,0,0,45.4,8.647,6.029,6.029,0,0,1,42.129,2.01.935.935,0,0,0,41.484.935a20.682,20.682,0,1,0,11.049,31.38A.935.935,0,0,0,52.468,31.165Zm-3.739,2.814A18.759,18.759,0,1,1,40.148,2.524,7.9,7.9,0,0,0,43.887,10a7.889,7.889,0,0,0,1.281,6.029A7.917,7.917,0,0,0,46.682,25.1a7.823,7.823,0,0,0,2.346,1.617,7.889,7.889,0,0,0,1.57,5.123A18.6,18.6,0,0,1,48.729,33.979Z" transform="translate(-14.904 0)"/>
+              </g>
+              <g transform="translate(24.556 12.199)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(34.81 18.817)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(33.212 32.212)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(36.652 9.03)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(23.509 25.912)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(42.765 27.23)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+            </g>
+          </svg>
+          <span>
+            We gebruiken cookies om u de beste ervaring op onze website te geven. Door gebruik te maken van onze site beseft u dat we cookies gebruiken. U kunt dit op elk gewenst ogenblik veranderen. <a href="/nl/cookie-information" hreflang="nl">Meer informatie</a>
+          </span>
+        </p>
+      </div>
+
+      <div class="column one-third text-end">
+        <ul class="cookiebar-nav">
+          <li>
+            <button
+              type="button"
+              class="cookies-submit button"
+              title="Negeer cookiemelding">
+              Oke, ik snap het
+            </button>
+          </li>
+          <li class="dropup cookies-dropup">
+            <button
+              type="button"
+              class="cookies-settings button"
+              title="Bewerk cookie-instellingen">
+              Instellingen &nbsp;
+              <svg viewBox="0 0 16.509 16.993" width="18" height="18">
+                <title>Instellingen pictogram</title>
+                <path d="M175.051,8.283V.478a.478.478,0,1,0-.955,0v7.8a2.425,2.425,0,0,0,0,4.755v3.474a.478.478,0,1,0,.955,0V13.038a2.425,2.425,0,0,0,0-4.755Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,174.574,12.129Z" transform="translate(-166.302 0)"/>
+                <path d="M9.751,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.479a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752ZM9.274,8.123a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,9.274,8.123Z" transform="translate(-6.85 0)"/>
+                <path d="M339.351,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.483a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,338.874,8.123Z" transform="translate(-324.789 0)"/>
+              </svg>
+            </button>
+            <div class="cookies-dropup-menu text-start" tabindex="1">
+               <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Noodzakelijke cookies</p>
+      <p>Gebruikt om uw privacy voorkeuren te onthouden. Kunnen niet worden uitgeschakeld.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking cookies</p>
+      <p>We gebruiken deze voor analyse van website verkeer.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B test-cookies</p>
+      <p>We gebruiken deze Google Optimize cookies voor A/B testing op basis van analysegegevens.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Sla cookie-voorkeuren op">
+    Sla voorkeuren op
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+              <span class="arrow"></span>
+            </div>
+          </li>
+        </ul>
+      </div><!-- .column -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+
+</div><!-- #cookies-large-bar -->
+  <form class="cookie cookieprompt">
+
+  <fieldset class="container">
+
+    <legend class="cookie-heading">
+      Cookie-voorkeuren
+    </legend>
+
+    <button
+      type="button"
+      class="cookies-close"
+      title="Negeer cookiemelding">
+      <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+        <title>Sluiten pictogram</title>
+        <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+      </svg>
+    </button>
+
+    <p>
+      We gebruiken cookies om u de beste ervaring op onze website te geven.
+      <a
+        href="/nl/cookie-information" hreflang="nl"
+        title="Meer informatie over cookies"
+        target="_blank">Lees meer</a>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-submit"
+        title="Negeer cookiemelding">
+        Oke, ik snap het
+      </button>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-settings"
+        title="Bewerk cookie-instellingen">
+        Wijzig instellingen
+      </button>
+    </p>
+
+  </fieldset>
+
+</form>
+  <form class="cookie cookiepage">
+
+  <header class="bg-dark">
+    <div class="container">
+
+      <h4 class="cookie-heading">
+        Cookie-voorkeuren
+      </h4>
+
+      <button
+        type="button"
+        class="cookies-close"
+        title="Negeer cookiemelding">
+        <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+          <title>Sluiten pictogram</title>
+          <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="bg-light">
+    <div class="container section">
+        We gebruiken cookies om u de beste ervaring op onze website te geven. Door gebruik te maken van onze site beseft u dat we cookies gebruiken. U kunt dit op elk gewenst ogenblik veranderen. <a href="/nl/cookie-information" hreflang="nl">Meer informatie</a>
+    </div>
+  </div>
+
+  <div class="container section">
+     <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Noodzakelijke cookies</p>
+      <p>Gebruikt om uw privacy voorkeuren te onthouden. Kunnen niet worden uitgeschakeld.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking cookies</p>
+      <p>We gebruiken deze voor analyse van website verkeer.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B test-cookies</p>
+      <p>We gebruiken deze Google Optimize cookies voor A/B testing op basis van analysegegevens.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Sla cookie-voorkeuren op">
+    Sla voorkeuren op
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+  </div>
+
+</form>
+    <script src="/js/testing/setup.js?4048046814"></script>
+    
+  <script src="/js/main.js?4048046814"></script>
+
+
+
+  </body>
+</html>

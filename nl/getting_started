@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html 
+lang="nl"
+data-siteurl="https://adblockplus.org"
+dir="ltr"
+class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Aan de slag met Adblock Plus</title>
+
+<link rel="canonical" href="https://adblockplus.org/getting_started">
+
+
+
+    
+<meta property="og:image" content="/img/adblockplus_promo.png">
+<meta property="og:title" content="Aan de slag met Adblock Plus">
+
+<meta property="og:locale" content="nl_NL">
+
+  
+    <meta property="og:locale:alternate" content="de_DE">
+  
+
+  
+    <meta property="og:locale:alternate" content="en_US">
+  
+
+  
+    <meta property="og:locale:alternate" content="es_ES">
+  
+
+  
+    <meta property="og:locale:alternate" content="fr_FR">
+  
+
+  
+
+  
+    <meta property="og:locale:alternate" content="ru_RU">
+  
+
+  
+    <meta property="og:locale:alternate" content="zh_CN">
+  
+
+<meta property="og:url" content="https://adblockplus.org/nl/getting_started">
+
+
+<meta name="twitter:site" content="@AdblockPlus">
+<meta name="twitter:creator" content="@AdblockPlus">
+    
+  <link rel="stylesheet" href="/css/defaults.css?1074802484">
+  <link rel="stylesheet" href="/css/fonts.css?1074802484">
+  <link rel="stylesheet" href="/css/main.css?1074802484">
+  <link rel="stylesheet" href="/css/cookies.css?1074802484">
+
+
+
+
+
+    
+    <script>
+  window.eyeo = {
+    
+    
+    preventCookiePrompt: false,
+    userTesting: false
+  }
+</script>
+
+    <!--[if IE 9]>
+  <script src="/js/vendor/es5-shim.js?3393629769"></script>
+  <script src="/js/vendor/dom4.js?3393629769"></script>
+<![endif]-->
+
+    
+      
+<meta content="Is Adblock Plus nieuw voor je? Zie hoe ongelooflijk makkelijk het is om jezelf te beschermen tegen alle vervelende online advertenties. Download Adblock Plus voor Chrome en andere platformen hier." name="description">
+<meta content="Is Adblock Plus nieuw voor je? Zie hoe ongelooflijk makkelijk het is om jezelf te beschermen tegen alle vervelende online advertenties. Download Adblock Plus voor Chrome en andere platformen hier." property="og:description">
+
+    
+  </head>
+
+  <body>
+    
+
+
+
+<nav id="navbar">
+  <div class="container">
+    <a href="/nl/" hreflang="nl" id="navbar-logo">
+      <img
+        src="/img/navbar-logo.svg?2413437387"
+        alt="">
+      <span>Adblock <strong>Plus</strong></span>
+    </a>
+    <a href="#" id="navbar-menu-toggle">
+      <img
+        src="/img/menu-toggle.svg?2413437387"
+        alt="">
+    </a>
+    <ul id="navbar-menu">
+      
+        <li class="uppercase ">
+          <a href="/nl/download" hreflang="nl">Downloaden</a>
+        </li>
+      
+        <li class="uppercase ">
+          <a href="/en/about" hreflang="en">Over</a>
+        </li>
+      
+      <li class="uppercase">
+        <a href="https://help.eyeo.com" target="_blank">Help</a>
+      </li>
+      <li class="uppercase ">
+        <a href="/nl/donate" hreflang="nl">Doneer</a>
+      </li>
+      <li id="navbar-locale-menubar">
+        <a id="navbar-locale-selected">
+          Nederlands (NL)
+        </a>
+        <ul id="navbar-locale-menu">
+          
+            <li>
+              <a href="/de/getting_started" hreflang="de">
+                Deutsch (DE)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/en/getting_started" hreflang="en">
+                English (US)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/es/getting_started" hreflang="es">
+                Español (España) (ES)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/fr/getting_started" hreflang="fr">
+                Français (FR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/nl/getting_started" hreflang="nl">
+                Nederlands (NL)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ru/getting_started" hreflang="ru">
+                Русский (RU)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_CN/getting_started" hreflang="zh-CN">
+                中文(简体) (CN)
+              </a>
+            </li>
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+    <div id="content" class="container content False">
+      
+        <h1>Aan de slag met Adblock Plus</h1>
+      
+
+      
+        
+
+        
+        
+          <div class="toc">
+            
+          <ul>
+            
+              <li>
+                <a href="#general">Wat is Adblock Plus</a>
+                
+              </li>
+            
+              <li>
+                <a href="#workings">Hoe werkt Adblock Plus?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#install">Installatie van Adblock Plus</a>
+                
+              </li>
+            
+              <li>
+                <a href="#firststeps">Eerste stappen</a>
+                
+          <ul>
+            
+              <li>
+                <a href="#subscription">De juiste filterlijst kiezen</a>
+                
+              </li>
+            
+              <li>
+                <a href="#add-subscription">Hoe een filterlijst toe te voegen</a>
+                
+              </li>
+            
+              <li>
+                <a href="#disabling">Het uitschakelen van Adblock Plus op veelgebruikte websites</a>
+                
+              </li>
+            
+          </ul>
+        
+              </li>
+            
+              <li>
+                <a href="#disable-reenable">De-installatie van Adblock Plus</a>
+                
+              </li>
+            
+              <li>
+                <a href="#problems">Het oplossen van problemen</a>
+                
+          <ul>
+            
+              <li>
+                <a href="#false-positives">Wat als Adblock Plus teveel blokkeert?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#false-negatives">Wat als Adblock Plus een advertentie niet blokkeert?</a>
+                
+              </li>
+            
+          </ul>
+        
+              </li>
+            
+          </ul>
+        
+          </div>
+        
+      
+
+      
+        
+
+
+
+<h2 id="general">Wat is Adblock Plus</h2>
+
+<p>
+  Adblock Plus is de meest populaire browser extensie die beschikbaar is voor Mozilla Firefox, Google Chrome, Opera en Android. De belangrijkste functie is het verwijderen van alle vervelende advertenties tijdens het surfen: YouTube video reclames, Facebook advertenties, banners, pop-ups, pop-unders, achtergrond advertenties etc.
+</p>
+
+<h2 id="workings">Hoe werkt Adblock Plus?</h2>
+
+<p>
+  Om advertenties te kunnen blokkeren, gebruikt Adblock Plus zogenaamde filters die Adblock Plus &#39;vertellen&#39; wat te blokkeren. Adblock Plus op zichzelf wordt gedownload zonder filters, maar, biedt een filter abonnement aan de eerste keer dat je het opstart. Met deze filters ingeschakeld kunnen specifieke verzoeken van websites worden geblokkeerd, meestal de verzoeken om een advertentie te injecteren. Geblokkeerde advertenties laten vaak een blanco ruimte achter (Advertising Tags) op webpagina&#39;s. Adblock Plus kan ook deze verwijderen vanwege de &#39;element hiding&#39; (verbergen van elementen) functionaliteit: gebaseerd op specifieke karakteristieken, kan Adblock Plus deze elementen op de webpagina verbergen.
+</p>
+
+<h2 id="install">Installatie van Adblock Plus</h2>
+
+<h3>Voor Firefox</h3>
+
+<p>
+  Als je de Mozilla Firefox browser gebruikt, klik dan de installatie button <a href="/en/adblock-plus-firefox" hreflang="en">op de Firefox installatie-pagina</a>. Firefox zal in een pop-up vragen om toestemming om Adblock Plus te installeren. Klik op &quot;Ja&quot;.
+</p>
+
+<img src="/en/images/gettingstarted_install_ff_1.png?2413437387">
+
+<p>
+  Firefox zal de installatie beginnen van onze advertentie blokker, en zal je vragen of je de &#39;auteur&#39; of ontwikkelaar wel vertrouwt. Klik op &quot;Nu Installeren&quot; om Adblock Plus toe te voegen aan je Firefox browser.
+</p>
+
+<img src="/en/images/gettingstarted_install_ff_2.png?2413437387">
+
+<p>
+  Vanaf nu ben je beschermd tegen alle vervelende advertenties!
+</p>
+
+<h3>Voor Chrome</h3>
+
+<p>
+  Voor Google Chrome kan ad block software op twee manieren worden geinstalleerd. Het makkelijkste is het om de installatie via onze website te doen, de alternative manier is door middel van de Chrome Webstore.
+</p>
+
+<h4>Installeer vai de website in twee stappen</h4>
+
+<p>
+  Ga <a href="/en/adblock-plus-chrome" hreflang="en">naar de Chrome installatie pagina</a> en klik op de installeer button om de ad blocker in je Chrome browser toe te voegen. Klik op &quot;Toevoegen&quot; wanneer de volgende pop-up in je browser verschijnt:
+</p>
+
+<img src="/en/images/gettingstarted_install_cr_2.png?2413437387">
+
+<p>
+  Adblock Plus zal in je browser worden geinstalleerd. Wanneer de installatie succesvol is, verschijnt het volgende bericht:
+</p>
+
+<img src="/en/images/gettingstarted_install_cr_3.png?2413437387">
+
+<h4>Installeer via de Google Chrome Webstore in drie stappen</h4>
+
+<p>
+  Wanneer je Adblock Plus via de Chrome Webstore wil installeren, <a href="https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb">klik hier</a> om ABP te openen. Het volgende scherm zal onze adblock voor Chrome openen:
+</p>
+
+<img src="/en/images/gettingstarted_install_cr_1.png?2413437387">
+
+<p>
+  In dit scherm, klik op de blauwe &quot;Toevoegen&quot; knop rechts bovenin. Na op deze knop te hebben geklikt, zal de volgende pop-up je vragen om Adblock Plus toe te voegen aan je browser:
+</p>
+
+<img src="/en/images/gettingstarted_install_cr_2.png?2413437387">
+
+<p>
+  Na bevestiging, zal je beschermd worden tegen alle vervelende online advertenties door &#39;s werelds meest populaire ad blokker!
+</p>
+
+<h3>Voor Opera</h3>
+
+<p>
+  Om Adblock Plus voor Opera te installeren, <a href="https://addons.opera.com/en/extensions/details/opera-adblock/">ga naar de Opera Add-on pagina</a> en klik op &quot;Toevoegen&quot;. De volgende pop-up zal verschijnen:
+</p>
+
+<img src="/en/images/gettingstarted_install_o.png?2413437387">
+
+<p>
+  Bevestig door op &quot;Installeer&quot; te klikken, en Adblock Plus zal alle online advertenties in je Opera browser blokkeren.
+</p>
+
+<h3>Voor Android</h3>
+
+<p>
+  Adblock Plus is ook beschikbaar voor Android toestellen. Het is belangrijk om te weten dat er <a href="/en/android-about#general" hreflang="en">een aantal beperkingen</a> zijn voor zogenaamde &#39;non-rooted&#39; toestellen. Om Adblock Plus te installeren, moet je je toestel toestemming geven om apps te installeren van onbekende locaties:
+</p>
+
+<ul>
+  <li>
+    Open &quot;Instellingen&quot; en ga naar &quot;Onbekende locaties&quot; -of vergelijkbare optie- (onder &quot;Applicaties&quot; of &quot;Beveiliging&quot; afhangende van je toestel)
+  </li>
+  <li>
+    Vink de checkbox aan, en bevestig met &quot;OK&quot;
+  </li>
+</ul>
+
+<p>
+  Om Adblock Plus voor Android te downloaden, ga naar de <a href="/en/android-install" hreflang="en">Android installatie pagina</a> , download de applicatie en open deze.
+</p>
+
+<p>
+  Wanneer Adblock Plus geinstalleerd, ingeschakeld en geconfigureerd is, zullen alle advertenties geblokkeerd zijn.
+</p>
+
+<h2 id="firststeps">Eerste stappen</h2>
+
+<h3 id="subscription">De juiste filterlijst kiezen</h3>
+
+<p>
+  As previously described, Adblock Plus requires filterlists to block ads. By itself, Adblock Plus can only see the webpage you are loading, but has to be &quot;told&quot; by the filterlist which elements to block. When you install Adblock Plus for the first time, it will automatically suggest a filterlist to you based on the language settings of your browser.
+</p>
+
+<p>
+  Er zijn twee zogenaamde basislijsten beschikbaar, EasyList en Fanboy&#39;s List. Deze twee lijsten blokkeren de advertenties van de meest populaire (vaak Engelse/Amerikaanse) websites. Deze lijsten blokkeren geen advertenties van minder populaire nationale websites. Voor het geval dat je, bijvoorbeeld uit Duitsland komt, zul je de nationale Duitse filterlijst moeten inschakelen om de advertenties in Duitsland te kunnen blokkeren. In dit geval zou je de &quot;EasyList Germany + EasyList&quot; moeten downloaden. Voor een overzicht van alle beschikbare filterlijsten, klik <a href="/nl/subscriptions" hreflang="nl">hier</a>.
+</p>
+
+<p>
+  <strong>
+    Het belangrijk om te weten dat je niet teveel filterlijsten moet toevoegen aan Adblock Plus. Dit zal de adblocker doen vertragen, met daardoor ook het surfen. In de regel, is het ten zeerste aangeraden om geen overlappende filterlijsten te gebruiken (bv. kies EasyList OF Fanboy&#39;s List, niet beide tegelijk).
+  </strong>
+</p>
+
+<p>
+  Er zijn ook fliterlijsten beschikbaar die je beschermen tegen tracking, malware, social media tracking etc. Lees <a href="/nl/features" hreflang="nl">hier</a> meer.
+</p>
+
+<h3 id="add-subscription">Hoe een filterlijst toe te voegen</h3>
+
+<p>
+  If you want to remove a filterlist again check out <a href="/nl/faq_basics#remove-subscription" hreflang="nl">this tutorial</a>.
+</p>
+
+<h4>In Firefox</h4>
+
+<p>
+  In Firefox selecteer &quot;Firefox&quot; &gt;&gt; &quot;Add-ons&quot; (voor Mac OS X / Linux, selecteer &quot;Tools&quot; (over vergelijkbare optie) uit de menubalk), dit zal je Firefox Add-ons Manager openen.
+</p>
+
+<h5>Voor Windows</h5>
+
+<img src="/en/images/gettingstarted_filters_add_ff_1_win.png?2413437387">
+
+<h5>Voor Mac OS X / Linux</h5>
+
+<img src="/en/images/gettingstarted_filters_add_ff_1_mac.png?2413437387">
+
+<p>
+  In de Add-ons manager onder de &quot;Extensies&quot; tab zul je Adblock Plus vinden:
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_ff_2.png?2413437387">
+
+<p>
+  Selecteer &quot;Voorkeuren&quot; om je Adblock Plus profiel te bekijken, en klik op &quot;Filter voorkeuren&quot;:
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_ff_3.png?2413437387">
+
+<p>
+  Dit zal het Adblock Plus filter voorkeuren menu openen:
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_ff_4.png?2413437387">
+
+<p>
+  Klik op &quot;Filter abonnement toevoegen&quot;, en open het zogenaamde &#39;drop-down menu&#39; om de andere filterlijst abonnementen te openen en om nieuwe/meer filterlijsten toe te voegen.  Selecteer de filterlijst waar je je voor wil abonneren, Adblock Plus zal de filterlijst automatisch inschakelen. Dit menu laat alleen de meest populaire en aanbevolen filterlijsten zien, klik <a href="/nl/subscriptions" hreflang="nl">hier</a> voor meer filterlijsten.
+</p>
+
+<h4>In Google Chrome</h4>
+
+<p>
+  Om een filterabonnement in Google Chrome toe te voegen, selecteer &quot;Instellingen&quot; in het menu rechtsbovenin. Dit menu kan worden gevonden onder het kleine icoontje met drie horizontale streepjes.
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_cr_1.png?2413437387">
+
+<p>
+  In dit &#39;drop-down menu&#39; selecteer &quot;Instellingen&quot;. Vervolgens, ga naar de &quot;Extensies&quot; tab aan de linkerkant van je scherm. Dit zal het extensie scherm van Google Chrome openen. Hier zul je Adblock Plus vinden.
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_cr_2.png?2413437387">
+
+<p>
+  Onder de beschrijving kun je de &quot;Opties&quot; link vinden. Open deze link om het menu van onze adblock voor Chrome te openen:
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_cr_3.png?2413437387">
+
+<p>
+  In het Adblock Plus opties menu, kun je een overzicht vinden van alle geinstalleerde en ingeschakelde filterlijsten. Om een nieuw abonnement aan onze advertentie blokker toe te voegen, selecteer &quot;Nieuw filterabonnement toevoegen&quot; of een vergelijkbare optie.
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_cr_4.png?2413437387">
+
+<p>
+  Dit zal een drop-down menu openen met alle populaire en aangeraden filterlijsten. Selecteer de filterlijst die je wil inschakelen, en klik op &quot;Toevoegen&quot;. Als de verlangde filterlijst er niet tussen staat, klik dan <a href="/nl/subscriptions" hreflang="nl">hier</a>.
+</p>
+
+<h4>In Opera</h4>
+
+<p>
+  Om een nieuwe filterlijst toe te voegen in Opera, ga naar de &quot;Menu&quot; knop (voor Max OS X ? Linux, &quot;Tools&quot; of vergelijkbare optie), selecteer &quot;Extensies&quot; &gt;&gt; Extensies Beheren&quot;. Dit zal de huidig geinstalleerde extensies openen, inclusief Adblock Plus:
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_o_1.png?2413437387">
+
+<p>
+  Om het filter instellingen menu te bereiken, klik op het kleine gereedschap icoontje aan de rechterkant. Dit zal het &quot;Adblock Plus Opties&quot; menu openen, waar je de filter abonnementen kan toevoegen.
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_o_2.png?2413437387">
+
+<p>
+  Klik op &quot;Filter abonnement toevoegen&quot; om toegang te krijgen tot het &#39;drop-down menu&#39; met de meest populaire filterlijsten.
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_o_3.png?2413437387">
+
+<p>
+  Hier kun je je filter naar keuze selecteren, en klik vervolgens op &quot;toevoegen&quot;.
+</p>
+
+<h4>In Android</h4>
+
+<p>
+  Voor Android is het helaas niet mogelijk om meerdere filterlijsten te selecteren. Om je filterlijst abonnement te wijzigen, open de Adblock Plus applicatie, en selecteer &quot;Filter Abonnement&quot;. Dit zal het menu openen waar je je abonnement kan wijzigen.
+</p>
+
+<h3 id="disabling">Het uitschakelen van Adblock Plus op veelgebruikte websites</h3>
+
+<p>
+  Veel websites zijn afhankelijk van advertenties voor hun inkomsten en als u zo&#39;n website regelmatig bezoekt, wilt u misschien hun advertenties toestaan — onder de voorwaarde dat hun advertenties niet te storend zijn. Om dat mogelijk te maken moet u naar die website navigeren en klikken op het pijlsymbool naast het Adblock Plus pictogram in de werkbalk. In het menu kunt u &quot;Uitschakelen op ...&quot; kiezen (u kunt dit weer ongedaan maken op dezelfde manier door deze menuregel uit te vinken).
+</p>
+
+<p>
+  It will add an exception rule like <code>@@||adblockplus.org^$document</code> to your list of filters. You can find more information on exception rules in <a href="https://adblockplus.org/en/filters#whitelist">Writing Adblock Plus filters</a>.
+</p>
+
+<p>
+  If you want to disable Adblock Plus on all websites, follow these instructions: <a href="https://adblockplus.org/getting_started#disable-reenable">Disabling/Reenabling Adblock Plus on all Websites</a>.
+</p>
+
+<h2 id="disable-reenable">De-installatie van Adblock Plus</h2>
+
+<h3>Voor Firefox</h3>
+
+<p>
+  Om Adblock Plus voor Mozilla Firefox te de-installeren, ga naar je &quot;Add-ons Manager&quot; door naar &quot;Firefox&quot; &gt;&gt; &quot;Add-ons&quot; te gaan (voor Mac OS X / Linux, selecteer &quot;Tools&quot; van de menubalk &gt;&gt; &quot;Add-Ons&quot;). Hier vind je een overzicht van al je geinstalleerde add-ons. Zoek Adblock Plus, en klik op &quot;Verwijderen&quot;. Voor meer gedetailleerde informatie om add-ons te verwijderen, ga naar <a>Firefox&#39; pagina</a>.
+</p>
+
+<p>
+  For more detailed information on how to remove add-ons, please visit <a href="https://support.mozilla.org/kb/disable-or-remove-add-ons">Firefox&#39;s page</a>.
+</p>
+
+<p>
+  Het is belangrijk om te weten dat Adblock Plus je voorkeuren opslaat, zodat als je ABP later weer installeert, niet weer hoeft te configureren. Als je toch met een frisse start met Adblock Plus wil beginnen, zul je de directory &quot;adblockplus&quot; in je gebruikers profiel (<a href="https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data#w_how-do-i-find-my-profile">hoe vind ik mijn profiel</a>) verwijderen. U moet ook naar <a href="http://kb.mozillazine.org/About:config">about:config</a> gaan en alle voorkeuren die met &quot;extensions.adblockplus&quot; beginnen herinitialiseren (om een voorkeur te herinitialiseren, moet u hem selecteren en met rechts klikken en Herinitialiseren uit het menu kiezen).
+</p>
+
+<h3>Voor Google Chrome</h3>
+
+<p>
+  Om onze Chrome Adblock versie te de-installeren, ga naar &quot;Instellingen&quot; in het menu rechts bovenin. Selecteer vervolgens &quot;Extensies&quot; aan de linker kant van je scherm. Zoek Adblock Plus hier en selecteer het prullenbak icoontje aan de rechterzijde. Adblock Plus zal vervolgens geheel worden verwijderd van je browser.
+</p>
+
+<h3>Voor Opera</h3>
+
+<p>
+  Om Adblock Plus voor Opera te de-installeren, ga naar de &quot;Menu&quot; knop (voor Mac OS X / Linux, &quot;Tools&quot; of vergelijkbare optie in de menubalk), selecteer &quot;Extensies&quot; &gt;&gt; &quot;Extensies beheren&quot;. Dit zal het extensie menu openen. Zoek naar Adblock Plus en selecteer &quot;De-installeer&quot;. Bevestig dit.
+</p>
+
+<h3>Voor Android</h3>
+
+<p>
+  De de-installatie van Adblock Plus voor Android gaat net als alle andere apps die je hebt gedownload:
+</p>
+
+<ol>
+  <li>
+    Navigeer naar Menu &gt; Instellingen &gt; Applicaties &gt; Applicaties beheren (voor toestellen met Android 4.x, Instellingen &gt; Apps).
+  </li>
+  <li>
+    Scroll door de lijst met applicaties om de app te vinden die je wil de-installeren.
+  </li>
+  <li>
+    Tap de app die je wil de-installeren.
+  </li>
+  <li>
+    Tap &quot;De-installeren&quot;
+  </li>
+</ol>
+
+<h2 id="problems">Het oplossen van problemen</h2>
+
+<h3 id="false-positives">Wat als Adblock Plus teveel blokkeert?</h3>
+
+<p>
+  Het kan gebeuren dat Adblock Plus er voor zorgt dat een bepaalde site niet goed functioneert.
+  Meestal is dit geen fout in Adblock Plus, maar ligt het aan de filters (of een filterabonnement) die u gebruikt, deze filters vertellen Adblock Plus dat ze iets moeten blokkeren wat niet geblokkeerd zou moeten worden. U kunt dit controleren door  <a href="/nl/faq_basics#disable" hreflang="nl">Adblock Plus tijdelijk uit te schakelen</a>. Als dit het probleem &quot;verhelpt&quot;, dan heeft u te maken met een verkeerd filter. Meld verkeerde filters alstublieft via de &quot;Probleem op deze pagina rapporteren&quot; functie, die automatisch belangrijke gegevens van de huidige pagina verzamelt:
+</p>
+
+<p>
+  <img src="/nl/images/screenshot_toolbarReport.png?2413437387">
+</p>
+
+<p>
+  Als u gevraagd wordt op het soort probleem, kies dan &quot;Adblock Plus blokkeert te veel&quot;
+</p>
+
+<p>
+  <img src="/nl/images/screenshot_reporter.png?2413437387">
+</p>
+
+<p>
+  Uw rapport wordt automatisch naar degenen die het filterabonnement onderhouden gestuurd. De mensen die het filterabonnement onderhouden zullen niet altijd direct op elk rapport antwoorden of reageren. U heeft meer kans dat uw rapport gebruikt wordt, als u extra informatie mee stuurt om het probleem te verduidelijken en te reproduceren.
+</p>
+
+<h3 id="false-negatives">Wat als Adblock Plus een advertentie niet blokkeert?</h3>
+
+<p>
+  Als u een advertentie tegenkomt die niet door Adblock Plus wordt geblokkeerd, controleer dan alstublieft eerst of u <a href="#subscription">het juiste filterabonnement</a> gebruikt. U kunt bijvoorbeeld niet van een Frans filterabonnement verwachten dat het advertenties op een Bulgaarse website blokkeert — daarvoor moet u een Bulgaars filterabonnement toevoegen. Als het filterabonnement wel klopt, dan is de onderhouder van het abonnement waarschijnlijk niet op de hoogte van het probleem en moet u het hem vertellen via de &quot;Probleem op deze pagina rapporteren&quot; functie, die automatisch de gegevens van de huidige pagina verzamelt:
+</p>
+
+<p>
+  <img src="/nl/images/screenshot_toolbarReport.png?2413437387">
+</p>
+
+<p>
+  Als u gevraagd wordt om het soort probleem, kies dan &quot;Adblock Plus blokkeert een advertentie niet&quot;:
+</p>
+
+<p>
+  <img src="/nl/images/screenshot_reporter2.png?2413437387">
+</p>
+
+<p>
+  Uw rapport wordt automatisch naar degenen die het filterabonnement onderhouden gestuurd. De mensen die het filterabonnement onderhouden zullen niet altijd direct op elk rapport antwoorden of reageren. U heeft meer kans dat uw rapport gebruikt wordt, als u extra informatie mee stuurt om het probleem te verduidelijken en te reproduceren.
+</p>
+
+      
+    </div>
+
+    
+
+<footer id="footer" class="content">
+  <div class="container">
+    <div class="row">
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Downloaden</h5>
+        <ul>
+          <li><a href="/en/adblock-plus-chrome" hreflang="en">Adblock Plus voor Chrome</a></li>
+          <li><a href="/en/adblock-plus-firefox" hreflang="en">Adblock Plus voor Firefox</a></li>
+          <li><a href="/en/ad-blocker-safari" hreflang="en">Adblock Plus voor Safari</a></li>
+          <li><a href="/en/adblock-plus-opera" hreflang="en">Adblock Plus voor Opera</a></li>
+          <li><a href="/en/android-install" hreflang="en">Adblock Browser for Android</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Resources</h5>
+        <ul>
+          
+            <li><a href="/nl/acceptable-ads" hreflang="nl">Acceptabele advertenties</a></li>
+          
+            <li><a href="/nl/documentation" hreflang="nl">Documentatie</a></li>
+          
+            <li><a href="/en/deployments" hreflang="en">Voor beheerders</a></li>
+          
+            <li><a href="/nl/bugs" hreflang="nl">Rapporteer een probleem</a></li>
+          
+          
+          <li><a href="https://help.eyeo.com/en/adblockplus/how-to-write-filters" target="_blank" hreflang="en">Het schrijven van Adblock Plus-filters</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Gemeenschap</h5>
+        <ul>
+          <li><a href="/nl/contribute" hreflang="nl">Bijdragen</a></li>
+          <li><a href="https://adblockplus.org/releases/" hreflang="en">Mededelingen</a></li>
+          <li><a href="https://adblockplus.org/blog/" hreflang="en">Blog</a></li>
+          <li><a href="https://adblockplus.org/forum/" hreflang="en">Forum</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Ontwikkeling</h5>
+        <ul>
+          <li><a href="https://gitlab.com/eyeo/adblockplus">Broncode</a></li>
+          
+  
+    <li><a href="/nl/tools" hreflang="nl">Tools</a></li>
+  
+
+          <li><a href="https://eyeo.com/jobs/" hreflang="en">Jobs</a></li>
+          <li><a href="/en/partner-integrations" hreflang="en">Partner Integrations</a></li>
+        </ul>
+      </nav>
+
+      <nav id="social-list" class="column">
+        <h5 class="footer-social-heading">Volg ons op</h5>
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/AdblockPlus"
+              title="Volg Adblock Plus op Twitter"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-twitter-glyphicon.png?2413437387"
+                alt="Twitter icon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/user/AdblockPlusOfficial"
+              title="Volg Adblock Plus op YouTube"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-youtube-glyphicon.png?2413437387"
+                alt="YouTube icon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/adblockplus"
+              title="Volg Adblock Plus op Facebook"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-facebook-glyphicon.png?2413437387"
+                alt="Facebook icon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/adblockplus/"
+              title="Volg Adblock Plus op Instagram"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-instagram-glyphicon.png?2413437387"
+                alt="Instagram icon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://vk.com/adblockplusofficial"
+              title="Volg Adblock Plus op VK"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-vk-glyphicon.png?2413437387"
+                alt="VK icon">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div> 
+
+    <div id="footer-legal">
+      <p id="copyright-notice">Copyright © 2020 Alle rechten voorbehouden. Adblock Plus<sup>®</sup> is een geregistreerd handelsmerk van <a href="https://eyeo.com">eyeo GmbH</a>.</p>
+      <ul id="legal-list">
+        
+          
+            <li><a href="/en/terms" hreflang="en">Gebruiksvoorwaarden</a></li>
+          
+            <li><a href="/en/privacy" hreflang="en">Privacybeleid</a></li>
+          
+            <li><a href="/en/imprint" hreflang="en">Imprint</a></li>
+          
+        
+      </ul>
+    </div> 
+  </div> 
+</footer> 
+    <div id="cookiebar" class="cookie cookiebar">
+  <div class="container">
+    <div class="row">
+
+      <div class="column two-thirds">
+        <p class="cookiebar-text">
+          <svg viewBox="0 0 37.796 41.279" width="38" height="42">
+            <title>Cookiemelding</title>
+            <g transform="translate(-14.904 0)">
+              <g transform="translate(14.904 0)">
+                <path d="M52.468,31.165a6.029,6.029,0,0,1-1.514-4.908.935.935,0,0,0-.626-1.019,6.029,6.029,0,0,1-3.244-8.8A.935.935,0,0,0,47,15.368a6.039,6.039,0,0,1-1.112-5.609A.935.935,0,0,0,45.4,8.647,6.029,6.029,0,0,1,42.129,2.01.935.935,0,0,0,41.484.935a20.682,20.682,0,1,0,11.049,31.38A.935.935,0,0,0,52.468,31.165Zm-3.739,2.814A18.759,18.759,0,1,1,40.148,2.524,7.9,7.9,0,0,0,43.887,10a7.889,7.889,0,0,0,1.281,6.029A7.917,7.917,0,0,0,46.682,25.1a7.823,7.823,0,0,0,2.346,1.617,7.889,7.889,0,0,0,1.57,5.123A18.6,18.6,0,0,1,48.729,33.979Z" transform="translate(-14.904 0)"/>
+              </g>
+              <g transform="translate(24.556 12.199)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(34.81 18.817)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(33.212 32.212)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(36.652 9.03)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(23.509 25.912)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(42.765 27.23)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+            </g>
+          </svg>
+          <span>
+            We gebruiken cookies om u de beste ervaring op onze website te geven. Door gebruik te maken van onze site beseft u dat we cookies gebruiken. U kunt dit op elk gewenst ogenblik veranderen. <a href="/nl/cookie-information" hreflang="nl">Meer informatie</a>
+          </span>
+        </p>
+      </div>
+
+      <div class="column one-third text-end">
+        <ul class="cookiebar-nav">
+          <li>
+            <button
+              type="button"
+              class="cookies-submit button"
+              title="Negeer cookiemelding">
+              Oke, ik snap het
+            </button>
+          </li>
+          <li class="dropup cookies-dropup">
+            <button
+              type="button"
+              class="cookies-settings button"
+              title="Bewerk cookie-instellingen">
+              Instellingen &nbsp;
+              <svg viewBox="0 0 16.509 16.993" width="18" height="18">
+                <title>Instellingen pictogram</title>
+                <path d="M175.051,8.283V.478a.478.478,0,1,0-.955,0v7.8a2.425,2.425,0,0,0,0,4.755v3.474a.478.478,0,1,0,.955,0V13.038a2.425,2.425,0,0,0,0-4.755Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,174.574,12.129Z" transform="translate(-166.302 0)"/>
+                <path d="M9.751,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.479a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752ZM9.274,8.123a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,9.274,8.123Z" transform="translate(-6.85 0)"/>
+                <path d="M339.351,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.483a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,338.874,8.123Z" transform="translate(-324.789 0)"/>
+              </svg>
+            </button>
+            <div class="cookies-dropup-menu text-start" tabindex="1">
+               <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Noodzakelijke cookies</p>
+      <p>Gebruikt om uw privacy voorkeuren te onthouden. Kunnen niet worden uitgeschakeld.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking cookies</p>
+      <p>We gebruiken deze voor analyse van website verkeer.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B test-cookies</p>
+      <p>We gebruiken deze Google Optimize cookies voor A/B testing op basis van analysegegevens.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Sla cookie-voorkeuren op">
+    Sla voorkeuren op
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+              <span class="arrow"></span>
+            </div>
+          </li>
+        </ul>
+      </div><!-- .column -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+
+</div><!-- #cookies-large-bar -->
+  <form class="cookie cookieprompt">
+
+  <fieldset class="container">
+
+    <legend class="cookie-heading">
+      Cookie-voorkeuren
+    </legend>
+
+    <button
+      type="button"
+      class="cookies-close"
+      title="Negeer cookiemelding">
+      <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+        <title>Sluiten pictogram</title>
+        <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+      </svg>
+    </button>
+
+    <p>
+      We gebruiken cookies om u de beste ervaring op onze website te geven.
+      <a
+        href="/nl/cookie-information" hreflang="nl"
+        title="Meer informatie over cookies"
+        target="_blank">Lees meer</a>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-submit"
+        title="Negeer cookiemelding">
+        Oke, ik snap het
+      </button>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-settings"
+        title="Bewerk cookie-instellingen">
+        Wijzig instellingen
+      </button>
+    </p>
+
+  </fieldset>
+
+</form>
+  <form class="cookie cookiepage">
+
+  <header class="bg-dark">
+    <div class="container">
+
+      <h4 class="cookie-heading">
+        Cookie-voorkeuren
+      </h4>
+
+      <button
+        type="button"
+        class="cookies-close"
+        title="Negeer cookiemelding">
+        <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+          <title>Sluiten pictogram</title>
+          <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="bg-light">
+    <div class="container section">
+        We gebruiken cookies om u de beste ervaring op onze website te geven. Door gebruik te maken van onze site beseft u dat we cookies gebruiken. U kunt dit op elk gewenst ogenblik veranderen. <a href="/nl/cookie-information" hreflang="nl">Meer informatie</a>
+    </div>
+  </div>
+
+  <div class="container section">
+     <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Noodzakelijke cookies</p>
+      <p>Gebruikt om uw privacy voorkeuren te onthouden. Kunnen niet worden uitgeschakeld.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking cookies</p>
+      <p>We gebruiken deze voor analyse van website verkeer.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B test-cookies</p>
+      <p>We gebruiken deze Google Optimize cookies voor A/B testing op basis van analysegegevens.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Sla cookie-voorkeuren op">
+    Sla voorkeuren op
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+  </div>
+
+</form>
+    <script src="/js/testing/setup.js?3393629769"></script>
+    
+  <script src="/js/main.js?3393629769"></script>
+
+
+
+  </body>
+</html>

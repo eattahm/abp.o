@@ -1,0 +1,2286 @@
+<!DOCTYPE html>
+<html 
+lang="he"
+data-siteurl="https://adblockplus.org"
+dir="rtl"
+class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>הרשמות Adblock Plus ידועות</title>
+
+<link rel="canonical" href="https://adblockplus.org/subscriptions">
+
+
+
+    
+<meta property="og:image" content="/img/adblockplus_promo.png">
+<meta property="og:title" content="הרשמות Adblock Plus ידועות">
+
+<meta property="og:locale" content="he_HE">
+
+  
+    <meta property="og:locale:alternate" content="de_DE">
+  
+
+  
+    <meta property="og:locale:alternate" content="en_US">
+  
+
+  
+    <meta property="og:locale:alternate" content="es_ES">
+  
+
+  
+    <meta property="og:locale:alternate" content="fr_FR">
+  
+
+  
+
+  
+    <meta property="og:locale:alternate" content="ko_KR">
+  
+
+  
+    <meta property="og:locale:alternate" content="nl_NL">
+  
+
+  
+    <meta property="og:locale:alternate" content="ru_RU">
+  
+
+  
+    <meta property="og:locale:alternate" content="sk_SK">
+  
+
+  
+    <meta property="og:locale:alternate" content="zh_CN">
+  
+
+  
+    <meta property="og:locale:alternate" content="zh_TW">
+  
+
+<meta property="og:url" content="https://adblockplus.org/he/subscriptions">
+
+
+<meta name="twitter:site" content="@AdblockPlus">
+<meta name="twitter:creator" content="@AdblockPlus">
+    
+  <link rel="stylesheet" href="/css/defaults.css?466091425">
+  <link rel="stylesheet" href="/css/fonts.css?466091425">
+  <link rel="stylesheet" href="/css/main.css?466091425">
+  <link rel="stylesheet" href="/css/cookies.css?466091425">
+
+
+
+
+
+    
+    <script>
+  window.eyeo = {
+    
+    
+    preventCookiePrompt: false,
+    userTesting: false
+  }
+</script>
+
+    <!--[if IE 9]>
+  <script src="/js/vendor/es5-shim.js?1094174723"></script>
+  <script src="/js/vendor/dom4.js?1094174723"></script>
+<![endif]-->
+
+    
+      
+    
+  </head>
+
+  <body>
+    
+
+
+
+<nav id="navbar">
+  <div class="container">
+    <a href="/en/" hreflang="en" id="navbar-logo">
+      <img
+        src="/img/navbar-logo.svg?2110906668"
+        alt="">
+      <span>Adblock <strong>Plus</strong></span>
+    </a>
+    <a href="#" id="navbar-menu-toggle">
+      <img
+        src="/img/menu-toggle.svg?2110906668"
+        alt="">
+    </a>
+    <ul id="navbar-menu">
+      
+        <li class="uppercase ">
+          <a href="/en/download" hreflang="en">Download</a>
+        </li>
+      
+        <li class="uppercase ">
+          <a href="/en/about" hreflang="en">אודות</a>
+        </li>
+      
+      <li class="uppercase">
+        <a href="https://help.eyeo.com" target="_blank">Help</a>
+      </li>
+      <li class="uppercase ">
+        <a href="/en/donate" hreflang="en">Donate</a>
+      </li>
+      <li id="navbar-locale-menubar">
+        <a id="navbar-locale-selected">
+          עברית (HE)
+        </a>
+        <ul id="navbar-locale-menu">
+          
+            <li>
+              <a href="/de/subscriptions" hreflang="de">
+                Deutsch (DE)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/en/subscriptions" hreflang="en">
+                English (US)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/es/subscriptions" hreflang="es">
+                Español (España) (ES)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/fr/subscriptions" hreflang="fr">
+                Français (FR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/he/subscriptions" hreflang="he">
+                עברית (HE)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ko/subscriptions" hreflang="ko">
+                한국어 (KR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/nl/subscriptions" hreflang="nl">
+                Nederlands (NL)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ru/subscriptions" hreflang="ru">
+                Русский (RU)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/sk/subscriptions" hreflang="sk">
+                Slovenčina (SK)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_CN/subscriptions" hreflang="zh-CN">
+                中文(简体) (CN)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_TW/subscriptions" hreflang="zh-TW">
+                中文(台灣) (TW)
+              </a>
+            </li>
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+    <div id="content" class="container content False">
+      
+        <h1>הרשמות Adblock Plus ידועות</h1>
+      
+
+      
+        
+
+        
+        
+          <div class="toc">
+            
+          <ul>
+            
+              <li>
+                <a href="#type_ads">חסימת מודעות</a>
+                
+              </li>
+            
+              <li>
+                <a href="#type_circumvention">Anti-circumvention</a>
+                
+              </li>
+            
+              <li>
+                <a href="#type_malware">Malware protection</a>
+                
+              </li>
+            
+              <li>
+                <a href="#type_notifications">Notification blocking</a>
+                
+              </li>
+            
+              <li>
+                <a href="#type_other">שונות</a>
+                
+              </li>
+            
+              <li>
+                <a href="#type_privacy">Privacy protection</a>
+                
+              </li>
+            
+              <li>
+                <a href="#type_social">Social media blocking</a>
+                
+              </li>
+            
+          </ul>
+        
+          </div>
+        
+      
+
+      
+        
+
+<style type="text/css">
+.subscriptions-list,
+.supplemented-subscriptions-list
+{
+  margin: 0px;
+  list-style: none;
+}
+
+.subscriptions-list
+{
+  padding: 0px;
+}
+
+.subscriptions-list li
+{
+  margin: 0;
+  list-style-type: none;
+}
+
+.supplemented-subscriptions-list
+{
+  padding: 0px 0px 0px 30px;
+}
+
+[dir="rtl"] .supplemented-subscriptions-list
+{
+  padding: 0px 30px 0px 0px;
+}
+
+.subscription
+{
+  position: relative;
+  overflow: auto;
+  /* Using outline and margin instead of border to prevent overlapping
+     and missing connections in hierarchy */
+  outline: 1px dashed #000;
+  margin-left: -1px;
+  margin-top: 1px;
+}
+
+#content .subscription h1
+{
+  margin: 0px;
+  font-size: 16px;
+}
+
+.subscription p
+{
+  margin: 0px;
+}
+
+.subscription-summary,
+.subscription-authors,
+.subscription-links
+{
+  padding: 5px;
+}
+
+.subscription-content,
+.subscription-details
+{
+  float: left;
+  width: 50%;
+}
+
+[dir="rtl"] .subscription-content,
+[dir="rtl"] .subscription-details
+{
+  float: right;
+}
+
+.subscription-authors,
+.subscription-links
+{
+  border-left: 1px dashed #000;
+}
+
+[dir="rtl"] .subscription-authors,
+[dir="rtl"] .subscription-links
+{
+  border-left: none;
+  border-right: 1px dashed #000;
+}
+
+.subscription-links
+{
+  border-top: 1px dashed #000;
+}
+
+.subscriptions .deprecated
+{
+  opacity: 0.5;
+}
+</style>
+
+<p>Below is a list of the actively maintained filter subscriptions that we&#39;re aware of. To subscribe to a filter list, click its &quot;Subscribe&quot; link. Please note that <a href="/en/getting_started#subscription" hreflang="en">you shouldn&#39;t add too many filter subscriptions</a>.</p>
+
+
+
+<h2 id="type_ads">חסימת מודעות</h2>
+
+  <ul class="subscriptions-list">
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>EasyList</h1>
+          <p>
+            Specialization:
+            English
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            fanboy, MonztA, Famlam, Khrin
+             
+          </address>
+          <p>
+          <a href="https://easylist.to/">עמוד הבית</a><a href="https://forums.lanik.us/">פורום</a><a href="https://easylist.to/category/articles.html">בלוג</a><a href="https://github.com/easylist/easylist/commits/master">רשימת שינויים</a><a href="https://github.com/easylist/easylist/commits/master">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;title=EasyList">EasyList</a>
+          </p>
+        </div>
+      </footer>
+    </article><ul class="supplemented-subscriptions-list">
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>ABPindo</h1>
+          <p>
+            Specialization:
+            Bahasa Indonesia, Melayu
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            heradhis
+             
+          </address>
+          <p>
+          <a href="http://abpindo.blogspot.com/">עמוד הבית</a><a href="https://forums.lanik.us/viewforum.php?f=94">פורום</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/abpindo%2Beasylist.txt&amp;title=ABPindo%2BEasyList">ABPindo+EasyList</a>, <a href="https://subscribe.adblockplus.org?location=https%3A//raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt&amp;title=ABPindo&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;requiresTitle=EasyList">ABPindo</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>ABPVN List</h1>
+          <p>
+            Specialization:
+            Tiếng Việt
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            Hoàng Rio
+             
+          </address>
+          <p>
+          <a href="http://abpvn.com/">עמוד הבית</a><a href="http://www.vn-zoom.com/f77/abp-bo-loc-quang-cao-cho-nguoi-viet-2856275.html">פורום</a><a href="https://github.com/abpvn/abpvn/commits/master/filter/abpvn.txt">רשימת שינויים</a><a href="https://github.com/abpvn/abpvn/commits/master/filter/abpvn.txt">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/abpvn%2Beasylist.txt&amp;title=ABPVN%20List%2BEasyList">ABPVN List+EasyList</a>, <a href="https://subscribe.adblockplus.org?location=https%3A//raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn.txt&amp;title=ABPVN%20List&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;requiresTitle=EasyList">ABPVN List</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>Bulgarian list</h1>
+          <p>
+            Specialization:
+            български
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            Александър Станев
+             
+          </address>
+          <p>
+          <a href="https://stanev.org/abp/">עמוד הבית</a><a href="https://stanev.org/abp/?SendFilters">עמוד יצירת קשר</a><a href="https://twitter.com/adblockbg">רשימת שינויים</a><a href="https://twitter.com/adblockbg">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/bulgarian_list%2Beasylist.txt&amp;title=Bulgarian%20list%2BEasyList">Bulgarian list+EasyList</a>, <a href="https://subscribe.adblockplus.org?location=https%3A//stanev.org/abp/adblock_bg.txt&amp;title=Bulgarian%20list&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;requiresTitle=EasyList">Bulgarian list</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>Dandelion Sprout&#39;s Nordic Filters</h1>
+          <p>
+            Specialization:
+            norsk, norsk, norsk, dansk, íslenska, føroyskt, kalaallisut
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            Imre Kristoffer Eilertsen
+             
+          </address>
+          <p>
+          <a href="https://github.com/DandelionSprout/adfilt">עמוד הבית</a><a href="https://github.com/DandelionSprout/adfilt/issues">עמוד יצירת קשר</a><a href="https://github.com/DandelionSprout/adfilt/commits/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP-Inclusion.txt">רשימת שינויים</a><a href="https://github.com/DandelionSprout/adfilt/commits/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP-Inclusion.txt">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/dandelion_sprouts_nordic_filters%2Beasylist.txt&amp;title=Dandelion%20Sprout%27s%20Nordic%20Filters%2BEasyList">Dandelion Sprout&#39;s Nordic Filters+EasyList</a>, <a href="https://subscribe.adblockplus.org?location=https%3A//raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%2520alternate%2520versions/NordicFiltersABP-Inclusion.txt&amp;title=Dandelion%20Sprout%27s%20Nordic%20Filters&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;requiresTitle=EasyList">Dandelion Sprout&#39;s Nordic Filters</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>EasyList China</h1>
+          <p>
+            Specialization:
+            中文
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            John, Li
+             
+          </address>
+          <p>
+          <a href="http://abpchina.org/forum/">עמוד הבית</a><a href="https://hg.adblockplus.org/easylistchina/">רשימת שינויים</a><a href="https://hg.adblockplus.org/easylistchina/">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/easylistchina%2Beasylist.txt&amp;title=EasyList%20China%2BEasyList">EasyList China+EasyList</a>, <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/easylistchina.txt&amp;title=EasyList%20China&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;requiresTitle=EasyList">EasyList China</a>
+          </p>
+        </div>
+      </footer>
+    </article><ul class="supplemented-subscriptions-list">
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>CJX&#39;s Annoyance List</h1>
+          <p>
+            Specialization:
+            removes self-promotion and privacy protection, 中文
+          </p>
+          <p>
+            תוספת ל-
+            EasyList China
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            John
+             
+          </address>
+          <p>
+          <a href="http://abpchina.org/forum/forum.php?mod=viewthread&amp;tid=29667">עמוד הבית</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt&amp;title=CJX%27s%20Annoyance%20List&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylistchina%2Beasylist.txt&amp;requiresTitle=EasyList%20China%2BEasyList">CJX&#39;s Annoyance List</a>
+          </p>
+        </div>
+      </footer>
+    </article></li></ul></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>EasyList Czech and Slovak</h1>
+          <p>
+            Specialization:
+            čeština, slovenčina
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            tomasko126
+             
+          </address>
+          <p>
+          <a href="https://adblock.sk/">עמוד הבית</a><a href="https://easylist-czech-and-slovak.tenderapp.com/">פורום</a><a href="https://github.com/tomasko126/easylistczechandslovak/commits/master/filters.txt">רשימת שינויים</a><a href="https://github.com/tomasko126/easylistczechandslovak/commits/master/filters.txt">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/easylistczechslovak%2Beasylist.txt&amp;title=EasyList%20Czech%20and%20Slovak%2BEasyList">EasyList Czech and Slovak+EasyList</a>, <a href="https://subscribe.adblockplus.org?location=https%3A//raw.github.com/tomasko126/easylistczechandslovak/master/filters.txt&amp;title=EasyList%20Czech%20and%20Slovak&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;requiresTitle=EasyList">EasyList Czech and Slovak</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>EasyList Dutch</h1>
+          <p>
+            Specialization:
+            Nederlands
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            Famlam
+             
+          </address>
+          <p>
+          <a href="https://easylist.to/">עמוד הבית</a><a href="https://forums.lanik.us/viewforum.php?f=100">פורום</a><a href="https://hg.adblockplus.org/easylistdutch/">רשימת שינויים</a><a href="https://hg.adblockplus.org/easylistdutch/">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/easylistdutch%2Beasylist.txt&amp;title=EasyList%20Dutch%2BEasyList">EasyList Dutch+EasyList</a>, <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/easylistdutch.txt&amp;title=EasyList%20Dutch&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;requiresTitle=EasyList">EasyList Dutch</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>EasyList Germany</h1>
+          <p>
+            Specialization:
+            Deutsch
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            MonztA, Famlam
+             
+          </address>
+          <p>
+          <a href="https://easylist.to/">עמוד הבית</a><a href="https://forums.lanik.us/viewforum.php?f=90">פורום</a><a href="https://github.com/easylist/easylistgermany/commits/master">רשימת שינויים</a><a href="https://github.com/easylist/easylistgermany/commits/master">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/easylistgermany%2Beasylist.txt&amp;title=EasyList%20Germany%2BEasyList">EasyList Germany+EasyList</a>, <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/easylistgermany.txt&amp;title=EasyList%20Germany&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;requiresTitle=EasyList">EasyList Germany</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>EasyList Hebrew</h1>
+          <p>
+            Specialization:
+            עברית
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            BsT
+             
+          </address>
+          <p>
+          <a href="https://github.com/easylist/EasyListHebrew">עמוד הבית</a><a href="https://github.com/easylist/EasyListHebrew/wiki/%D7%93%D7%99%D7%95%D7%95%D7%97-%D7%A2%D7%9C-%D7%A4%D7%A8%D7%A1%D7%95%D7%9E%D7%95%D7%AA-%D7%95%D7%91%D7%A2%D7%99%D7%95%D7%AA-%7C-Reporting-on-ads-and-problems">עמוד יצירת קשר</a><a href="https://github.com/easylist/EasyListHebrew/commits/master/EasyListHebrew.txt">רשימת שינויים</a><a href="https://github.com/easylist/EasyListHebrew/commits/master/EasyListHebrew.txt">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/israellist%2Beasylist.txt&amp;title=EasyList%20Hebrew%2BEasyList">EasyList Hebrew+EasyList</a>, <a href="https://subscribe.adblockplus.org?location=https%3A//raw.githubusercontent.com/easylist/EasyListHebrew/master/EasyListHebrew.txt&amp;title=EasyList%20Hebrew&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;requiresTitle=EasyList">EasyList Hebrew</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>EasyList Italy</h1>
+          <p>
+            Specialization:
+            italiano
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            Khrin
+             
+          </address>
+          <p>
+          <a href="https://easylist.to/">עמוד הבית</a><a href="https://forums.lanik.us/viewforum.php?f=96">פורום</a><a href="https://hg.adblockplus.org/easylistitaly/summary">רשימת שינויים</a><a href="https://hg.adblockplus.org/easylistitaly/summary">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/easylistitaly%2Beasylist.txt&amp;title=EasyList%20Italy%2BEasyList">EasyList Italy+EasyList</a>, <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/easylistitaly.txt&amp;title=EasyList%20Italy&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;requiresTitle=EasyList">EasyList Italy</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>EasyList Lithuania</h1>
+          <p>
+            Specialization:
+            lietuvių kalba
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            Algimantas Margevičius
+             
+          </address>
+          <p>
+          <a href="http://margevicius.lt/">עמוד הבית</a><a href="https://forums.lanik.us/viewforum.php?f=101">פורום</a><a href="https://github.com/EasyList-Lithuania/easylist_lithuania/commits/master/easylistlithuania.txt">רשימת שינויים</a><a href="https://github.com/EasyList-Lithuania/easylist_lithuania/commits/master/easylistlithuania.txt">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/easylistlithuania%2Beasylist.txt&amp;title=EasyList%20Lithuania%2BEasyList">EasyList Lithuania+EasyList</a>, <a href="https://subscribe.adblockplus.org?location=https%3A//raw.githubusercontent.com/EasyList-Lithuania/easylist_lithuania/master/easylistlithuania.txt&amp;title=EasyList%20Lithuania&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;requiresTitle=EasyList">EasyList Lithuania</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>EasyList Polish</h1>
+          <p>
+            Specialization:
+            polski
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            krzysiek-gala
+             
+          </address>
+          <p>
+          <a href="https://easylist.to/">עמוד הבית</a><a href="https://forums.lanik.us/viewforum.php?f=107">פורום</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/easylistpolish%2Beasylist.txt&amp;title=EasyList%20Polish%2BEasyList">EasyList Polish+EasyList</a>, <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/easylistpolish.txt&amp;title=EasyList%20Polish&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;requiresTitle=EasyList">EasyList Polish</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>EasyList Portuguese</h1>
+          <p>
+            Specialization:
+            português
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            diaux
+             
+          </address>
+          <p>
+          <a href="https://easylist.to/">עמוד הבית</a><a href="https://forums.lanik.us/viewforum.php?f=109">פורום</a><a href="https://github.com/easylist/easylistportuguese/commits/master">רשימת שינויים</a><a href="https://github.com/easylist/easylistportuguese/commits/master">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/easylistportuguese%2Beasylist.txt&amp;title=EasyList%20Portuguese%2BEasyList">EasyList Portuguese+EasyList</a>, <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/easylistportuguese.txt&amp;title=EasyList%20Portuguese&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;requiresTitle=EasyList">EasyList Portuguese</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>EasyList Spanish</h1>
+          <p>
+            Specialization:
+            español
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            jabonsolo
+             
+          </address>
+          <p>
+          <a href="https://easylist.to/">עמוד הבית</a><a href="https://forums.lanik.us/viewforum.php?f=103">פורום</a><a href="https://github.com/easylist/easylistspanish/commits/master">רשימת שינויים</a><a href="https://github.com/easylist/easylistspanish/commits/master">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/easylistspanish%2Beasylist.txt&amp;title=EasyList%20Spanish%2BEasyList">EasyList Spanish+EasyList</a>, <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/easylistspanish.txt&amp;title=EasyList%20Spanish&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;requiresTitle=EasyList">EasyList Spanish</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>IndianList</h1>
+          <p>
+            Specialization:
+            বাংলা (ভারত), ગુજરાતી (ભારત), भारतीय, ਪੰਜਾਬੀ (ਭਾਰਤ), অসমীয়া, मराठी, മലയാളം, తెలుగు, ಕನ್ನಡ, ଓଡ଼ିଆ, नेपाली, සිංහල
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            mediumkreation
+             
+          </address>
+          <p>
+          <a href="https://easylist.to/">עמוד הבית</a><a href="https://forums.lanik.us/viewforum.php?f=110">פורום</a><a href="https://github.com/mediumkreation/IndianList/commits/master/IndianList">רשימת שינויים</a><a href="https://github.com/mediumkreation/IndianList/commits/master/IndianList">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/indianlist%2Beasylist.txt&amp;title=IndianList%2BEasyList">IndianList+EasyList</a>, <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/indianlist.txt&amp;title=IndianList&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;requiresTitle=EasyList">IndianList</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>KoreanList</h1>
+          <p>
+            Specialization:
+            한국어
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            Mark Choi
+             
+          </address>
+          <p>
+          <a href="https://easylist.to/">עמוד הבית</a><a href="https://forums.lanik.us/viewforum.php?f=111">פורום</a><a href="https://github.com/easylist/KoreanList/commits/master/KoreanList">רשימת שינויים</a><a href="https://github.com/easylist/KoreanList/commits/master/KoreanList">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/koreanlist%2Beasylist.txt&amp;title=KoreanList%2BEasyList">KoreanList+EasyList</a>, <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/koreanlist.txt&amp;title=KoreanList&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;requiresTitle=EasyList">KoreanList</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>Latvian List</h1>
+          <p>
+            Specialization:
+            latviešu valoda
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            anonymous74100
+             
+          </address>
+          <p>
+          <a href="https://notabug.org/latvian-list/adblock-latvian">עמוד הבית</a><a href="https://forums.lanik.us/viewforum.php?f=99">פורום</a><a href="https://notabug.org/latvian-list/adblock-latvian/commits/master/lists/latvian-list.txt">רשימת שינויים</a><a href="https://notabug.org/latvian-list/adblock-latvian/commits/master/lists/latvian-list.txt">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/latvianlist%2Beasylist.txt&amp;title=Latvian%20List%2BEasyList">Latvian List+EasyList</a>, <a href="https://subscribe.adblockplus.org?location=https%3A//notabug.org/latvian-list/adblock-latvian/raw/master/lists/latvian-list.txt&amp;title=Latvian%20List&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;requiresTitle=EasyList">Latvian List</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>Liste AR</h1>
+          <p>
+            Specialization:
+            العربية
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            smed79
+             
+          </address>
+          <p>
+          <a href="https://code.google.com/p/liste-ar-adblock/">עמוד הבית</a><a href="https://forums.lanik.us/viewforum.php?f=98">פורום</a><a href="https://hg.adblockplus.org/listear/">רשימת שינויים</a><a href="https://hg.adblockplus.org/listear/">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/liste_ar%2Bliste_fr%2Beasylist.txt&amp;title=Liste%20AR%2BListe%20FR%2BEasyList">Liste AR+Liste FR+EasyList</a>, <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/Liste_AR.txt&amp;title=Liste%20AR&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;requiresTitle=EasyList">Liste AR</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>Liste FR</h1>
+          <p>
+            Specialization:
+            français
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            Lian, Crits, smed79
+             
+          </address>
+          <p>
+          <a href="https://forums.lanik.us/viewforum.php?f=91">עמוד הבית</a><a href="https://forums.lanik.us/viewforum.php?f=91">פורום</a><a href="https://hg.adblockplus.org/listefr/">רשימת שינויים</a><a href="https://hg.adblockplus.org/listefr/">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/liste_fr%2Beasylist.txt&amp;title=Liste%20FR%2BEasyList">Liste FR+EasyList</a>, <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/liste_fr.txt&amp;title=Liste%20FR&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;requiresTitle=EasyList">Liste FR</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>ROList</h1>
+          <p>
+            Specialization:
+            românesc
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            MenetZ, Zoso
+             
+          </address>
+          <p>
+          <a href="https://zoso.ro/rolist/">עמוד הבית</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/rolist%2Beasylist.txt&amp;title=ROList%2BEasyList">ROList+EasyList</a>, <a href="https://subscribe.adblockplus.org?location=https%3A//www.zoso.ro/pages/rolist.txt&amp;title=ROList&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;requiresTitle=EasyList">ROList</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>RU AdList</h1>
+          <p>
+            Specialization:
+            русский, українська
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            Lain_13, dimisa
+             
+          </address>
+          <p>
+          <a href="https://forums.lanik.us/viewforum.php?f=102">עמוד הבית</a><a href="https://forums.lanik.us/viewforum.php?f=102">פורום</a><a href="https://hg.adblockplus.org/ruadlist/">רשימת שינויים</a><a href="https://hg.adblockplus.org/ruadlist/">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/ruadlist%2Beasylist.txt&amp;title=RuAdList%2BEasyList">RuAdList+EasyList</a>, <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/advblock.txt&amp;title=RU%20AdList&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;requiresTitle=EasyList">RU AdList</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>Colombian filters by yecarrillo</h1>
+          <p>
+            Specialization:
+            español
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            Yezid Carrillo
+             
+          </address>
+          <p>
+          <a href="https://github.com/yecarrillo/adblock-colombia">עמוד הבית</a><a href="https://www.laneros.com/temas/adblockers-y-lista-de-filtros-de-publicidad-para-colombia.230398/">פורום</a><a href="https://github.com/yecarrillo/adblock-colombia/commits/master/adblock_co.txt">רשימת שינויים</a><a href="https://github.com/yecarrillo/adblock-colombia/commits/master/adblock_co.txt">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//raw.githubusercontent.com/yecarrillo/adblock-colombia/master/adblock_co.txt&amp;title=Colombian%20filters%20by%20yecarrillo&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;requiresTitle=EasyList">Colombian filters by yecarrillo</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>Icelandic ABP List</h1>
+          <p>
+            Specialization:
+            íslenska
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            Garðar
+             
+          </address>
+          <p>
+          <a href="https://adblock.gardar.net/">עמוד הבית</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//adblock.gardar.net/is.abp.txt&amp;title=Icelandic%20ABP%20List&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;requiresTitle=EasyList">Icelandic ABP List</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>void.gr</h1>
+          <p>
+            Specialization:
+            ελληνικά
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <p>
+          <a href="https://www.void.gr/kargig/blog/greek-adblock-plus-filter/">עמוד הבית</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//www.void.gr/kargig/void-gr-filters.txt&amp;title=void.gr&amp;requiresLocation=https%3A//easylist-downloads.adblockplus.org/easylist.txt&amp;requiresTitle=EasyList">void.gr</a>
+          </p>
+        </div>
+      </footer>
+    </article></li></ul></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>280blocker for japanese mobile site</h1>
+          <p>
+            Specialization:
+            日本語
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            280
+             
+          </address>
+          <p>
+          <a href="https://280blocker.net/">עמוד הבית</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//280blocker.net/files/280blocker_adblock.txt&amp;title=280blocker%20for%20japanese%20mobile%20site">280blocker for japanese mobile site</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>ABP Japanese Filters</h1>
+          <p>
+            Specialization:
+            日本語
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            k2japan
+             
+          </address>
+          <p>
+          <a href="https://github.com/k2jp/abp-japanese-filters/">עמוד הבית</a><a href="https://groups.google.com/group/adblock-plus-japanese-filter">פורום</a><a href="http://d.hatena.ne.jp/k2jp/">בלוג</a><a href="https://github.com/k2jp/abp-japanese-filters/commits/master/abpjf.txt">רשימת שינויים</a><a href="https://github.com/k2jp/abp-japanese-filters/commits/master/abpjf.txt">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//bit.ly/11QrCfx&amp;title=ABP%20Japanese%20Filters">ABP Japanese Filters</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>AdBlockFarsi</h1>
+          <p>
+            Specialization:
+            فارسی
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            Arash Kadkhodaei
+             
+          </address>
+          <p>
+          <a href="https://github.com/SlashArash/adblockfa">עמוד הבית</a><a href="https://github.com/SlashArash/adblockfa/issues">פורום</a><a href="https://github.com/SlashArash/adblockfa/commits/master/adblockfa.txt">רשימת שינויים</a><a href="https://github.com/SlashArash/adblockfa/commits/master/adblockfa.txt">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//cdn.rawgit.com/SlashArash/adblockfa/master/adblockfa.txt&amp;title=AdBlockFarsi">AdBlockFarsi</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>Eesti saitidele kohandatud filter</h1>
+          <p>
+            Specialization:
+            Eesti keel
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            Sander Lepik
+             
+          </address>
+          <p>
+          <a href="https://adblock.ee/">עמוד הבית</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//adblock.ee/list.php&amp;title=Eesti%20saitidele%20kohandatud%20filter">Eesti saitidele kohandatud filter</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>Estonian filters by Gurud.ee</h1>
+          <p>
+            Specialization:
+            Eesti keel
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            Janno Lamus
+             
+          </address>
+          <p>
+          <a href="https://gurud.ee/">עמוד הבית</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//gurud.ee/ab.txt&amp;title=Estonian%20filters%20by%20Gurud.ee">Estonian filters by Gurud.ee</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>Filtros Nauscopicos</h1>
+          <p>
+            Specialization:
+            español
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            maty
+             
+          </address>
+          <p>
+          <a href="http://nauscopio.nireblog.com/cat/filtrado">עמוד הבית</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=http%3A//abp.mozilla-hispano.org/nauscopio/filtros.txt&amp;title=Filtros%20Nauscopicos">Filtros Nauscopicos</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>hufilter</h1>
+          <p>
+            Specialization:
+            magyar
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            Hufilter contributors
+             
+          </address>
+          <p>
+          <a href="https://github.com/hufilter/hufilter/wiki">עמוד הבית</a><a href="https://github.com/hufilter/hufilter/issues">פורום</a><a href="https://github.com/hufilter/hufilter/commits/master/hufilter-abp.txt">רשימת שינויים</a><a href="https://github.com/hufilter/hufilter/commits/master/hufilter-abp.txt">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//raw.githubusercontent.com/hufilter/hufilter/master/hufilter-abp.txt&amp;title=hufilter">hufilter</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>Peter Lowe&#39;s list</h1>
+          <p>
+            Specialization:
+            English
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            Peter Lowe
+             
+          </address>
+          <p>
+          <a href="https://pgl.yoyo.org/adservers/">עמוד הבית</a><a href="https://pgl.yoyo.org/adservers/rss/adservers.rss">רשימת שינויים</a><a href="https://pgl.yoyo.org/adservers/rss/adservers.rss">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//pgl.yoyo.org/adservers/serverlist.php%3Fhostformat%3Dadblockplus%26mimetype%3Dplaintext&amp;title=Peter%20Lowe%27s%20list">Peter Lowe&#39;s list</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>Raajje Adlist</h1>
+          <p>
+            Specialization:
+            Dhivehi
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            evenxzero
+             
+          </address>
+          <p>
+          <a href="https://github.com/evenxzero/Raajje-AdList">עמוד הבית</a><a href="https://github.com/evenxzero/Raajje-AdList/commits/master/filter.txt">רשימת שינויים</a><a href="https://github.com/evenxzero/Raajje-AdList/commits/master/filter.txt">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//raw.githubusercontent.com/evenxzero/Raajje-AdList/master/filter.txt&amp;title=Raajje%20Adlist">Raajje Adlist</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>Schacks Adblock Plus liste</h1>
+          <p>
+            Specialization:
+            dansk
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            Henrik Schacks
+             
+          </address>
+          <p>
+          <a href="https://henrik.schack.dk/adblock/">עמוד הבית</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//adblock.dk/block.csv&amp;title=Schacks%20Adblock%20Plus%20liste">Schacks Adblock Plus liste</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>Xfiles</h1>
+          <p>
+            Specialization:
+            italiano
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            Gioxx
+             
+          </address>
+          <p>
+          <a href="https://xfiles.noads.it/">עמוד הבית</a><a href="https://forum.mozillaitalia.org/">פורום</a><a href="https://gioxx.org/tag/abpxfiles/">בלוג</a><a href="https://github.com/gioxx/xfiles/commits/master/filtri.txt">רשימת שינויים</a><a href="https://github.com/gioxx/xfiles/commits/master/filtri.txt">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//raw.githubusercontent.com/gioxx/xfiles/master/filtri.txt&amp;title=Xfiles">Xfiles</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>YousList</h1>
+          <p>
+            Specialization:
+            한국어
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            yous
+             
+          </address>
+          <p>
+          <a href="https://github.com/yous/YousList">עמוד הבית</a><a href="https://github.com/yous/YousList/issues">פורום</a><a href="https://github.com/yous/YousList/commits/master/youslist.txt">רשימת שינויים</a><a href="https://github.com/yous/YousList/commits/master/youslist.txt">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//raw.githubusercontent.com/yous/YousList/master/youslist.txt&amp;title=YousList">YousList</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  </ul><h2 id="type_circumvention">Anti-circumvention</h2>
+
+  <ul class="subscriptions-list">
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>ABP filters</h1>
+          <p>
+            Specialization:
+            Removes circumvention ads in Adblock Plus
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            eyeo GmbH
+             
+          </address>
+          <p>
+          <a href="https://github.com/abp-filters/abp-filters-anti-cv">עמוד הבית</a><a href="https://github.com/abp-filters/abp-filters-anti-cv/issues">פורום</a><a href="https://github.com/abp-filters/abp-filters-anti-cv/commits/master">רשימת שינויים</a><a href="https://github.com/abp-filters/abp-filters-anti-cv/commits/master">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt&amp;title=ABP%20filters">ABP filters</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  </ul><h2 id="type_malware">Malware protection</h2>
+
+  <ul class="subscriptions-list">
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>Malware Domains</h1>
+          <p>
+            Specialization:
+            malware protection
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <p>
+          <a href="http://malwaredomains.com/">עמוד הבית</a><a href="http://malwaredomains.com/?page_id=13">עמוד יצירת קשר</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/malwaredomains_full.txt&amp;title=Malware%20Domains">Malware Domains</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>Spam404</h1>
+          <p>
+            Specialization:
+            blocks scam sites
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            Cameron Dawe
+             
+          </address>
+          <p>
+          <a href="https://www.spam404.com/">עמוד הבית</a><a href="https://www.spam404.com/domain-blacklist.html">עמוד יצירת קשר</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt&amp;title=Spam404">Spam404</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  </ul><h2 id="type_notifications">Notification blocking</h2>
+
+  <ul class="subscriptions-list">
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>Fanboy&#39;s Notifications Blocking List</h1>
+          <p>
+            Specialization:
+            removes website notification popups (included in Fanboy&#39;s Annoyances)
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            fanboy
+             
+          </address>
+          <p>
+          <a href="https://easylist.to/">עמוד הבית</a><a href="https://forums.lanik.us/">פורום</a><a href="https://github.com/easylist/easylist/commits/master/fanboy-addon">רשימת שינויים</a><a href="https://github.com/easylist/easylist/commits/master/fanboy-addon">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/fanboy-notifications.txt&amp;title=Fanboy%27s%20Notifications%20Blocking%20List">Fanboy&#39;s Notifications Blocking List</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  </ul><h2 id="type_other">שונות</h2>
+
+  <ul class="subscriptions-list">
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>CPBL Filters for Adblock Plus</h1>
+          <p>
+            Specialization:
+            removes ads, trackers/telemetry, malware and scams
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            Bongochong
+             
+          </address>
+          <p>
+          <a href="https://git.io/JTTLB">עמוד הבית</a><a href="https://git.io/JTTL0">פורום</a><a href="https://github.com/bongochong/CombinedPrivacyBlockLists/commits/master/cpbl-abp-list.txt">רשימת שינויים</a><a href="https://github.com/bongochong/CombinedPrivacyBlockLists/commits/master/cpbl-abp-list.txt">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/cpbl-abp-list.txt&amp;title=CPBL%20Filters%20for%20Adblock%20Plus">CPBL Filters for Adblock Plus</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>Fanboy&#39;s Annoyances</h1>
+          <p>
+            Specialization:
+            removes online annoyances (includes Fanboy&#39;s Social Blocking List)
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            fanboy
+             
+          </address>
+          <p>
+          <a href="https://easylist.to/">עמוד הבית</a><a href="https://forums.lanik.us/">פורום</a><a href="https://github.com/easylist/easylist/commits/master/fanboy-addon">רשימת שינויים</a><a href="https://github.com/easylist/easylist/commits/master/fanboy-addon">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/fanboy-annoyance.txt&amp;title=Fanboy%27s%20Annoyances">Fanboy&#39;s Annoyances</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>NoCoin</h1>
+          <p>
+            Specialization:
+            filters browser based miners such as coin-hive
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            Hosh
+             
+          </address>
+          <p>
+          <a href="https://github.com/hoshsadiq/adblock-nocoin-list/">עמוד הבית</a><a href="https://github.com/hoshsadiq/adblock-nocoin-list/issues">פורום</a><a href="https://github.com/hoshsadiq/adblock-nocoin-list/commits/master/nocoin.txt">רשימת שינויים</a><a href="https://github.com/hoshsadiq/adblock-nocoin-list/commits/master/nocoin.txt">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt&amp;title=NoCoin">NoCoin</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  </ul><h2 id="type_privacy">Privacy protection</h2>
+
+  <ul class="subscriptions-list">
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>EasyPrivacy</h1>
+          <p>
+            Specialization:
+            privacy protection
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            fanboy, MonztA, Famlam, Khrin
+             
+          </address>
+          <p>
+          <a href="https://easylist.to/">עמוד הבית</a><a href="https://forums.lanik.us/">פורום</a><a href="https://easylist.to/category/articles.html">בלוג</a><a href="https://github.com/easylist/easylist/commits/master/easyprivacy">רשימת שינויים</a><a href="https://github.com/easylist/easylist/commits/master/easyprivacy">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/easyprivacy.txt&amp;title=EasyPrivacy">EasyPrivacy</a>, <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/easyprivacy%2Beasylist.txt&amp;title=EasyPrivacy%2BEasyList">EasyPrivacy+EasyList</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  </ul><h2 id="type_social">Social media blocking</h2>
+
+  <ul class="subscriptions-list">
+  <li>
+    <article class="subscription ">
+      <div class="subscription-content">
+        <div class="subscription-summary">
+          <h1>Fanboy&#39;s Social Blocking List</h1>
+          <p>
+            Specialization:
+            removes social media integration
+          </p>
+          <p>
+            תוספת ל-
+            EasyList
+             .
+          </p>
+        </div>
+      </div>
+      <footer class="subscription-details">
+        <div class="subscription-authors">
+          <address>
+            על ידי
+            fanboy, Famlam, MonztA
+             
+          </address>
+          <p>
+          <a href="https://easylist.to/">עמוד הבית</a><a href="http://forums.lanik.us/">פורום</a><a href="https://github.com/easylist/easylist/commits/master/fanboy-addon">רשימת שינויים</a><a href="https://github.com/easylist/easylist/commits/master/fanboy-addon">מדיניות</a>
+          </p>
+        </div>
+        <div class="subscription-links">
+          <p>
+            הרשמה: <a href="https://subscribe.adblockplus.org?location=https%3A//easylist-downloads.adblockplus.org/fanboy-social.txt&amp;title=Fanboy%27s%20Social%20Blocking%20List">Fanboy&#39;s Social Blocking List</a>
+          </p>
+        </div>
+      </footer>
+    </article></li>
+  </ul>
+
+
+<p>לא יכולים לראות את המסנן שלכם כאן? <a href="mailto:subscriptionlist@adblockplus.org">שלחו</a> את המידע שאתם רוצים להציג כאן. אנא שימו לב שעל מנת להיכלל ברשימה זו ההרשמה שלכם חייבת להכיל בהתחלה הערה המתארת את מקור רשימת המסנן והדרך המועדפת ליצירת קשר אתכם אם צצה בעיה עם ההרשמה שלכם. אתם צריכים להיות בטוחים שכאשר בעיות אלו יופיעו אתם תוכלו לתקן אותן במסגרת זמן הגיונית.</p>
+
+<p>All filter lists on this page are maintained by third parties. eyeo, the company behind Adblock Plus, has no control over them. We only list them to help you find subscriptions that may be useful for you. In no case shall eyeo be held liable towards you, or any other third party, for any loss or damage (including, but not limited to, loss of chances and of business) deriving directly or indirectly from your use of these lists.</p>
+      
+    </div>
+
+    
+
+<footer id="footer" class="content">
+  <div class="container">
+    <div class="row">
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Download</h5>
+        <ul>
+          <li><a href="/en/adblock-plus-chrome" hreflang="en">Adblock Plus for Chrome</a></li>
+          <li><a href="/en/adblock-plus-firefox" hreflang="en">Adblock Plus for Firefox</a></li>
+          <li><a href="/en/ad-blocker-safari" hreflang="en">Adblock Plus for Safari</a></li>
+          <li><a href="/en/adblock-plus-opera" hreflang="en">Adblock Plus for Opera</a></li>
+          <li><a href="/en/android-install" hreflang="en">Adblock Browser for Android</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">מקורות</h5>
+        <ul>
+          
+            <li><a href="/en/acceptable-ads" hreflang="en">Acceptable Ads</a></li>
+          
+            <li><a href="/he/documentation" hreflang="he">תיעוד</a></li>
+          
+            <li><a href="/en/deployments" hreflang="en">For admins</a></li>
+          
+            <li><a href="/en/bugs" hreflang="en">דיווח בעיה</a></li>
+          
+          
+          <li><a href="https://help.eyeo.com/en/adblockplus/how-to-write-filters" target="_blank" hreflang="en">Writing Adblock Plus filters</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">קהילה</h5>
+        <ul>
+          <li><a href="/he/contribute" hreflang="he">תרומה</a></li>
+          <li><a href="https://adblockplus.org/releases/" hreflang="en">הכרזות</a></li>
+          <li><a href="https://adblockplus.org/blog/" hreflang="en">בלוג</a></li>
+          <li><a href="https://adblockplus.org/forum/" hreflang="en">פורום</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">פיתוח</h5>
+        <ul>
+          <li><a href="https://gitlab.com/eyeo/adblockplus">קוד מקור</a></li>
+          
+  
+    <li><a href="/he/tools" hreflang="he">כלים</a></li>
+  
+
+          <li><a href="https://eyeo.com/jobs/" hreflang="en">Jobs</a></li>
+          <li><a href="/en/partner-integrations" hreflang="en">Partner Integrations</a></li>
+        </ul>
+      </nav>
+
+      <nav id="social-list" class="column">
+        <h5 class="footer-social-heading">Follow us on</h5>
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/AdblockPlus"
+              title="Follow Adblock Plus on Twitter"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-twitter-glyphicon.png?2110906668"
+                alt="Twitter glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/user/AdblockPlusOfficial"
+              title="Subscribe to Adblock Plus on YouTube"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-youtube-glyphicon.png?2110906668"
+                alt="YouTube glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/adblockplus"
+              title="Follow Adblock Plus on Facebook"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-facebook-glyphicon.png?2110906668"
+                alt="Facebook glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/adblockplus/"
+              title="Follow Adblock Plus on Instagram"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-instagram-glyphicon.png?2110906668"
+                alt="Instagram glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://vk.com/adblockplusofficial"
+              title="Follow Adblock Plus on VK"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-vk-glyphicon.png?2110906668"
+                alt="VK glyphicon">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div> 
+
+    <div id="footer-legal">
+      <p id="copyright-notice">Copyright © 2020 All rights reserved. Adblock Plus<sup>®</sup> is a registered trademark of <a href="https://eyeo.com">eyeo GmbH</a>.</p>
+      <ul id="legal-list">
+        
+          
+            <li><a href="/en/terms" hreflang="en">Terms of use</a></li>
+          
+            <li><a href="/en/privacy" hreflang="en">מדיניות פרטיות</a></li>
+          
+            <li><a href="/en/imprint" hreflang="en">הערות משפטיות</a></li>
+          
+        
+      </ul>
+    </div> 
+  </div> 
+</footer> 
+    <div id="cookiebar" class="cookie cookiebar">
+  <div class="container">
+    <div class="row">
+
+      <div class="column two-thirds">
+        <p class="cookiebar-text">
+          <svg viewBox="0 0 37.796 41.279" width="38" height="42">
+            <title>Cookie notice</title>
+            <g transform="translate(-14.904 0)">
+              <g transform="translate(14.904 0)">
+                <path d="M52.468,31.165a6.029,6.029,0,0,1-1.514-4.908.935.935,0,0,0-.626-1.019,6.029,6.029,0,0,1-3.244-8.8A.935.935,0,0,0,47,15.368a6.039,6.039,0,0,1-1.112-5.609A.935.935,0,0,0,45.4,8.647,6.029,6.029,0,0,1,42.129,2.01.935.935,0,0,0,41.484.935a20.682,20.682,0,1,0,11.049,31.38A.935.935,0,0,0,52.468,31.165Zm-3.739,2.814A18.759,18.759,0,1,1,40.148,2.524,7.9,7.9,0,0,0,43.887,10a7.889,7.889,0,0,0,1.281,6.029A7.917,7.917,0,0,0,46.682,25.1a7.823,7.823,0,0,0,2.346,1.617,7.889,7.889,0,0,0,1.57,5.123A18.6,18.6,0,0,1,48.729,33.979Z" transform="translate(-14.904 0)"/>
+              </g>
+              <g transform="translate(24.556 12.199)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(34.81 18.817)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(33.212 32.212)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(36.652 9.03)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(23.509 25.912)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(42.765 27.23)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+            </g>
+          </svg>
+          <span>
+            We use some cookies to give you the best experience on our website. By using our site you are aware that we are using cookies and you can change this any time. <a href="/en/cookie-information" hreflang="en">Learn more</a>
+          </span>
+        </p>
+      </div>
+
+      <div class="column one-third text-end">
+        <ul class="cookiebar-nav">
+          <li>
+            <button
+              type="button"
+              class="cookies-submit button"
+              title="Dismiss cookie notification">
+              Ok, got it
+            </button>
+          </li>
+          <li class="dropup cookies-dropup">
+            <button
+              type="button"
+              class="cookies-settings button"
+              title="Edit cookie settings">
+              Settings &nbsp;
+              <svg viewBox="0 0 16.509 16.993" width="18" height="18">
+                <title>Settings icon</title>
+                <path d="M175.051,8.283V.478a.478.478,0,1,0-.955,0v7.8a2.425,2.425,0,0,0,0,4.755v3.474a.478.478,0,1,0,.955,0V13.038a2.425,2.425,0,0,0,0-4.755Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,174.574,12.129Z" transform="translate(-166.302 0)"/>
+                <path d="M9.751,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.479a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752ZM9.274,8.123a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,9.274,8.123Z" transform="translate(-6.85 0)"/>
+                <path d="M339.351,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.483a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,338.874,8.123Z" transform="translate(-324.789 0)"/>
+              </svg>
+            </button>
+            <div class="cookies-dropup-menu text-start" tabindex="1">
+               <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Necessary cookies</p>
+      <p>Used to remember your privacy preferences. They cannot be switched off.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking cookies</p>
+      <p>We use these to analyze website traffic.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B testing cookies</p>
+      <p>We use these Google Optimize cookies for A/B testing based on the analytics data.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Save cookie preferences">
+    Save preferences
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+              <span class="arrow"></span>
+            </div>
+          </li>
+        </ul>
+      </div><!-- .column -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+
+</div><!-- #cookies-large-bar -->
+  <form class="cookie cookieprompt">
+
+  <fieldset class="container">
+
+    <legend class="cookie-heading">
+      Cookie preferences
+    </legend>
+
+    <button
+      type="button"
+      class="cookies-close"
+      title="Dismiss cookie notification">
+      <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+        <title>Close icon</title>
+        <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+      </svg>
+    </button>
+
+    <p>
+      We use some cookies to give you the best experience on our website.
+      <a
+        href="/en/cookie-information" hreflang="en"
+        title="More information about cookies"
+        target="_blank">Read more</a>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-submit"
+        title="Dismiss cookie notification">
+        Ok, got it
+      </button>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-settings"
+        title="Edit cookie settings">
+        Change settings
+      </button>
+    </p>
+
+  </fieldset>
+
+</form>
+  <form class="cookie cookiepage">
+
+  <header class="bg-dark">
+    <div class="container">
+
+      <h4 class="cookie-heading">
+        Cookie preferences
+      </h4>
+
+      <button
+        type="button"
+        class="cookies-close"
+        title="Dismiss cookie notification">
+        <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+          <title>Close icon</title>
+          <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="bg-light">
+    <div class="container section">
+        We use some cookies to give you the best experience on our website. By using our site you are aware that we are using cookies and you can change this any time. <a href="/en/cookie-information" hreflang="en">Learn more</a>
+    </div>
+  </div>
+
+  <div class="container section">
+     <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Necessary cookies</p>
+      <p>Used to remember your privacy preferences. They cannot be switched off.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking cookies</p>
+      <p>We use these to analyze website traffic.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B testing cookies</p>
+      <p>We use these Google Optimize cookies for A/B testing based on the analytics data.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Save cookie preferences">
+    Save preferences
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+  </div>
+
+</form>
+    <script src="/js/testing/setup.js?1094174723"></script>
+    
+  <script src="/js/main.js?1094174723"></script>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html 
+lang="zh_CN"
+data-siteurl="https://adblockplus.org"
+dir="ltr"
+class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Adblock Plus 新手上路</title>
+
+<link rel="canonical" href="https://adblockplus.org/getting_started">
+
+
+
+    
+<meta property="og:image" content="/img/adblockplus_promo.png">
+<meta property="og:title" content="Adblock Plus 新手上路">
+
+<meta property="og:locale" content="zh_CN">
+
+  
+    <meta property="og:locale:alternate" content="de_DE">
+  
+
+  
+    <meta property="og:locale:alternate" content="en_US">
+  
+
+  
+    <meta property="og:locale:alternate" content="es_ES">
+  
+
+  
+    <meta property="og:locale:alternate" content="fr_FR">
+  
+
+  
+    <meta property="og:locale:alternate" content="nl_NL">
+  
+
+  
+    <meta property="og:locale:alternate" content="ru_RU">
+  
+
+  
+
+<meta property="og:url" content="https://adblockplus.org/zh_CN/getting_started">
+
+
+<meta name="twitter:site" content="@AdblockPlus">
+<meta name="twitter:creator" content="@AdblockPlus">
+    
+  <link rel="stylesheet" href="/css/defaults.css?1966543941">
+  <link rel="stylesheet" href="/css/fonts.css?1966543941">
+  <link rel="stylesheet" href="/css/main.css?1966543941">
+  <link rel="stylesheet" href="/css/cookies.css?1966543941">
+
+
+
+
+
+    
+    <script>
+  window.eyeo = {
+    
+    
+    preventCookiePrompt: false,
+    userTesting: false
+  }
+</script>
+
+    <!--[if IE 9]>
+  <script src="/js/vendor/es5-shim.js?482233325"></script>
+  <script src="/js/vendor/dom4.js?482233325"></script>
+<![endif]-->
+
+    
+      
+<meta content="不熟悉Adblock Plus吗？来发现用它保护自己不受烦人广告的困扰是多么简单。从这里下载Adblock Plus的Chrome版本和其他版本。" name="description">
+<meta content="不熟悉Adblock Plus吗？来发现用它保护自己不受烦人广告的困扰是多么简单。从这里下载Adblock Plus的Chrome版本和其他版本。" property="og:description">
+
+    
+  </head>
+
+  <body>
+    
+
+
+
+<nav id="navbar">
+  <div class="container">
+    <a href="/zh_CN/" hreflang="zh-CN" id="navbar-logo">
+      <img
+        src="/img/navbar-logo.svg?867139844"
+        alt="">
+      <span>Adblock <strong>Plus</strong></span>
+    </a>
+    <a href="#" id="navbar-menu-toggle">
+      <img
+        src="/img/menu-toggle.svg?867139844"
+        alt="">
+    </a>
+    <ul id="navbar-menu">
+      
+        <li class="uppercase ">
+          <a href="/zh_CN/download" hreflang="zh-CN">下载</a>
+        </li>
+      
+        <li class="uppercase ">
+          <a href="/zh_CN/about" hreflang="zh-CN">关于</a>
+        </li>
+      
+      <li class="uppercase">
+        <a href="https://help.eyeo.com" target="_blank">帮助</a>
+      </li>
+      <li class="uppercase ">
+        <a href="/zh_CN/donate" hreflang="zh-CN">捐赠</a>
+      </li>
+      <li id="navbar-locale-menubar">
+        <a id="navbar-locale-selected">
+          中文(简体) (CN)
+        </a>
+        <ul id="navbar-locale-menu">
+          
+            <li>
+              <a href="/de/getting_started" hreflang="de">
+                Deutsch (DE)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/en/getting_started" hreflang="en">
+                English (US)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/es/getting_started" hreflang="es">
+                Español (España) (ES)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/fr/getting_started" hreflang="fr">
+                Français (FR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/nl/getting_started" hreflang="nl">
+                Nederlands (NL)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ru/getting_started" hreflang="ru">
+                Русский (RU)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_CN/getting_started" hreflang="zh-CN">
+                中文(简体) (CN)
+              </a>
+            </li>
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+    <div id="content" class="container content False">
+      
+        <h1>Adblock Plus 新手上路</h1>
+      
+
+      
+        
+
+        
+        
+          <div class="toc">
+            
+          <ul>
+            
+              <li>
+                <a href="#general">什么是 Adblock Plus？</a>
+                
+              </li>
+            
+              <li>
+                <a href="#workings">Adblock Plus 是如何工作的？</a>
+                
+              </li>
+            
+              <li>
+                <a href="#install">安装 Adblock Plus</a>
+                
+              </li>
+            
+              <li>
+                <a href="#firststeps">第一个步骤</a>
+                
+          <ul>
+            
+              <li>
+                <a href="#subscription">选择合适的过滤规则列表</a>
+                
+              </li>
+            
+              <li>
+                <a href="#add-subscription">如何添加过滤规则列表</a>
+                
+              </li>
+            
+              <li>
+                <a href="#disabling">在经常访问的站点禁用 Adblock Plus</a>
+                
+              </li>
+            
+          </ul>
+        
+              </li>
+            
+              <li>
+                <a href="#disable-reenable">卸载 Adblock Plus</a>
+                
+              </li>
+            
+              <li>
+                <a href="#problems">疑难排解</a>
+                
+          <ul>
+            
+              <li>
+                <a href="#false-positives">Adblock Plus 过滤得太多怎么办?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#false-negatives">Adblock Plus 无法过滤某个广告怎么办？</a>
+                
+              </li>
+            
+          </ul>
+        
+              </li>
+            
+          </ul>
+        
+          </div>
+        
+      
+
+      
+        
+
+
+
+<h2 id="general">什么是 Adblock Plus？</h2>
+
+<p>
+  Adblock Plus 是 Mozilla Firefox、Google Chrome、Opera 及 Android 平台最受欢迎的浏览器扩展，主要目的在于过滤所有影响浏览体验的烦人广告，包括 YouTube 视频广告、Facebook 广告、横幅、显式或隐式弹出窗口、背景广告等等。
+</p>
+
+<h2 id="workings">Adblock Plus 是如何工作的？</h2>
+
+<p>
+  为了过滤广告，Adblock Plus 需要有所谓的过滤规则来&quot;告诉&quot;它所要拦截的请求。Adblock Plus 默认不包含任何过滤规则，但在初次安装后会提示您添加过滤规则订阅组。一旦启用了这些规则，它就能拦截来自网站的特定请求，通常此类请求是用来加载广告的。被过滤的广告所处位置常常会留下成片的空白区域或呈现&quot;广告标记&quot;，而 Adblock  Plus 依然能够使用所谓的&quot;元素隐藏&quot;功能来去除它们。该功能是指 Adblock Plus 可以根据网页元素的某些特征来隐藏这些特定元素。
+</p>
+
+<h2 id="install">安装 Adblock Plus</h2>
+
+<h3>适用于 Firefox</h3>
+
+<p>
+  如果您使用的是 Mozilla Firefox 浏览器，请点击 <a href="/en/adblock-plus-firefox" hreflang="en">Firefox 扩展页面</a>上的安装按钮，接着 Firefox 会提示您允许安装 Adblock Plus，这时请点击&quot;允许&quot;。
+</p>
+
+<img src="/en/images/gettingstarted_install_ff_1.png?867139844">
+
+<p>
+  接下来 Firefox 会开始安装并提示您确认是否信任该作者的扩展。请点击&quot;立刻安装&quot;将 Adblock
+Plus 安装到您的浏览器当中。
+</p>
+
+<img src="/en/images/gettingstarted_install_ff_2.png?867139844">
+
+<p>
+  现在您就可以免受烦人广告的骚扰啦！
+</p>
+
+<h3>适用于 Chrome</h3>
+
+<p>
+  有两种方法可以将我们的扩展安装到 Google Chrome，最简单的方法是通过我们网站，另一种是通过 Chrome 网上应用店。
+</p>
+
+<h4>通过我们网站两步安装</h4>
+
+<p>
+  只要<a href="/en/adblock-plus-chrome" hreflang="en">打开 Chrome 的安装页面</a>并点击安装按钮即可将它安装到您的 Chrome 浏览器。当浏览器弹出以下对话框时请点击&quot;添加&quot;：
+</p>
+
+<img src="/en/images/gettingstarted_install_cr_2.png?867139844">
+
+<p>
+  这样 Adblock Plus  就会开始安装。当显示以下信息时就表示您已安装成功：
+</p>
+
+<img src="/en/images/gettingstarted_install_cr_3.png?867139844">
+
+<h4>通过 Google Chrome 网上应用店三步安装</h4>
+
+<p>
+  如果您想从 Chrome 网上应用店安装 Adblock Plus，请<a href="https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb">点击这里</a>打开 ABP  for Chrome 的主页：
+</p>
+
+<img src="/en/images/gettingstarted_install_cr_1.png?867139844">
+
+<p>
+  点击屏幕右上角的&quot;添加到 Chrome&quot; 的蓝色按钮。当浏览器弹出以下对话框时请点击&quot;添加&quot;：
+</p>
+
+<img src="/en/images/gettingstarted_install_cr_2.png?867139844">
+
+<p>
+  确认后您就可以免受所有烦人的在线广告的骚扰啦！
+</p>
+
+<h3>适用于 Opera</h3>
+
+<p>
+  要安装 Adblock Plus 到 Opera，只要<a href="https://addons.opera.com/en/extensions/details/opera-adblock/">打开 Opera 附加组件页面</a>并点击&quot;添加到 Opera&quot;，接着会弹出以下对话框：
+</p>
+
+<img src="/en/images/gettingstarted_install_o.png?867139844">
+
+<p>
+  确认后点击&quot;安装&quot;，Adblock Plus 就安装到您的 Opera 浏览器当中了。
+</p>
+
+<h3>适用于 Android</h3>
+
+<p>
+  Adblock Plus 也推出了针对 Android 设备的应用，但需要注意的是在未获取 root 权限的设备上存在<a href="/zh_CN/android-about#general" hreflang="zh_CN">一些使用限制</a>。要安装 Adblock Plus 您需要先允许安装来自未知来源的应用：
+</p>
+
+<ul>
+  <li>
+    打开&quot;设置&quot;并找到&quot;未知来源&quot;这个选项（位于&quot;应用程序&quot;或&quot;安全&quot;，这取决于您的设备类型）
+  </li>
+  <li>
+    点中复选框并在出现的信息框选择&quot;确定&quot;
+  </li>
+</ul>
+
+<p>
+  接下来进入<a href="/en/android-install" hreflang="en">Android 的安装页面</a>，下载并打开该应用。
+</p>
+
+<p>
+  一旦 Adblock Plus 安装、启用和配置完毕，所有的广告就都消失不见了。
+</p>
+
+<h2 id="firststeps">第一个步骤</h2>
+
+<h3 id="subscription">选择合适的过滤规则列表</h3>
+
+<p>
+  如前所述，Adblock Plus 需要过滤规则列表来阻挡广告。Adblock Plus 本身只能看到您在加载什么网页，但它需要靠“过滤规则列表”告诉它应该屏蔽哪些请求或元素。在您第一次安装 Adblock Plus 时，它会基于您的浏览器语言设置为您自动推荐一个过滤规则列表。
+</p>
+
+<p>
+  这里包含两个基本的过滤规则列表，分别是 EasyList 和 Fanboy&#39;s List。它们可以过滤绝大多数流行网站（通常是英文网站）的广告，但不适用于一些本国不太流行的网站。举例来说，如果您来自德国，您还需要额外订阅所在国的过滤规则列表，在这种情况下即 &quot;EasyList Germany + EasyList&quot;。<a href="/zh_CN/subscriptions" hreflang="zh_CN">这里</a>罗列了所有已知的过滤规则列表。
+</p>
+
+<p>
+  <strong>
+    需要注意的是请避免一次性添加太多的过滤规则列表，这会减慢 Adblock Plus 处理速度，进而影响您的浏览体验。一般来说，请不要使用互相重叠的多个过滤规则列表，例如 EasyList 和 Fanboy&#39;s List。
+  </strong>
+</p>
+
+<p>
+  您还可以使用过滤规则列表来保护您免受在线跟踪、恶意域名及社交媒体跟踪等行为的骚扰。关于这方面的更多信息参见<a href="/zh_CN/features" hreflang="zh_CN">这里</a>。
+</p>
+
+<h3 id="add-subscription">如何添加过滤规则列表</h3>
+
+<p>
+  如要再次移除某个过滤规则列表，请参考<a href="/zh_CN/faq_basics#remove-subscription" hreflang="zh_CN">这篇教程</a>。
+</p>
+
+<h4>对于 Firefox</h4>
+
+<p>
+  点击 Firefox &gt;&gt; 附加组件（ 对于 Mac OS X / Linux，点击菜单栏的&quot;工具&quot; &gt;&gt; &quot;附加组件&quot;），打开 Firefox 附加组件管理器。
+</p>
+
+<h5>在 Windows 平台：</h5>
+
+<img src="/en/images/gettingstarted_filters_add_ff_1_win.png?867139844">
+
+<h5>在 Mac OS X / Linux 平台：</h5>
+
+<img src="/en/images/gettingstarted_filters_add_ff_1_mac.png?867139844">
+
+<p>
+  在附加组件管理器的&quot;扩展&quot;标签页下找到 Adblock Plus：
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_ff_2.png?867139844">
+
+<p>
+  点击&quot;选项&quot;打开 Adblock Plus 的设置，并点击&quot;过滤规则首选项&quot;：
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_ff_3.png?867139844">
+
+<p>
+  这时会显示 Adblock Plus 的过滤规则首选项菜单：
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_ff_4.png?867139844">
+
+<p>
+  点击&quot;添加过滤规则订阅组&quot;，您可以在弹出面板的下拉菜单中添加新的或更多的过滤规则列表。点击您要订阅的列表，Adblock Plus 会默认自动启用该列表。不过这里只显示一些最受欢迎和值得推荐的过滤规则列表，更多的列表请参见<a href="/zh_CN/subscriptions" hreflang="zh_CN">这里</a>。
+</p>
+
+<h4>对于 Google Chrome</h4>
+
+<p>
+  在 Google Chrome 浏览器中添加过滤规则订阅组的方法是点击右上角的三道杠图标，在下拉菜单中选择&quot;设定&quot;：
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_cr_1.png?867139844">
+
+<p>
+  接着点击左侧屏幕的&quot;扩展&quot;标签页，这时会在右侧窗口显示 Google Chrome 的扩展，找到 Adblock Plus。
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_cr_2.png?867139844">
+
+<p>
+  点击扩展描述下方的&quot;选项&quot;链接，这时会打开 Adblock Plus 的菜单：
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_cr_3.png?867139844">
+
+<p>
+  这里会显示所有已安装并启用的过滤规则列表。如果您要添加一个新的订阅组，请点击&quot;添加过滤规则订阅组&quot;。
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_cr_4.png?867139844">
+
+<p>
+  在下拉菜单中您会发现一些值得推荐和最受欢迎的过滤规则列表。选择您要启用的列表并点击&quot;添加&quot;。如果您要添加的列表不在此列，请参见<a href="/zh_CN/subscriptions" hreflang="zh_CN">这里</a>。
+</p>
+
+<h4>对于 Opera</h4>
+
+<p>
+  在 Opera 浏览器中添加过滤规则列表的方法是点击&quot;菜单&quot;按钮（对于 Mac OS X / Linux，点击&quot;工具&quot;），选择&quot;扩展&quot; &gt;&gt; &quot;管理扩展&quot;。这时会显示您当前安装的所有扩展，找到 Adblock Plus：
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_o_1.png?867139844">
+
+<p>
+  点击右侧小小的工具图标，这时会打开 &quot;Adblock Plus 选项&quot;菜单，您可以在这里添加过滤规则订阅组。
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_o_2.png?867139844">
+
+<p>
+  点击&quot;添加过滤规则订阅组&quot;，在下拉菜单中您会发现一些值得推荐和最受欢迎的过滤列表。
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_o_3.png?867139844">
+
+<p>
+  选择您要启用的列表，最后点击&quot;添加&quot;。
+</p>
+
+<h4>对于 Android</h4>
+
+<p>
+  对于 Android，您无法同时选择多个过滤规则列表，而只能更换您的过滤规则订阅组，方法是打开 Adblock Plus 应用并选择&quot;过滤规则订阅组&quot;，您可以在打开的菜单中更换您的订阅的列表。
+</p>
+
+<h3 id="disabling">在经常访问的站点禁用 Adblock Plus</h3>
+
+<p>
+  许多网站的营运依靠广告收入，如果您认为您经常访问的网站广告并不太烦人，您完全可以允许显示这些广告。这时只要打开此网站，点击 Adblock Plus 工具栏图标右侧的小箭头，在弹出菜单中选择&quot;在 ... 禁用Adblock Plus&quot;，反之亦然。
+</p>
+
+<p>
+  It will add an exception rule like <code>@@||adblockplus.org^$document</code> to your list of filters. You can find more information on exception rules in <a href="https://adblockplus.org/en/filters#whitelist">Writing Adblock Plus filters</a>.
+</p>
+
+<p>
+  If you want to disable Adblock Plus on all websites, follow these instructions: <a href="https://adblockplus.org/getting_started#disable-reenable">Disabling/Reenabling Adblock Plus on all Websites</a>.
+</p>
+
+<h2 id="disable-reenable">卸载 Adblock Plus</h2>
+
+<h3>对于 Firefox</h3>
+
+<p>
+  在 Mozilla Firefox 中卸载 Adblock Plus 的方法是点击 Firefox &gt;&gt; 附加组件（ 对于 Mac OS X / Linux，点击菜单栏的&quot;工具&quot; &gt;&gt; &quot;附加组件&quot;），打开 Firefox 附加组件管理器。在所有当前安装的附加组件之中找到 Adblock Plus，点击&quot;移除&quot;按钮。关于如何移除附加组件的更详细信息，请访问<a>Firefox 的相应页面</a>。
+</p>
+
+<p>
+  For more detailed information on how to remove add-ons, please visit <a href="https://support.mozilla.org/kb/disable-or-remove-add-ons">Firefox&#39;s page</a>.
+</p>
+
+<p>
+  需要注意的是 Adblock Plus 会保存您的首选项设置，因此您今后重新安装 ABP 无需重新设置选项。如果您要以全新的面貌开始使用 Adblock Plus，您可以删除用户档案下的（<a href="https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data#w_how-do-i-find-my-profile">我如何找到我的用户档案？</a>）下的 &quot;adblockplus&quot; 目录，同时重置 <a href="http://kb.mozillazine.org/About:config">about:config</a> 中所有以 &quot;extensions.adblockplus&quot; 打头的首选项（点击首选项上下文菜单的&quot;重置&quot;）。
+</p>
+
+<h3>对于 Google Chrome</h3>
+
+<p>
+  点击右上角图标下拉菜单的&quot;设定&quot;，接着选择左侧&quot;扩展&quot;标签页，找到 Adblock Plus，点击右侧的小垃圾桶图标。这样 Adblock Plus 就完全从您的 Chrome 浏览器当中移除了。
+</p>
+
+<h3>对于 Opera</h3>
+
+<p>
+  点击&quot;菜单&quot;按钮（对于 Mac OS X / Linux，点击&quot;工具&quot;），选择&quot;扩展&quot; &gt;&gt; &quot;管理扩展&quot;。在扩展菜单中找到 Adblock Plus，选择&quot;卸载&quot;，最后确认您的操作。
+</p>
+
+<h3>对于 Android</h3>
+
+<p>
+  卸载 Adblock Plus for Android 的方法如同卸载其他您所下载应用的方法：
+</p>
+
+<ol>
+  <li>
+    进入菜单 &gt; 设置 &gt; 应用程序 &gt; 管理应用程序（对于运行 Android 4.x 的设备，是在设置 &gt; 应用程序）。
+  </li>
+  <li>
+    向下滚动并在应用列表中找到您要卸载的应用。
+  </li>
+  <li>
+    点击您要卸载的应用。
+  </li>
+  <li>
+    点击&quot;卸载&quot;。
+  </li>
+</ol>
+
+<h2 id="problems">疑难排解</h2>
+
+<h3 id="false-positives">Adblock Plus 过滤得太多怎么办?</h3>
+
+<p>
+  有时候您会发现 Adblock Plus 阻止了部分网站功能的正常使用，
+  通常这不是 Adblock Plus 本身的缺陷，而是与您所使用的过滤规则或订阅组有关。这些过滤规则引起了 Adblock Plus 的误杀。 如果在 <a href="/zh_CN/faq_basics#disable" hreflang="zh_CN">临时禁用 Adblock Plus</a> 后问题&quot;消失&quot;，那说明您所使用的过滤规则有问题。 这时请通过&quot;报告该页面上的问题&quot;报告有问题的规则，首先它会自动收集当前页面的重要数据：
+</p>
+
+<p>
+  <img src="/zh_CN/images/screenshot_toolbarReport.png?867139844">
+</p>
+
+<p>
+  接着在问题类型界面中选中&quot;Adblock Plus 过滤了太多元素&quot;：
+</p>
+
+<p>
+  <img src="/zh_CN/images/screenshot_reporter.png?867139844">
+</p>
+
+<p>
+  这样，您的报告将会自动发送给对应的过滤规则订阅组维护者。 但请注意规则订阅组维护者并不会对所有收到的报告都作出回复或进行其他操作。 只有当您提供的额外信息能使问题更清楚更易于重现，您的报告才更有可能受到重视。
+</p>
+
+<h3 id="false-negatives">Adblock Plus 无法过滤某个广告怎么办？</h3>
+
+<p>
+  如果您发现 Adblock Plus 无法过滤某个广告，请先检查一下您是否添加的是<a href="#subscription">正确的过滤规则订阅组</a>。 如果是错误的，这就好比指望针对法语网站的订阅组能对付保加利亚语网站的广告，而显得有些强人所难。实际上，您需要添加的是针对保加利亚语网站的订阅组。 如果您订阅了正确的规则但还是看到广告，那有可能是订阅的维护者没有注意到，不妨通过&quot;报告该页面上的问题&quot;联系他们，首先它会自动收集当前网页的重要数据：
+</p>
+
+<p>
+  <img src="/zh_CN/images/screenshot_toolbarReport.png?867139844">
+</p>
+
+<p>
+  接着在问题类型界面中选中&quot;Adblock Plus 无法过滤广告&quot;：
+</p>
+
+<p>
+  <img src="/zh_CN/images/screenshot_reporter2.png?867139844">
+</p>
+
+<p>
+  这样，您的报告将会自动发送给对应的过滤规则订阅组维护者。 但请注意规则订阅组维护者并不会对所有收到的报告都作出回复或进行其他操作。 只有当您提供的额外信息能使问题更清楚更易于重现，您的报告才更有可能受到重视。
+</p>
+
+      
+    </div>
+
+    
+
+<footer id="footer" class="content">
+  <div class="container">
+    <div class="row">
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">下载</h5>
+        <ul>
+          <li><a href="/en/adblock-plus-chrome" hreflang="en">Adblock Plus for Chrome</a></li>
+          <li><a href="/en/adblock-plus-firefox" hreflang="en">Adblock Plus for Firefox</a></li>
+          <li><a href="/en/ad-blocker-safari" hreflang="en">Adblock Plus for Safari</a></li>
+          <li><a href="/en/adblock-plus-opera" hreflang="en">Adblock Plus for Opera</a></li>
+          <li><a href="/en/android-install" hreflang="en">Adblock Browser for Android</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">资源</h5>
+        <ul>
+          
+            <li><a href="/zh_CN/acceptable-ads" hreflang="zh-CN">可接受广告</a></li>
+          
+            <li><a href="/zh_CN/documentation" hreflang="zh-CN">文档</a></li>
+          
+            <li><a href="/zh_CN/deployments" hreflang="zh-CN">管理员适用</a></li>
+          
+            <li><a href="/zh_CN/bugs" hreflang="zh-CN">报告问题</a></li>
+          
+          
+          <li><a href="https://help.eyeo.com/en/adblockplus/how-to-write-filters" target="_blank" hreflang="en">撰写 Adblock Plus 过滤规则</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">社区</h5>
+        <ul>
+          <li><a href="/zh_CN/contribute" hreflang="zh_CN">协助</a></li>
+          <li><a href="https://adblockplus.org/releases/" hreflang="en">通告</a></li>
+          <li><a href="https://adblockplus.org/blog/" hreflang="en">博客</a></li>
+          <li><a href="https://adblockplus.org/forum/" hreflang="en">论坛</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">开发</h5>
+        <ul>
+          <li><a href="https://gitlab.com/eyeo/adblockplus">源代码</a></li>
+          
+  
+    <li><a href="/zh_CN/tools" hreflang="zh-CN">工具</a></li>
+  
+
+          <li><a href="https://eyeo.com/jobs/" hreflang="en">工作</a></li>
+          <li><a href="/en/partner-integrations" hreflang="en">Partner Integrations</a></li>
+        </ul>
+      </nav>
+
+      <nav id="social-list" class="column">
+        <h5 class="footer-social-heading">关注我们的</h5>
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/AdblockPlus"
+              title="在 Twitter 上关注 Adblock Plus"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-twitter-glyphicon.png?867139844"
+                alt="Twitter 图标">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/user/AdblockPlusOfficial"
+              title="在 YouTube 上订阅 Adblock Plus"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-youtube-glyphicon.png?867139844"
+                alt="YouTube 图标">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/adblockplus"
+              title="在 Facebook 上关注 Adblock Plus"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-facebook-glyphicon.png?867139844"
+                alt="Facebook 图标">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/adblockplus/"
+              title="在 Instagram 上关注 Adblock Plus"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-instagram-glyphicon.png?867139844"
+                alt="Instagram 图标">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://vk.com/adblockplusofficial"
+              title="在 VK 上关注 Adblock Plus"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-vk-glyphicon.png?867139844"
+                alt="VK 图标">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div> 
+
+    <div id="footer-legal">
+      <p id="copyright-notice">版权所有© 2020 保留所有权利。 Adblock Plus<sup>®</sup> 是 <a href="https://eyeo.com">eyeo GmbH</a> 的注册商标。</p>
+      <ul id="legal-list">
+        
+          
+            <li><a href="/en/terms" hreflang="en">使用条款</a></li>
+          
+            <li><a href="/en/privacy" hreflang="en">隐私策略</a></li>
+          
+            <li><a href="/en/imprint" hreflang="en">联系</a></li>
+          
+        
+      </ul>
+    </div> 
+  </div> 
+</footer> 
+    <div id="cookiebar" class="cookie cookiebar">
+  <div class="container">
+    <div class="row">
+
+      <div class="column two-thirds">
+        <p class="cookiebar-text">
+          <svg viewBox="0 0 37.796 41.279" width="38" height="42">
+            <title>Cookie 通知</title>
+            <g transform="translate(-14.904 0)">
+              <g transform="translate(14.904 0)">
+                <path d="M52.468,31.165a6.029,6.029,0,0,1-1.514-4.908.935.935,0,0,0-.626-1.019,6.029,6.029,0,0,1-3.244-8.8A.935.935,0,0,0,47,15.368a6.039,6.039,0,0,1-1.112-5.609A.935.935,0,0,0,45.4,8.647,6.029,6.029,0,0,1,42.129,2.01.935.935,0,0,0,41.484.935a20.682,20.682,0,1,0,11.049,31.38A.935.935,0,0,0,52.468,31.165Zm-3.739,2.814A18.759,18.759,0,1,1,40.148,2.524,7.9,7.9,0,0,0,43.887,10a7.889,7.889,0,0,0,1.281,6.029A7.917,7.917,0,0,0,46.682,25.1a7.823,7.823,0,0,0,2.346,1.617,7.889,7.889,0,0,0,1.57,5.123A18.6,18.6,0,0,1,48.729,33.979Z" transform="translate(-14.904 0)"/>
+              </g>
+              <g transform="translate(24.556 12.199)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(34.81 18.817)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(33.212 32.212)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(36.652 9.03)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(23.509 25.912)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(42.765 27.23)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+            </g>
+          </svg>
+          <span>
+            我们使用一些 cookie 来为您提供在我们网站上的最佳体验。使用我们的网站表示您知悉我们正在使用 cookie，并且您可以随时更改设置。<a href="/zh_CN/cookie-information" hreflang="zh_CN">了解更多</a>
+          </span>
+        </p>
+      </div>
+
+      <div class="column one-third text-end">
+        <ul class="cookiebar-nav">
+          <li>
+            <button
+              type="button"
+              class="cookies-submit button"
+              title="拒绝 cookie 通知">
+              好的，我知道了
+            </button>
+          </li>
+          <li class="dropup cookies-dropup">
+            <button
+              type="button"
+              class="cookies-settings button"
+              title="编辑 cookie 设置">
+              设置 &nbsp;
+              <svg viewBox="0 0 16.509 16.993" width="18" height="18">
+                <title>设置图标</title>
+                <path d="M175.051,8.283V.478a.478.478,0,1,0-.955,0v7.8a2.425,2.425,0,0,0,0,4.755v3.474a.478.478,0,1,0,.955,0V13.038a2.425,2.425,0,0,0,0-4.755Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,174.574,12.129Z" transform="translate(-166.302 0)"/>
+                <path d="M9.751,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.479a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752ZM9.274,8.123a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,9.274,8.123Z" transform="translate(-6.85 0)"/>
+                <path d="M339.351,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.483a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,338.874,8.123Z" transform="translate(-324.789 0)"/>
+              </svg>
+            </button>
+            <div class="cookies-dropup-menu text-start" tabindex="1">
+               <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">必要的 cookie</p>
+      <p>用于记住您的隐私偏好。不可关闭。</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">跟踪 cookie</p>
+      <p>我们使用这些来分析网站流量。</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B 测试 Cookie</p>
+      <p>我们根据分析数据使用这些 Google Optimize Cookie 进行 A/B 测试。</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="保存 cookie 偏好">
+    保存偏好
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+              <span class="arrow"></span>
+            </div>
+          </li>
+        </ul>
+      </div><!-- .column -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+
+</div><!-- #cookies-large-bar -->
+  <form class="cookie cookieprompt">
+
+  <fieldset class="container">
+
+    <legend class="cookie-heading">
+      Cookie 偏好
+    </legend>
+
+    <button
+      type="button"
+      class="cookies-close"
+      title="拒绝 cookie 通知">
+      <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+        <title>关闭图标</title>
+        <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+      </svg>
+    </button>
+
+    <p>
+      我们使用一些 cookie 来为您提供在我们网站上的最佳体验。
+      <a
+        href="/zh_CN/cookie-information" hreflang="zh_CN"
+        title="有关 cookie 的更多信息"
+        target="_blank">阅读更多</a>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-submit"
+        title="拒绝 cookie 通知">
+        好的，我知道了
+      </button>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-settings"
+        title="编辑 cookie 设置">
+        更改设置
+      </button>
+    </p>
+
+  </fieldset>
+
+</form>
+  <form class="cookie cookiepage">
+
+  <header class="bg-dark">
+    <div class="container">
+
+      <h4 class="cookie-heading">
+        Cookie 偏好
+      </h4>
+
+      <button
+        type="button"
+        class="cookies-close"
+        title="拒绝 cookie 通知">
+        <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+          <title>关闭图标</title>
+          <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="bg-light">
+    <div class="container section">
+        我们使用一些 cookie 来为您提供在我们网站上的最佳体验。使用我们的网站表示您知悉我们正在使用 cookie，并且您可以随时更改设置。<a href="/zh_CN/cookie-information" hreflang="zh_CN">了解更多</a>
+    </div>
+  </div>
+
+  <div class="container section">
+     <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">必要的 cookie</p>
+      <p>用于记住您的隐私偏好。不可关闭。</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">跟踪 cookie</p>
+      <p>我们使用这些来分析网站流量。</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B 测试 Cookie</p>
+      <p>我们根据分析数据使用这些 Google Optimize Cookie 进行 A/B 测试。</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="保存 cookie 偏好">
+    保存偏好
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+  </div>
+
+</form>
+    <script src="/js/testing/setup.js?482233325"></script>
+    
+  <script src="/js/main.js?482233325"></script>
+
+
+
+  </body>
+</html>

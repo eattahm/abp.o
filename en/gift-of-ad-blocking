@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html 
+lang="en"
+data-siteurl="https://adblockplus.org"
+dir="ltr"
+class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Give the gift of ad blocking this Christmas</title>
+
+  <meta name="description" content="A gift that keeps on giving, at times when you least expect it. Get and give Adblock Plus this holiday season.">
+
+<link rel="canonical" href="https://adblockplus.org/gift-of-ad-blocking">
+
+
+
+    
+<meta property="og:image" content="https://adblockplus.org/img/gift-of-ad-blocking/featured-image.png">
+<meta property="og:title" content="Give the gift of ad blocking this Christmas">
+
+  <meta property="og:description" content="A gift that keeps on giving, at times when you least expect it. Get and give Adblock Plus this holiday season.">
+
+<meta property="og:locale" content="en_US">
+
+  
+
+<meta property="og:url" content="https://adblockplus.org/en/gift-of-ad-blocking">
+
+
+<meta name="twitter:site" content="@AdblockPlus">
+<meta name="twitter:creator" content="@AdblockPlus">
+    
+  <link rel="stylesheet" href="/css/defaults.css?2029667279">
+  <link rel="stylesheet" href="/css/fonts.css?2029667279">
+  <link rel="stylesheet" href="/css/main.css?2029667279">
+  <link rel="stylesheet" href="/css/cookies.css?2029667279">
+
+
+
+
+
+  <link rel="stylesheet" href="/css/gift-of-ad-blocking.css?2029667279">
+
+    
+    <script>
+  window.eyeo = {
+    
+    
+    preventCookiePrompt: false,
+    userTesting: false
+  }
+</script>
+
+    <!--[if IE 9]>
+  <script src="/js/vendor/es5-shim.js?521437489"></script>
+  <script src="/js/vendor/dom4.js?521437489"></script>
+<![endif]-->
+
+    
+      
+    
+  </head>
+
+  <body>
+    
+
+
+
+    
+      
+
+
+
+
+
+
+
+<script src="/js/testing/api.js?521437489"></script>
+
+<div id="page" class="no-hover">
+  <div id="page-header-gradient">
+  <div id="page-header-image">
+    <div id="page-header-container" class="container">
+      <header id="page-header-contents">
+        <h1><span class="text-block">The gift</span><span class="text-break"> </span> <span class="text-block">of ad blocking</span></h1>
+        <p class="lead">The holiday season is magical, but it can be a little... hectic. <strong>Adblock Plus</strong> can’t help you with everything, but it makes the perfect gift for a better Internet.</p>
+        <div class="story-cta">
+          <a
+            href="#campaigns"
+            data-ga='{"event_category": "See more button", "event_action": "Scroll to section", "event_label": "GOAB campaign - photo story"}'
+            class="button bg-green">See Stories Below</a>
+          
+
+
+<div class="social-icons">
+  <div class="dropdown-container">
+    <a
+      target="_blank"
+      class="social-icon"
+      href="https://www.facebook.com/sharer/sharer.php?u=http%3A//adblockplus.org/en/gift-of-ad-blocking"
+      title="Share on Facebook">
+      <img
+        alt="Facebook icon"
+        src="/img/gift-of-ad-blocking/facebook-icon-grey.png?1522662797"
+        srcset="/img/gift-of-ad-blocking/facebook-icon-grey-2x.png 2x" />
+    </a>
+    <div class="dropdown">
+      <span class="arrow"></span>
+      <p class="dropdown-body">Click again to share this. Please note that by sharing this, some personal data is transferred to Facebook. For more information, please review Facebook’s <a href="https://www.facebook.com/privacy/explanation">Data Policy</a>.</p>
+    </div><!-- .dropdown -->
+  </div><!-- .dropdown-container -->
+  <div class="dropdown-container">
+    <a
+      target="_blank"
+      class="social-icon"
+      href="https://twitter.com/home?status=See%20how%20Adblock%20Plus%20sprinkles%20a%20little%20holiday%20magic%20on%20the%20web%3A%20www.giftofadblocking.com"
+      title="Share on Twitter">
+      <img
+        alt="Twitter icon"
+        src="/img/gift-of-ad-blocking/twitter-icon-grey.png?1522662797"
+        srcset="/img/gift-of-ad-blocking/twitter-icon-grey-2x.png 2x" />
+    </a>
+    <div class="dropdown">
+      <span class="arrow"></span>
+      <p class="dropdown-body">Click again to share this. Please note that by sharing this, some personal data is transferred to Twitter. For more information, please review Twitter’s <a href="https://twitter.com/en/privacy">Privacy Policy</a>.</p>
+    </div><!-- .dropdown -->
+  </div><!-- .dropdown-container -->
+</div><!-- .social-icons -->
+
+        </div><!-- .social-cta -->
+      </header><!-- #page-header-contents -->
+    </div><!-- #page-header-container -->
+  </div><!-- #page-header-image -->
+</div><!-- #page-header-gradient -->
+
+  <section id="campaigns">
+  <div id="campaigns-header-container" class="campaigns-container">
+
+    <header id="campaigns-header">
+
+      <h2>See how Adblock Plus sprinkles a little holiday magic on the web</h2>
+      <p class="lead">Click on a thumbnail to see the whole photo-story!</p>
+
+    </header>
+
+    <nav>
+      <ul id="campaign-thumbnails">
+        
+
+
+  <li class="campaign-thumbnail column one-fourth active">
+    <a onclick="gotoCampaign(0)">
+      <figure>
+        <div class="image-container">
+          <img
+            alt="Mother puts helmet on her child"
+            src="/img/gift-of-ad-blocking/campaign-thumbnail-1.jpg?1522662797"
+            srcset="/img/gift-of-ad-blocking/campaign-thumbnail-1-2x.jpg 2x" />
+          <div class="inset-border-image"></div>
+        </div>
+        <figcaption>The Best Present</figcaption>
+      </figure>
+    </a>
+  </li>
+
+  <li class="campaign-thumbnail column one-fourth ">
+    <a onclick="gotoCampaign(1)">
+      <figure>
+        <div class="image-container">
+          <img
+            alt="Young people at holiday party"
+            src="/img/gift-of-ad-blocking/campaign-thumbnail-2.jpg?1522662797"
+            srcset="/img/gift-of-ad-blocking/campaign-thumbnail-2-2x.jpg 2x" />
+          <div class="inset-border-image"></div>
+        </div>
+        <figcaption>Party, interrupted</figcaption>
+      </figure>
+    </a>
+  </li>
+
+  <li class="campaign-thumbnail column one-fourth ">
+    <a onclick="gotoCampaign(2)">
+      <figure>
+        <div class="image-container">
+          <img
+            alt="Man browsing on his laptop"
+            src="/img/gift-of-ad-blocking/campaign-thumbnail-3.jpg?1522662797"
+            srcset="/img/gift-of-ad-blocking/campaign-thumbnail-3-2x.jpg 2x" />
+          <div class="inset-border-image"></div>
+        </div>
+        <figcaption>A Holiday Surprise</figcaption>
+      </figure>
+    </a>
+  </li>
+
+  <li class="campaign-thumbnail column one-fourth ">
+    <a onclick="gotoCampaign(3)">
+      <figure>
+        <div class="image-container">
+          <img
+            alt="Man trying holiday recipe from his laptop"
+            src="/img/gift-of-ad-blocking/campaign-thumbnail-4.jpg?1522662797"
+            srcset="/img/gift-of-ad-blocking/campaign-thumbnail-4-2x.jpg 2x" />
+          <div class="inset-border-image"></div>
+        </div>
+        <figcaption>The Missing Ingredient</figcaption>
+      </figure>
+    </a>
+  </li>
+
+      </ul>
+    </nav>
+
+  </div>
+
+  <div id="campaigns-slides-container" class="campaigns-container">
+    
+
+
+  
+  <article class="campaign active">
+
+    <ul>
+      
+        <li
+          data-index="0"
+          class="campaign-slide active">
+          <figure>
+            <img
+              alt="Mother puts helmet on her child"
+              src="/img/gift-of-ad-blocking/campaign-slide-1-1.jpg?1522662797" />
+            <figcaption>You’d do anything to keep your kids safe</figcaption>
+          </figure>
+        </li>
+      
+        <li
+          data-index="1"
+          class="campaign-slide ">
+          <figure>
+            <img
+              alt="Mother and son browsing online on laptop"
+              src="/img/gift-of-ad-blocking/campaign-slide-1-2.jpg?1522662797" />
+            <figcaption>But they need a little independence</figcaption>
+          </figure>
+        </li>
+      
+        <li
+          data-index="2"
+          class="campaign-slide ">
+          <figure>
+            <img
+              alt="Mother and son with skateboard in the park"
+              src="/img/gift-of-ad-blocking/campaign-slide-1-3.jpg?1522662797" />
+            <figcaption>This year, gift yourself peace of mind with Adblock Plus</figcaption>
+          </figure>
+        </li>
+      
+    </ul>
+
+    <nav class="campaign-slide-controls">
+      <ul>
+        <li>
+          <a
+            onclick="previousSlide()"
+            title="Previous slide">
+            <img
+              alt="Previous slide arrow icon"
+              src="/img/gift-of-ad-blocking/previous-icon.png?1522662797"
+              srcset="/img/gift-of-ad-blocking/previous-icon-2x.png 2x" />
+          </a>
+        </li>
+        
+          <li
+            class="campaign-slide-control active">
+            <a
+              onclick="gotoSlide(0)"
+              title="Goto slide 1">
+              <img
+                class="active-slide-icon"
+                alt="Slide 1 icon"
+                src="/img/gift-of-ad-blocking/active-slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/active-slide-icon-2x.png 2x"
+              />
+              <img
+                class="inactive-slide-icon"
+                alt="Slide 1 icon"
+                src="/img/gift-of-ad-blocking/slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/slide-icon-2x.png 2x"
+              />
+            </a>
+          </li>
+        
+          <li
+            class="campaign-slide-control ">
+            <a
+              onclick="gotoSlide(1)"
+              title="Goto slide 2">
+              <img
+                class="active-slide-icon"
+                alt="Slide 2 icon"
+                src="/img/gift-of-ad-blocking/active-slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/active-slide-icon-2x.png 2x"
+              />
+              <img
+                class="inactive-slide-icon"
+                alt="Slide 2 icon"
+                src="/img/gift-of-ad-blocking/slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/slide-icon-2x.png 2x"
+              />
+            </a>
+          </li>
+        
+          <li
+            class="campaign-slide-control ">
+            <a
+              onclick="gotoSlide(2)"
+              title="Goto slide 3">
+              <img
+                class="active-slide-icon"
+                alt="Slide 3 icon"
+                src="/img/gift-of-ad-blocking/active-slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/active-slide-icon-2x.png 2x"
+              />
+              <img
+                class="inactive-slide-icon"
+                alt="Slide 3 icon"
+                src="/img/gift-of-ad-blocking/slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/slide-icon-2x.png 2x"
+              />
+            </a>
+          </li>
+        
+        <li>
+          <a
+            onclick="nextSlide()"
+            title="Next slide">
+            <img
+              alt="Next slide arrow icon"
+              src="/img/gift-of-ad-blocking/next-icon.png?1522662797"
+              srcset="/img/gift-of-ad-blocking/next-icon-2x.png 2x" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </article>
+
+  
+  <article class="campaign ">
+
+    <ul>
+      
+        <li
+          data-index="0"
+          class="campaign-slide active">
+          <figure>
+            <img
+              alt="Young people at holiday party"
+              src="/img/gift-of-ad-blocking/campaign-slide-2-1.jpg?1522662797" />
+            <figcaption>Music, conversation and drinks!</figcaption>
+          </figure>
+        </li>
+      
+        <li
+          data-index="1"
+          class="campaign-slide ">
+          <figure>
+            <img
+              alt="Young people clinking glasses at holiday party"
+              src="/img/gift-of-ad-blocking/campaign-slide-2-2.jpg?1522662797" />
+            <figcaption>Cheers!</figcaption>
+          </figure>
+        </li>
+      
+        <li
+          data-index="2"
+          class="campaign-slide ">
+          <figure>
+            <img
+              alt="Young people interrupted during holiday party"
+              src="/img/gift-of-ad-blocking/campaign-slide-2-3.jpg?1522662797" />
+            <figcaption>*record scratch*</figcaption>
+          </figure>
+        </li>
+      
+        <li
+          data-index="3"
+          class="campaign-slide ">
+          <figure>
+            <img
+              alt="Get Adblock Plus"
+              src="/img/gift-of-ad-blocking/campaign-slide-2-4.jpg?1522662797" />
+            <figcaption>Don’t let ads ruin the party. Get Adblock Plus</figcaption>
+          </figure>
+        </li>
+      
+    </ul>
+
+    <nav class="campaign-slide-controls">
+      <ul>
+        <li>
+          <a
+            onclick="previousSlide()"
+            title="Previous slide">
+            <img
+              alt="Previous slide arrow icon"
+              src="/img/gift-of-ad-blocking/previous-icon.png?1522662797"
+              srcset="/img/gift-of-ad-blocking/previous-icon-2x.png 2x" />
+          </a>
+        </li>
+        
+          <li
+            class="campaign-slide-control active">
+            <a
+              onclick="gotoSlide(0)"
+              title="Goto slide 1">
+              <img
+                class="active-slide-icon"
+                alt="Slide 1 icon"
+                src="/img/gift-of-ad-blocking/active-slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/active-slide-icon-2x.png 2x"
+              />
+              <img
+                class="inactive-slide-icon"
+                alt="Slide 1 icon"
+                src="/img/gift-of-ad-blocking/slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/slide-icon-2x.png 2x"
+              />
+            </a>
+          </li>
+        
+          <li
+            class="campaign-slide-control ">
+            <a
+              onclick="gotoSlide(1)"
+              title="Goto slide 2">
+              <img
+                class="active-slide-icon"
+                alt="Slide 2 icon"
+                src="/img/gift-of-ad-blocking/active-slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/active-slide-icon-2x.png 2x"
+              />
+              <img
+                class="inactive-slide-icon"
+                alt="Slide 2 icon"
+                src="/img/gift-of-ad-blocking/slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/slide-icon-2x.png 2x"
+              />
+            </a>
+          </li>
+        
+          <li
+            class="campaign-slide-control ">
+            <a
+              onclick="gotoSlide(2)"
+              title="Goto slide 3">
+              <img
+                class="active-slide-icon"
+                alt="Slide 3 icon"
+                src="/img/gift-of-ad-blocking/active-slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/active-slide-icon-2x.png 2x"
+              />
+              <img
+                class="inactive-slide-icon"
+                alt="Slide 3 icon"
+                src="/img/gift-of-ad-blocking/slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/slide-icon-2x.png 2x"
+              />
+            </a>
+          </li>
+        
+          <li
+            class="campaign-slide-control ">
+            <a
+              onclick="gotoSlide(3)"
+              title="Goto slide 4">
+              <img
+                class="active-slide-icon"
+                alt="Slide 4 icon"
+                src="/img/gift-of-ad-blocking/active-slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/active-slide-icon-2x.png 2x"
+              />
+              <img
+                class="inactive-slide-icon"
+                alt="Slide 4 icon"
+                src="/img/gift-of-ad-blocking/slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/slide-icon-2x.png 2x"
+              />
+            </a>
+          </li>
+        
+        <li>
+          <a
+            onclick="nextSlide()"
+            title="Next slide">
+            <img
+              alt="Next slide arrow icon"
+              src="/img/gift-of-ad-blocking/next-icon.png?1522662797"
+              srcset="/img/gift-of-ad-blocking/next-icon-2x.png 2x" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </article>
+
+  
+  <article class="campaign ">
+
+    <ul>
+      
+        <li
+          data-index="0"
+          class="campaign-slide active">
+          <figure>
+            <img
+              alt="Man browsing on his laptop"
+              src="/img/gift-of-ad-blocking/campaign-slide-3-1.jpg?1522662797" />
+            <figcaption>Ah, the perfect ring for a holiday proposal</figcaption>
+          </figure>
+        </li>
+      
+        <li
+          data-index="1"
+          class="campaign-slide ">
+          <figure>
+            <img
+              alt="Man and woman browsing from their couch"
+              src="/img/gift-of-ad-blocking/campaign-slide-3-2.jpg?1522662797" />
+            <figcaption>There’s no way she’ll expect this!</figcaption>
+          </figure>
+        </li>
+      
+        <li
+          data-index="2"
+          class="campaign-slide ">
+          <figure>
+            <img
+              alt="Man looking at woman"
+              src="/img/gift-of-ad-blocking/campaign-slide-3-3.jpg?1522662797" />
+            <figcaption>Perhaps it’s not the surprise you thought it was</figcaption>
+          </figure>
+        </li>
+      
+        <li
+          data-index="3"
+          class="campaign-slide ">
+          <figure>
+            <img
+              alt="Woman showing man something on her laptop"
+              src="/img/gift-of-ad-blocking/campaign-slide-3-4.jpg?1522662797" />
+            <figcaption>Perhaps it’s not the surprise you thought it was</figcaption>
+          </figure>
+        </li>
+      
+        <li
+          data-index="4"
+          class="campaign-slide ">
+          <figure>
+            <img
+              alt="Couple on a couch"
+              src="/img/gift-of-ad-blocking/campaign-slide-3-5.jpg?1522662797" />
+            <figcaption>Uh-oh. Ads have given the holiday game away</figcaption>
+          </figure>
+        </li>
+      
+        <li
+          data-index="5"
+          class="campaign-slide ">
+          <figure>
+            <img
+              alt="Woman looking at her laptop scree at engagement rings"
+              src="/img/gift-of-ad-blocking/campaign-slide-3-6.jpg?1522662797" />
+            <figcaption>It’s too late now!</figcaption>
+          </figure>
+        </li>
+      
+        <li
+          data-index="6"
+          class="campaign-slide ">
+          <figure>
+            <img
+              alt="Couple fighting over laptop"
+              src="/img/gift-of-ad-blocking/campaign-slide-3-7.jpg?1522662797" />
+            <figcaption>You weren’t meant to see that!</figcaption>
+          </figure>
+        </li>
+      
+        <li
+          data-index="7"
+          class="campaign-slide ">
+          <figure>
+            <img
+              alt="Couple on couch next to Christmas tree"
+              src="/img/gift-of-ad-blocking/campaign-slide-3-8.jpg?1522662797" />
+            <figcaption>Surprise…!?!</figcaption>
+          </figure>
+        </li>
+      
+    </ul>
+
+    <nav class="campaign-slide-controls">
+      <ul>
+        <li>
+          <a
+            onclick="previousSlide()"
+            title="Previous slide">
+            <img
+              alt="Previous slide arrow icon"
+              src="/img/gift-of-ad-blocking/previous-icon.png?1522662797"
+              srcset="/img/gift-of-ad-blocking/previous-icon-2x.png 2x" />
+          </a>
+        </li>
+        
+          <li
+            class="campaign-slide-control active">
+            <a
+              onclick="gotoSlide(0)"
+              title="Goto slide 1">
+              <img
+                class="active-slide-icon"
+                alt="Slide 1 icon"
+                src="/img/gift-of-ad-blocking/active-slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/active-slide-icon-2x.png 2x"
+              />
+              <img
+                class="inactive-slide-icon"
+                alt="Slide 1 icon"
+                src="/img/gift-of-ad-blocking/slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/slide-icon-2x.png 2x"
+              />
+            </a>
+          </li>
+        
+          <li
+            class="campaign-slide-control ">
+            <a
+              onclick="gotoSlide(1)"
+              title="Goto slide 2">
+              <img
+                class="active-slide-icon"
+                alt="Slide 2 icon"
+                src="/img/gift-of-ad-blocking/active-slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/active-slide-icon-2x.png 2x"
+              />
+              <img
+                class="inactive-slide-icon"
+                alt="Slide 2 icon"
+                src="/img/gift-of-ad-blocking/slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/slide-icon-2x.png 2x"
+              />
+            </a>
+          </li>
+        
+          <li
+            class="campaign-slide-control ">
+            <a
+              onclick="gotoSlide(2)"
+              title="Goto slide 3">
+              <img
+                class="active-slide-icon"
+                alt="Slide 3 icon"
+                src="/img/gift-of-ad-blocking/active-slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/active-slide-icon-2x.png 2x"
+              />
+              <img
+                class="inactive-slide-icon"
+                alt="Slide 3 icon"
+                src="/img/gift-of-ad-blocking/slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/slide-icon-2x.png 2x"
+              />
+            </a>
+          </li>
+        
+          <li
+            class="campaign-slide-control ">
+            <a
+              onclick="gotoSlide(3)"
+              title="Goto slide 4">
+              <img
+                class="active-slide-icon"
+                alt="Slide 4 icon"
+                src="/img/gift-of-ad-blocking/active-slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/active-slide-icon-2x.png 2x"
+              />
+              <img
+                class="inactive-slide-icon"
+                alt="Slide 4 icon"
+                src="/img/gift-of-ad-blocking/slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/slide-icon-2x.png 2x"
+              />
+            </a>
+          </li>
+        
+          <li
+            class="campaign-slide-control ">
+            <a
+              onclick="gotoSlide(4)"
+              title="Goto slide 5">
+              <img
+                class="active-slide-icon"
+                alt="Slide 5 icon"
+                src="/img/gift-of-ad-blocking/active-slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/active-slide-icon-2x.png 2x"
+              />
+              <img
+                class="inactive-slide-icon"
+                alt="Slide 5 icon"
+                src="/img/gift-of-ad-blocking/slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/slide-icon-2x.png 2x"
+              />
+            </a>
+          </li>
+        
+          <li
+            class="campaign-slide-control ">
+            <a
+              onclick="gotoSlide(5)"
+              title="Goto slide 6">
+              <img
+                class="active-slide-icon"
+                alt="Slide 6 icon"
+                src="/img/gift-of-ad-blocking/active-slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/active-slide-icon-2x.png 2x"
+              />
+              <img
+                class="inactive-slide-icon"
+                alt="Slide 6 icon"
+                src="/img/gift-of-ad-blocking/slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/slide-icon-2x.png 2x"
+              />
+            </a>
+          </li>
+        
+          <li
+            class="campaign-slide-control ">
+            <a
+              onclick="gotoSlide(6)"
+              title="Goto slide 7">
+              <img
+                class="active-slide-icon"
+                alt="Slide 7 icon"
+                src="/img/gift-of-ad-blocking/active-slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/active-slide-icon-2x.png 2x"
+              />
+              <img
+                class="inactive-slide-icon"
+                alt="Slide 7 icon"
+                src="/img/gift-of-ad-blocking/slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/slide-icon-2x.png 2x"
+              />
+            </a>
+          </li>
+        
+          <li
+            class="campaign-slide-control ">
+            <a
+              onclick="gotoSlide(7)"
+              title="Goto slide 8">
+              <img
+                class="active-slide-icon"
+                alt="Slide 8 icon"
+                src="/img/gift-of-ad-blocking/active-slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/active-slide-icon-2x.png 2x"
+              />
+              <img
+                class="inactive-slide-icon"
+                alt="Slide 8 icon"
+                src="/img/gift-of-ad-blocking/slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/slide-icon-2x.png 2x"
+              />
+            </a>
+          </li>
+        
+        <li>
+          <a
+            onclick="nextSlide()"
+            title="Next slide">
+            <img
+              alt="Next slide arrow icon"
+              src="/img/gift-of-ad-blocking/next-icon.png?1522662797"
+              srcset="/img/gift-of-ad-blocking/next-icon-2x.png 2x" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </article>
+
+  
+  <article class="campaign ">
+
+    <ul>
+      
+        <li
+          data-index="0"
+          class="campaign-slide active">
+          <figure>
+            <img
+              alt="Man trying holiday recipe from his laptop"
+              src="/img/gift-of-ad-blocking/campaign-slide-4-1.jpg?1522662797" />
+            <figcaption>Making something special for the holiday</figcaption>
+          </figure>
+        </li>
+      
+        <li
+          data-index="1"
+          class="campaign-slide ">
+          <figure>
+            <img
+              alt="Man adding milk while cooking his holiday recipe"
+              src="/img/gift-of-ad-blocking/campaign-slide-4-2.jpg?1522662797" />
+            <figcaption>It’s a new recipe</figcaption>
+          </figure>
+        </li>
+      
+        <li
+          data-index="2"
+          class="campaign-slide ">
+          <figure>
+            <img
+              alt="Man mixing ingredients for Christmas cookies"
+              src="/img/gift-of-ad-blocking/campaign-slide-4-3.jpg?1522662797" />
+            <figcaption>So far, so good</figcaption>
+          </figure>
+        </li>
+      
+        <li
+          data-index="3"
+          class="campaign-slide ">
+          <figure>
+            <img
+              alt="Man spreads cookie dough and looks very pleased with himself"
+              src="/img/gift-of-ad-blocking/campaign-slide-4-4.jpg?1522662797" />
+            <figcaption>Maybe I should check the recipe?</figcaption>
+          </figure>
+        </li>
+      
+        <li
+          data-index="4"
+          class="campaign-slide ">
+          <figure>
+            <img
+              alt="Man trying to type on his laptop with dirty hands from cooking"
+              src="/img/gift-of-ad-blocking/campaign-slide-4-5.jpg?1522662797" />
+            <figcaption>A badly-timed ad appears!</figcaption>
+          </figure>
+        </li>
+      
+        <li
+          data-index="5"
+          class="campaign-slide ">
+          <figure>
+            <img
+              alt="Man with Santa hat looking at his laptop while cooking"
+              src="/img/gift-of-ad-blocking/campaign-slide-4-6.jpg?1522662797" />
+            <figcaption>And the cookies are ruined...</figcaption>
+          </figure>
+        </li>
+      
+        <li
+          data-index="6"
+          class="campaign-slide ">
+          <figure>
+            <img
+              alt="Man in Santa hat disappointed by cookies being ruined"
+              src="/img/gift-of-ad-blocking/campaign-slide-4-7.jpg?1522662797" />
+            <figcaption>Give the gift of ad blocking</figcaption>
+          </figure>
+        </li>
+      
+    </ul>
+
+    <nav class="campaign-slide-controls">
+      <ul>
+        <li>
+          <a
+            onclick="previousSlide()"
+            title="Previous slide">
+            <img
+              alt="Previous slide arrow icon"
+              src="/img/gift-of-ad-blocking/previous-icon.png?1522662797"
+              srcset="/img/gift-of-ad-blocking/previous-icon-2x.png 2x" />
+          </a>
+        </li>
+        
+          <li
+            class="campaign-slide-control active">
+            <a
+              onclick="gotoSlide(0)"
+              title="Goto slide 1">
+              <img
+                class="active-slide-icon"
+                alt="Slide 1 icon"
+                src="/img/gift-of-ad-blocking/active-slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/active-slide-icon-2x.png 2x"
+              />
+              <img
+                class="inactive-slide-icon"
+                alt="Slide 1 icon"
+                src="/img/gift-of-ad-blocking/slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/slide-icon-2x.png 2x"
+              />
+            </a>
+          </li>
+        
+          <li
+            class="campaign-slide-control ">
+            <a
+              onclick="gotoSlide(1)"
+              title="Goto slide 2">
+              <img
+                class="active-slide-icon"
+                alt="Slide 2 icon"
+                src="/img/gift-of-ad-blocking/active-slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/active-slide-icon-2x.png 2x"
+              />
+              <img
+                class="inactive-slide-icon"
+                alt="Slide 2 icon"
+                src="/img/gift-of-ad-blocking/slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/slide-icon-2x.png 2x"
+              />
+            </a>
+          </li>
+        
+          <li
+            class="campaign-slide-control ">
+            <a
+              onclick="gotoSlide(2)"
+              title="Goto slide 3">
+              <img
+                class="active-slide-icon"
+                alt="Slide 3 icon"
+                src="/img/gift-of-ad-blocking/active-slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/active-slide-icon-2x.png 2x"
+              />
+              <img
+                class="inactive-slide-icon"
+                alt="Slide 3 icon"
+                src="/img/gift-of-ad-blocking/slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/slide-icon-2x.png 2x"
+              />
+            </a>
+          </li>
+        
+          <li
+            class="campaign-slide-control ">
+            <a
+              onclick="gotoSlide(3)"
+              title="Goto slide 4">
+              <img
+                class="active-slide-icon"
+                alt="Slide 4 icon"
+                src="/img/gift-of-ad-blocking/active-slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/active-slide-icon-2x.png 2x"
+              />
+              <img
+                class="inactive-slide-icon"
+                alt="Slide 4 icon"
+                src="/img/gift-of-ad-blocking/slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/slide-icon-2x.png 2x"
+              />
+            </a>
+          </li>
+        
+          <li
+            class="campaign-slide-control ">
+            <a
+              onclick="gotoSlide(4)"
+              title="Goto slide 5">
+              <img
+                class="active-slide-icon"
+                alt="Slide 5 icon"
+                src="/img/gift-of-ad-blocking/active-slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/active-slide-icon-2x.png 2x"
+              />
+              <img
+                class="inactive-slide-icon"
+                alt="Slide 5 icon"
+                src="/img/gift-of-ad-blocking/slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/slide-icon-2x.png 2x"
+              />
+            </a>
+          </li>
+        
+          <li
+            class="campaign-slide-control ">
+            <a
+              onclick="gotoSlide(5)"
+              title="Goto slide 6">
+              <img
+                class="active-slide-icon"
+                alt="Slide 6 icon"
+                src="/img/gift-of-ad-blocking/active-slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/active-slide-icon-2x.png 2x"
+              />
+              <img
+                class="inactive-slide-icon"
+                alt="Slide 6 icon"
+                src="/img/gift-of-ad-blocking/slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/slide-icon-2x.png 2x"
+              />
+            </a>
+          </li>
+        
+          <li
+            class="campaign-slide-control ">
+            <a
+              onclick="gotoSlide(6)"
+              title="Goto slide 7">
+              <img
+                class="active-slide-icon"
+                alt="Slide 7 icon"
+                src="/img/gift-of-ad-blocking/active-slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/active-slide-icon-2x.png 2x"
+              />
+              <img
+                class="inactive-slide-icon"
+                alt="Slide 7 icon"
+                src="/img/gift-of-ad-blocking/slide-icon.png?1522662797"
+                srcset="/img/gift-of-ad-blocking/slide-icon-2x.png 2x"
+              />
+            </a>
+          </li>
+        
+        <li>
+          <a
+            onclick="nextSlide()"
+            title="Next slide">
+            <img
+              alt="Next slide arrow icon"
+              src="/img/gift-of-ad-blocking/next-icon.png?1522662797"
+              srcset="/img/gift-of-ad-blocking/next-icon-2x.png 2x" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </article>
+
+  </div>
+
+  <footer id="campaigns-footer" class="campaigns-container">
+    <div class="story-cta">
+      <span class="social-cta">
+        Share this story with someone you care for
+      </span>
+      
+
+
+<div class="social-icons">
+  <div class="dropdown-container">
+    <a
+      target="_blank"
+      class="social-icon"
+      href="https://www.facebook.com/sharer/sharer.php?u=http%3A//adblockplus.org/en/gift-of-ad-blocking"
+      title="Share on Facebook">
+      <img
+        alt="Facebook icon"
+        src="/img/gift-of-ad-blocking/facebook-icon-white.png?1522662797"
+        srcset="/img/gift-of-ad-blocking/facebook-icon-white-2x.png 2x" />
+    </a>
+    <div class="dropdown">
+      <span class="arrow"></span>
+      <p class="dropdown-body">Click again to share this. Please note that by sharing this, some personal data is transferred to Facebook. For more information, please review Facebook’s <a href="https://www.facebook.com/privacy/explanation">Data Policy</a>.</p>
+    </div><!-- .dropdown -->
+  </div><!-- .dropdown-container -->
+  <div class="dropdown-container">
+    <a
+      target="_blank"
+      class="social-icon"
+      href="https://twitter.com/home?status=See%20how%20Adblock%20Plus%20sprinkles%20a%20little%20holiday%20magic%20on%20the%20web%3A%20www.giftofadblocking.com"
+      title="Share on Twitter">
+      <img
+        alt="Twitter icon"
+        src="/img/gift-of-ad-blocking/twitter-icon-white.png?1522662797"
+        srcset="/img/gift-of-ad-blocking/twitter-icon-white-2x.png 2x" />
+    </a>
+    <div class="dropdown">
+      <span class="arrow"></span>
+      <p class="dropdown-body">Click again to share this. Please note that by sharing this, some personal data is transferred to Twitter. For more information, please review Twitter’s <a href="https://twitter.com/en/privacy">Privacy Policy</a>.</p>
+    </div><!-- .dropdown -->
+  </div><!-- .dropdown-container -->
+</div><!-- .social-icons -->
+
+    </div>
+    <p>
+      <a
+        data-ga='{"event_category": "Learn more button", "event_action": "Learn more", "event_label": "GOAB campaign"}'
+        href="/en/" hreflang="en"
+        class="button bg-red">
+        Get the gift of ad blocking
+      </a>
+    </p>
+  </footer>
+
+</section>
+
+  
+
+<aside id="related-posts">
+  <div id="related-posts-container">
+  
+
+    <article class="related-post" style="background-image: url(/img/gift-of-ad-blocking/related-post-1.jpg)">
+      <div class="related-post-shadow">
+        <div class="related-post-body-container">
+          <div class="related-post-body">
+            <h2><a>Find out how one mother stopped worrying</a></h2>
+            <a
+              data-ga='{"event_category": "Featured article", "event_action": "Learn more", "event_label": "GOAB campaign - skateboard"}'
+              class="button bg-red"
+              href="https://medium.com/the-gift-of-ad-blocking/confessions-of-an-overprotective-mother-bddd39614b6f?utm_source=medium&amp;utm_medium=blog&amp;utm_campaign=goab&amp;utm_term=overprotectivemum">
+              Read more
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    
+
+    <article class="related-post" style="background-image: url(/img/gift-of-ad-blocking/related-post-2.jpg)">
+      <div class="related-post-shadow">
+        <div class="related-post-body-container">
+          <div class="related-post-body">
+            <h2><a>Get the recipe for an ad free holiday season (and cookies)</a></h2>
+            <a
+              data-ga='{"event_category": "Featured article", "event_action": "Learn more", "event_label": "GOAB campaign - cookies"}'
+              class="button bg-red"
+              href="https://medium.com/the-gift-of-ad-blocking/the-bake-off-or-salty-double-chocolate-cookies-to-save-christmas-8ff146ac3ecc?utm_source=medium&amp;utm_medium=blog&amp;utm_campaign=goab&amp;utm_term=cookies">
+              Read more
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    
+
+    <article class="related-post" style="background-image: url(/img/gift-of-ad-blocking/related-post-3.jpg)">
+      <div class="related-post-shadow">
+        <div class="related-post-body-container">
+          <div class="related-post-body">
+            <h2><a>Find out how ads made the holidays surprising</a></h2>
+            <a
+              data-ga='{"event_category": "Featured article", "event_action": "Learn more", "event_label": "GOAB campaign - ring"}'
+              class="button bg-red"
+              href="https://medium.com/the-gift-of-ad-blocking/how-re-targeted-ads-ruined-my-christmas-proposal-dc3018d68d1b?utm_source=medium&amp;utm_medium=blog&amp;utm_campaign=goab&amp;utm_term=proposal">
+              Read more
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    
+  </div>
+</aside>
+</div>
+
+<script src="/js/gift-of-ad-blocking.js?521437489"></script>
+    
+
+    
+
+<footer id="footer" class="content">
+  <div class="container">
+    <div class="row">
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Download</h5>
+        <ul>
+          <li><a href="/en/adblock-plus-chrome" hreflang="en">Adblock Plus for Chrome</a></li>
+          <li><a href="/en/adblock-plus-firefox" hreflang="en">Adblock Plus for Firefox</a></li>
+          <li><a href="/en/ad-blocker-safari" hreflang="en">Adblock Plus for Safari</a></li>
+          <li><a href="/en/adblock-plus-opera" hreflang="en">Adblock Plus for Opera</a></li>
+          <li><a href="/en/android-install" hreflang="en">Adblock Browser for Android</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Resources</h5>
+        <ul>
+          
+            <li><a href="/en/acceptable-ads" hreflang="en">Acceptable Ads</a></li>
+          
+            <li><a href="/en/documentation" hreflang="en">Documentation</a></li>
+          
+            <li><a href="/en/deployments" hreflang="en">For admins</a></li>
+          
+            <li><a href="/en/bugs" hreflang="en">Report an issue</a></li>
+          
+          
+            <li><a href="/en/faq-privacy" hreflang="en">Privacy FAQ</a></li>
+          
+          <li><a href="https://help.eyeo.com/en/adblockplus/how-to-write-filters" target="_blank" hreflang="en">Writing Adblock Plus filters</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Community</h5>
+        <ul>
+          <li><a href="/en/contribute" hreflang="en">Contribute</a></li>
+          <li><a href="https://adblockplus.org/releases/" hreflang="en">Announcements</a></li>
+          <li><a href="https://adblockplus.org/blog/" hreflang="en">Blog</a></li>
+          <li><a href="https://adblockplus.org/forum/" hreflang="en">Forum</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Development</h5>
+        <ul>
+          <li><a href="https://gitlab.com/eyeo/adblockplus">Source Code</a></li>
+          
+  
+    <li><a href="/en/tools" hreflang="en">Tools</a></li>
+  
+
+          <li><a href="https://eyeo.com/jobs/" hreflang="en">Jobs</a></li>
+          <li><a href="/en/partner-integrations" hreflang="en">Partner Integrations</a></li>
+        </ul>
+      </nav>
+
+      <nav id="social-list" class="column">
+        <h5 class="footer-social-heading">Follow us on</h5>
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/AdblockPlus"
+              title="Follow Adblock Plus on Twitter"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-twitter-glyphicon.png?1522662797"
+                alt="Twitter glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/user/AdblockPlusOfficial"
+              title="Subscribe to Adblock Plus on YouTube"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-youtube-glyphicon.png?1522662797"
+                alt="YouTube glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/adblockplus"
+              title="Follow Adblock Plus on Facebook"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-facebook-glyphicon.png?1522662797"
+                alt="Facebook glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/adblockplus/"
+              title="Follow Adblock Plus on Instagram"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-instagram-glyphicon.png?1522662797"
+                alt="Instagram glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://vk.com/adblockplusofficial"
+              title="Follow Adblock Plus on VK"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-vk-glyphicon.png?1522662797"
+                alt="VK glyphicon">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div> 
+
+    <div id="footer-legal">
+      <p id="copyright-notice">Copyright © 2020 All rights reserved. Adblock Plus<sup>®</sup> is a registered trademark of <a href="https://eyeo.com">eyeo GmbH</a>.</p>
+      <ul id="legal-list">
+        
+          
+            <li><a href="/en/terms" hreflang="en">Terms of use</a></li>
+          
+            <li><a href="/en/privacy" hreflang="en">Privacy Policy</a></li>
+          
+            <li><a href="/en/privacy-goab" hreflang="en">Campaign privacy policy</a></li>
+          
+            <li><a href="/en/imprint" hreflang="en">Imprint</a></li>
+          
+        
+      </ul>
+    </div> 
+  </div> 
+</footer> 
+    <div id="cookiebar" class="cookie cookiebar">
+  <div class="container">
+    <div class="row">
+
+      <div class="column two-thirds">
+        <p class="cookiebar-text">
+          <svg viewBox="0 0 37.796 41.279" width="38" height="42">
+            <title>Cookie notice</title>
+            <g transform="translate(-14.904 0)">
+              <g transform="translate(14.904 0)">
+                <path d="M52.468,31.165a6.029,6.029,0,0,1-1.514-4.908.935.935,0,0,0-.626-1.019,6.029,6.029,0,0,1-3.244-8.8A.935.935,0,0,0,47,15.368a6.039,6.039,0,0,1-1.112-5.609A.935.935,0,0,0,45.4,8.647,6.029,6.029,0,0,1,42.129,2.01.935.935,0,0,0,41.484.935a20.682,20.682,0,1,0,11.049,31.38A.935.935,0,0,0,52.468,31.165Zm-3.739,2.814A18.759,18.759,0,1,1,40.148,2.524,7.9,7.9,0,0,0,43.887,10a7.889,7.889,0,0,0,1.281,6.029A7.917,7.917,0,0,0,46.682,25.1a7.823,7.823,0,0,0,2.346,1.617,7.889,7.889,0,0,0,1.57,5.123A18.6,18.6,0,0,1,48.729,33.979Z" transform="translate(-14.904 0)"/>
+              </g>
+              <g transform="translate(24.556 12.199)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(34.81 18.817)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(33.212 32.212)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(36.652 9.03)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(23.509 25.912)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(42.765 27.23)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+            </g>
+          </svg>
+          <span>
+            We use some cookies to give you the best experience on our website. By using our site you are aware that we are using cookies and you can change this any time. <a href="/en/cookie-information" hreflang="en">Learn more</a>
+          </span>
+        </p>
+      </div>
+
+      <div class="column one-third text-end">
+        <ul class="cookiebar-nav">
+          <li>
+            <button
+              type="button"
+              class="cookies-submit button"
+              title="Dismiss cookie notification">
+              Ok, got it
+            </button>
+          </li>
+          <li class="dropup cookies-dropup">
+            <button
+              type="button"
+              class="cookies-settings button"
+              title="Edit cookie settings">
+              Settings &nbsp;
+              <svg viewBox="0 0 16.509 16.993" width="18" height="18">
+                <title>Settings icon</title>
+                <path d="M175.051,8.283V.478a.478.478,0,1,0-.955,0v7.8a2.425,2.425,0,0,0,0,4.755v3.474a.478.478,0,1,0,.955,0V13.038a2.425,2.425,0,0,0,0-4.755Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,174.574,12.129Z" transform="translate(-166.302 0)"/>
+                <path d="M9.751,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.479a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752ZM9.274,8.123a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,9.274,8.123Z" transform="translate(-6.85 0)"/>
+                <path d="M339.351,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.483a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,338.874,8.123Z" transform="translate(-324.789 0)"/>
+              </svg>
+            </button>
+            <div class="cookies-dropup-menu text-start" tabindex="1">
+               <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Necessary cookies</p>
+      <p>Used to remember your privacy preferences. They cannot be switched off.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking cookies</p>
+      <p>We use these to analyze website traffic.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B testing cookies</p>
+      <p>We use these Google Optimize cookies for A/B testing based on the analytics data.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Save cookie preferences">
+    Save preferences
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+              <span class="arrow"></span>
+            </div>
+          </li>
+        </ul>
+      </div><!-- .column -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+
+</div><!-- #cookies-large-bar -->
+  <form class="cookie cookieprompt">
+
+  <fieldset class="container">
+
+    <legend class="cookie-heading">
+      Cookie preferences
+    </legend>
+
+    <button
+      type="button"
+      class="cookies-close"
+      title="Dismiss cookie notification">
+      <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+        <title>Close icon</title>
+        <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+      </svg>
+    </button>
+
+    <p>
+      We use some cookies to give you the best experience on our website.
+      <a
+        href="/en/cookie-information" hreflang="en"
+        title="More information about cookies"
+        target="_blank">Read more</a>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-submit"
+        title="Dismiss cookie notification">
+        Ok, got it
+      </button>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-settings"
+        title="Edit cookie settings">
+        Change settings
+      </button>
+    </p>
+
+  </fieldset>
+
+</form>
+  <form class="cookie cookiepage">
+
+  <header class="bg-dark">
+    <div class="container">
+
+      <h4 class="cookie-heading">
+        Cookie preferences
+      </h4>
+
+      <button
+        type="button"
+        class="cookies-close"
+        title="Dismiss cookie notification">
+        <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+          <title>Close icon</title>
+          <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="bg-light">
+    <div class="container section">
+        We use some cookies to give you the best experience on our website. By using our site you are aware that we are using cookies and you can change this any time. <a href="/en/cookie-information" hreflang="en">Learn more</a>
+    </div>
+  </div>
+
+  <div class="container section">
+     <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Necessary cookies</p>
+      <p>Used to remember your privacy preferences. They cannot be switched off.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking cookies</p>
+      <p>We use these to analyze website traffic.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B testing cookies</p>
+      <p>We use these Google Optimize cookies for A/B testing based on the analytics data.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Save cookie preferences">
+    Save preferences
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+  </div>
+
+</form>
+    <script src="/js/testing/setup.js?521437489"></script>
+    
+
+
+  </body>
+</html>

@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html 
+lang="nl"
+data-siteurl="https://adblockplus.org"
+dir="ltr"
+class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Acceptabele advertenties toestaan in Adblock Plus</title>
+
+<link rel="canonical" href="https://adblockplus.org/acceptable-ads">
+
+
+
+    
+<meta property="og:image" content="/img/adblockplus_promo.png">
+<meta property="og:title" content="Acceptabele advertenties toestaan in Adblock Plus">
+
+<meta property="og:locale" content="nl_NL">
+
+  
+    <meta property="og:locale:alternate" content="de_DE">
+  
+
+  
+    <meta property="og:locale:alternate" content="en_US">
+  
+
+  
+    <meta property="og:locale:alternate" content="es_ES">
+  
+
+  
+    <meta property="og:locale:alternate" content="fr_FR">
+  
+
+  
+
+  
+    <meta property="og:locale:alternate" content="pt_BR">
+  
+
+  
+    <meta property="og:locale:alternate" content="ru_RU">
+  
+
+  
+    <meta property="og:locale:alternate" content="zh_CN">
+  
+
+<meta property="og:url" content="https://adblockplus.org/nl/acceptable-ads">
+
+
+<meta name="twitter:site" content="@AdblockPlus">
+<meta name="twitter:creator" content="@AdblockPlus">
+    
+  <link rel="stylesheet" href="/css/defaults.css?1236903317">
+  <link rel="stylesheet" href="/css/fonts.css?1236903317">
+  <link rel="stylesheet" href="/css/main.css?1236903317">
+  <link rel="stylesheet" href="/css/cookies.css?1236903317">
+
+
+
+
+
+    
+    <script>
+  window.eyeo = {
+    
+    
+    preventCookiePrompt: false,
+    userTesting: false
+  }
+</script>
+
+    <!--[if IE 9]>
+  <script src="/js/vendor/es5-shim.js?196779263"></script>
+  <script src="/js/vendor/dom4.js?196779263"></script>
+<![endif]-->
+
+    
+      
+  <meta content="Adblock Plus introduceert het Acceptabele advertenties-initiatief: Ondersteun websites die afhankelijk zijn van reclame, maar ervoor kiezen om de advertenties op een niet-opdringerige wijze aan te bieden." name="description" />
+  <meta content="Adblock Plus introduceert het Acceptabele advertenties-initiatief: Ondersteun websites die afhankelijk zijn van reclame, maar ervoor kiezen om de advertenties op een niet-opdringerige wijze aan te bieden." property="og:description" />
+  <style type="text/css">
+    img
+    {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+
+    
+  </head>
+
+  <body>
+    
+
+
+
+<nav id="navbar">
+  <div class="container">
+    <a href="/nl/" hreflang="nl" id="navbar-logo">
+      <img
+        src="/img/navbar-logo.svg?771632731"
+        alt="">
+      <span>Adblock <strong>Plus</strong></span>
+    </a>
+    <a href="#" id="navbar-menu-toggle">
+      <img
+        src="/img/menu-toggle.svg?771632731"
+        alt="">
+    </a>
+    <ul id="navbar-menu">
+      
+        <li class="uppercase ">
+          <a href="/nl/download" hreflang="nl">Downloaden</a>
+        </li>
+      
+        <li class="uppercase ">
+          <a href="/en/about" hreflang="en">Over</a>
+        </li>
+      
+      <li class="uppercase">
+        <a href="https://help.eyeo.com" target="_blank">Help</a>
+      </li>
+      <li class="uppercase ">
+        <a href="/nl/donate" hreflang="nl">Doneer</a>
+      </li>
+      <li id="navbar-locale-menubar">
+        <a id="navbar-locale-selected">
+          Nederlands (NL)
+        </a>
+        <ul id="navbar-locale-menu">
+          
+            <li>
+              <a href="/de/acceptable-ads" hreflang="de">
+                Deutsch (DE)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/en/acceptable-ads" hreflang="en">
+                English (US)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/es/acceptable-ads" hreflang="es">
+                Español (España) (ES)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/fr/acceptable-ads" hreflang="fr">
+                Français (FR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/nl/acceptable-ads" hreflang="nl">
+                Nederlands (NL)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/pt_BR/acceptable-ads" hreflang="pt-BR">
+                Português (Brasil) (BR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ru/acceptable-ads" hreflang="ru">
+                Русский (RU)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_CN/acceptable-ads" hreflang="zh-CN">
+                中文(简体) (CN)
+              </a>
+            </li>
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+    <div id="content" class="container content False">
+      
+        <h1>Acceptabele advertenties toestaan in Adblock Plus</h1>
+      
+
+      
+        
+
+        
+        
+          <div class="toc">
+            
+          <ul>
+            
+              <li>
+                <a href="#what-are-those">Wat zijn Acceptabele advertenties?</a>
+                
+          <ul>
+            
+              <li>
+                <a href="#privacy-friendly-acceptable-ads">Wat zijn Acceptabele advertenties zonder tracking door derden?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#committee">Wat is het Acceptabele advertenties-comité?</a>
+                
+              </li>
+            
+          </ul>
+        
+              </li>
+            
+              <li>
+                <a href="#criteria">Criteria voor Acceptabele advertenties</a>
+                
+          <ul>
+            
+              <li>
+                <a href="#desktop">Criteria voor desktop</a>
+                
+              </li>
+            
+              <li>
+                <a href="#specific-criteria">Specifieke criteria</a>
+                
+              </li>
+            
+              <li>
+                <a href="#mobile">Criteria voor mobiele apparaten</a>
+                
+              </li>
+            
+              <li>
+                <a href="#other-formats">Ander formaten van acceptabele advertenties?</a>
+                
+              </li>
+            
+          </ul>
+        
+              </li>
+            
+              <li>
+                <a href="#enabled-by-default">Waarom is de Acceptabele advertenties-functie standaard ingeschakeld?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#optout">Ik heb een hekel aan alle advertenties!</a>
+                
+              </li>
+            
+              <li>
+                <a href="#love">Willen Adblock Plus-gebruikers echt acceptabele advertenties zien?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#annoying">Worden alle vervelende advertenties geblokkeerd?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#view-whitelist">Kan ik de filterlijst met uitzonderingen voor acceptabele advertenties bekijken?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#report">Hoe meld ik een advertentie die niet aan de criteria voldoet?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#get-whitelisted">Hoe kan ik advertenties op mijn website op de lijst met uitzonderingen krijgen?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#revenue">Moet ergens voor betaald worden?</a>
+                
+              </li>
+            
+          </ul>
+        
+          </div>
+        
+      
+
+      
+        <p></p>
+<p class="alert">Deze pagina wordt momenteel beoordeeld aangezien het beheer van het Acceptabele advertenties-initiatief is overgedragen aan het onafhankelijke <a href="https://acceptableads.org/">Acceptabele advertenties-comité</a>.</p>
+<h2 id="what-are-those">Wat zijn Acceptabele advertenties?</h2>
+<p>Acceptabele advertenties zijn advertenties die niet opdringerig of vervelend zijn. Deze advertenties zijn respectvol, verstoren de content van een website niet en zijn duidelijk gelabeld met het woord &quot;reclame&quot; of een vergelijkbare term. Een advertentie is een &quot;acceptabele advertentie&quot; als de advertentie voldoet aan de <a href="#criteria">standaard</a> die door het <a href="https://acceptableads.com/en/committee/">Acceptabele advertenties-comité</a> is vastgesteld.</p>
+<p>Advertenties die voldoen aan de standaard voor acceptabele advertenties worden op een uitzonderingslijst geplaatst. De advertenties op de uitzonderingslijst worden vervolgens getoond aan gebruikers die advertenties blokkeren en acceptabele advertenties toestaan.</p>
+<p>De meeste websites gebruiken advertenties om geld te verdienen. Dit betekent dat u deze websites gratis kunt zien. Veel websites gebruiken echter te veel vervelende of opdringerige advertenties om uw aandacht te trekken. Met Adblock Plus kunt u ervoor kiezen om advertenties te blokkeren, maar wij vinden niet dat websites gestraft moeten worden.</p>
+<h3 id="privacy-friendly-acceptable-ads">Wat zijn Acceptabele advertenties zonder tracking door derden?</h3>
+<p>Acceptabele advertenties zonder tracking door derden zijn advertenties die voldoen aan de criteria voor acceptabele advertenties en die derden niet toestaan om uw surfgedrag te volgen. Dit zijn advertenties die voldoen aan <a href="https://www.eff.org/dnt-policy" title="Link to the Do Not Track Policy by EFF">Do Not Track</a> en/of advertenties die worden aangeboden door het domein dat volledig eigendom is van hetzelfde bedrijf.</p>
+<h3 id="committee">Wat is het Acceptabele advertenties-comité?</h3>
+<p>Zoals <a href="https://adblockplus.org/blog/campdavid-nyc" title="Link to blog post announcing the Acceptable Ads Committee">eerder aangekondigd</a>, heeft eyeo/Adblock Plus in 2017 het beheer van het Acceptabele advertenties-initiatief overgedragen aan een onafhankelijke groep: het <a href="https://acceptableads.org/" title="Link to the Acceptable Ads Committee website">Acceptabele advertenties-comité</a>. Het Acceptabele advertenties-comité bestaat uit geïnteresseerden van bedrijven met winstoogmerk, industrie-experts en internetgebruikers zoals u.</p>
+<h2 id="criteria">Criteria voor Acceptabele advertenties</h2>
+<p>Acceptabele advertenties, zoals gedefinieerd door het Acceptabele advertenties-comité, moeten voldoen aan de volgende criteria:</p>
+<h3 id="desktop">Criteria voor desktop</h3>
+<h4>Plaatsing</h4>
+<p>De advertenties mogen de natuurlijke leeservaring van de gebruiker niet verstoren. Dergelijke advertenties moeten boven, naast of onder de primaire inhoud worden geplaatst. <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<p><img alt="Plaatsing criteria voor Acceptabele advertenties" height="368px" src="/img/acceptable-ads-criteria-placement.png?771632731" /></p>
+<h4>Onderscheiding</h4>
+<p>De advertenties moeten altijd duidelijk herkenbaar zijn als advertenties en te onderscheiden zijn van alle andere inhoud (bijv. het label niet verbergen, gebruikers niet de indruk geven dat een advertentie deel uitmaakt van de primaire inhoud). De advertenties moeten duidelijk gemarkeerd zijn met het woord &quot;reclame&quot; of een vergelijkebare term.</p>
+<p><img alt="Onderscheidingscriteria voor Acceptabele advertenties" height="273px" src="/img/acceptable-ads-criteria-label.png?771632731" /></p>
+<h4>Grootte</h4>
+<p>De individuele eisen ten aanzien van de grootte van de advertentie zijn afhankelijk van de plaatsing van de advertentie:</p>
+<ul>
+<li>bij plaatsing boven de primaire inhoud mag de hoogte van een advertentie max. 200 px zijn.</li>
+<li>bij plaatsing naast de primaire inhoud mag de breedte van een advertentie max. 350 px zijn.</li>
+<li>bij plaatsing onder de primaire inhoud mag de hoogte van een advertentie max. 400 px zijn.</li>
+</ul>
+<p>De advertenties moeten altijd voldoende ruimte over laten voor de primaire inhoud op de gebruikelijke schermafmeting van 1366×768 voor desktop, 360×640 voor mobiele apparaten en 768×1024 voor tablets. <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> <sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> <sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></p>
+<p>Alle advertenties die boven de ‘vouw’ zijn geplaatst (het gedeelte van de webpagina dat zichtbaar is in het browservenster als de pagina voor het eerst onder de gebruikelijke schermafmeting wordt geladen), mogen in totaal niet meer dan 15 procent van het zichtbare gedeelte van de webpagina in beslag nemen. Advertenties die onder de ‘vouw’ zijn geplaatst, mogen in totaal niet meer dan 25 procent van het zichtbare gedeelte van de webpagina in beslag nemen.</p>
+<p><img alt="Percentage criteria voor Acceptabele advertenties" height="309px" src="/img/acceptable-ads-criteria-percentages.png?771632731" /></p>
+<h3 id="specific-criteria">Specifieke criteria</h3>
+<h4>Tekstadvertenties</h4>
+<p>Tekstadvertenties ontworpen met overmatig gebruik van kleuren en/of andere elementen om de aandacht te trekken zijn niet toegestaan.</p>
+<h4>Afbeeldingsadvertenties</h4>
+<p>Statische afbeeldingsadvertenties kunnen mogelijk acceptabel zijn, afhankelijk van de evaluatie van hun onopvallendheid op basis van de integratie ervan op de webpagina.</p>
+<h4>In-feed-advertenties</h4>
+<p>Voor advertenties in lijsten en feeds verschillen de algemene criteria afhankelijk van het type advertentie:</p>
+<ul>
+<li>Plaatsingsvereisten<br/>Advertenties zijn toegestaan tussen posts en feeds in.</li>
+<li>Groottevereisten<br/>In-feed-advertenties mogen meer ruimte in beslag nemen, mits deze niet substantieel groter zijn dan andere elementen in de lijst of feed.</li>
+</ul>
+<h4>Zoekadvertenties</h4>
+<p>Voor zoekadvertenties - advertenties die worden weergegeven naar aanleiding van een door de gebruiker geïnitieerde zoekopdracht - verschillen de criteria per zoekopdracht:</p>
+<ul>
+<li>Groottevereisten<br/>Zoekadvertenties mogen groter zijn en extra schermruimte innemen.</li>
+</ul>
+<h4>Advertenties op pagina&#39;s zonder primaire inhoud</h4>
+<p>Alleen tekstadvertenties zijn toegestaan. Voor webpagina&#39;s zonder primaire inhoud (bijv. Foutpagina’s of geparkeerde domeinen) verschillen de criteria afhankelijk van de inhoud:</p>
+<ul>
+<li>Plaatsingsvereisten<br/>Geen plaatsingsbeperkingen.</li>
+<li>Groottevereisten<br/>Geen groottebeperkingen.</li>
+</ul>
+<h3 id="mobile">Criteria voor mobiele apparaten</h3>
+<h4>Plaatsingsvereisten</h4>
+<ul>
+<li>Statische advertentietypes (bijv. de zogenaamde ‘6×1 banner’ en ‘1×1 tile ad’ naast elkaar geplaatste advertentie) mogen overal op de mobiele pagina worden geplaatst</li>
+<li>Kleine advertenties (‘6x1 banner’ of kleiner) mogen als een ‘sticky’ advertentie onderaan het scherm worden geplaatst. Andere implementaties van ‘sticky’ formaten zijn niet toegestaan.</li>
+<li>Grote advertentietypes (bijv. grote ‘native tile ads’) mogen uitsluitend onder de primaire inhoud worden geplaatst. <sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup> <sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
+</ul>
+<h4>Groottevereisten</h4>
+<p>Voor advertenties op mobiele schermen gelden de volgende groottebeperkingen:</p>
+<ul>
+<li>Advertenties die op het scrolbare gedeelte van de webpagina worden geïmplementeerd, mogen in totaal niet meer dan 50 procent van het zichtbare gedeelte van de webpagina in beslag nemen. <sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup></li>
+<li>Als ‘sticky’ geïmplementeerde advertenties hebben een maximale hoogtebeperking van 75 px (of 15%).</li>
+<li>Onder de primaire inhoud zijn advertenties beperkt tot 100% van de schermruimte. <sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup></li>
+</ul>
+<h4>Animaties</h4>
+<p>Animaties zijn toegestaan voor het ‘6×1 banner’-advertentietype als deze als ‘sticky’ onderaan het scherm zijn geplaatst. Animaties moeten voldoen aan de LEAN-standaard voor animaties, en er moet een “Sluit” functie of een ander sluitmechanisme worden inbegrepen. <sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup></p>
+<h3 id="other-formats">Ander formaten van acceptabele advertenties?</h3>
+<p>Worden uw advertenties op alternatieve schermen weergegeven of bent u ervan overtuigd dat u een innovatief Acceptabele advertenties-formaat hebt dat niet past binnen de hierboven geschetste advertenties? <a href="#" data-mask="{&quot;href&quot;: &quot;bWFpbHRvOmFjY2VwdGFibGVhZHNAYWRibG9ja3BsdXMub3Jn&quot;}">Laat het ons weten!</a></p>
+<h2 id="enabled-by-default">Waarom is de Acceptabele advertenties-functie standaard ingeschakeld?</h2>
+<p>Wij geloven dat acceptabele advertenties de duurzame middenweg zijn tussen de keuze van een gebruiker om een adblocker te gebruiken en de blijvende noodzaak om gratis online content te ondersteunen met advertenties. Als de meerderheid van de Adblock Plus gebruikers de Acceptabele advertenties-functie heeft ingeschakeld, dan hebben adverteerders een grotere stimulans om betere, minder opdringerige advertentieformaten te produceren.</p>
+<h2 id="optout">Ik heb een hekel aan alle advertenties!</h2>
+<p>Geen probleem, u kunt deze functie op elk moment uitschakelen:</p>
+<h4>Adblock Plus voor Chrome, Firefox (versie 3 en hoger), Maxthon, Opera, Yandex Browser</h4>
+<ol>
+<li>Klik in de werkbalk van uw browser op het pictogram <strong>Adblock Plus</strong> en klik op het <strong>tandwiel</strong>-pictogram in de rechterbovenhoek.</li>
+<li>Scroll vanuit het tabblad <em>Algemeen</em> naar het gedeelte <em>acceptabele advertenties</em>.</li>
+<li>Vink <strong>acceptabele advertenties toestaan</strong> aan.</li>
+<li>Sluit het tabblad.</li>
+</ol>
+<h4>Adblock Plus voor Safari</h4>
+<ol>
+<li>Klik in de werkbalk van Safari op het pictogram <strong>Adblock Plus</strong> en klik op <strong>Adblock Plus openen</strong>.</li>
+<li>Vink <strong>acceptabele advertenties toestaan</strong> aan.</li>
+<li>Sluit het tabblad.</li>
+</ol>
+<h4>Adblock Plus voor Firefox (versies 1 en 2)</h4>
+<ol>
+<li>Klik op het Adblock Plus-pictogram en klik op <strong>Filtervoorkeuren</strong>.</li>
+<li>Vink <strong>acceptabele advertenties toestaan</strong> aan.</li>
+</ol>
+<h4>Adblock Plus voor Internet Explorer</h4>
+<ol>
+<li>Klik op het pictogram Adblock Plus en klik op <strong>Instellingen</strong>.</li>
+<li>Vink <strong>acceptabele advertenties toestaan</strong> aan.</li>
+</ol>
+<h4>Adblock Plus voor iOS</h4>
+<ol>
+<li>Open Adblock Plus voor iOS</li>
+<li>Tik op het <strong>Instellingen-pictogram</strong> onderaan de pagina.</li>
+<li>Tik op de Instellingen-pagina op <strong>Acceptabele advertenties</strong>.</li>
+<li>Schakel <strong>Sta sommige niet-opdringerige advertenties toe</strong> uit.</li>
+</ol>
+<h4>Adblock Browser voor Android</h4>
+<ol>
+<li>Open Adblock Browser voor Android.</li>
+<li>Tik op het <strong>menupictogram</strong> en selecteer <strong>Instellingen</strong>.</li>
+<li>Tik op <strong>Advertenties blokkeren</strong> &gt; <strong>Acceptabele advertenties</strong>.</li>
+<li>Vink <strong>acceptabele advertenties toestaan</strong> aan.</li>
+</ol>
+<h4>Adblock Plus voor Samsung Internet</h4>
+<ol>
+<li>Open Adblock Plus voor Samsung Internet.</li>
+<li>Vink <strong>acceptabele advertenties toestaan</strong> aan.</li>
+</ol>
+<h2 id="love">Willen Adblock Plus-gebruikers echt acceptabele advertenties zien?</h2>
+<p>Ja! Drieëntachtig procent (<a href="https://blog.hubspot.com/news-trends/why-people-block-ads-and-what-it-means-for-marketers-and-advertisers">83%</a>) van de Adblock Plus-gebruikers vindt het niet erg om acceptabele advertenties te zien, omdat hun surfervaring niet wordt verpest door schreeuwerige, vervelende en irrelevante advertenties.</p>
+<h2 id="annoying">Worden alle vervelende advertenties geblokkeerd?</h2>
+<p>Nee. Het is technisch niet mogelijk om advertenties die niet voldoen aan de Acceptabele advertenties-criteria automatisch te herkennen. We hebben <a href="https://adblockplus.org/acceptable-ads-agreements">overeenkomsten</a> met sommige websites en adverteerders die bepalen dat alleen advertenties die voldoen aan de Acceptabele advertenties-criteria worden weergegeven als Adblock Plus gebruikers deze specifieke sites bezoeken.</p>
+<h2 id="view-whitelist">Kan ik de filterlijst met uitzonderingen voor acceptabele advertenties bekijken?</h2>
+<p>Absoluut. U kunt de lijst bekijken door <a href="https://easylist-downloads.adblockplus.org/exceptionrules.txt" title="Link to filter list with whitelisted websites">hier te klikken</a>.</p>
+<h2 id="report">Hoe meld ik een advertentie die niet aan de criteria voldoet?</h2>
+<p>Stuur een bericht naar <a href="#" data-mask="{&quot;href&quot;: &quot;bWFpbHRvOnN1cHBvcnRAYWRibG9ja3BsdXMub3Jn&quot;, &quot;textContent&quot;: &quot;c3VwcG9ydEBhZGJsb2NrcGx1cy5vcmc=&quot;}">e-mailadres</a> met de volgende informatie:</p>
+<ul>
+<li>URL van de pagina waar de advertentie verschijnt</li>
+<li>Screenshot van de gehele pagina, inclusief de advertentie OF een gedetailleerde beschrijving van waar de advertentie zich op de pagina bevindt</li>
+<li>Geef, indien bekend, aan of inloggegevens of VPN nodig zijn om het probleem te reproduceren</li>
+</ul>
+<h2 id="get-whitelisted">Hoe kan ik advertenties op mijn website op de lijst met uitzonderingen krijgen?</h2>
+<p>Het proces om uw advertenties op de uitzonderingslijst te laten plaatsen duurt ongeveer 10 werkdagen zodra de advertenties voldoen aan de Acceptabele advertenties-normen:</p>
+<ol>
+<li>Als uw website advertenties heeft die voldoen aan de <a href="#criteria">Acceptabele advertenties-standaard</a>, vul dan gewoon <a href="https://acceptableads.com/get-whitelisted/" title="Acceptabele advertenties op de witte lijst laten plaatsen">dit formulier</a> in.</li>
+<li>Iemand van <a href="https://www.eyeo.com/">eyeo</a>, het bedrijf achter Adblock Plus, neemt contact met u op om de exacte advertenties te bepalen en om te controleren of deze voldoen aan onze criteria.</li>
+<li>Nadat u de noodzakelijke wijzigingen hebt doorgevoerd, ondertekenen beide partijen een <a href="https://adblockplus.org/acceptable-ads-agreements" title="Link naar de pagina Acceptabele advertenties-overeenkomsten">overeenkomst</a>&quot;.</li>
+<li>We submit the whitelisting proposal <a href="https://adblockplus.org/forum/viewforum.php?f=12" title="Link to Adblock Plus Forum">in the forum</a> and the ads are whitelisted at the same time. The topic will stay open in order for the community to declare concerns if or when the candidate does not meet the requirements.</li>
+</ol>
+<h2 id="revenue">Moet ergens voor betaald worden?</h2>
+<p>Klik <a href="/en/about#monetization" hreflang="en">hier</a> voor een gedetailleerd overzicht van onze financiële gegevens.</p>
+<script src="/js/address-masking.js?196779263"></script>
+
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>De &#39;primaire inhoud&#39; wordt gedefinieerd als (gebaseerd op <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main">Mozilla&#39;s omschrijving</a> van het <code>&lt;main&gt;</code>HTML-element): De primaire inhoud bestaat uit inhoud die direct verband houdt met, of uitweidt over het centrale onderwerpt van een document of de centrale functionaliteit van een toepassing. Deze inhoud moet uniek zijn voor het document, alle inhoud uitsluiten die in een serie documenten wordt herhaald zoals sidebars, navigatielinks, copyrightinformatie, sitelogo’s en zoekformulieren (tenzij uiteraard de hoofdfunctie van het document een zoekformulier is). <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>De &#39;gebruikelijke schermafmeting&#39; voor desktop is 1366×768, gebaseerd op gegevens van <a href="http://gs.statcounter.com/#desktop-resolution-ww-monthly-201401-201412">StatCounter</a>. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+<li id="fn:3">
+<p>De ‘gebruikelijke schermafmeting voor mobiele apparaten is 360×640, gebaseerd op gegevens van <a href="http://gs.statcounter.com/#mobile_resolution-ww-monthly-201401-201412">StatCounter</a>. <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>
+</li>
+<li id="fn:4">
+<p>De &#39;gebruikelijke schermafmeting&#39; voor tablets is 768×1024, gebaseerd op gegevens van <a href="http://gs.statcounter.com/#tablet-resolution-ww-monthly-201401-201412">StatCounter</a>. <a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">↩</a></p>
+</li>
+<li id="fn:5">
+<p>Grote advertentie: elke advertentie met een hoogte van &gt;300 px <a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">↩</a></p>
+</li>
+<li id="fn:6">
+<p>Het zichtbare gedeelte van de webpagina is gedefinieerd als een standaard CSS-pixelgrootte van <a href="/img/360x512.png" target="_blank">360×512 px</a> (Samsung Galaxy S7 met de SBrowser), wat is gebaseerd op de standaard viewport van <a href="https://deviceatlas.com/blog/mobile-viewport-size-statistics-2017">360×640 px</a>, maar met aftrek van de OS- en browser-UI-elementen. <a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">↩</a></p>
+</li>
+<li id="fn:7">
+<p>Dit betekent dat gebruikers de primaire inhoud voorbij kunnen scrollen en een advertentie daarna kan het volledige scherm in beslag nemen; maar na deze advertentie kunnen geen extra advertenties worden geïmplementeerd. <a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">↩</a></p>
+</li>
+<li id="fn:8">
+<p>Van: <a href="https://www.iab.com/wp-content/uploads/2017/08/IABNewAdPortfolio_FINAL_2017.pdf">Iab New Standard Ad Unit Portfolio (2017)</a> <a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+      
+    </div>
+
+    
+
+<footer id="footer" class="content">
+  <div class="container">
+    <div class="row">
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Downloaden</h5>
+        <ul>
+          <li><a href="/en/adblock-plus-chrome" hreflang="en">Adblock Plus voor Chrome</a></li>
+          <li><a href="/en/adblock-plus-firefox" hreflang="en">Adblock Plus voor Firefox</a></li>
+          <li><a href="/en/ad-blocker-safari" hreflang="en">Adblock Plus voor Safari</a></li>
+          <li><a href="/en/adblock-plus-opera" hreflang="en">Adblock Plus voor Opera</a></li>
+          <li><a href="/en/android-install" hreflang="en">Adblock Browser for Android</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Resources</h5>
+        <ul>
+          
+            <li><a href="/nl/acceptable-ads" hreflang="nl">Acceptabele advertenties</a></li>
+          
+            <li><a href="/nl/documentation" hreflang="nl">Documentatie</a></li>
+          
+            <li><a href="/en/deployments" hreflang="en">Voor beheerders</a></li>
+          
+            <li><a href="/nl/bugs" hreflang="nl">Rapporteer een probleem</a></li>
+          
+          
+          <li><a href="https://help.eyeo.com/en/adblockplus/how-to-write-filters" target="_blank" hreflang="en">Het schrijven van Adblock Plus-filters</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Gemeenschap</h5>
+        <ul>
+          <li><a href="/nl/contribute" hreflang="nl">Bijdragen</a></li>
+          <li><a href="https://adblockplus.org/releases/" hreflang="en">Mededelingen</a></li>
+          <li><a href="https://adblockplus.org/blog/" hreflang="en">Blog</a></li>
+          <li><a href="https://adblockplus.org/forum/" hreflang="en">Forum</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Ontwikkeling</h5>
+        <ul>
+          <li><a href="https://gitlab.com/eyeo/adblockplus">Broncode</a></li>
+          
+  
+    <li><a href="/nl/tools" hreflang="nl">Tools</a></li>
+  
+
+          <li><a href="https://eyeo.com/jobs/" hreflang="en">Jobs</a></li>
+          <li><a href="/en/partner-integrations" hreflang="en">Partner Integrations</a></li>
+        </ul>
+      </nav>
+
+      <nav id="social-list" class="column">
+        <h5 class="footer-social-heading">Volg ons op</h5>
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/AdblockPlus"
+              title="Volg Adblock Plus op Twitter"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-twitter-glyphicon.png?771632731"
+                alt="Twitter icon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/user/AdblockPlusOfficial"
+              title="Volg Adblock Plus op YouTube"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-youtube-glyphicon.png?771632731"
+                alt="YouTube icon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/adblockplus"
+              title="Volg Adblock Plus op Facebook"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-facebook-glyphicon.png?771632731"
+                alt="Facebook icon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/adblockplus/"
+              title="Volg Adblock Plus op Instagram"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-instagram-glyphicon.png?771632731"
+                alt="Instagram icon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://vk.com/adblockplusofficial"
+              title="Volg Adblock Plus op VK"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-vk-glyphicon.png?771632731"
+                alt="VK icon">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div> 
+
+    <div id="footer-legal">
+      <p id="copyright-notice">Copyright © 2020 Alle rechten voorbehouden. Adblock Plus<sup>®</sup> is een geregistreerd handelsmerk van <a href="https://eyeo.com">eyeo GmbH</a>.</p>
+      <ul id="legal-list">
+        
+          
+            <li><a href="/en/terms" hreflang="en">Gebruiksvoorwaarden</a></li>
+          
+            <li><a href="/en/privacy" hreflang="en">Privacybeleid</a></li>
+          
+            <li><a href="/en/imprint" hreflang="en">Imprint</a></li>
+          
+        
+      </ul>
+    </div> 
+  </div> 
+</footer> 
+    <div id="cookiebar" class="cookie cookiebar">
+  <div class="container">
+    <div class="row">
+
+      <div class="column two-thirds">
+        <p class="cookiebar-text">
+          <svg viewBox="0 0 37.796 41.279" width="38" height="42">
+            <title>Cookiemelding</title>
+            <g transform="translate(-14.904 0)">
+              <g transform="translate(14.904 0)">
+                <path d="M52.468,31.165a6.029,6.029,0,0,1-1.514-4.908.935.935,0,0,0-.626-1.019,6.029,6.029,0,0,1-3.244-8.8A.935.935,0,0,0,47,15.368a6.039,6.039,0,0,1-1.112-5.609A.935.935,0,0,0,45.4,8.647,6.029,6.029,0,0,1,42.129,2.01.935.935,0,0,0,41.484.935a20.682,20.682,0,1,0,11.049,31.38A.935.935,0,0,0,52.468,31.165Zm-3.739,2.814A18.759,18.759,0,1,1,40.148,2.524,7.9,7.9,0,0,0,43.887,10a7.889,7.889,0,0,0,1.281,6.029A7.917,7.917,0,0,0,46.682,25.1a7.823,7.823,0,0,0,2.346,1.617,7.889,7.889,0,0,0,1.57,5.123A18.6,18.6,0,0,1,48.729,33.979Z" transform="translate(-14.904 0)"/>
+              </g>
+              <g transform="translate(24.556 12.199)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(34.81 18.817)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(33.212 32.212)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(36.652 9.03)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(23.509 25.912)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(42.765 27.23)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+            </g>
+          </svg>
+          <span>
+            We gebruiken cookies om u de beste ervaring op onze website te geven. Door gebruik te maken van onze site beseft u dat we cookies gebruiken. U kunt dit op elk gewenst ogenblik veranderen. <a href="/nl/cookie-information" hreflang="nl">Meer informatie</a>
+          </span>
+        </p>
+      </div>
+
+      <div class="column one-third text-end">
+        <ul class="cookiebar-nav">
+          <li>
+            <button
+              type="button"
+              class="cookies-submit button"
+              title="Negeer cookiemelding">
+              Oke, ik snap het
+            </button>
+          </li>
+          <li class="dropup cookies-dropup">
+            <button
+              type="button"
+              class="cookies-settings button"
+              title="Bewerk cookie-instellingen">
+              Instellingen &nbsp;
+              <svg viewBox="0 0 16.509 16.993" width="18" height="18">
+                <title>Instellingen pictogram</title>
+                <path d="M175.051,8.283V.478a.478.478,0,1,0-.955,0v7.8a2.425,2.425,0,0,0,0,4.755v3.474a.478.478,0,1,0,.955,0V13.038a2.425,2.425,0,0,0,0-4.755Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,174.574,12.129Z" transform="translate(-166.302 0)"/>
+                <path d="M9.751,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.479a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752ZM9.274,8.123a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,9.274,8.123Z" transform="translate(-6.85 0)"/>
+                <path d="M339.351,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.483a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,338.874,8.123Z" transform="translate(-324.789 0)"/>
+              </svg>
+            </button>
+            <div class="cookies-dropup-menu text-start" tabindex="1">
+               <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Noodzakelijke cookies</p>
+      <p>Gebruikt om uw privacy voorkeuren te onthouden. Kunnen niet worden uitgeschakeld.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking cookies</p>
+      <p>We gebruiken deze voor analyse van website verkeer.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B test-cookies</p>
+      <p>We gebruiken deze Google Optimize cookies voor A/B testing op basis van analysegegevens.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Sla cookie-voorkeuren op">
+    Sla voorkeuren op
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+              <span class="arrow"></span>
+            </div>
+          </li>
+        </ul>
+      </div><!-- .column -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+
+</div><!-- #cookies-large-bar -->
+  <form class="cookie cookieprompt">
+
+  <fieldset class="container">
+
+    <legend class="cookie-heading">
+      Cookie-voorkeuren
+    </legend>
+
+    <button
+      type="button"
+      class="cookies-close"
+      title="Negeer cookiemelding">
+      <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+        <title>Sluiten pictogram</title>
+        <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+      </svg>
+    </button>
+
+    <p>
+      We gebruiken cookies om u de beste ervaring op onze website te geven.
+      <a
+        href="/nl/cookie-information" hreflang="nl"
+        title="Meer informatie over cookies"
+        target="_blank">Lees meer</a>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-submit"
+        title="Negeer cookiemelding">
+        Oke, ik snap het
+      </button>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-settings"
+        title="Bewerk cookie-instellingen">
+        Wijzig instellingen
+      </button>
+    </p>
+
+  </fieldset>
+
+</form>
+  <form class="cookie cookiepage">
+
+  <header class="bg-dark">
+    <div class="container">
+
+      <h4 class="cookie-heading">
+        Cookie-voorkeuren
+      </h4>
+
+      <button
+        type="button"
+        class="cookies-close"
+        title="Negeer cookiemelding">
+        <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+          <title>Sluiten pictogram</title>
+          <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="bg-light">
+    <div class="container section">
+        We gebruiken cookies om u de beste ervaring op onze website te geven. Door gebruik te maken van onze site beseft u dat we cookies gebruiken. U kunt dit op elk gewenst ogenblik veranderen. <a href="/nl/cookie-information" hreflang="nl">Meer informatie</a>
+    </div>
+  </div>
+
+  <div class="container section">
+     <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Noodzakelijke cookies</p>
+      <p>Gebruikt om uw privacy voorkeuren te onthouden. Kunnen niet worden uitgeschakeld.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking cookies</p>
+      <p>We gebruiken deze voor analyse van website verkeer.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B test-cookies</p>
+      <p>We gebruiken deze Google Optimize cookies voor A/B testing op basis van analysegegevens.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Sla cookie-voorkeuren op">
+    Sla voorkeuren op
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+  </div>
+
+</form>
+    <script src="/js/testing/setup.js?196779263"></script>
+    
+  <script src="/js/main.js?196779263"></script>
+
+
+
+  </body>
+</html>

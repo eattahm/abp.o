@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html 
+lang="sk"
+data-siteurl="https://adblockplus.org"
+dir="ltr"
+class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Tutorials</title>
+
+<link rel="canonical" href="https://adblockplus.org/tutorials">
+
+
+
+    
+<meta property="og:image" content="/img/adblockplus_promo.png">
+<meta property="og:title" content="Tutorials">
+
+<meta property="og:locale" content="sk_SK">
+
+  
+    <meta property="og:locale:alternate" content="de_DE">
+  
+
+  
+    <meta property="og:locale:alternate" content="en_US">
+  
+
+  
+    <meta property="og:locale:alternate" content="es_ES">
+  
+
+  
+    <meta property="og:locale:alternate" content="nl_NL">
+  
+
+  
+    <meta property="og:locale:alternate" content="ru_RU">
+  
+
+  
+
+  
+    <meta property="og:locale:alternate" content="zh_CN">
+  
+
+<meta property="og:url" content="https://adblockplus.org/sk/tutorials">
+
+
+<meta name="twitter:site" content="@AdblockPlus">
+<meta name="twitter:creator" content="@AdblockPlus">
+    
+  <link rel="stylesheet" href="/css/defaults.css?2896136256">
+  <link rel="stylesheet" href="/css/fonts.css?2896136256">
+  <link rel="stylesheet" href="/css/main.css?2896136256">
+  <link rel="stylesheet" href="/css/cookies.css?2896136256">
+
+
+
+
+
+    
+    <script>
+  window.eyeo = {
+    
+    
+    preventCookiePrompt: false,
+    userTesting: false
+  }
+</script>
+
+    <!--[if IE 9]>
+  <script src="/js/vendor/es5-shim.js?1605777279"></script>
+  <script src="/js/vendor/dom4.js?1605777279"></script>
+<![endif]-->
+
+    
+      
+<meta content="Chcete blokovať reklamy na YouTube? Alebo vymazať Facebok reklamy? Už nikdy nechcete vidieť blikajúci banner? Použite Adblock Plus tutoriály aby ste sa chránili pre nechcenou online reklamou." name="description">
+<meta content="Chcete blokovať reklamy na YouTube? Alebo vymazať Facebok reklamy? Už nikdy nechcete vidieť blikajúci banner? Použite Adblock Plus tutoriály aby ste sa chránili pre nechcenou online reklamou." property="og:description">
+
+    
+  </head>
+
+  <body>
+    
+
+
+
+<nav id="navbar">
+  <div class="container">
+    <a href="/en/" hreflang="en" id="navbar-logo">
+      <img
+        src="/img/navbar-logo.svg?4092169798"
+        alt="">
+      <span>Adblock <strong>Plus</strong></span>
+    </a>
+    <a href="#" id="navbar-menu-toggle">
+      <img
+        src="/img/menu-toggle.svg?4092169798"
+        alt="">
+    </a>
+    <ul id="navbar-menu">
+      
+        <li class="uppercase ">
+          <a href="/en/download" hreflang="en">Download</a>
+        </li>
+      
+        <li class="uppercase ">
+          <a href="/en/about" hreflang="en">O programe</a>
+        </li>
+      
+      <li class="uppercase">
+        <a href="https://help.eyeo.com" target="_blank">Help</a>
+      </li>
+      <li class="uppercase ">
+        <a href="/en/donate" hreflang="en">Donate</a>
+      </li>
+      <li id="navbar-locale-menubar">
+        <a id="navbar-locale-selected">
+          Slovenčina (SK)
+        </a>
+        <ul id="navbar-locale-menu">
+          
+            <li>
+              <a href="/de/tutorials" hreflang="de">
+                Deutsch (DE)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/en/tutorials" hreflang="en">
+                English (US)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/es/tutorials" hreflang="es">
+                Español (España) (ES)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/nl/tutorials" hreflang="nl">
+                Nederlands (NL)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ru/tutorials" hreflang="ru">
+                Русский (RU)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/sk/tutorials" hreflang="sk">
+                Slovenčina (SK)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_CN/tutorials" hreflang="zh-CN">
+                中文(简体) (CN)
+              </a>
+            </li>
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+    <div id="content" class="container content False">
+      
+        <h1>Tutorials</h1>
+      
+
+      
+        
+
+        
+        
+          <div class="toc">
+            
+          <ul>
+            
+              <li>
+                <a href="#adblocker">Čo je to blokovač reklám?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#block-ads">Ako blokovať reklamy</a>
+                
+              </li>
+            
+              <li>
+                <a href="#tracking">Ako vypnúť online sledovanie</a>
+                
+              </li>
+            
+              <li>
+                <a href="#malware">How to disable malware domains</a>
+                
+              </li>
+            
+              <li>
+                <a href="#disablesocial">How to disable social media buttons</a>
+                
+              </li>
+            
+              <li>
+                <a href="#block-ads-youtube">How to block ads on YouTube</a>
+                
+              </li>
+            
+              <li>
+                <a href="#block-ads-facebook">How to block ads on Facebook</a>
+                
+              </li>
+            
+          </ul>
+        
+          </div>
+        
+      
+
+      
+        
+
+
+
+<h2 id="adblocker">Čo je to blokovač reklám?</h2>
+
+<p>
+  Blokovač reklám pre Chrome alebo Firefox je rozšírenie (alebo add-on) do vášho prehliadača, ktoré pridáva funkciu filtrovania obsahu. Blokovače reklám nemajú žiadnu funkciu, dokiaľ mu to niečo &quot;nepovie&quot;, aby tento obsah blokoval. To &quot;niečo&quot; sú zoznamy filtrov ktoré &quot;hovoria&quot;, čo má blokovač reklám blokovať. Tieto zoznamy filtrov sú jednoducho zostavené z filtrov a sú vytvárané a obsluhované obrovskou online komunitou.
+</p>
+
+<h2 id="block-ads">Ako blokovať reklamy</h2>
+
+<p>
+  Hlavná funkcia Adblocku Plus je blokovanie reklám. Tieto tutoriály ukazujú ako blokovať nevhodnú reklamu v rôznych prehliadačoch.
+</p>
+
+<h3>Ako blokovať reklamy vo Firefoxe</h3>
+
+<p>
+  Adblock Plus pre Firefox vám umožňuje zbaviť vás všetkej reklamy, ako aj YouTube reklamy, Facebook reklamy, bannery, vyskakovacie okná a oveľa viac. Ak ešte nemáte nainštalovaný Mozilla Firefox prehliadač, prosím <a href="https://www.mozilla.org/firefox/new/">nanštaluujte si ho priamo od Mozilly</a>. Ak chcete blokovať reklamy v inom prehliadači prosím pozrite si tutoriály ako nainštalovať Adblock Plus pre Google Chrome a Operu.
+</p>
+
+<p>
+  Najľahšia cesta ako pridať Adblock Plus do Firefoxu je jednoducho <a href="/en/adblock-plus-firefox" hreflang="en">ísť na inštalačnú stránku Firefoxu </a> a kliknúť na inštalačné tlačítko. Na ľavej strane vášho prehliadača sa otvorí malé okno, prosím kliknite na &quot;Povoľ&quot;. Neskôr sa zobrazí iné malé okno kde musíte stlačiť tlačidlo &quot;Inštalovať teraz&quot;. Toto pridá Adblock Plus do vášho prehliadača a odteraz budete chránený pred reklamou.
+</p>
+
+<p>
+  Môžete taktiež <a href="https://addons.mozilla.org/firefox/addon/adblock-plus">nainštalovať Adblock Plus cez Mozillu Firefox</a>. Najprv choďte  First, go to Adblock Plus in the Mozilla Add-ons section. Then, when you have opened the link, the following screen appears:
+</p>
+
+<img src="/en/images/tutorials_blockads_ff.png?4092169798">
+
+<p>
+  Prosím kliknite na veľké zelené tlačidlo &quot;Inštalovať pre Firefox&quot;, aby ste nainštalovali Adblock Plus. Potom vám Firefox oznámi &quot;Inštalujte doplnky iba od autorov, ktorým dôverujete.&quot;, prosím potvrďte toto kliknutím na tlačidlo &quot;Inštalovať&quot;. Po potvrdení tohto okna budú všetky reklamy blokované.
+</p>
+
+<p>
+  Predvolený zoznam filtrov bude stiahnutý hneď po inštalácii Adblocku Plus, zoznam filtrov je viazaný na vašu lokalizáciu. Ak chcete pridať iný zoznam filtrov, <a href="/en/getting_started#add-subscription" hreflang="en">prečítajte si viac o tom tu</a>. Pre viac možností ako vytvorenie svojho vlastného filtra, prosím <a href="/en/filters" hreflang="en">choďte sem</a>.
+</p>
+
+<h3>Ako blokovať reklamy v Google Chrome</h3>
+
+<p>
+  Momentálne, Adblock Plus používa denne 10 miliónov ľudí v prehliadači Google Chrome. Adblock Plus blokuje všetku dotieravú reklamu na webe, ako napríklad YouTube reklamy, blikajúce bannery, Facebook reklamy a oveľa viac. Blokuje taktiež vyskakovacie okná, ktoré nie sú automaticky blokované vašim prehliadačom. Tento tutoriál vám ukáže ako nainštalovať Adblock Plus a ako blokovať reklamy v Chrome.
+</p>
+
+<h4>Pridanie Adblocku Plus do Google Chrome</h4>
+
+<p>
+  Existujú dve cesty ako pridať Adblock Plus do Chromu. Môžete si ho pridať vtedy, ak navštívite <a href="/en/adblock-plus-chrome" hreflang="en">inštalačnú stránku </a> a kliknete na zelené inštalačné tlačidlo. Po kliknutí na tlačidlo sa vám objaví malé okno o inštalácii Adblocku Plus do prehliadača. Prosím kliknite na &quot;Pridať&quot; aby ste nainštalovali Adblock Plus. Odteraz ste chránený pred reklamou.
+</p>
+
+<p>
+  Adblock Plus si môžete taktiež pridať cez Google Chrome obchod. Aby ste ho nainštalovali cez obchod, <a href="https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb">navštívte obchod.</a>. Kliknite na &quot;Pridať do Chrome&quot;, a neskôr kliknite na &quot;Pridať&quot;.
+</p>
+
+<p>
+  Adblock Plus automaticky nainštaluje predvolený zoznam filtrov, založený na vašom jazyku. Ak sa chcete naučiť ako pridať svoje vlastné filtre, môžete <a href="/en/getting_started#add-subscription" hreflang="en">si prečítať o tom tu</a>.  Pre viac možností, ako napríklad vypnutie sledovania, kliknite <a href="/sk/subscriptions" hreflang="sk">sem</a>.
+</p>
+
+<h3>Ako blokovať reklamy v Opere</h3>
+
+<p>
+  Aby sme blokovali reklamy v Opere, potrebujete nainštalovať Adblock Plus. Najľahšia cesta je <a href="https://addons.opera.com/en/extensions/details/opera-adblock/">ísť na na stránku Opery </a> a kliknúť na &quot;Pridať do Opery&quot;. Hneď na to sa objaví vyskakvacie okno, ktoré vás informuje o pridaní Adblocku Plus do Opery. Kliknite na tlačidlo &quot;Insštalovať&quot; aby ste sa chránili pred reklamou.
+</p>
+
+<h3>Ako blokovať reklamy na Androide</h3>
+
+<p>
+  Ak chcete blokovať všetky reklamy na zariadeniach s nainštalovaným OS Android, choďte na <a href="https://adblockplus.org">našu domovskú stránku </a> s vašim Android zariadením a stiahnite si aplikáciu &quot;Adblock Plus&quot;. Predtým ako ju stiahnete, uistite sa že máte <a href="/en/android-install" hreflang="en">povolené inštalovanie aplikácii z neznámych zdrojov</a>. Ak nemáte zariadenie s rootom, pravdepodobne budete potrebovať <a href="/sk/android-about#general" hreflang="sk">nakonfigurovať proxy manuálne</a>. Po týchto krokoch budete chránený pred online reklamou.
+</p>
+
+<h2 id="tracking">Ako vypnúť online sledovanie</h2>
+
+<p>
+  Existuje veľa firiem ktoré zbiera o vás dáta o prehliadaní internetu na veľmi vela stránkach. Vaša história je zaznamenávaná a zbieraná. Niektorí s týmto nemajú problém, pretože firmy na základe zozbieraných údajov servírujú reklamu, ktorá je viac zameraná na vašu osobu. Ak nechcete byť sledovaný. stačí použiť Adblock Plus a nikto vás už nebude sledovať. Odvolávajúc sa na <a href="https://cyberlaw.stanford.edu/node/6730">štúdium Stanfordskej univerzity</a>, Adblock Plus je najlepšie riešenie ako sa brániť proti sledovaniu na internete.
+</p>
+
+<p>
+  See <a href="#disablesocial">How to disable social media button</a> if you want to disable tracking from companies like Facebook and Google by removing the social media buttons from all websites.
+</p>
+
+<h3>Disable online tracking in Firefox</h3>
+
+<p>
+  Online tracking can be disabled by adding a new filterlist subscription to Adblock Plus. The so-called &quot;EasyPrivacy&quot; filter will block all tracking requests made by websites. To add this list to Adblock Plus, simply <a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Feasylist-downloads.adblockplus.org%2Feasyprivacy%2Beasylist.txt&amp;title=EasyPrivacy%2BEasyList">click here</a>, and click &quot;Add subscription&quot;.
+</p>
+
+<h3>Disable online tracking in Google Chrome</h3>
+
+<p>
+  In Google Chrome, Adblock Plus can disable all unwanted tracking practices from advertising companies. Disabling tracking can be done by installing and enabling the &quot;EasyPrivacy&quot; filterlist subscription, by <a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Feasylist-downloads.adblockplus.org%2Feasyprivacy%2Beasylist.txt&amp;title=EasyPrivacy%2BEasyList">opening this dialog</a>. Click on &quot;Add&quot; to protect yourself against tracking in Chrome.
+</p>
+
+<h2 id="malware">How to disable malware domains</h2>
+
+<p>
+  Malware is currently one of the biggest online threats. Without the user knowing, bits of software can be installed on your hard-drive which will open up your computer for all kinds of cyber criminality. If your computer is infected by malware, your online banking credentials, credit card information, personal identification numbers, passwords etc. are all at risk. Malware can be installed on your computer <a href="http://www.digitaltrends.com/computing/yahoo-fox-and-google-inadvertently-spread-malware-through-ads/">through online ads</a>, even the Google and Yahoo ads. You can use Adblock Plus to protect yourself against malware, Trojan horses, worms, spy- and adware and viruses.
+</p>
+
+<h3>Disable malware domains on Firefox</h3>
+
+<p>
+  Disabling known malware domains is done by simply adding a new filterlist subscription to Adblock Plus. To add this list to Adblock Plus, simply <a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Feasylist-downloads.adblockplus.org%2Fmalwaredomains_full.txt&amp;title=Malware%20Domains">click here</a>, and click &quot;Add subscription&quot;.
+</p>
+
+<h3>Disable malware domains on Chrome</h3>
+
+<p>
+  By adding a new filterlist subscription to Chrome, Adblock Plus can disable all the domains, known to spread malware. To add this list to Adblock Plus, simply <a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Feasylist-downloads.adblockplus.org%2Fmalwaredomains_full.txt&amp;title=Malware%20Domains">click here</a>, and click &quot;Add&quot; in the filterlist settings menu of our ad block for Chrome.
+</p>
+
+<h2 id="disablesocial">How to disable social media buttons</h2>
+
+<p>
+  Almost every website today contains buttons of social media platforms, such as Facebook, Twitter, Google + and others. Even if you never click these buttons, your browsing data is still being transferred to these platforms in order to create a profile based on your browsing habits.
+</p>
+
+<p>
+  If you want to browse the web without being observed by the social media websites, Adblock Plus offers an easy solution to remove these buttons.
+</p>
+
+<h3>Disable social media buttons in Mozilla Firefox</h3>
+
+<p>
+  If you want to block social media buttons in Firefox, just follow these easy steps: simply <a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Feasylist-downloads.adblockplus.org%2Ffanboy-social.txt&amp;title=Fanboy&#39;s%20Social%20Blocking%20List">click here</a> and choose &quot;Add subscription&quot;.
+</p>
+
+<h3>Disable social media buttons in Google Chrome</h3>
+
+<p>
+  In Adblock Plus for Google Chrome it is very simple to remove social media buttons by adding a new filterlist to subscriptions. All you have to do is simply <a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Feasylist-downloads.adblockplus.org%2Ffanboy-social.txt&amp;title=Fanboy&#39;s%20Social%20Blocking%20List">click here</a>, and then click &quot;Add&quot; in the filterlist settings of Adblock Plus.
+</p>
+
+<h2 id="block-ads-youtube">How to block ads on YouTube</h2>
+
+<p>
+  One of the greatest online annoyances is the 30-second commercials you have to sit through to see a 20-second movie on YouTube. Although people are complaining about this continuously, it is expected that this way of advertising will only grow in the near future. With Adblock Plus, it is very easy to block the video ads on Youtube. Just install Adblock Plus and all YouTube video ads will be blocked.
+</p>
+
+<p>
+  For Google Chrome, Adblock Plus can be installed by <a href="/en/adblock-plus-chrome" hreflang="en">visiting the Chrome installation page</a> and clicking on the install button. After the small pop-up window pops up, click on &quot;Add&quot;. Adblock Plus is now automatically blocking all annoying YouTube video ads.
+</p>
+
+<p>
+  For Firefox, you can install Adblock Plus by <a href="/en/adblock-plus-firefox" hreflang="en">visiting the Firefox installation page</a> and clicking on the install button. Confirm the installation by clicking &quot;Allow&quot; on the first one, and &quot;Install Now&quot; on the second. Out of the box, Adblock Plus automatically blocks all those annoying video ads from YouTube.
+</p>
+
+<h2 id="block-ads-facebook">How to block ads on Facebook</h2>
+
+<p>
+  Getting tired of ads cluttering your Facebook timeline? Use Adblock Plus to block all Facebook ads. After installation, Adblock Plus automatically blocks all ads, including Facebook advertising.
+</p>
+
+<p>
+  For Google Chrome, Adblock Plus can be installed by <a href="/en/adblock-plus-chrome" hreflang="en">visiting the Chrome installation page</a> and clicking on the install button. Just confirm the installation by clicking on &quot;Add&quot;, and refresh Facebook. You will see that all Facebook ads will be blocked!
+</p>
+
+<p>
+  Adblock Plus for Firefox can be installed by <a href="/en/adblock-plus-firefox" hreflang="en">visiting the Firefox installation page</a> and clicking on the install button. Firefox will ask you to confirm the installation of the add-on twice, so click on &quot;Allow&quot; and then &quot;Install Now&quot;. After the installation process, Adblock Plus will be blocking all those annoying Facebook ads.
+</p>
+
+      
+    </div>
+
+    
+
+<footer id="footer" class="content">
+  <div class="container">
+    <div class="row">
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Download</h5>
+        <ul>
+          <li><a href="/en/adblock-plus-chrome" hreflang="en">Adblock Plus for Chrome</a></li>
+          <li><a href="/en/adblock-plus-firefox" hreflang="en">Adblock Plus for Firefox</a></li>
+          <li><a href="/en/ad-blocker-safari" hreflang="en">Adblock Plus for Safari</a></li>
+          <li><a href="/en/adblock-plus-opera" hreflang="en">Adblock Plus for Opera</a></li>
+          <li><a href="/en/android-install" hreflang="en">Adblock Browser for Android</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Zdroje</h5>
+        <ul>
+          
+            <li><a href="/en/acceptable-ads" hreflang="en">Acceptable Ads</a></li>
+          
+            <li><a href="/sk/documentation" hreflang="sk">Dokumentácia</a></li>
+          
+            <li><a href="/en/deployments" hreflang="en">For admins</a></li>
+          
+            <li><a href="/sk/bugs" hreflang="sk">Nahláste nám chybu</a></li>
+          
+          
+          <li><a href="https://help.eyeo.com/en/adblockplus/how-to-write-filters" target="_blank" hreflang="en">Writing Adblock Plus filters</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Komunita</h5>
+        <ul>
+          <li><a href="/sk/contribute" hreflang="sk">Pridajte sa</a></li>
+          <li><a href="https://adblockplus.org/releases/" hreflang="en">Oznámenia</a></li>
+          <li><a href="https://adblockplus.org/blog/" hreflang="en">Blog</a></li>
+          <li><a href="https://adblockplus.org/forum/" hreflang="en">Fórum</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Vývoj</h5>
+        <ul>
+          <li><a href="https://gitlab.com/eyeo/adblockplus">Zdrojový kód</a></li>
+          
+  
+    <li><a href="/sk/tools" hreflang="sk">Prostriedky</a></li>
+  
+
+          <li><a href="https://eyeo.com/jobs/" hreflang="en">Jobs</a></li>
+          <li><a href="/en/partner-integrations" hreflang="en">Partner Integrations</a></li>
+        </ul>
+      </nav>
+
+      <nav id="social-list" class="column">
+        <h5 class="footer-social-heading">Follow us on</h5>
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/AdblockPlus"
+              title="Follow Adblock Plus on Twitter"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-twitter-glyphicon.png?4092169798"
+                alt="Twitter glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/user/AdblockPlusOfficial"
+              title="Subscribe to Adblock Plus on YouTube"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-youtube-glyphicon.png?4092169798"
+                alt="YouTube glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/adblockplus"
+              title="Follow Adblock Plus on Facebook"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-facebook-glyphicon.png?4092169798"
+                alt="Facebook glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/adblockplus/"
+              title="Follow Adblock Plus on Instagram"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-instagram-glyphicon.png?4092169798"
+                alt="Instagram glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://vk.com/adblockplusofficial"
+              title="Follow Adblock Plus on VK"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-vk-glyphicon.png?4092169798"
+                alt="VK glyphicon">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div> 
+
+    <div id="footer-legal">
+      <p id="copyright-notice">Copyright © 2020 All rights reserved. Adblock Plus<sup>®</sup> is a registered trademark of <a href="https://eyeo.com">eyeo GmbH</a>.</p>
+      <ul id="legal-list">
+        
+          
+            <li><a href="/en/terms" hreflang="en">Terms of use</a></li>
+          
+            <li><a href="/en/privacy" hreflang="en">Zásady ochrany osobných údajov</a></li>
+          
+            <li><a href="/sk/imprint" hreflang="sk">Právne upozornenie</a></li>
+          
+        
+      </ul>
+    </div> 
+  </div> 
+</footer> 
+    <div id="cookiebar" class="cookie cookiebar">
+  <div class="container">
+    <div class="row">
+
+      <div class="column two-thirds">
+        <p class="cookiebar-text">
+          <svg viewBox="0 0 37.796 41.279" width="38" height="42">
+            <title>Cookie notice</title>
+            <g transform="translate(-14.904 0)">
+              <g transform="translate(14.904 0)">
+                <path d="M52.468,31.165a6.029,6.029,0,0,1-1.514-4.908.935.935,0,0,0-.626-1.019,6.029,6.029,0,0,1-3.244-8.8A.935.935,0,0,0,47,15.368a6.039,6.039,0,0,1-1.112-5.609A.935.935,0,0,0,45.4,8.647,6.029,6.029,0,0,1,42.129,2.01.935.935,0,0,0,41.484.935a20.682,20.682,0,1,0,11.049,31.38A.935.935,0,0,0,52.468,31.165Zm-3.739,2.814A18.759,18.759,0,1,1,40.148,2.524,7.9,7.9,0,0,0,43.887,10a7.889,7.889,0,0,0,1.281,6.029A7.917,7.917,0,0,0,46.682,25.1a7.823,7.823,0,0,0,2.346,1.617,7.889,7.889,0,0,0,1.57,5.123A18.6,18.6,0,0,1,48.729,33.979Z" transform="translate(-14.904 0)"/>
+              </g>
+              <g transform="translate(24.556 12.199)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(34.81 18.817)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(33.212 32.212)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(36.652 9.03)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(23.509 25.912)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(42.765 27.23)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+            </g>
+          </svg>
+          <span>
+            We use some cookies to give you the best experience on our website. By using our site you are aware that we are using cookies and you can change this any time. <a href="/en/cookie-information" hreflang="en">Learn more</a>
+          </span>
+        </p>
+      </div>
+
+      <div class="column one-third text-end">
+        <ul class="cookiebar-nav">
+          <li>
+            <button
+              type="button"
+              class="cookies-submit button"
+              title="Dismiss cookie notification">
+              Ok, got it
+            </button>
+          </li>
+          <li class="dropup cookies-dropup">
+            <button
+              type="button"
+              class="cookies-settings button"
+              title="Edit cookie settings">
+              Settings &nbsp;
+              <svg viewBox="0 0 16.509 16.993" width="18" height="18">
+                <title>Settings icon</title>
+                <path d="M175.051,8.283V.478a.478.478,0,1,0-.955,0v7.8a2.425,2.425,0,0,0,0,4.755v3.474a.478.478,0,1,0,.955,0V13.038a2.425,2.425,0,0,0,0-4.755Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,174.574,12.129Z" transform="translate(-166.302 0)"/>
+                <path d="M9.751,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.479a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752ZM9.274,8.123a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,9.274,8.123Z" transform="translate(-6.85 0)"/>
+                <path d="M339.351,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.483a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,338.874,8.123Z" transform="translate(-324.789 0)"/>
+              </svg>
+            </button>
+            <div class="cookies-dropup-menu text-start" tabindex="1">
+               <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Necessary cookies</p>
+      <p>Used to remember your privacy preferences. They cannot be switched off.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking cookies</p>
+      <p>We use these to analyze website traffic.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B testing cookies</p>
+      <p>We use these Google Optimize cookies for A/B testing based on the analytics data.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Save cookie preferences">
+    Save preferences
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+              <span class="arrow"></span>
+            </div>
+          </li>
+        </ul>
+      </div><!-- .column -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+
+</div><!-- #cookies-large-bar -->
+  <form class="cookie cookieprompt">
+
+  <fieldset class="container">
+
+    <legend class="cookie-heading">
+      Cookie preferences
+    </legend>
+
+    <button
+      type="button"
+      class="cookies-close"
+      title="Dismiss cookie notification">
+      <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+        <title>Close icon</title>
+        <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+      </svg>
+    </button>
+
+    <p>
+      We use some cookies to give you the best experience on our website.
+      <a
+        href="/en/cookie-information" hreflang="en"
+        title="More information about cookies"
+        target="_blank">Read more</a>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-submit"
+        title="Dismiss cookie notification">
+        Ok, got it
+      </button>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-settings"
+        title="Edit cookie settings">
+        Change settings
+      </button>
+    </p>
+
+  </fieldset>
+
+</form>
+  <form class="cookie cookiepage">
+
+  <header class="bg-dark">
+    <div class="container">
+
+      <h4 class="cookie-heading">
+        Cookie preferences
+      </h4>
+
+      <button
+        type="button"
+        class="cookies-close"
+        title="Dismiss cookie notification">
+        <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+          <title>Close icon</title>
+          <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="bg-light">
+    <div class="container section">
+        We use some cookies to give you the best experience on our website. By using our site you are aware that we are using cookies and you can change this any time. <a href="/en/cookie-information" hreflang="en">Learn more</a>
+    </div>
+  </div>
+
+  <div class="container section">
+     <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Necessary cookies</p>
+      <p>Used to remember your privacy preferences. They cannot be switched off.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking cookies</p>
+      <p>We use these to analyze website traffic.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B testing cookies</p>
+      <p>We use these Google Optimize cookies for A/B testing based on the analytics data.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Save cookie preferences">
+    Save preferences
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+  </div>
+
+</form>
+    <script src="/js/testing/setup.js?1605777279"></script>
+    
+  <script src="/js/main.js?1605777279"></script>
+
+
+
+  </body>
+</html>

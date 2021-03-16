@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html 
+lang="ru"
+data-siteurl="https://adblockplus.org"
+dir="ltr"
+class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Блокировать уведомления о файлах cookie | Adblock Plus</title>
+
+  <meta name="description" content="Добавьте функцию «Меня не волнуют файлы cookie» в Adblock Plus и заблокируйте уведомления о файлах cookie. Просматривайте веб-страницы в Сети быстрее, меньше задержек, больше контроля.">
+
+<link rel="canonical" href="https://adblockplus.org/block-cookie-warnings">
+
+
+
+    
+<meta property="og:image" content="/img/abp-cookies-page-facebook.png">
+<meta property="og:title" content="Блокировать уведомления о файлах cookie | Adblock Plus">
+
+  <meta property="og:description" content="Добавьте функцию «Меня не волнуют файлы cookie» в Adblock Plus и заблокируйте уведомления о файлах cookie. Просматривайте веб-страницы в Сети быстрее, меньше задержек, больше контроля.">
+
+<meta property="og:locale" content="ru_RU">
+
+  
+    <meta property="og:locale:alternate" content="ar_AR">
+  
+
+  
+    <meta property="og:locale:alternate" content="de_DE">
+  
+
+  
+    <meta property="og:locale:alternate" content="el_GR">
+  
+
+  
+    <meta property="og:locale:alternate" content="en_US">
+  
+
+  
+    <meta property="og:locale:alternate" content="es_ES">
+  
+
+  
+    <meta property="og:locale:alternate" content="fr_FR">
+  
+
+  
+    <meta property="og:locale:alternate" content="hu_HU">
+  
+
+  
+    <meta property="og:locale:alternate" content="it_IT">
+  
+
+  
+    <meta property="og:locale:alternate" content="ja_JP">
+  
+
+  
+    <meta property="og:locale:alternate" content="ko_KR">
+  
+
+  
+    <meta property="og:locale:alternate" content="nl_NL">
+  
+
+  
+    <meta property="og:locale:alternate" content="pl_PL">
+  
+
+  
+    <meta property="og:locale:alternate" content="pt_BR">
+  
+
+  
+
+  
+    <meta property="og:locale:alternate" content="tr_TR">
+  
+
+  
+    <meta property="og:locale:alternate" content="zh_CN">
+  
+
+<meta property="og:url" content="https://adblockplus.org/ru/block-cookie-warnings">
+
+
+<meta name="twitter:site" content="@AdblockPlus">
+<meta name="twitter:creator" content="@AdblockPlus">
+    
+  <link rel="stylesheet" href="/css/defaults.css?1065862836">
+  <link rel="stylesheet" href="/css/fonts.css?1065862836">
+  <link rel="stylesheet" href="/css/main.css?1065862836">
+  <link rel="stylesheet" href="/css/cookies.css?1065862836">
+
+
+
+
+
+    
+    <script>
+  window.eyeo = {
+    
+    
+    preventCookiePrompt: false,
+    userTesting: false
+  }
+</script>
+
+    <!--[if IE 9]>
+  <script src="/js/vendor/es5-shim.js?2756035842"></script>
+  <script src="/js/vendor/dom4.js?2756035842"></script>
+<![endif]-->
+
+    
+      
+  <style>
+    main .one-half {
+      width: 100%;
+    }
+
+    @media (min-width: 1366px) {
+      main .one-half {
+        width: 50%;
+      }
+    }
+
+    .hero.container {
+      margin-top: 1em;
+    }
+
+    @media (min-width: 768px) {
+      .hero.container {
+        width: 75%;
+        mrgin-top: 0;
+        margin-bottom: 6em;
+      }
+    }
+
+    @media (min-width: 1366px) {
+      main .container {
+        width: auto;
+      }
+
+      .hero.container {
+        width: 80%;
+        margin-top: 6em;
+        margin-bottom: 12em;
+      }
+    }
+
+    @media (min-width: 1920px) {
+      .hero.container {
+        width: 100%;
+      }
+    }
+
+    /* overrride - prevent full-width buttons */
+    .button {
+      display: inline-block;
+      width: auto;
+    }
+
+    .content a,
+    .content a:visited {
+      color: inherit;
+    }
+
+    a.button,
+    a.button:visited {
+      color: #fff;
+    }
+
+    .hero-image {
+      padding: 2em;
+      padding-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+      .hero-image {
+        height: 24em;
+        margin-top: 4em;
+      }
+    }
+
+    @media (min-width: 1366px) {
+      .hero-image {
+        height: 26em;
+        margin-top: 0.5em;
+      }
+    }
+
+    @media (min-width: 1920px) {
+      .hero-image {
+        margin-left: 24em;
+      }
+    }
+
+    @media (min-width: 1920px) {
+      [dir="rtl"] .hero-image {
+        margin-left: -22em;
+      }
+    }
+
+    .hero-text .note {
+      margin-top: 0;
+    }
+    .hero-text .note.hide {
+      display: none;
+    }
+
+    .hero-text .button {
+      padding: 0.6em 1em;
+      border-radius: 0.4em;
+      box-shadow: 0 3px 3px #ccc;
+      margin-bottom: 2em;
+    }
+
+    .hero-text .button-container {
+      margin-top: 2em;
+    }
+
+    .hero-text .download-abp {
+      margin-top: 3em;
+    }
+
+    .hero-text .button-container.hide {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      .hero-text .button-container {
+        display: inline-block;
+        margin-top: 2em;
+      }
+    }
+
+    @media (min-width: 1920px) {
+      .hero-text {
+        padding-right: 20em;
+      }
+
+      [dir="rtl"] .hero-text {
+        padding-right: 0;
+        padding-left: 20em;
+      }
+    }
+
+    .error-msg:not(.visible) {
+      display: none;
+    }
+
+    .button-text,
+    .button-image {
+      vertical-align: middle;
+    }
+
+    .button-text {
+      padding-left: 0.5em;
+    }
+
+    [dir="rtl"] .button-text {
+      padding-left: 0;
+      padding-right: 0.5em;
+    }
+
+    .button.add {
+      background-color: #503018;
+      margin-right: 2em;
+    }
+
+    [dir="rtl"] .button.add {
+      margin-right: 0;
+      margin-left: 2em;
+    }
+
+    .button.download {
+      background-color: #0aad03;
+    }
+
+    .button.add .button-image,
+    .button.download .button-image {
+      width: 2em;
+      height: 2em;
+    }
+
+    .download-abp {
+      position: relative;
+    }
+
+    .download-abp .prompt {
+      position: absolute;
+      top: -2em;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .download-abp .prompt {
+        text-align: left;
+        white-space: nowrap;
+      }
+
+      [dir="rtl"] .download-abp .prompt {
+        text-align: right;
+      }
+    }
+
+    .abp-installed .download-abp {
+      display: none;
+    }
+
+    .bg-curve {
+      position: absolute;
+      left: 0;
+      top: -2em;
+      width: 100%;
+      height: 2em;
+      background-image: url(/img/bg-curve.svg);
+      background-size: 100% 100%;
+    }
+
+    @media (min-width: 768px) {
+      .bg-curve {
+        height: 4em;
+        top: -4em;
+      }
+    }
+
+    @media (min-width: 1366px) {
+      .bg-curve {
+        top: -7em;
+        height: 7em;
+      }
+    }
+
+    @media (min-width: 1920px) {
+      .bg-curve {
+        top: -6em;
+        height: 6em;
+      }
+    }
+
+    .how-to .content h2 {
+      margin-bottom: 1em;
+    }
+
+    @media (min-width: 1920px) {
+      .how-to .content h2 {
+        margin-bottom: 0.75em;
+      }
+    }
+
+    .how-to-container {
+      margin: 0 auto;
+    }
+
+    @media (min-width: 768px) {
+      .how-to-container {
+        width: 42.5em;
+      }
+    }
+
+    @media (min-width: 1366px) {
+      .how-to-container {
+        width: 50em;
+      }
+    }
+
+    .how-to {
+      margin-top: 4em;
+    }
+
+    .bg-grey {
+      position: relative;
+      background-color: #ececec;
+    }
+
+    @media (min-width: 768px) {
+      .how-to-add img,
+      .how-to-remove img{
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    @media (min-width: 1366px) {
+      .how-to {
+        padding-bottom: 2em;
+      }
+
+      .how-to h2 {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .how-to-add {
+        margin-right: 1em;
+        margin-left: -1em;
+      }
+
+      [dir="rtl"] .how-to-add {
+        margin-left: 1em;
+        margin-right: -1em;
+      }
+
+      .how-to-add img {
+        display: inline;
+      }
+    }
+
+    @media (min-width: 768px) {
+      h2 {
+        padding: 0 4em;
+      }
+
+      .download-abp {
+        margin-top: 1em;
+      }
+    }
+
+    .more-filters {
+      padding: 1em 0;
+    }
+
+    @media (min-width: 768px) {
+      .more-filters {
+        width: 23.5em;
+        margin: 1em auto 4em auto;
+      }
+    }
+
+    @media (min-width: 1366px) {
+      .more-filters {
+        width: auto;
+        margin-left: -1em;
+        margin-bottom: 2em;
+      }
+
+      [dir="rtl"] .more-filters {
+        margin-left: 0;
+        margin-right: -1em;
+      }
+    }
+
+  </style>
+
+    
+  </head>
+
+  <body>
+    
+
+
+
+<nav id="navbar">
+  <div class="container">
+    <a href="/ru/" hreflang="ru" id="navbar-logo">
+      <img
+        src="/img/navbar-logo.svg?256973886"
+        alt="">
+      <span>Adblock <strong>Plus</strong></span>
+    </a>
+    <a href="#" id="navbar-menu-toggle">
+      <img
+        src="/img/menu-toggle.svg?256973886"
+        alt="">
+    </a>
+    <ul id="navbar-menu">
+      
+        <li class="uppercase ">
+          <a href="/ru/download" hreflang="ru">Загрузить</a>
+        </li>
+      
+        <li class="uppercase ">
+          <a href="/en/about" hreflang="en">O нас</a>
+        </li>
+      
+      <li class="uppercase">
+        <a href="https://help.eyeo.com" target="_blank">Cправка</a>
+      </li>
+      <li class="uppercase ">
+        <a href="/ru/donate" hreflang="ru">Пожертвовать</a>
+      </li>
+      <li id="navbar-locale-menubar">
+        <a id="navbar-locale-selected">
+          Русский (RU)
+        </a>
+        <ul id="navbar-locale-menu">
+          
+            <li>
+              <a href="/ar/block-cookie-warnings" hreflang="ar">
+                العربية (AR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/de/block-cookie-warnings" hreflang="de">
+                Deutsch (DE)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/el/block-cookie-warnings" hreflang="el">
+                Ελληνικά (GR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/en/block-cookie-warnings" hreflang="en">
+                English (US)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/es/block-cookie-warnings" hreflang="es">
+                Español (España) (ES)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/fr/block-cookie-warnings" hreflang="fr">
+                Français (FR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/hu/block-cookie-warnings" hreflang="hu">
+                Magyar (HU)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/it/block-cookie-warnings" hreflang="it">
+                Italiano (IT)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ja/block-cookie-warnings" hreflang="ja">
+                日本語 (JP)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ko/block-cookie-warnings" hreflang="ko">
+                한국어 (KR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/nl/block-cookie-warnings" hreflang="nl">
+                Nederlands (NL)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/pl/block-cookie-warnings" hreflang="pl">
+                Polski (PL)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/pt_BR/block-cookie-warnings" hreflang="pt-BR">
+                Português (Brasil) (BR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ru/block-cookie-warnings" hreflang="ru">
+                Русский (RU)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/tr/block-cookie-warnings" hreflang="tr">
+                Türkçe (TR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_CN/block-cookie-warnings" hreflang="zh-CN">
+                中文(简体) (CN)
+              </a>
+            </li>
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+    
+      
+
+
+
+
+
+
+
+<main>
+  <section class="container hero">
+    <div class="row">
+      <div class="column one-half content text-center">
+        <img alt="Значок cookie"
+          src="/img/cookie-notice.svg?256973886" class="hero-image">
+      </div>
+      <div class="column one-half content hero-text">
+        <h1 class="hero-heading">Устали от файлов cookie на каждой странице?</h1>
+        <p>Добавьте популярную функцию ‘<a href="https://i-dont-care-about-cookies.eu/" target="_blank">Меня не волнуют файлы cookie</a>’ в Adblock Plus и получите ещё больший контроль над использованием Интернета.</p>
+        <p>Вы можете заблокировать эти уведомления о файлах cookie и работать быстрее и без проблем. Если у вас ещё нет Adblock Plus, сначала добавьте его, а затем воспользуйтесь этой замечательной функцией.</p>
+        <div class="error-msg">
+            <p><strong>В настоящий момент данная функция еще недоступна для вашего браузера. При этом вы по-прежнему можете блокировать надоедливую рекламу с помощью Adblock Plus.</strong></p>
+            <a href="/ru/" hreflang="ru" class="button icon-button download" title="Перейти к скачиванию">
+              <img class="button-image" src="/img/dl-button-safari.svg?256973886" alt="">
+              <span class="button-text">Перейти к скачиванию</span>
+            </a>
+        </div>
+        <div class="subscribe-idcac button-container">
+          <a href="https://subscribe.adblockplus.org/?location=https%3A//www.i-dont-care-about-cookies.eu/abp/&amp;title=I%20don%27t%20care%20about%20cookies" target="_blank" class="button icon-button add" title="Добавьте функцию «Меня не волнуют файлы cookie» в Adblock Plus">
+            <img src="/img/cookie.svg?256973886" alt="" class="button-image">
+            <span class="button-text">Добавить функцию в ABP</span>
+          </a>
+        </div>
+
+        <div class="download-abp button-container">
+          <small class="prompt"><strong>Всё ещё не используете Adblock Plus?</strong></small>
+            <a href="/ru/" hreflang="ru" class="button icon-button download" title="Перейти к скачиванию">
+              <img class="button-image" src="/img/dl-button-chrome.svg?256973886" alt="" hidden>
+              <span class="button-text">Перейти к скачиванию</span>
+            </a>
+        </div>
+        <p class="note"><small><strong>Примечание:</strong> добавив эту функцию и заблокировав эти запросы, вы отказываетесь от своего права на получение уведомлений об использовании файлов cookie и редактирование настроек файлов cookie на отдельных веб-сайтах.</small></p>
+      </div>
+    </div>
+  </section>
+  <div class="bg-grey">
+    <div class="bg-curve"></div>
+    <div class="container how-to">
+      <div class="how-to-container">
+        <div class="row">
+          <section class="column one-half content how-to-add">
+            <h2 class="h1">Как добавить функцию</h2>
+            <img alt="Снимок экрана с изображением окна подтверждения добавления функции в Adblock Plus" src="/img/how-to-add-feature.png?256973886" srcset="/img/how-to-add-feature-2x.png 2x">
+          </section>
+
+          <section class="column one-half content how-to-remove">
+            <h2 class="h1">Как её убрать</h2>
+            <img alt="Снимок экрана, показывающий, где была установлена функция" src="/img/how-to-remove-feature.png?256973886" srcset="/img/how-to-remove-feature-2x.png 2x">
+          </section>
+        </div>
+        <div class="row">
+          <div class="column content">
+            <div class="more-filters">
+              Функция автоматически сохраняется в разделе MORE FILTERS [БОЛЬШЕ ФИЛЬТРОВ]. Вы можете её там найти, если захотите её удалить.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="/js/vendor/bowser.js?2756035842"></script>
+
+<script>
+
+addEventListener('load', function() {
+  var imgEl;
+
+  var browserNames = {
+    'Chrome': 'chrome',
+    'Firefox': 'firefox',
+    'Internet Explorer': 'ie',
+    'Microsoft Edge': 'edge',
+    'Opera': 'opera',
+    'Yandex Browser': 'yandex'
+  };
+
+  var browserName = browserNames[bowser.name];
+
+  if ((window.location.href.indexOf('utm_source=abp') !== -1) || !browserName) {
+    document.body.classList.add('abp-installed');
+
+  } else {
+    imgEl = document.querySelector('.download-abp .button-image');
+
+    if (navigator.userAgent.indexOf("Edg/") !== -1) {
+        browserName = 'edge';
+    }
+    imgEl.src = imgEl.src.split('/img/')[0] +
+    '/img/dl-button-' + browserName + '.svg';
+
+    imgEl.removeAttribute('hidden');
+  }
+
+  if (!(Object.values(browserNames).includes(browserName) && !bowser.mobile)) {
+      document.getElementsByClassName('error-msg')[0].classList.add('visible');
+      document.getElementsByClassName('subscribe-idcac')[0].classList.add('hide');
+      document.getElementsByClassName('download-abp')[0].classList.add('hide');
+      document.getElementsByClassName('note')[0].classList.add('hide');
+  }
+
+  function alignHeadings() {
+    var howToAdd = document.querySelector('.how-to-add h2');
+    var howToRemove = document.querySelector('.how-to-remove h2');
+
+    if (window.innerWidth < 1366) {
+      howToAdd.style.height = 'auto';
+      howToRemove.style.height = 'auto';
+
+    } else {
+
+      if (howToAdd.clientHeight > howToRemove.clientHeight) {
+        howToRemove.style.height = howToAdd.clientHeight + 'px';
+
+      } else if (howToAdd.clientHeight < howToRemove.clientHeight) {
+        howToAdd.style.height = howToRemove.clientHeight + 'px';
+      }
+    }
+  }
+
+  alignHeadings();
+
+  addEventListener('resize', alignHeadings);
+});
+
+</script>
+
+    
+
+    
+
+<footer id="footer" class="content">
+  <div class="container">
+    <div class="row">
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Загрузить</h5>
+        <ul>
+          <li><a href="/en/adblock-plus-chrome" hreflang="en">Adblock Plus для Chrome</a></li>
+          <li><a href="/en/adblock-plus-firefox" hreflang="en">Adblock Plus для Firefox</a></li>
+          <li><a href="/en/ad-blocker-safari" hreflang="en">Adblock Plus для Safari</a></li>
+          <li><a href="/en/adblock-plus-opera" hreflang="en">Adblock Plus для Opera</a></li>
+          <li><a href="/en/android-install" hreflang="en">Adblock Browser for Android</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Ресурсы</h5>
+        <ul>
+          
+            <li><a href="/ru/acceptable-ads" hreflang="ru">Допустимая реклама</a></li>
+          
+            <li><a href="/ru/documentation" hreflang="ru">Документация</a></li>
+          
+            <li><a href="/ru/deployments" hreflang="ru">Для администраторов</a></li>
+          
+            <li><a href="/ru/bugs" hreflang="ru">Сообщить о проблеме</a></li>
+          
+          
+          <li><a href="https://help.eyeo.com/en/adblockplus/how-to-write-filters" target="_blank" hreflang="en">Создание фильтров для Adblock Plus</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Сообщество</h5>
+        <ul>
+          <li><a href="/ru/contribute" hreflang="ru">Участие</a></li>
+          <li><a href="https://adblockplus.org/releases/" hreflang="en">Объявления</a></li>
+          <li><a href="https://adblockplus.org/blog/" hreflang="en">Блог</a></li>
+          <li><a href="https://adblockplus.org/forum/" hreflang="en">Форум</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Развитие</h5>
+        <ul>
+          <li><a href="https://gitlab.com/eyeo/adblockplus">Исходный код</a></li>
+          
+  
+    <li><a href="/ru/tools" hreflang="ru">Инструменты</a></li>
+  
+
+          <li><a href="https://eyeo.com/jobs/" hreflang="en">Вакансии</a></li>
+          <li><a href="/en/partner-integrations" hreflang="en">Partner Integrations</a></li>
+        </ul>
+      </nav>
+
+      <nav id="social-list" class="column">
+        <h5 class="footer-social-heading">Следите за нами</h5>
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/AdblockPlus"
+              title="Следить за Adblock Plus на Twitter"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-twitter-glyphicon.png?256973886"
+                alt="Значок Twitter">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/user/AdblockPlusOfficial"
+              title="Подписаться на Adblock Plus на YouTube"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-youtube-glyphicon.png?256973886"
+                alt="Значок YouTube">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/adblockplus"
+              title="Следить за Adblock Plus на Facebook"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-facebook-glyphicon.png?256973886"
+                alt="Значок Facebook">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/adblockplus/"
+              title="Следить за Adblock Plus на Instagram"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-instagram-glyphicon.png?256973886"
+                alt="Значок Instagram">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://vk.com/adblockplusofficial"
+              title="Следить за Adblock Plus на VK"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-vk-glyphicon.png?256973886"
+                alt="Значок VK">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div> 
+
+    <div id="footer-legal">
+      <p id="copyright-notice">Авторское право © 2020 Все права защищены. Adblock Plus<sup>®</sup> является зарегистрированной торговой маркой компании <a href="https://eyeo.com">eyeo GmbH</a>.</p>
+      <ul id="legal-list">
+        
+          
+            <li><a href="/en/terms" hreflang="en">Условия использования</a></li>
+          
+            <li><a href="/en/privacy" hreflang="en">Политика конфиденциальности</a></li>
+          
+            <li><a href="/en/imprint" hreflang="en">Контакт</a></li>
+          
+        
+      </ul>
+    </div> 
+  </div> 
+</footer> 
+    <div id="cookiebar" class="cookie cookiebar">
+  <div class="container">
+    <div class="row">
+
+      <div class="column two-thirds">
+        <p class="cookiebar-text">
+          <svg viewBox="0 0 37.796 41.279" width="38" height="42">
+            <title>Сообщение о куки</title>
+            <g transform="translate(-14.904 0)">
+              <g transform="translate(14.904 0)">
+                <path d="M52.468,31.165a6.029,6.029,0,0,1-1.514-4.908.935.935,0,0,0-.626-1.019,6.029,6.029,0,0,1-3.244-8.8A.935.935,0,0,0,47,15.368a6.039,6.039,0,0,1-1.112-5.609A.935.935,0,0,0,45.4,8.647,6.029,6.029,0,0,1,42.129,2.01.935.935,0,0,0,41.484.935a20.682,20.682,0,1,0,11.049,31.38A.935.935,0,0,0,52.468,31.165Zm-3.739,2.814A18.759,18.759,0,1,1,40.148,2.524,7.9,7.9,0,0,0,43.887,10a7.889,7.889,0,0,0,1.281,6.029A7.917,7.917,0,0,0,46.682,25.1a7.823,7.823,0,0,0,2.346,1.617,7.889,7.889,0,0,0,1.57,5.123A18.6,18.6,0,0,1,48.729,33.979Z" transform="translate(-14.904 0)"/>
+              </g>
+              <g transform="translate(24.556 12.199)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(34.81 18.817)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(33.212 32.212)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(36.652 9.03)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(23.509 25.912)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(42.765 27.23)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+            </g>
+          </svg>
+          <span>
+            Мы используем куки, чтобы обеспечить вам максимальное качество пользования нашим сайтом. Пользуясь нашим сайтом, вы осознаете, что мы используем куки, и вы можете изменить настройки в любое время. <a href="/ru/cookie-information" hreflang="ru">Подробнее</a>
+          </span>
+        </p>
+      </div>
+
+      <div class="column one-third text-end">
+        <ul class="cookiebar-nav">
+          <li>
+            <button
+              type="button"
+              class="cookies-submit button"
+              title="Убрать сообщение о куки">
+              Ок, я понял
+            </button>
+          </li>
+          <li class="dropup cookies-dropup">
+            <button
+              type="button"
+              class="cookies-settings button"
+              title="Редактировать настройки куки">
+              Настройки &nbsp;
+              <svg viewBox="0 0 16.509 16.993" width="18" height="18">
+                <title>Значок настроек</title>
+                <path d="M175.051,8.283V.478a.478.478,0,1,0-.955,0v7.8a2.425,2.425,0,0,0,0,4.755v3.474a.478.478,0,1,0,.955,0V13.038a2.425,2.425,0,0,0,0-4.755Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,174.574,12.129Z" transform="translate(-166.302 0)"/>
+                <path d="M9.751,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.479a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752ZM9.274,8.123a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,9.274,8.123Z" transform="translate(-6.85 0)"/>
+                <path d="M339.351,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.483a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,338.874,8.123Z" transform="translate(-324.789 0)"/>
+              </svg>
+            </button>
+            <div class="cookies-dropup-menu text-start" tabindex="1">
+               <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Необходимые куки</p>
+      <p>Эти куки используются для запоминания ваших настроек конфиденциальности. Их нельзя отключить.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Куки отслеживания</p>
+      <p>Мы используем эти куки для анализа трафика сайта.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Куки тестирования A/B</p>
+      <p>Мы используем эти куки Google Optimize для тестирования A/B на основании данных аналитики.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Сохранить настройки куки">
+    Сохранить настройки
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+              <span class="arrow"></span>
+            </div>
+          </li>
+        </ul>
+      </div><!-- .column -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+
+</div><!-- #cookies-large-bar -->
+  <form class="cookie cookieprompt">
+
+  <fieldset class="container">
+
+    <legend class="cookie-heading">
+      Настройки куки
+    </legend>
+
+    <button
+      type="button"
+      class="cookies-close"
+      title="Убрать сообщение о куки">
+      <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+        <title>Значок закрытия</title>
+        <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+      </svg>
+    </button>
+
+    <p>
+      Мы используем куки, чтобы обеспечить вам максимальное качество пользования нашим сайтом.
+      <a
+        href="/ru/cookie-information" hreflang="ru"
+        title="Дополнительная информация о куки"
+        target="_blank">Подробнее</a>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-submit"
+        title="Убрать сообщение о куки">
+        Ок, я понял
+      </button>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-settings"
+        title="Редактировать настройки куки">
+        Изменить настройки
+      </button>
+    </p>
+
+  </fieldset>
+
+</form>
+  <form class="cookie cookiepage">
+
+  <header class="bg-dark">
+    <div class="container">
+
+      <h4 class="cookie-heading">
+        Настройки куки
+      </h4>
+
+      <button
+        type="button"
+        class="cookies-close"
+        title="Убрать сообщение о куки">
+        <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+          <title>Значок закрытия</title>
+          <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="bg-light">
+    <div class="container section">
+        Мы используем куки, чтобы обеспечить вам максимальное качество пользования нашим сайтом. Пользуясь нашим сайтом, вы осознаете, что мы используем куки, и вы можете изменить настройки в любое время. <a href="/ru/cookie-information" hreflang="ru">Подробнее</a>
+    </div>
+  </div>
+
+  <div class="container section">
+     <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Необходимые куки</p>
+      <p>Эти куки используются для запоминания ваших настроек конфиденциальности. Их нельзя отключить.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Куки отслеживания</p>
+      <p>Мы используем эти куки для анализа трафика сайта.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Куки тестирования A/B</p>
+      <p>Мы используем эти куки Google Optimize для тестирования A/B на основании данных аналитики.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Сохранить настройки куки">
+    Сохранить настройки
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+  </div>
+
+</form>
+    <script src="/js/testing/setup.js?2756035842"></script>
+    
+  <script src="/js/main.js?2756035842"></script>
+
+
+
+  </body>
+</html>

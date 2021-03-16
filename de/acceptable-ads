@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html 
+lang="de"
+data-siteurl="https://adblockplus.org"
+dir="ltr"
+class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Acceptable Ads in Adblock Plus zulassen</title>
+
+<link rel="canonical" href="https://adblockplus.org/acceptable-ads">
+
+
+
+    
+<meta property="og:image" content="/img/adblockplus_promo.png">
+<meta property="og:title" content="Acceptable Ads in Adblock Plus zulassen">
+
+<meta property="og:locale" content="de_DE">
+
+  
+
+  
+    <meta property="og:locale:alternate" content="en_US">
+  
+
+  
+    <meta property="og:locale:alternate" content="es_ES">
+  
+
+  
+    <meta property="og:locale:alternate" content="fr_FR">
+  
+
+  
+    <meta property="og:locale:alternate" content="nl_NL">
+  
+
+  
+    <meta property="og:locale:alternate" content="pt_BR">
+  
+
+  
+    <meta property="og:locale:alternate" content="ru_RU">
+  
+
+  
+    <meta property="og:locale:alternate" content="zh_CN">
+  
+
+<meta property="og:url" content="https://adblockplus.org/de/acceptable-ads">
+
+
+<meta name="twitter:site" content="@AdblockPlus">
+<meta name="twitter:creator" content="@AdblockPlus">
+    
+  <link rel="stylesheet" href="/css/defaults.css?1994888628">
+  <link rel="stylesheet" href="/css/fonts.css?1994888628">
+  <link rel="stylesheet" href="/css/main.css?1994888628">
+  <link rel="stylesheet" href="/css/cookies.css?1994888628">
+
+
+
+
+
+    
+    <script>
+  window.eyeo = {
+    
+    
+    preventCookiePrompt: false,
+    userTesting: false
+  }
+</script>
+
+    <!--[if IE 9]>
+  <script src="/js/vendor/es5-shim.js?3219304834"></script>
+  <script src="/js/vendor/dom4.js?3219304834"></script>
+<![endif]-->
+
+    
+      
+  <meta content="Adblock Plus stellt die Acceptable Ads-initiative vor: Unterstütze Websites, die auf Werbung angewiesen sind, sich aber dafür entscheiden, dies auf eine nicht aufdringliche Weise zu tun." name="description" />
+  <meta content="Adblock Plus stellt die Acceptable Ads-initiative vor: Unterstütze Websites, die auf Werbung angewiesen sind, sich aber dafür entscheiden, dies auf eine nicht aufdringliche Weise zu tun." property="og:description" />
+  <style type="text/css">
+    img
+    {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+
+    
+  </head>
+
+  <body>
+    
+
+
+
+<nav id="navbar">
+  <div class="container">
+    <a href="/de/" hreflang="de" id="navbar-logo">
+      <img
+        src="/img/navbar-logo.svg?3865023345"
+        alt="">
+      <span>Adblock <strong>Plus</strong></span>
+    </a>
+    <a href="#" id="navbar-menu-toggle">
+      <img
+        src="/img/menu-toggle.svg?3865023345"
+        alt="">
+    </a>
+    <ul id="navbar-menu">
+      
+        <li class="uppercase ">
+          <a href="/de/download" hreflang="de">Herunterladen</a>
+        </li>
+      
+        <li class="uppercase ">
+          <a href="/de/about" hreflang="de">Über</a>
+        </li>
+      
+      <li class="uppercase">
+        <a href="https://help.eyeo.com" target="_blank">Hilfe</a>
+      </li>
+      <li class="uppercase ">
+        <a href="/de/donate" hreflang="de">Spenden</a>
+      </li>
+      <li id="navbar-locale-menubar">
+        <a id="navbar-locale-selected">
+          Deutsch (DE)
+        </a>
+        <ul id="navbar-locale-menu">
+          
+            <li>
+              <a href="/de/acceptable-ads" hreflang="de">
+                Deutsch (DE)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/en/acceptable-ads" hreflang="en">
+                English (US)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/es/acceptable-ads" hreflang="es">
+                Español (España) (ES)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/fr/acceptable-ads" hreflang="fr">
+                Français (FR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/nl/acceptable-ads" hreflang="nl">
+                Nederlands (NL)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/pt_BR/acceptable-ads" hreflang="pt-BR">
+                Português (Brasil) (BR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ru/acceptable-ads" hreflang="ru">
+                Русский (RU)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_CN/acceptable-ads" hreflang="zh-CN">
+                中文(简体) (CN)
+              </a>
+            </li>
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+    <div id="content" class="container content False">
+      
+        <h1>Acceptable Ads in Adblock Plus zulassen</h1>
+      
+
+      
+        
+
+        
+        
+          <div class="toc">
+            
+          <ul>
+            
+              <li>
+                <a href="#what-are-those">Was sind Acceptable Ads?</a>
+                
+          <ul>
+            
+              <li>
+                <a href="#privacy-friendly-acceptable-ads">Was sind Acceptable Ads ohne Tracking durch Drittanbieter?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#committee">Was ist das Acceptable Ads Committee?</a>
+                
+              </li>
+            
+          </ul>
+        
+              </li>
+            
+              <li>
+                <a href="#criteria">Kriterien für Acceptable Ads</a>
+                
+          <ul>
+            
+              <li>
+                <a href="#desktop">Kriterien für Desktop-PCs</a>
+                
+              </li>
+            
+              <li>
+                <a href="#specific-criteria">Besondere Kriterien</a>
+                
+              </li>
+            
+              <li>
+                <a href="#mobile">Kriterien für mobile Geräte</a>
+                
+              </li>
+            
+              <li>
+                <a href="#other-formats">Andere Formate akzeptabler Werbung?</a>
+                
+              </li>
+            
+          </ul>
+        
+              </li>
+            
+              <li>
+                <a href="#enabled-by-default">Warum ist die Funktion „Acceptable Ads“ standardmäßig aktiviert?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#optout">Aber ich hasse jede Werbung!</a>
+                
+              </li>
+            
+              <li>
+                <a href="#love">Wollen Adblock-Plus-Nutzer wirklich Acceptable Ads?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#annoying">Wird jede lästige Werbung blockiert?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#view-whitelist">Kann ich die Whitelist für Acceptable Ads einsehen?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#report">Wie melde ich eine Anzeige, die die Kriterien nicht erfüllt?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#get-whitelisted">Wie kann ich Anzeigen auf meiner Website auf die Whitelist setzen?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#revenue">Sind Zahlungen erforderlich?</a>
+                
+              </li>
+            
+          </ul>
+        
+          </div>
+        
+      
+
+      
+        <p></p>
+<p class="alert">Diese Seite wird derzeit überarbeitet, da die Verwaltung der Acceptable Ads-Initiative auf das unabhängige <a href="https://acceptableads.org/">Acceptable Ads Committee</a> übertragen wurde.</p>
+<h2 id="what-are-those">Was sind Acceptable Ads?</h2>
+<p>Acceptable Ads sind Anzeigen, die nicht aufdringlich oder störend sind. Sie sind respektvoll, beeinträchtigen nicht den redaktionellen Inhalt einer Webseite und sind klar mit dem Wort „Werbung“ oder einer gleichwertigen Bezeichnung gekennzeichnet. Damit eine Anzeige eine „Acceptable Ad“ ist, muss sie <a href="#criteria">Richtlinien</a> einhalten, die vom <a href="https://acceptableads.com/en/committee/">Acceptable Ads Committee</a> festgelegt wurden.</p>
+<p>Anzeigen, die sich an die Richtlinien für akzeptable Werbung halten, werden auf eine Whitelist gesetzt. Die Anzeigen auf der Whitelist werden dann den Benutzern angezeigt, die Acceptable Ads auch mit Werbeblockierung weiterhin zulassen wollen.</p>
+<p>Die meisten Webseiten verdienen durch Werbeanzeigen Geld und können deshalb auch kostenlos genutzt werden. Allerdings verwenden viele Webseiten dafür nervige oder aufdringliche Anzeigen, um damit deine Aufmerksamkeit zu erregen. Mit Adblock Plus kannst du alle Anzeigen blockieren, aber wir glauben nicht, dass Webseiten grundsätzlich für Werbung von dir bestraft werden sollten.</p>
+<h3 id="privacy-friendly-acceptable-ads">Was sind Acceptable Ads ohne Tracking durch Drittanbieter?</h3>
+<p>Acceptable Ads ohne Tracking durch Drittanbieter sind Anzeigen, die den Kriterien für Acceptable Ads entsprechen und es Drittanbietern nicht erlauben, Ihr Browserverhalten zu verfolgen. Diese Art von Anzeigen halten sich an <a href="https://www.eff.org/dnt-policy" title="Link to the Do Not Track Policy by EFF">Do Not Track</a>-Vereinbarungen und/oder werden von der Domain verwaltet, die sich vollständig im Besitz desselben Unternehmens befindet.</p>
+<h3 id="committee">Was ist das Acceptable Ads Committee?</h3>
+<p>Wie <a href="https://adblockplus.org/blog/campdavid-nyc" title="Link to blog post announcing the Acceptable Ads Committee">bereits bekannt gegeben</a>, übertrug eyeo / Adblock Plus 2017 die alleinige Verantwortung für die Acceptable Ads-Initiative auf eine unabhängige Gruppe, das <a href="https://acceptableads.org/" title="Link to the Acceptable Ads Committee website">Acceptable Ads Committee</a>. Das Acceptable Ads Committee besteht aus interessierten Unternehmen, spezialisierten Sachverständigen und Internetnutzern wie dir.</p>
+<h2 id="criteria">Kriterien für Acceptable Ads</h2>
+<p>Acceptable Ads müssen gemäß der vom Acceptable Ads Committee gefundenen Definition folgende Kriterien erfüllen:</p>
+<h3 id="desktop">Kriterien für Desktop-PCs</h3>
+<h4>Platzierung</h4>
+<p>Werbung darf den natürlichen Lesefluss des Nutzers nicht stören. Solche Werbung muss oberhalb, seitlich oder unter dem Hauptinhalt platziert sein. <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<p><img alt="Kriterien für Acceptable Ads – Platzierung" height="368px" src="/img/acceptable-ads-criteria-placement.png?3865023345" /></p>
+<h4>Unterscheidung</h4>
+<p>Werbung sollte immer als Werbung zu erkennen sein und sich von anderen Inhalten unterscheiden (z.B. die Bezeichnung nicht verstecken und den Nutzer nicht glauben machen, eine Werbung sei Teil des Hauptinhalts). Werbung muss klar mit dem Wort „Werbung“ oder einer gleichwertigen Bezeichnung gekennzeichnet sein.</p>
+<p><img alt="Kriterien für Acceptable Ads – Labels" height="273px" src="/img/acceptable-ads-criteria-label.png?3865023345" /></p>
+<h4>Größe</h4>
+<p>Einzelne Anforderung an die Größe sind abhängig von der Platzierung der Werbung:</p>
+<ul>
+<li>Wenn über dem Hauptinhalt platziert, sollte die maximale Höhe einer Werbung 200 Pixel betragen.</li>
+<li>Wenn seitlich neben dem Hauptinhalt platziert, sollte die maximale Breite einer Werbung 350 Pixel betragen.</li>
+<li>Wenn unter dem Hauptinhalt platziert, sollte die maximale Höhe einer Werbung 400 Pixel betragen.</li>
+</ul>
+<p>Bei den gängigen Bildschirmgrößen von 1366 x 768 für Desktop-PCs, 360 x 640 für Mobilgeräte und 768 x 1024 für Tablets muss Werbung in jedem Fall ausreichend Platz für den Hauptinhalt übrig lassen. <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> <sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> <sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></p>
+<p>Dafür darf jegliche Werbung, die oberhalb der Falz (dem Teil der Webseite, der bei den genannten gängigen Bildschirmgrößen im Browserfenster sichtbar ist, wenn die Seite erstmals geladen wird) platziert ist, insgesamt nicht mehr als 15 Prozent des sichtbaren Teils der Webseite einnehmen. Wenn sie unterhalb der Falz platziert wird, darf die Werbung insgesamt nicht mehr als 25 Prozent des sichtbaren Teils der Webseite einnehmen.&lt;Abbildung&gt;</p>
+<p><img alt="Kriterien für Acceptable Ads – Prozentsatz" height="309px" src="/img/acceptable-ads-criteria-percentages.png?3865023345" /></p>
+<h3 id="specific-criteria">Besondere Kriterien</h3>
+<h4>Textwerbung</h4>
+<p>Textwerbung, die mit übermäßigem Einsatz von Farben und/oder anderen Elementen gestaltet ist, um Aufmerksamkeit zu erregen, ist nicht gestattet.</p>
+<h4>Bildwerbung</h4>
+<p>Statische Bildwerbung kann, entsprechend der Bewertung der Unaufdringlichkeit im Gesamtzusammenhang der jeweiligen Webseite, als akzeptabel eingestuft werden.</p>
+<h4>In-Feed Werbung</h4>
+<p>Für Werbung in Listen und Feeds unterscheiden sich die Kriterien in Bezug auf:</p>
+<ul>
+<li>Anforderungen hinsichtlich der Anordnung<br/>Werbung darf zwischen Einträgen und Feeds platziert werden.</li>
+<li>Anforderungen an die Größe<br/>Werbung in Listen und Feeds darf mehr Platz in Anspruch nehmen, solange die Werbung nicht wesentlich größer ist als andere Elemente in der Liste oder dem Feed.</li>
+</ul>
+<h4>Suchwerbung</h4>
+<p>Für Suchwerbung - Werbung, die nach einem vom Nutzer initiierten Suchbegriff angezeigt wird - unterscheiden sich die Kriterien in:</p>
+<ul>
+<li>Anforderungen an die Größe<br/>Suchwerbung darf größer sein und mehr Platz auf dem Bildschirm einnehmen.</li>
+</ul>
+<h4>Werbung auf Seiten ohne Hauptinhalt</h4>
+<p>Es ist nur Textwerbung gestattet. Für Webseiten ohne Hauptinhalt (z. B. Fehler- oder Warteseiten) unterscheiden sich die Kriterien abhängig von:</p>
+<ul>
+<li>Anforderungen hinsichtlich der Anordnung<br/>Keine Einschränkungen bei der Platzierung.</li>
+<li>Anforderungen an die Größe<br/>Keine Größenbeschränkungen.</li>
+</ul>
+<h3 id="mobile">Kriterien für mobile Geräte</h3>
+<h4>Anforderungen hinsichtlich der Anordnung</h4>
+<ul>
+<li>Statische Anzeigentypen (z. B. 6x1-Banner und 1x1-Kachelanzeige) dürfen überall auf der mobilen Seite platziert werden</li>
+<li>Kleinanzeigen (6x1-Banner oder kleiner) dürfen fest verankert am unteren Bildschirmrand platziert werden. Andere Formate dürfen nicht verankert bleiben.</li>
+<li>Große Werbeanzeigen (z. B. native Kachelanzeigen) dürfen nur unter dem Hauptinhalt platziert werden. <sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup> <sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
+</ul>
+<h4>Anforderungen an die Größe</h4>
+<p>Anzeigen, die auf Mobilbildschirmen angezeigt werden, sind an die folgenden Größeneinschränkungen gebunden:</p>
+<ul>
+<li>Werbeanzeigen im scrollbaren Teil der Website dürfen insgesamt nicht mehr als 50 Prozent des sichtbaren Teils der Website einnehmen. <sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup></li>
+<li>Verankerte Werbeanzeigen haben eine maximale Höhenbeschränkung von 75 px (oder 15 %).</li>
+<li>Unter dem Hauptinhalt sind Werbeanzeigen auf 100 % des Platzes auf dem Bildschirm begrenzt. <sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup></li>
+</ul>
+<h4>Animationen</h4>
+<p>Animationen sind als 6x1-Werbeanzeigen zulässig, wenn sie als verankerte Werbeanzeige im unteren Bereich des Bildschirms platziert werden. Animationen müssen dem LEAN-Standard für Animationen entsprechen, und es muss eine Schließen-Schaltfläche oder eine andere Schließen-Option vorhanden sein. <sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup></p>
+<h3 id="other-formats">Andere Formate akzeptabler Werbung?</h3>
+<p>Wird deine Werbung auf alternativen Bildschirmen angezeigt oder bist du überzeugt, dass du ein Format für Acceptable Ads gefunden hast, dass nicht zu den oben skizzierten passt? <a href="#" data-mask="{&quot;href&quot;: &quot;bWFpbHRvOmFjY2VwdGFibGVhZHNAYWRibG9ja3BsdXMub3Jn&quot;}">Lass es uns wissen!</a></p>
+<h2 id="enabled-by-default">Warum ist die Funktion „Acceptable Ads“ standardmäßig aktiviert?</h2>
+<p>Wir glauben, dass Acceptable Ads der nachhaltige Mittelweg zwischen einer Nutzerentscheidung gegen jegliche Werbung und der fortgesetzten Notwendigkeit der Unterstützung freier Online-Inhalte durch Werbung ist. Wenn die Mehrheit der Adblock-Plus-Nutzer die Funktion „Acceptable Ads“ aktiviert hat, gibt das auch Werbetreibenden einen größeren Anreiz, bessere und weniger aufdringliche Werbeformate zu erstellen.</p>
+<h2 id="optout">Aber ich hasse jede Werbung!</h2>
+<p>Kein Problem, du kannst diese Funktion jederzeit deaktivieren:</p>
+<h4>Adblock Plus für die Browser Chrome, Firefox (Versionen 3 und höher), Maxthon, Opera, Yandex</h4>
+<ol>
+<li>Klicke in der Symbolleiste deines Browsers auf das Symbol <strong>Adblock Plus</strong> und wähle das Symbol <strong>Getriebe</strong> in der oberen rechten Ecke.</li>
+<li>Scrolle auf der Registerkarte <em>Allgemein</em> zum Abschnitt <em>Acceptable Ads</em>.</li>
+<li>Deaktiviere den Menüpunkt <strong>Acceptable Ads zulassen</strong>.</li>
+<li>Schließe die Registerkarte.</li>
+</ol>
+<h4>Adblock Plus für Safari</h4>
+<ol>
+<li>Klicke in der Safari-Symbolleiste auf das Symbol <strong>Adblock Plus</strong> und wähle <strong>Adblock Plus öffnen</strong>.</li>
+<li>Deaktiviere den Menüpunkt <strong>Acceptable Ads zulassen</strong>.</li>
+<li>Schließe die Registerkarte.</li>
+</ol>
+<h4>Adblock Plus für Firefox (Versionen 1 und 2)</h4>
+<ol>
+<li>Klicke auf das Symbol Adblock Plus und wähle <strong>Filtereinstellungen</strong>.</li>
+<li>Deaktiviere den Menüpunkt <strong>Einige nicht aufdringliche Werbung zulassen</strong>.</li>
+</ol>
+<h4>Adblock Plus für Internet Explorer</h4>
+<ol>
+<li>Klicke auf das Symbol Adblock Plus und wähle <strong>Einstellungen</strong>.</li>
+<li>Deaktiviere den Menüpunkt <strong>Einige nicht aufdringliche Werbung zulassen</strong>.</li>
+</ol>
+<h4>Adblock Plus für iOS</h4>
+<ol>
+<li>Öffne Adblock Plus für iOS.</li>
+<li>Tippe auf das <strong>Einstellungen-Symbol</strong> unten auf der Seite.</li>
+<li>Tippe auf der Einstellungsseite auf &lt;strong&gt;Acceptable Ads&lt;strong&gt;.</li>
+<li>Deaktiviere <strong>Einige nicht aufdringliche Werbung zulassen</strong>.</li>
+</ol>
+<h4>Adblock Browser für Android</h4>
+<ol>
+<li>Adblock Browser für Android öffnen</li>
+<li>Tippe auf den <strong>Menüpunkt</strong> und wähle <strong>Einstellungen</strong>.</li>
+<li>Tippe auf <strong>Werbeblockierung</strong> &gt; <strong>Acceptable Ads</strong>.</li>
+<li>Deaktiviere den Menüpunkt <strong>Einige nicht aufdringliche Werbung zulassen</strong>.</li>
+</ol>
+<h4>Adblock Plus für Samsung Internet</h4>
+<ol>
+<li>Adblock Plus für Samsung Internet öffnen.</li>
+<li>Deaktiviere den Menüpunkt <strong>Einige nicht aufdringliche Werbung zulassen</strong>.</li>
+</ol>
+<h2 id="love">Wollen Adblock-Plus-Nutzer wirklich Acceptable Ads?</h2>
+<p>Ja! Dreiundachtzig Prozent (<a href="https://blog.hubspot.com/news-trends/why-people-block-ads-and-what-it-means-for-marketers-and-advertisers">83 %</a>) der Adblock-Plus-Nutzer macht es nichts aus, Acceptable Ads zu sehen, weil ihr Surferlebnis dabei nicht durch laute, lästige und irrelevante Anzeigen beeinträchtigt wird.</p>
+<h2 id="annoying">Wird jede lästige Werbung blockiert?</h2>
+<p>Nein. Es ist technisch nicht möglich, solche Anzeigen automatisch zu erkennen, die nicht den Kriterien für Acceptable Ads entsprechen. Wir haben deswegen mit einigen Websites und Werbetreibenden entsprechende <a href="https://adblockplus.org/acceptable-ads-agreements">Vereinbarungen</a> getroffen. Diese sehen vor, dass nur Anzeigen angezeigt werden, die den Kriterien für Acceptable Ads entsprechen, wenn Adblock-Plus-Nutzer diese speziellen Websites besuchen.</p>
+<h2 id="view-whitelist">Kann ich die Whitelist für Acceptable Ads einsehen?</h2>
+<p>Absolut. <a href="https://easylist-downloads.adblockplus.org/exceptionrules.txt" title="Link to filter list with whitelisted websites">Klicke hier</a>, um die Liste einzusehen.</p>
+<h2 id="report">Wie melde ich eine Anzeige, die die Kriterien nicht erfüllt?</h2>
+<p>Sende eine Nachricht mit den folgenden Informationen an <a href="#" data-mask="{&quot;href&quot;: &quot;bWFpbHRvOnN1cHBvcnRAYWRibG9ja3BsdXMub3Jn&quot;, &quot;textContent&quot;: &quot;c3VwcG9ydEBhZGJsb2NrcGx1cy5vcmc=&quot;}">E-Mail-Adresse</a>:</p>
+<ul>
+<li>URL der Seite, auf der die Anzeige erscheint</li>
+<li>Screenshot der gesamten Seite, einschließlich der Anzeige ODER eine detaillierte Beschreibung, wo sich die Anzeige auf der Seite befindet</li>
+<li>Gib ggf. an, ob ein Login oder VPN erforderlich ist, um das Problem zu reproduzieren</li>
+</ul>
+<h2 id="get-whitelisted">Wie kann ich Anzeigen auf meiner Website auf die Whitelist setzen?</h2>
+<p>Der Vorgang, Ihre Anzeigen auf die Whitelist zu setzen, dauert ca. 10 Arbeitstage, sobald die Anzeigen den Richtlinien für Acceptable Ads entsprechen:</p>
+<ol>
+<li>Wenn deine Website deiner Meinung nach über Anzeigen verfügt, die den <a href="#criteria">Richtlinien für Acceptable Ads</a> entsprechen, oder du dies einrichten möchtet, kannst du einfach <a href="https://acceptableads.com/get-whitelisted/" title="Erscheine auf der Whitelist für Acceptable Ads">dieses Formular</a> ausfüllen.</li>
+<li>Einer unserer Mitarbeiter von <a href="https://www.eyeo.com/">eyeo</a> – dem Unternehmen hinter Adblock Plus – wird sich mit dir in Verbindung setzen, um die konkreten Anzeigen anzusehen und zu prüfen, ob sie den Kriterien entsprechen.</li>
+<li>Nachdem du etwaige Änderungen vorgenommen hast, unterzeichnen beide Seiten eine <a href="https://adblockplus.org/acceptable-ads-agreements" title="Link zur Seite mit den Vereinbarungen über Acceptable Ads">Vereinbarung</a>.</li>
+<li>We submit the whitelisting proposal <a href="https://adblockplus.org/forum/viewforum.php?f=12" title="Link to Adblock Plus Forum">in the forum</a> and the ads are whitelisted at the same time. The topic will stay open in order for the community to declare concerns if or when the candidate does not meet the requirements.</li>
+</ol>
+<h2 id="revenue">Sind Zahlungen erforderlich?</h2>
+<p>Klicke <a href="/de/about#monetization" hreflang="de">hier</a> für einen detaillierten Überblick über unsere Finanzen.</p>
+<script src="/js/address-masking.js?3219304834"></script>
+
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Der „Hauptinhalt“ ist definiert als (basierend auf <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main">Mozillas Beschreibung</a> des <code>&lt;main&gt;</code> HTML Elements): Der Hauptteil besteht aus Inhalt, der direkt bezogen oder auf das zentrale Thema eines Bereichs oder der zentralen Funktionalität einer Applikation aufbaut. Der Inhalt sollte zum Dokument einzigartig sein, ausgenommen jeglicher Inhalt, welcher auf dem gesamten Dokument wiederholt ist wie zum Beispiel Seitenleisten, Navigationslinks, Information über das Urheberrecht, Seitenlogos, und Sucheingaben (ausgenommen, wenn die Hauptfunktion eine Sucheingabe ist). <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>Die „gängige Bildschirmgröße“ für Desktop-PCs ist 1366 x 768, basierend auf Daten von <a href="http://gs.statcounter.com/#desktop-resolution-ww-monthly-201401-201412">StatCounter</a>. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+<li id="fn:3">
+<p>Die „gängige Bildschirmgröße“ für Mobilgeräte ist 360 x 640, basierend auf Daten von <a href="http://gs.statcounter.com/#mobile_resolution-ww-monthly-201401-201412">StatCounter</a>. <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>
+</li>
+<li id="fn:4">
+<p>Die „gängige Bildschirmgröße“ für Tablets ist 768 x 1024, basierend auf Daten von <a href="http://gs.statcounter.com/#tablet-resolution-ww-monthly-201401-201412">StatCounter</a>. <a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">↩</a></p>
+</li>
+<li id="fn:5">
+<p>Große Werbeanzeige: jede Anzeige &gt; 300 px Höhe <a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">↩</a></p>
+</li>
+<li id="fn:6">
+<p>Der sichtbare Teil der Webseite ist definiert mit einer Standard-CSS-Pixelgröße von <a href="/img/360x512.png" target="_blank">360 x 512 px</a> (Samsung Galaxy S7 mit dem SBrowser), die auf dem Standard-Viewport von <a href="https://deviceatlas.com/blog/mobile-viewport-size-statistics-2017">360 x 640 px</a> basiert, jedoch ohne der OS- und Browser-Oberflächenelemente. <a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">↩</a></p>
+</li>
+<li id="fn:7">
+<p>Das bedeutet, dass Benutzer über den Hauptinhalt hinaus scrollen können und ein Werbeblock, der danach erscheint, den gesamten Bildschirm einnehmen kann; nach diesem Werbeblock können jedoch keine zusätzlichen Anzeigen implementiert werden. <a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">↩</a></p>
+</li>
+<li id="fn:8">
+<p>Aus: <a href="https://www.iab.com/wp-content/uploads/2017/08/IABNewAdPortfolio_FINAL_2017.pdf">iab New Standard Ad Unit Portfolio (2017)</a> <a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+      
+    </div>
+
+    
+
+<footer id="footer" class="content">
+  <div class="container">
+    <div class="row">
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Herunterladen</h5>
+        <ul>
+          <li><a href="/en/adblock-plus-chrome" hreflang="en">Adblock Plus für Chrome</a></li>
+          <li><a href="/en/adblock-plus-firefox" hreflang="en">Adblock Plus für Firefox</a></li>
+          <li><a href="/en/ad-blocker-safari" hreflang="en">Adblock Plus für Safari</a></li>
+          <li><a href="/en/adblock-plus-opera" hreflang="en">Adblock Plus für Opera</a></li>
+          <li><a href="/en/android-install" hreflang="en">Adblock Browser for Android</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Ressourcen</h5>
+        <ul>
+          
+            <li><a href="/de/acceptable-ads" hreflang="de">Acceptable Ads</a></li>
+          
+            <li><a href="/de/documentation" hreflang="de">Dokumentation</a></li>
+          
+            <li><a href="/de/deployments" hreflang="de">Für Administratoren</a></li>
+          
+            <li><a href="/de/bugs" hreflang="de">Problem melden</a></li>
+          
+          
+            <li><a href="/de/faq-privacy" hreflang="de">FAQ zum Datenschutz</a></li>
+          
+          <li><a href="https://help.eyeo.com/en/adblockplus/how-to-write-filters" target="_blank" hreflang="en">Filter für Adblock Plus erstellen</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Community</h5>
+        <ul>
+          <li><a href="/de/contribute" hreflang="de">Beitragen</a></li>
+          <li><a href="https://adblockplus.org/releases/" hreflang="en">Bekanntmachungen</a></li>
+          <li><a href="https://adblockplus.org/blog/" hreflang="en">Blog</a></li>
+          <li><a href="https://adblockplus.org/forum/" hreflang="en">Forum</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Entwicklung</h5>
+        <ul>
+          <li><a href="https://gitlab.com/eyeo/adblockplus">Quellcode</a></li>
+          
+  
+    <li><a href="/de/tools" hreflang="de">Tools</a></li>
+  
+
+          <li><a href="https://eyeo.com/jobs/" hreflang="en">Stellen</a></li>
+          <li><a href="/en/partner-integrations" hreflang="en">Partner Integrations</a></li>
+        </ul>
+      </nav>
+
+      <nav id="social-list" class="column">
+        <h5 class="footer-social-heading">Folge uns auf</h5>
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/AdblockPlus"
+              title="Adblock Plus auf Twitter folgen"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-twitter-glyphicon.png?3865023345"
+                alt="Twitter-Icon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/user/AdblockPlusOfficial"
+              title="Adblock Plus auf YouTube abonnieren"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-youtube-glyphicon.png?3865023345"
+                alt="YouTube-Icon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/adblockplus"
+              title="Adblock Plus auf Facebook folgen"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-facebook-glyphicon.png?3865023345"
+                alt="Facebook-Icon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/adblockplus/"
+              title="Adblock Plus auf Instagram folgen"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-instagram-glyphicon.png?3865023345"
+                alt="Instagram-Icon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://vk.com/adblockplusofficial"
+              title="Adblock Plus auf VK folgen"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-vk-glyphicon.png?3865023345"
+                alt="VK-Icon">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div> 
+
+    <div id="footer-legal">
+      <p id="copyright-notice">Copyright © 2020 Alle Rechte vorbehalten. Adblock Plus<sup>®</sup> ist eine eingetragene Marke der <a href="https://eyeo.com">eyeo GmbH</a>.</p>
+      <ul id="legal-list">
+        
+          
+            <li><a href="/de/terms" hreflang="de">Nutzungsbedingungen</a></li>
+          
+            <li><a href="/de/privacy" hreflang="de">Datenschutzerklärung</a></li>
+          
+            <li><a href="/de/imprint" hreflang="de">Impressum</a></li>
+          
+        
+      </ul>
+    </div> 
+  </div> 
+</footer> 
+    <div id="cookiebar" class="cookie cookiebar">
+  <div class="container">
+    <div class="row">
+
+      <div class="column two-thirds">
+        <p class="cookiebar-text">
+          <svg viewBox="0 0 37.796 41.279" width="38" height="42">
+            <title>Cookie-Benachrichtigung</title>
+            <g transform="translate(-14.904 0)">
+              <g transform="translate(14.904 0)">
+                <path d="M52.468,31.165a6.029,6.029,0,0,1-1.514-4.908.935.935,0,0,0-.626-1.019,6.029,6.029,0,0,1-3.244-8.8A.935.935,0,0,0,47,15.368a6.039,6.039,0,0,1-1.112-5.609A.935.935,0,0,0,45.4,8.647,6.029,6.029,0,0,1,42.129,2.01.935.935,0,0,0,41.484.935a20.682,20.682,0,1,0,11.049,31.38A.935.935,0,0,0,52.468,31.165Zm-3.739,2.814A18.759,18.759,0,1,1,40.148,2.524,7.9,7.9,0,0,0,43.887,10a7.889,7.889,0,0,0,1.281,6.029A7.917,7.917,0,0,0,46.682,25.1a7.823,7.823,0,0,0,2.346,1.617,7.889,7.889,0,0,0,1.57,5.123A18.6,18.6,0,0,1,48.729,33.979Z" transform="translate(-14.904 0)"/>
+              </g>
+              <g transform="translate(24.556 12.199)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(34.81 18.817)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(33.212 32.212)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(36.652 9.03)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(23.509 25.912)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(42.765 27.23)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+            </g>
+          </svg>
+          <span>
+            Wir verwenden einige Cookies, um dir das optimale Erlebnis bei der Nutzung unserer Website zu bieten. Wenn du unsere Website benutzt, bedeutet das, du bist dir bewusst, dass wir Cookies verwenden und dass du dies jederzeit unterbinden kannst. <a href="/de/cookie-information" hreflang="de">Mehr erfahren</a>
+          </span>
+        </p>
+      </div>
+
+      <div class="column one-third text-end">
+        <ul class="cookiebar-nav">
+          <li>
+            <button
+              type="button"
+              class="cookies-submit button"
+              title="Cookie-Benachrichtigung ausblenden">
+              OK, verstanden
+            </button>
+          </li>
+          <li class="dropup cookies-dropup">
+            <button
+              type="button"
+              class="cookies-settings button"
+              title="Cookie-Einstellungen anpassen">
+              Einstellungen &nbsp;
+              <svg viewBox="0 0 16.509 16.993" width="18" height="18">
+                <title>Einstellungen-Symbol</title>
+                <path d="M175.051,8.283V.478a.478.478,0,1,0-.955,0v7.8a2.425,2.425,0,0,0,0,4.755v3.474a.478.478,0,1,0,.955,0V13.038a2.425,2.425,0,0,0,0-4.755Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,174.574,12.129Z" transform="translate(-166.302 0)"/>
+                <path d="M9.751,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.479a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752ZM9.274,8.123a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,9.274,8.123Z" transform="translate(-6.85 0)"/>
+                <path d="M339.351,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.483a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,338.874,8.123Z" transform="translate(-324.789 0)"/>
+              </svg>
+            </button>
+            <div class="cookies-dropup-menu text-start" tabindex="1">
+               <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Notwendige Cookies</p>
+      <p>Werden verwendet, um deine Datenschutzeinstellungen zu speichern. Sie können nicht ausgeschaltet werden.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking Cookies</p>
+      <p>Wir verwenden diese, um den Website-Traffic zu analysieren.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B-Test-Cookies</p>
+      <p>Wir nutzen diese Google Optimize-Cookies für A/B-Tests basierend auf den Analysedaten.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Cookie-Präferenzen speichern">
+    Präferenzen speichern
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+              <span class="arrow"></span>
+            </div>
+          </li>
+        </ul>
+      </div><!-- .column -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+
+</div><!-- #cookies-large-bar -->
+  <form class="cookie cookieprompt">
+
+  <fieldset class="container">
+
+    <legend class="cookie-heading">
+      Cookie-Präferenzen
+    </legend>
+
+    <button
+      type="button"
+      class="cookies-close"
+      title="Cookie-Benachrichtigung ausblenden">
+      <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+        <title>Schließen-Symbol</title>
+        <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+      </svg>
+    </button>
+
+    <p>
+      Wir verwenden einige Cookies, um dir das optimale Erlebnis bei der Nutzung unserer Website zu bieten.
+      <a
+        href="/de/cookie-information" hreflang="de"
+        title="Mehr Informationen über Cookies"
+        target="_blank">Mehr lesen</a>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-submit"
+        title="Cookie-Benachrichtigung ausblenden">
+        OK, verstanden
+      </button>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-settings"
+        title="Cookie-Einstellungen anpassen">
+        Einstellungen ändern
+      </button>
+    </p>
+
+  </fieldset>
+
+</form>
+  <form class="cookie cookiepage">
+
+  <header class="bg-dark">
+    <div class="container">
+
+      <h4 class="cookie-heading">
+        Cookie-Präferenzen
+      </h4>
+
+      <button
+        type="button"
+        class="cookies-close"
+        title="Cookie-Benachrichtigung ausblenden">
+        <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+          <title>Schließen-Symbol</title>
+          <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="bg-light">
+    <div class="container section">
+        Wir verwenden einige Cookies, um dir das optimale Erlebnis bei der Nutzung unserer Website zu bieten. Wenn du unsere Website benutzt, bedeutet das, du bist dir bewusst, dass wir Cookies verwenden und dass du dies jederzeit unterbinden kannst. <a href="/de/cookie-information" hreflang="de">Mehr erfahren</a>
+    </div>
+  </div>
+
+  <div class="container section">
+     <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Notwendige Cookies</p>
+      <p>Werden verwendet, um deine Datenschutzeinstellungen zu speichern. Sie können nicht ausgeschaltet werden.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking Cookies</p>
+      <p>Wir verwenden diese, um den Website-Traffic zu analysieren.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B-Test-Cookies</p>
+      <p>Wir nutzen diese Google Optimize-Cookies für A/B-Tests basierend auf den Analysedaten.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Cookie-Präferenzen speichern">
+    Präferenzen speichern
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+  </div>
+
+</form>
+    <script src="/js/testing/setup.js?3219304834"></script>
+    
+  <script src="/js/main.js?3219304834"></script>
+
+
+
+  </body>
+</html>
