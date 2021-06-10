@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html 
+lang="de"
+data-siteurl="https://adblockplus.org"
+dir="ltr"
+class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Erste Schritte mit Adblock Plus</title>
+
+<link rel="canonical" href="https://adblockplus.org/getting_started">
+
+
+
+    
+<meta property="og:image" content="/img/adblockplus_promo.png">
+<meta property="og:title" content="Erste Schritte mit Adblock Plus">
+
+<meta property="og:locale" content="de_DE">
+
+  
+
+  
+    <meta property="og:locale:alternate" content="en_US">
+  
+
+  
+    <meta property="og:locale:alternate" content="es_ES">
+  
+
+  
+    <meta property="og:locale:alternate" content="fr_FR">
+  
+
+  
+    <meta property="og:locale:alternate" content="nl_NL">
+  
+
+  
+    <meta property="og:locale:alternate" content="ru_RU">
+  
+
+  
+    <meta property="og:locale:alternate" content="zh_CN">
+  
+
+<meta property="og:url" content="https://adblockplus.org/de/getting_started">
+
+
+<meta name="twitter:site" content="@AdblockPlus">
+<meta name="twitter:creator" content="@AdblockPlus">
+    
+  <link rel="stylesheet" href="/css/defaults.css?803670966">
+  <link rel="stylesheet" href="/css/fonts.css?803670966">
+  <link rel="stylesheet" href="/css/main.css?803670966">
+  <link rel="stylesheet" href="/css/cookies.css?803670966">
+
+
+
+
+
+    <script>
+  window.eyeo = {
+    
+    
+    
+    preventCookiePrompt: false,
+    userTesting: false,
+    userTestingVariants: false,
+    testAnalytics: false,
+    testOptimize: false
+  }
+
+  window.console = window.console || {warn: function(){}};
+</script>
+    
+    <!--[if IE 9]>
+  <script src="/js/vendor/es5-shim.js?34278132"></script>
+  <script src="/js/vendor/dom4.js?34278132"></script>
+<![endif]-->
+
+    
+      
+<meta content="Neu bei Adblock Plus? Finden Sie heraus, wie leicht es ist, sich gegen nervige Werbung zu schützen. Adblock Plus für Chrome und andere Plattformen kann hier heruntergeladen werden." name="description">
+<meta content="Neu bei Adblock Plus? Finden Sie heraus, wie leicht es ist, sich gegen nervige Werbung zu schützen. Adblock Plus für Chrome und andere Plattformen kann hier heruntergeladen werden." property="og:description">
+
+    
+  </head>
+
+  <body>
+    
+
+
+
+<nav id="navbar">
+  <div class="container">
+    <a href="/de/" hreflang="de" id="navbar-logo">
+      <img
+        src="/img/navbar-logo.svg?198413819"
+        alt="">
+      <span>Adblock <strong>Plus</strong></span>
+    </a>
+    <a href="#" id="navbar-menu-toggle">
+      <img
+        src="/img/menu-toggle.svg?198413819"
+        alt="">
+    </a>
+    <ul id="navbar-menu">
+      
+        <li class="uppercase ">
+          <a href="/de/download" hreflang="de">Herunterladen</a>
+        </li>
+      
+        <li class="uppercase ">
+          <a href="/de/about" hreflang="de">Über</a>
+        </li>
+      
+      <li class="uppercase">
+        <a href="https://help.eyeo.com" target="_blank">Hilfe</a>
+      </li>
+      <li class="uppercase ">
+        <a href="/de/donate" hreflang="de">Spenden</a>
+      </li>
+      <li id="navbar-locale-menubar">
+        <a id="navbar-locale-selected">
+          Deutsch (DE)
+        </a>
+        <ul id="navbar-locale-menu">
+          
+            <li>
+              <a href="/de/getting_started" hreflang="de">
+                Deutsch (DE)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/en/getting_started" hreflang="en">
+                English (US)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/es/getting_started" hreflang="es">
+                Español (España) (ES)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/fr/getting_started" hreflang="fr">
+                Français (FR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/nl/getting_started" hreflang="nl">
+                Nederlands (NL)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ru/getting_started" hreflang="ru">
+                Русский (RU)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_CN/getting_started" hreflang="zh-CN">
+                中文(简体) (CN)
+              </a>
+            </li>
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+    <div id="content" class="container content False">
+      
+        <h1>Erste Schritte mit Adblock Plus</h1>
+      
+
+      
+        
+
+        
+        
+          <div class="toc">
+            
+          <ul>
+            
+              <li>
+                <a href="#general">Was ist Adblock Plus?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#workings">Wie funktioniert Adblock Plus?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#install">Adblock Plus installieren</a>
+                
+              </li>
+            
+              <li>
+                <a href="#firststeps">Erste Schritte</a>
+                
+          <ul>
+            
+              <li>
+                <a href="#subscription">Wahl der richtigen Filterliste</a>
+                
+              </li>
+            
+              <li>
+                <a href="#add-subscription">Wie man eine Filterliste hinzufügt</a>
+                
+              </li>
+            
+              <li>
+                <a href="#disabling">Adblock Plus auf häufig genutzten Seiten deaktivieren</a>
+                
+              </li>
+            
+          </ul>
+        
+              </li>
+            
+              <li>
+                <a href="#disable-reenable">Adblock Plus auf allen Webseiten aus und wieder einschalten</a>
+                
+              </li>
+            
+              <li>
+                <a href="#problems">Typische Probleme</a>
+                
+          <ul>
+            
+              <li>
+                <a href="#false-positives">Was tun, wenn Adblock Plus zu viel blockiert?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#false-negatives">Was tun, wenn Adblock Plus ein Werbebanner nicht blockiert?</a>
+                
+              </li>
+            
+          </ul>
+        
+              </li>
+            
+          </ul>
+        
+          </div>
+        
+      
+
+      
+        
+
+
+
+<h2 id="general">Was ist Adblock Plus?</h2>
+
+<p>
+  Adblock Plus ist die beliebteste Browsererweiterung für Mozilla Firefox, Google Chrome, Opera und Android. Sein Hauptnutzen besteht in der Entfernung aller aufdringlicher Werbung: YouTube Video Werbung, Facebook Werbung, Banner, Pop-ups, Pop-unders, Hintergrundwerbung, etc.
+</p>
+
+<h2 id="workings">Wie funktioniert Adblock Plus?</h2>
+
+<p>
+  Um Werbung blockieren zu können, benötigt Adblock Plus sogenannte Filter, um gesagt zu bekommen, welche Anfragen blockiert werden sollen. Standardmäßig kommt Adblock Plus ohne jegliche Filter aber es schlägt beim ersten Start eine Filterliste vor. Mit diesen Filtern kann es spezifische Anfragen von Webseiten blockieren, üblicherweise Anfragen zur Auslieferung einer Werbung. Blockierte Werbungen lassen oft einen leeren Platz oder &quot;Werbekennzeichnung&quot; zurück. Adblock Plus kann diese dennoch mit einer &quot;element-hiding&quot; genannten Funktionalität entfernen: Adblock kann diese Elemente anhand gewisser Charakteristiken von der Webseite entfernen.
+</p>
+
+<h2 id="install">Adblock Plus installieren</h2>
+
+<h3>Für Firefox</h3>
+
+<p>
+  Wenn Sie Mozilla Firefox nutzen, klicken Sie einfach die Installations-Schaltfläche <a href="/en/adblock-plus-firefox" hreflang="en">auf der Firefox Installationsseite</a>. Firefox wird Sie daraufhin bitten, Adblock Plus zu erlauben, das Add-on zu installieren: Klicken Sie auf &quot;Erlauben&quot;.
+</p>
+
+<img src="/en/images/gettingstarted_install_ff_1.png?198413819">
+
+<p>
+  Firefox wird daraufhin die Installation unseres Werbeblockers starten und Sie bitten, zu bestätigen, dass Sie dem Author vertrauen. Klicken Sie auf &quot;Jetzt installieren&quot;, um Adblock Plus zu Ihrem Firefox Browser hinzuzufügen.
+</p>
+
+<img src="/en/images/gettingstarted_install_ff_2.png?198413819">
+
+<p>
+  Sie sind nun gegen alle Arten nerviger Werbung geschützt.
+</p>
+
+<h3>Für Chrome</h3>
+
+<p>
+  Google Chrome ermöglicht zwei Wege, unsere Ad Block Software zu installieren. Der leichteste Weg ist über unsere Webseite, der zweite über den Chrome Web Store.
+</p>
+
+<h4>Installation über unsere Webseite in zwei Schritten</h4>
+
+<p>
+  Gehen Sie einfach auf <a href="/en/adblock-plus-chrome" hreflang="en">unsere Chrome Installationsseite</a> und klicken Sie auf die Installations-Schaltfläche, um den Ad Blocker
+</p>
+
+<img src="/en/images/gettingstarted_install_cr_2.png?198413819">
+
+<p>
+  Adblock Plus wird in Ihrem Browser installiert. Wenn die folgende Nachricht aufscheint, war die Installation erfolgreich:
+</p>
+
+<img src="/en/images/gettingstarted_install_cr_3.png?198413819">
+
+<h4>Installation über den Google Chrome Web Store in drei Schritten</h4>
+
+<p>
+  Wenn Sie Adblock Plus über den Chrome Web Store installieren wollen, <a href="https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb">klicken Sie hier</a>, um Adblock Plus zu öffnen. Das folgende Fenster wird unseren Adblock für Chrome öffnen:
+</p>
+
+<img src="/en/images/gettingstarted_install_cr_1.png?198413819">
+
+<p>
+  Klicken Sie in diesem Fenster auf die blaue &quot;Hinzufügen&quot; Schaltfläche in der rechts-oberen Ecke. Nach einem Klick auf die Schaltfläche öffnet sich das folgende Pop-up, in dem Sie durch Klicken auf &quot;Hinzufügen&quot; Adblock Plus zu Ihrem Browser hinzufügen.
+</p>
+
+<img src="/en/images/gettingstarted_install_cr_2.png?198413819">
+
+<p>
+  Sobald das abgeschlossen ist, sind Sie gegen alle Arten von nerviger online Werbung durch den weltweit beliebtesten Ad Blocker geschützt.
+</p>
+
+<h3>Für Opera</h3>
+
+<p>
+  Um Adblock Plus für Opera zu installieren, <a href="https://addons.opera.com/en/extensions/details/opera-adblock/">gehen Sie auf die Opera Add-ons Seite</a> und klicken Sie auf &quot;In Opera hinzufügen&quot;. Sie sehen daraufhin das folgende Pop-up:
+</p>
+
+<img src="/en/images/gettingstarted_install_o.png?198413819">
+
+<p>
+  Nachdem Sie mit einem Klick auf &quot;Installieren&quot; die Installation bestätigen, wird Adblock Plus alle Werbung in Ihrem Opera Browser blockiere.
+</p>
+
+<h3>Auf Android</h3>
+
+<p>
+  Adblock Plus ist auch für Android Geräte verfügbar. Es ist hierbei wichtig, zu beachten, dass es <a href="/de/android-about#general" hreflang="de">ein paar Einschränkungen</a> für nicht-gerootete Geräte gibt. Um Adblock Plus zu installieren, müssen Sie zuerst die Installation von unbekannten Quellen erlauben:
+</p>
+
+<ul>
+  <li>
+    Öffnen Sie &quot;Einstellungen&quot; und gehen Sie zur Option &quot;Unbekannte Herkunft&quot; (je nach Gerät entweder unter &quot;Applikationen&quot; oder &quot;Sicherheit&quot;)
+  </li>
+  <li>
+    Tippen Sie auf das Kontrollkästchen und bestätigen Sie die aufkommende Nachricht mit &quot;OK&quot;
+  </li>
+</ul>
+
+<p>
+  Um Adblock Plus für Android herunterzuladen, gehen Sie auf die <a href="/en/android-install" hreflang="en">Android Installationsseite</a>, laden Sie die App herunter und öffnen Sie sie.
+</p>
+
+<p>
+  Sobald Adblock Plus installiert wurde und die es aktiviert und konfiguriert ist, sollten alle Arten von Werbung blockiert werden.
+</p>
+
+<h2 id="firststeps">Erste Schritte</h2>
+
+<h3 id="subscription">Wahl der richtigen Filterliste</h3>
+
+<p>
+  Wie vorhin beschrieben, benötigt Adblock Plus Filterlisten, um Werbung zu blockieren. Von sich aus kann Adblock Plus die zu ladende Webseite nur sehen, muss jedoch durch die Filterlisten gesagt bekommen, welche Elemente blockiert werden sollen. Wenn Sie Adblock Plus zum ersten Mal installieren, wird, basierend auf den Spracheinstellungen Ihres Browsers, automatisch eine Filterlist für Sie vorgeschlagen.
+</p>
+
+<p>
+  Es gibt zwei grundsätzliche Listen, EasyList und Fanboy&#39;s List. diese zwei Listen blockieren Werbung von den beliebtesten (zumeist englischen) Webseiten. Jedoch blockieren diese Listen keine Werbung von weniger bekannten länderspezifischen Webseiten. Im Falle, dass Sie zum Beispiel aus Deutschland kommen, müssen Sie zusätzlich die deutsche Filterliste abonnieren. In diesem Fall &quot;EasyList Germany + EasyList&quot;. Einen Überblick über alle Listen können Sie <a href="/de/subscriptions" hreflang="de">hier</a> finden.
+</p>
+
+<p>
+  <strong>
+    Es ist wichtig, zu erwähnen, dass Sie nicht zu viele Filterlisten zu Adblock Plus hinzufügen sollten. Dies könnte den Adblocker und somit auch das Surfen im Internet verlangsamen. Grundsätzlich kann man sagen, dass man keine ähnlichen Filterlisten verwenden sollte (z.B. wählen Sie entweder EasyList ODER Fanboy&#39;s List).
+  </strong>
+</p>
+
+<p>
+  Sie können Filterlisten auch dazu nutzen, sich gegen Tracking,, Malware, Social Media Tracking usw. zu schützen. Lesen Sie mehr darüber <a href="/de/features" hreflang="de">hier</a>.
+</p>
+
+<h3 id="add-subscription">Wie man eine Filterliste hinzufügt</h3>
+
+<p>
+  Wenn Sie eine Filterliste entfernen möchten, schauen Sie sich <a href="/de/faq_basics#remove-subscription" hreflang="de">dieses Tutorial</a> an.
+</p>
+
+<h4>In Firefox</h4>
+
+<p>
+  Wählen Sie Firefox &gt;&gt; Add-ons (für Mac OS X / Linux, &quot;Tools&quot; von der Menüleiste &gt;&gt; &quot;Add-Ons&quot;), was den Firefox Add-ons Manager öffnet
+</p>
+
+<h5>Unter Windows:</h5>
+
+<img src="/en/images/gettingstarted_filters_add_ff_1_win.png?198413819">
+
+<h5>Unter Mac OS X / Linux</h5>
+
+<img src="/en/images/gettingstarted_filters_add_ff_1_mac.png?198413819">
+
+<p>
+  Adblock Plus findet man daraufhin im Add-ons Manager in der Registerkarte &quot;Erweiterungen&quot;.
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_ff_2.png?198413819">
+
+<p>
+  Wählen Sie &quot;Einstellungen&quot;, um auf das Adblock Plus Profil zuzugreifen und klicken Sie auf &quot;Filtereinstellungen&quot;:
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_ff_3.png?198413819">
+
+<p>
+  Daraufhin öffnet sich das Adblock Plus Filtereinstellungen Menü.
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_ff_4.png?198413819">
+
+<p>
+  Klicken Sie auf &quot;Filterabonnement hinzufügen&quot; und öffnen Sie das Drop-down Menü für die Filterlisten, um neue/mehr Filter hinzuzufügen. Wählen Sie die Liste, die Sie abonnieren wollen und Adblock Plus aktiviert diese dann automatisch. Diese Liste zeigt ausschließlich die beliebtesten und empfohlene Filter. Mehr Filterlisten sehen Sie <a href="/de/subscriptions" hreflang="de">hier</a>.
+</p>
+
+<h4>In Google Chrome</h4>
+
+<p>
+  Um eine Filterliste in Google Chrome hinzuzufügen, wählen Sie &quot;Einstellung&quot; aus dem Menü in der rechten, oberen Ecke. Das Menü befindet sich beim Symbol mit den drei horizontalen Balken.
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_cr_1.png?198413819">
+
+<p>
+  Wählen Sie im Drop-down Menü &quot;Einstellungen&quot;. Klicken Sie danach auf der linken Seite des Bildschirms auf &quot;Erweiterungen&quot;. Es öffnet sich eine Liste mit den Erweiterungen für Google Chrome, wo auch Adblock Plus zu finden ist.
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_cr_2.png?198413819">
+
+<p>
+  Unter dessen Beschreibung finden Sie den Link &quot;Optionen&quot;. Klicken Sie auf diesen Link, um das Adblock für Chrome Menü zu öffnen.
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_cr_3.png?198413819">
+
+<p>
+  Im Adblock Plus Optionsmenü findet sich ein Überblick über alle installierten und aktivierten Filterlisten. Um eine neue Filterliste zum Adblocker hinzuzufügen, wählen Sie &quot;Filterabonnement hinzufügen&quot;.
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_cr_4.png?198413819">
+
+<p>
+  Es erscheint ein Drop-down Menü mit den beliebtesten und vorgeschlagenen Filterlisten. Wählen Sie eine Filterliste, die Sie aktivieren wollen und klicken Sie auf &quot;Hinzufügen&quot;.  Wenn sich der gewünschte Filter nicht in der Liste befindet, <a href="/de/subscriptions" hreflang="de">gehen Sie auf diese Seite</a>.
+</p>
+
+<h4>In Opera</h4>
+
+<p>
+  Um eine Filterliste in Opera hinzuzufügen, klicken Sie auf die &quot;Menü&quot; Schaltfläche (für Mac OS X / Linux, &quot;Tools&quot;), wählen Sie &quot;Erweiterungen&quot; &gt;&gt; &quot;Erweiterungen verwalten&quot;. Es öffnet sich eine Liste der zurzeit installierten Erweiterungen, inklusive Adblock Plus:
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_o_1.png?198413819">
+
+<p>
+  Um zu den Filtereinstellungen zu gelangen, klicken Sie auf das kleine Werkzeugsymbol in der rechts-oberen Ecke. Dadurch öffnet sich das Adblock Plus Optionsmenü, in welchem Sie Filterlisten hinzufügen können.
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_o_2.png?198413819">
+
+<p>
+  Klicken Sie auf &quot;Filterabonnement hinzufügen&quot;, woraufhin ein Drop-down Menü mit den beliebtesten und vorgeschlagenen Filterlisten erscheint.
+</p>
+
+<img src="/en/images/gettingstarted_filters_add_o_3.png?198413819">
+
+<p>
+  Wählen Sie eine Filterliste und klicken Sie auf &quot;Hinzufügen&quot;.
+</p>
+
+<h4>Auf Android</h4>
+
+<p>
+  Auf Android ist es nicht möglich, mehrere Filterlisten auszuwählen. Um ein Filterabonnement zu ändern, öffnen Sie die Adblock Plus App und wählen Sie &quot;Filterabonnement&quot;. Es öffnet sich ein Menü, mit welchem Sie Ihr Filterabonnement ändern können.
+</p>
+
+<h3 id="disabling">Adblock Plus auf häufig genutzten Seiten deaktivieren</h3>
+
+<p>
+  Viele Webseiten sind auf die Werbeeinnahmen angewiesen. Falls man eine Webseite regelmäßig besucht, sollte man in Erwägung ziehen, Werbung auf dieser Seite zu erlauben.  Das macht man, indem man diese Seite aufruft und das Adblock Plus Symbol in der Werkzeugleiste anklickt. In dem Menü wählt man dann aus &quot;Deaktivieren: auf ...&quot; durch einen Klick auf den entsprechenden Aus/An Schalter (diese Auswahl kann jederzeit genauso rückgängig gemacht werden, dazu klickt man denselben Menüpunkt nochmal an). Klicken Sie dann auf „Aktualisieren“ oder rufen Sie die Webseite auf andere Weise erneut auf.
+</p>
+
+<p>
+  Wählt man diesen Menüpunkt aus, wird ein Filter wie zum Beispiel <code>@@||adblockplus.org^$document</code> in die Filterliste aufgenommen. Mehr Informationen über solche Ausnahmeregeln findet man in <a href="https://adblockplus.org/en/filters#whitelist">Filter für Adblock Plus erstellen</a>.
+</p>
+
+<p>
+  Sie können Adblock Plus auch auf allen Domains zusammen deaktivieren oder reaktivieren. Die Anleitung dazu finden Sie hier: <a href="https://adblockplus.org/getting_started#disable-reenable">Adblock Plus auf allen Webseiten aus und wieder einschalten</a>
+</p>
+
+<h2 id="disable-reenable">Adblock Plus auf allen Webseiten aus und wieder einschalten</h2>
+
+<h3>In Firefox</h3>
+
+<p>
+  Um Adblock Plus in Mozilla Firefox für alle Webseiten zusammen deaktivieren oder reaktivieren zu können, gehen Sie zuerst zum &quot;Add-ons Manager&quot;, den Sie unter &quot;Firefox&quot; &gt;&gt; &quot;Add-ons&quot; erreichen (für Mac OS X / Linux, wählen Sie &quot;Tools&quot; aus der Menüleiste &gt;&gt; &quot;Add-ons&quot;). Hier finden Sie eine Übersicht über alle derzeit installierten Add-ons. Suchen Sie Adblock Plus und klicken Sie einfach auf den zugehörigen Aus/An Schalter.
+</p>
+
+<p>
+  Weitere Informationen zum Entfernen von Add-ons finden Sie auf <a href="https://support.mozilla.org/kb/disable-or-remove-add-ons">der diesbezüglichen Seite von Firefox</a>.
+</p>
+
+<p>
+  Es ist wichtig zu erwähnen, dass Adblock Plus Ihre Einstellungen speichert. Sollten Sie ABP also zu einem späteren Zeitpunkt wieder installieren, müssen Sie Ihre Einstellungen nicht wieder neu konfigurieren. Wenn Sie dies jedoch nicht wollen, löschen Sie das Verzeichnis &quot;adblockplus&quot; in Ihrem Benutzerprofil (<a href="https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data#w_how-do-i-find-my-profile">wie man das Benutzerprofil findet</a>). Außerdem sollte man <a href="http://kb.mozillazine.org/About:config">about:config</a> aufmachen und alle Einstellungen zurücksetzen, die mit &quot;extensions.adblockplus&quot; anfangen (zum Zurücksetzen klickt man den Eintrag mit der rechten Maustaste an und wählt &quot;Zurücksetzen&quot; im Kontextmenü aus).
+</p>
+
+<h3>In Google Chrome</h3>
+
+<p>
+  Um Adblock Plus in Chrome für alle Webseiten zusammen deaktivieren oder reaktivieren zu können, gehen Sie auf &quot;Einstellungen&quot; im Menü in der rechts-oberen Ecke. Wählen Sie danach &quot;Erweiterungen&quot; auf der linken Seite aus. Suchen Sie Adblock Plus und klicken Sie auf den Aus/An Schalter auf der rechten Seite davon.
+</p>
+
+<h3>In Opera</h3>
+
+<p>
+  Um Adblock Plus für Opera zu deinstallieren, klicken Sie auf die &quot;Menü&quot; Schaltfläche (für Mac OS X / Linux, &quot;Tools&quot; in der Menüleiste) und wählen Sie &quot;Erweiterungen&quot; &gt;&gt; &quot;Erweiterungen verwalten&quot;. Dies öffnet das Menü für die Erweiterungen. Suchen Sie Adblock Plus, klicken Sie auf &quot;Deinstallieren&quot; und bestätigen Sie dies im darauffolgenden Dialog.
+</p>
+
+<h3>Auf Android</h3>
+
+<p>
+  Adblock Plus für Android lässt sich wie jede andere App, die Sie heruntergeladen haben, deinstallieren.
+</p>
+
+<ol>
+  <li>
+    Gehen Sie im Menü zu Einstellungen &gt; Applikationen &gt; Applikationen verwalten (auf Geräten mit Android 4.x, Einstellungen &gt; Apps).
+  </li>
+  <li>
+    Gehen Sie die Liste durch, bis Sie die App finden, die Sie deinstallieren wollen.
+  </li>
+  <li>
+    Tippen Sie auf die zu deinstallierende App.
+  </li>
+  <li>
+    Tippen Sie auf &quot;Deinstallieren&quot;.
+  </li>
+</ol>
+
+<h2 id="problems">Typische Probleme</h2>
+
+<h3 id="false-positives">Was tun, wenn Adblock Plus zu viel blockiert?</h3>
+
+<p>
+  Es kann passieren, dass eine Webseite wegen Adblock Plus nicht korrekt funktioniert.
+  Normalerweise ist dafür kein Fehler in Adblock Plus verantwortlich, sondern es ist ein Problem mit den Filtern (oder dem Filterabonnement), die man benutzt. Diese Filter weisen Adblock Plus an, etwas zu blockieren, das nicht blockiert werden sollte. Man kann es überprüfen, indem man  <a href="/de/faq_basics#disable" hreflang="de">Adblock Plus vorübergehend abschaltet</a>. Sollte dadurch das Problem &quot;gelöst&quot; sein, ist fast immer ein Filter dafür verantworlich. Bitte melden Sie falsche Filter über die Funktion &quot;Fehler auf dieser Seite melden&quot;, diese wird automatisch die wichtigen Daten für die Webseite sammeln:
+</p>
+
+<p>
+  <img src="/de/images/screenshot_toolbarReport.png?198413819">
+</p>
+
+<p>
+  Wenn Sie nach Art des Fehlers gefragt werden, wählen Sie bitte &quot;Adblock Plus blockiert zu viel&quot;:
+</p>
+
+<p>
+  <img src="/de/images/screenshot_reporter.png?198413819">
+</p>
+
+<p>
+  Ihr Fehlerbericht wird automatisch an die Autoren der Filterliste geschickt, die Sie benutzen. Bitte haben Sie Verständnis, dass die Autoren der Filterlisten nicht auf jeden der vielen Filterberichte antworten können. Ihr Fehlerbericht wird mit größerer Wahrscheinlichkeit beachtet, wenn es zusätzliche Informationen enthält, die das Problem offensichtlicher und einfacher zu reproduzieren machen.
+</p>
+
+<h3 id="false-negatives">Was tun, wenn Adblock Plus ein Werbebanner nicht blockiert?</h3>
+
+<p>
+  Falls Sie ein Werbebanner gefunden haben, das nicht von Adblock Plus blockiert wird, sollten Sie zuerst überprüfen, ob Sie <a href="#subscription">die richtige Filterliste</a> abonniert haben. Z.B. kann man von einer Filterlist für französische Webseiten nicht erwarten, dass sie auch auf bulgarischen Seiten die Werbung zuverlässig blockiert — für diese Aufgabe sollten Sie eine bulgarische Filterliste abonnieren. Falls es aber die richtige Filterliste ist, ist dem Autor dieser Filterliste das Problem wahrscheinlich einfach nicht bekannt. Sie sollten ihn mit der Funktion &quot;Fehler auf dieser Webseite melden&quot; benachrichtigen, diese wird automatisch die wichtigen Daten für die Webseite sammeln:
+</p>
+
+<p>
+  <img src="/de/images/screenshot_toolbarReport.png?198413819">
+</p>
+
+<p>
+  Wenn Sie nach Art des Fehlers gefragt werden, wählen Sie bitte &quot;Eine Werbeeinblendung wird von Adblock Plus nicht blockiert&quot;:
+</p>
+
+<p>
+  <img src="/de/images/screenshot_reporter2.png?198413819">
+</p>
+
+<p>
+  Ihr Fehlerbericht wird automatisch an die Autoren der Filterliste geschickt, die Sie benutzen. Bitte haben Sie Verständnis, dass die Autoren der Filterlisten nicht auf jeden der vielen Filterberichte antworten können. Ihr Fehlerbericht wird mit größerer Wahrscheinlichkeit beachtet, wenn es zusätzliche Informationen enthält, die das Problem offensichtlicher und einfacher zu reproduzieren machen.
+</p>
+
+      
+    </div>
+
+    
+
+<footer id="footer" class="content">
+  <div class="container">
+    <div class="row">
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Herunterladen</h5>
+        <ul>
+          <li><a href="/en/adblock-plus-chrome" hreflang="en">Adblock Plus für Chrome</a></li>
+          <li><a href="/en/adblock-plus-firefox" hreflang="en">Adblock Plus für Firefox</a></li>
+          <li><a href="/en/ad-blocker-safari" hreflang="en">Adblock Plus für Safari</a></li>
+          <li><a href="/en/adblock-plus-opera" hreflang="en">Adblock Plus für Opera</a></li>
+          <li><a href="/en/adblock-plus-edge" hreflang="en">Adblock Plus for Edge</a></li>
+          <li><a href="/en/android-install" hreflang="en">Adblock Browser for Android</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Ressourcen</h5>
+        <ul>
+          
+            <li><a href="/de/acceptable-ads" hreflang="de">Acceptable Ads</a></li>
+          
+            <li><a href="/de/documentation" hreflang="de">Dokumentation</a></li>
+          
+            <li><a href="/de/deployments" hreflang="de">Für Administratoren</a></li>
+          
+            <li><a href="/de/bugs" hreflang="de">Problem melden</a></li>
+          
+          
+            <li><a href="/de/faq-privacy" hreflang="de">FAQ zum Datenschutz</a></li>
+          
+          <li><a href="https://help.eyeo.com/en/adblockplus/how-to-write-filters" target="_blank" hreflang="en">Filter für Adblock Plus erstellen</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Community</h5>
+        <ul>
+          <li><a href="/de/contribute" hreflang="de">Beitragen</a></li>
+          <li><a href="https://adblockplus.org/releases/" hreflang="en">Bekanntmachungen</a></li>
+          <li><a href="https://adblockplus.org/blog/" hreflang="en">Blog</a></li>
+          <li><a href="https://adblockplus.org/forum/" hreflang="en">Forum</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Entwicklung</h5>
+        <ul>
+          <li><a href="https://gitlab.com/eyeo/adblockplus">Quellcode</a></li>
+          
+  
+    <li><a href="/de/tools" hreflang="de">Tools</a></li>
+  
+
+          <li><a href="https://eyeo.com/jobs/" hreflang="en">Stellen</a></li>
+          <li><a href="/en/partner-integrations" hreflang="en">Partner Integrations</a></li>
+        </ul>
+      </nav>
+
+      <nav id="social-list" class="column">
+        <h5 class="footer-social-heading">Folge uns auf</h5>
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/AdblockPlus"
+              title="Adblock Plus auf Twitter folgen"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-twitter-glyphicon.png?198413819"
+                alt="Twitter-Icon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/user/AdblockPlusOfficial"
+              title="Adblock Plus auf YouTube abonnieren"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-youtube-glyphicon.png?198413819"
+                alt="YouTube-Icon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/adblockplus"
+              title="Adblock Plus auf Facebook folgen"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-facebook-glyphicon.png?198413819"
+                alt="Facebook-Icon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/adblockplus/"
+              title="Adblock Plus auf Instagram folgen"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-instagram-glyphicon.png?198413819"
+                alt="Instagram-Icon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://vk.com/adblockplusofficial"
+              title="Adblock Plus auf VK folgen"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-vk-glyphicon.png?198413819"
+                alt="VK-Icon">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div> 
+
+    <div id="footer-legal">
+      <p id="copyright-notice">Copyright © 2020 Alle Rechte vorbehalten. Adblock Plus<sup>®</sup> ist eine eingetragene Marke der <a href="https://eyeo.com">eyeo GmbH</a>.</p>
+      <ul id="legal-list">
+        
+          
+            <li><a href="/de/terms" hreflang="de">Nutzungsbedingungen</a></li>
+          
+            <li><a href="/de/privacy" hreflang="de">Datenschutzerklärung</a></li>
+          
+            <li><a href="/de/imprint" hreflang="de">Impressum</a></li>
+          
+        
+      </ul>
+    </div> 
+  </div> 
+</footer> 
+    <div id="cookiebar" class="cookie cookiebar">
+  <div class="container">
+    <div class="row">
+
+      <div class="column two-thirds">
+        <p class="cookiebar-text">
+          <svg viewBox="0 0 37.796 41.279" width="38" height="42">
+            <title>Cookie-Benachrichtigung</title>
+            <g transform="translate(-14.904 0)">
+              <g transform="translate(14.904 0)">
+                <path d="M52.468,31.165a6.029,6.029,0,0,1-1.514-4.908.935.935,0,0,0-.626-1.019,6.029,6.029,0,0,1-3.244-8.8A.935.935,0,0,0,47,15.368a6.039,6.039,0,0,1-1.112-5.609A.935.935,0,0,0,45.4,8.647,6.029,6.029,0,0,1,42.129,2.01.935.935,0,0,0,41.484.935a20.682,20.682,0,1,0,11.049,31.38A.935.935,0,0,0,52.468,31.165Zm-3.739,2.814A18.759,18.759,0,1,1,40.148,2.524,7.9,7.9,0,0,0,43.887,10a7.889,7.889,0,0,0,1.281,6.029A7.917,7.917,0,0,0,46.682,25.1a7.823,7.823,0,0,0,2.346,1.617,7.889,7.889,0,0,0,1.57,5.123A18.6,18.6,0,0,1,48.729,33.979Z" transform="translate(-14.904 0)"/>
+              </g>
+              <g transform="translate(24.556 12.199)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(34.81 18.817)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(33.212 32.212)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(36.652 9.03)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(23.509 25.912)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(42.765 27.23)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+            </g>
+          </svg>
+          <span>
+            Wir verwenden einige Cookies, um dir das optimale Erlebnis bei der Nutzung unserer Website zu bieten. Wenn du unsere Website benutzt, bedeutet das, du bist dir bewusst, dass wir Cookies verwenden und dass du dies jederzeit unterbinden kannst. <a href="/de/cookie-information" hreflang="de">Mehr erfahren</a>
+          </span>
+        </p>
+      </div>
+
+      <div class="column one-third text-end">
+        <ul class="cookiebar-nav">
+          <li>
+            <button
+              type="button"
+              class="cookies-submit button"
+              title="Cookie-Benachrichtigung ausblenden">
+              OK, verstanden
+            </button>
+          </li>
+          <li class="dropup cookies-dropup">
+            <button
+              type="button"
+              class="cookies-settings button"
+              title="Cookie-Einstellungen anpassen">
+              Einstellungen &nbsp;
+              <svg viewBox="0 0 16.509 16.993" width="18" height="18">
+                <title>Einstellungen-Symbol</title>
+                <path d="M175.051,8.283V.478a.478.478,0,1,0-.955,0v7.8a2.425,2.425,0,0,0,0,4.755v3.474a.478.478,0,1,0,.955,0V13.038a2.425,2.425,0,0,0,0-4.755Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,174.574,12.129Z" transform="translate(-166.302 0)"/>
+                <path d="M9.751,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.479a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752ZM9.274,8.123a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,9.274,8.123Z" transform="translate(-6.85 0)"/>
+                <path d="M339.351,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.483a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,338.874,8.123Z" transform="translate(-324.789 0)"/>
+              </svg>
+            </button>
+            <div class="cookies-dropup-menu text-start" tabindex="1">
+               <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Notwendige Cookies</p>
+      <p>Werden verwendet, um deine Datenschutzeinstellungen zu speichern. Sie können nicht ausgeschaltet werden.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking Cookies</p>
+      <p>Wir verwenden diese, um den Website-Traffic zu analysieren.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B-Test-Cookies</p>
+      <p>Wir nutzen diese Google Optimize-Cookies für A/B-Tests basierend auf den Analysedaten.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Cookie-Präferenzen speichern">
+    Präferenzen speichern
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+              <span class="arrow"></span>
+            </div>
+          </li>
+        </ul>
+      </div><!-- .column -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+
+</div><!-- #cookies-large-bar -->
+  <form class="cookie cookieprompt">
+
+  <fieldset class="container">
+
+    <legend class="cookie-heading">
+      Cookie-Präferenzen
+    </legend>
+
+    <button
+      type="button"
+      class="cookies-close"
+      title="Cookie-Benachrichtigung ausblenden">
+      <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+        <title>Schließen-Symbol</title>
+        <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+      </svg>
+    </button>
+
+    <p>
+      Wir verwenden einige Cookies, um dir das optimale Erlebnis bei der Nutzung unserer Website zu bieten.
+      <a
+        href="/de/cookie-information" hreflang="de"
+        title="Mehr Informationen über Cookies"
+        target="_blank">Mehr lesen</a>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-submit"
+        title="Cookie-Benachrichtigung ausblenden">
+        OK, verstanden
+      </button>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-settings"
+        title="Cookie-Einstellungen anpassen">
+        Einstellungen ändern
+      </button>
+    </p>
+
+  </fieldset>
+
+</form>
+  <form class="cookie cookiepage">
+
+  <header class="bg-dark">
+    <div class="container">
+
+      <h4 class="cookie-heading">
+        Cookie-Präferenzen
+      </h4>
+
+      <button
+        type="button"
+        class="cookies-close"
+        title="Cookie-Benachrichtigung ausblenden">
+        <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+          <title>Schließen-Symbol</title>
+          <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="bg-light">
+    <div class="container section">
+        Wir verwenden einige Cookies, um dir das optimale Erlebnis bei der Nutzung unserer Website zu bieten. Wenn du unsere Website benutzt, bedeutet das, du bist dir bewusst, dass wir Cookies verwenden und dass du dies jederzeit unterbinden kannst. <a href="/de/cookie-information" hreflang="de">Mehr erfahren</a>
+    </div>
+  </div>
+
+  <div class="container section">
+     <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Notwendige Cookies</p>
+      <p>Werden verwendet, um deine Datenschutzeinstellungen zu speichern. Sie können nicht ausgeschaltet werden.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking Cookies</p>
+      <p>Wir verwenden diese, um den Website-Traffic zu analysieren.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B-Test-Cookies</p>
+      <p>Wir nutzen diese Google Optimize-Cookies für A/B-Tests basierend auf den Analysedaten.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Cookie-Präferenzen speichern">
+    Präferenzen speichern
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+  </div>
+
+</form>
+    <script src="/js/testing/setup.js?34278132"></script>
+    
+  <script src="/js/main.js?34278132"></script>
+
+
+
+  </body>
+</html>

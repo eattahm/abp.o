@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html 
+lang="en"
+data-siteurl="https://adblockplus.org"
+dir="ltr"
+class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Writing Adblock Plus filters</title>
+
+<link rel="canonical" href="https://adblockplus.org/filters">
+
+
+
+    
+<meta property="og:image" content="/img/adblockplus_promo.png">
+<meta property="og:title" content="Writing Adblock Plus filters">
+
+<meta property="og:locale" content="en_US">
+
+  
+    <meta property="og:locale:alternate" content="de_DE">
+  
+
+  
+
+  
+    <meta property="og:locale:alternate" content="es_ES">
+  
+
+  
+    <meta property="og:locale:alternate" content="fr_FR">
+  
+
+  
+    <meta property="og:locale:alternate" content="ko_KR">
+  
+
+  
+    <meta property="og:locale:alternate" content="nl_NL">
+  
+
+  
+    <meta property="og:locale:alternate" content="ru_RU">
+  
+
+  
+    <meta property="og:locale:alternate" content="zh_CN">
+  
+
+  
+    <meta property="og:locale:alternate" content="zh_TW">
+  
+
+<meta property="og:url" content="https://adblockplus.org/en/filters">
+
+
+<meta name="twitter:site" content="@AdblockPlus">
+<meta name="twitter:creator" content="@AdblockPlus">
+    
+  <link rel="stylesheet" href="/css/defaults.css?2263033021">
+  <link rel="stylesheet" href="/css/fonts.css?2263033021">
+  <link rel="stylesheet" href="/css/main.css?2263033021">
+  <link rel="stylesheet" href="/css/cookies.css?2263033021">
+
+
+
+
+
+    <script>
+  window.eyeo = {
+    
+    
+    
+    preventCookiePrompt: false,
+    userTesting: false,
+    userTestingVariants: false,
+    testAnalytics: false,
+    testOptimize: false
+  }
+
+  window.console = window.console || {warn: function(){}};
+</script>
+    
+    <!--[if IE 9]>
+  <script src="/js/vendor/es5-shim.js?1885094715"></script>
+  <script src="/js/vendor/dom4.js?1885094715"></script>
+<![endif]-->
+
+    
+      
+    
+  </head>
+
+  <body>
+    
+
+
+
+<nav id="navbar">
+  <div class="container">
+    <a href="/en/" hreflang="en" id="navbar-logo">
+      <img
+        src="/img/navbar-logo.svg?4218596109"
+        alt="">
+      <span>Adblock <strong>Plus</strong></span>
+    </a>
+    <a href="#" id="navbar-menu-toggle">
+      <img
+        src="/img/menu-toggle.svg?4218596109"
+        alt="">
+    </a>
+    <ul id="navbar-menu">
+      
+        <li class="uppercase ">
+          <a href="/en/download" hreflang="en">Download</a>
+        </li>
+      
+        <li class="uppercase ">
+          <a href="/en/about" hreflang="en">About</a>
+        </li>
+      
+      <li class="uppercase">
+        <a href="https://help.eyeo.com" target="_blank">Help</a>
+      </li>
+      <li class="uppercase ">
+        <a href="/en/donate" hreflang="en">Donate</a>
+      </li>
+      <li id="navbar-locale-menubar">
+        <a id="navbar-locale-selected">
+          English (US)
+        </a>
+        <ul id="navbar-locale-menu">
+          
+            <li>
+              <a href="/de/filters" hreflang="de">
+                Deutsch (DE)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/en/filters" hreflang="en">
+                English (US)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/es/filters" hreflang="es">
+                Español (España) (ES)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/fr/filters" hreflang="fr">
+                Français (FR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ko/filters" hreflang="ko">
+                한국어 (KR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/nl/filters" hreflang="nl">
+                Nederlands (NL)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ru/filters" hreflang="ru">
+                Русский (RU)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_CN/filters" hreflang="zh-CN">
+                中文(简体) (CN)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_TW/filters" hreflang="zh-TW">
+                中文(台灣) (TW)
+              </a>
+            </li>
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+    <div id="content" class="container content False">
+      
+        <h1>Writing Adblock Plus filters</h1>
+      
+
+      
+        
+
+        
+        
+          <div class="toc">
+            
+          <ul>
+            
+              <li>
+                <a href="#introduction">Introduction to Adblock Plus filters</a>
+                
+          <ul>
+            
+              <li>
+                <a href="#basic">Basic filter rules</a>
+                
+              </li>
+            
+              <li>
+                <a href="#whitelist">Defining exception rules</a>
+                
+              </li>
+            
+              <li>
+                <a href="#anchors">Matching at beginning/end of an address</a>
+                
+              </li>
+            
+              <li>
+                <a href="#separators">Marking separator characters</a>
+                
+              </li>
+            
+              <li>
+                <a href="#comments">Comments</a>
+                
+          <ul>
+            
+              <li>
+                <a href="#special-comments">Special comments</a>
+                
+              </li>
+            
+          </ul>
+        
+              </li>
+            
+              <li>
+                <a href="#advanced">Advanced features</a>
+                
+          <ul>
+            
+              <li>
+                <a href="#options">Specifying filter options</a>
+                
+              </li>
+            
+              <li>
+                <a href="#regexps">Using regular expressions</a>
+                
+              </li>
+            
+          </ul>
+        
+              </li>
+            
+          </ul>
+        
+              </li>
+            
+              <li>
+                <a href="#elemhide">Element hiding</a>
+                
+          <ul>
+            
+              <li>
+                <a href="#elemhide_basic">Basic rules</a>
+                
+              </li>
+            
+              <li>
+                <a href="#elemhide_domains">Limiting rules to certain domains</a>
+                
+              </li>
+            
+              <li>
+                <a href="#elemhide_attributes">Attribute selectors</a>
+                
+              </li>
+            
+              <li>
+                <a href="#elemhide_css">Advanced selectors</a>
+                
+              </li>
+            
+              <li>
+                <a href="#elemhide-emulation">Extended CSS selectors (Adblock Plus specific)</a>
+                
+              </li>
+            
+              <li>
+                <a href="#elemhide_exceptions">Exception rules</a>
+                
+              </li>
+            
+              <li>
+                <a href="#generic-specific">Generic / Specific filters</a>
+                
+              </li>
+            
+          </ul>
+        
+              </li>
+            
+              <li>
+                <a href="#sitekey_server">Implementing a sitekey on the server</a>
+                
+              </li>
+            
+          </ul>
+        
+          </div>
+        
+      
+
+      
+        
+
+
+<p>Current Adblock Plus versions allow you to &quot;tweak&quot; your filters in many different ways. This document explains the choices that you have and how they can be used.</p>
+
+  <p><em>Disclaimer</em>: All filter examples given here are really only examples and are not meant to be used.</p>
+
+  <h2 id="introduction">Introduction to Adblock Plus filters</h2>
+
+  <p>The options described in this section should be enough for users who have to create a filter occasionally.</p>
+
+  <h3 id="basic">Basic filter rules</h3>
+
+  <p>The most trivial filter you can define is of course the address of banner you want to block. However, often this address changes every time you open a page. For example it could be <code>http://example.com/ads/banner123.gif</code> where 123 is a random number. Here blocking the complete address won&#39;t help you, you need a more general filter — like <code>http://example.com/ads/banner*.gif</code>. Or maybe even <code>http://example.com/ads/*</code>.</p>
+
+  <p><em>Note</em>: Make sure that you are not replacing too much by wildcards. The filter <code>http://example.com/*</code> will definitely block all banners but it will also block everything else from example.com that you still might want to see.</p>
+
+  <h3 id="whitelist">Defining exception rules</h3>
+
+  <p>Once in a while you may notice that one of your filters, that normally works well, is blocking something that it shouldn&#39;t block. You don&#39;t want to remove this filter but you still don&#39;t want it to match in this one case.</p>
+
+  <p>That&#39;s what exception rules are good for — they allow you to define cases where filters shouldn&#39;t be applied. For example if you are unhappy with your filter <code>adv</code> blocking <code>http://example.com/advice.html</code>, you can define an exception rule <code>@@advice</code>. Exception rules are no different from filter rules, you can use wildcards or regular expressions. You only have to precede them by <code>@@</code> to indicate an exception rule.</p>
+
+  <p>Exception rules can do more. If you specify <code>$document</code> option you will get an exception for the entire page. For example, if your exception rule is <code>@@||example.com^$document</code> and you open some page from example.com — Adblock Plus will be entirely disabled on this page and nothing will be blocked.</p>
+
+  <h3 id="anchors">Matching at beginning/end of an address</h3>
+
+  <p>Usually Adblock Plus treats every filter as if it had a wildcard at its beginning and end, e.g. there is not difference between the filters <code>ad</code> and <code>*ad*</code>. While this is usually unproblematic, sometimes you wish that the filter you defined only matches at the beginning or end of an address. For example you might want to block all Flash, but if you add the filter <code>swf</code> the address <code>http://example.com/swf/index.html</code> will also be blocked.</p>
+
+  <p>Solution to this problem: add a pipe symbol to the filter to show that there should be definitely the end of the address at this point. For example the filter <code>swf|</code> will block <code>http://example.com/annoyingflash.swf</code> but not <code>http://example.com/swf/index.html</code>. And the filter <code>|http://baddomain.example/</code> will block <code>http://baddomain.example/banner.gif</code> but not <code>http://gooddomain.example/analyze?http://baddomain.example</code>.</p>
+
+  <p id="flexible-anchors">Sometimes one wants to block <code>http://example.com/banner.gif</code> as well as <code>https://example.com/banner.gif</code> and <code>http://www.example.com/banner.gif</code>. This can be achieved by putting two pipe symbols in front of the filter which makes sure the filter matches at the beginning of the domain name: <code>||example.com/banner.gif</code> will block all these addresses while not blocking <code>http://badexample.com/banner.gif</code> or <code>http://gooddomain.example/analyze?http://example.com/banner.gif</code> (requires Adblock Plus 1.1 or higher).</p>
+
+  <h3 id="separators">Marking separator characters</h3>
+
+  <p>Often you need to accept any separator character in a filter. For example, you might write a filter that blocks <code>http://example.com/</code> and <code>http://example.com:8000/</code> but not <code>http://example.com.ar/</code>. Here the symbol ^ can be used as a placeholder for a single separator character: <code>http://example.com^</code> (requires Adblock Plus 1.1 or higher).</p>
+
+  <p>Separator character is anything but a letter, a digit, or one of the following: _ - . %. The end of the address is also accepted as separator. In the following example all separator characters are shown in red: http:<b style="color: red;">//</b>example.com<b style="color: red;">:</b>8000<b style="color: red;">/</b>foo.bar<b style="color: red;">?</b>a<b style="color: red;">=</b>12<b style="color: red;">&amp;</b>b<b style="color: red;">=</b>%D1%82%D0%B5%D1%81%D1%82. So this address can be blocked with the filter <code>^example.com^</code> or <code>^%D1%82%D0%B5%D1%81%D1%82^</code> or <code>^foo.bar^</code>.</p>
+
+  <h3 id="comments">Comments</h3>
+
+  <p>Any rule that starts with an exclamation mark is considered a comment. It will still show up in the filter list but in grey instead of black. Adblock Plus will ignore this rule for actual blocking so it is safe to write there whatever you want. You can place a comment rule above a real filter to describe what it is doing. Or you can put a comment on top of your filter list stating your authorship (most filter list authors do that).</p>
+
+<h4 id="special-comments">Special comments</h4>
+
+<p>
+  Special comments will only have an effect in downloaded filter lists, not in custom filters.
+  Special comments must be given at the top of the filter list right below the header.
+  They can set a number of parameters for the filter list:
+</p>
+
+<ul>
+  <li>
+    <p>
+      <code>! Homepage: http://example.com/</code>
+    </p>
+    <p>
+      This comment determines which webpage should be linked as filter list homepage.
+    </p>
+  </li>
+  <li>
+    <p>
+      <code>! Title: FooList</code>
+    </p>
+    <p>
+      This comment sets a fixed title for the filter list. If this comment is present the user will no longer be able to change
+      the title.
+    </p>
+  </li>
+  <li>
+    <p>
+      <code>! Expires: 5 days</code>
+    </p>
+    <p>
+      This comment sets the update interval for the filter list, the value can be given in days (e.g. <code>5 days</code>) or hours
+      (e.g. <code>8 hours</code>). Any value between 1 hour and 14 days is possible. Note that the update
+      will not necessarily happen after this time interval. The actual update time is slightly randomized and depends on
+      some additional factors to reduce server load.
+    </p>
+  </li>
+  <li>
+    <p>
+      <code>! Redirect: http://example.com/list.txt</code>
+    </p>
+    <p>
+      This comment indicates that the filter list has moved to a new download address. Adblock Plus will ignore any file
+      contents beyond that comment and immediately try downloading from the new address. In case of success the address
+      of the filter list will be updated in the settings. This comment is ignored if the new address is the same as the
+      current address, meaning that it can be used to enforce the &quot;canonical&quot; address of the filter list.
+    </p>
+  </li>
+  <li>
+    <p>
+      <code>! Version: 1234</code>
+    </p>
+    <p>
+      This comment defines a numerical version of the filter list. This version number will be displayed in issue reports
+      and can be used to verify that the report refers to the current version of the filter list.
+    </p>
+  </li>
+</ul>
+
+  <h3 id="advanced">Advanced features</h3>
+
+  <p>The features described in this section are usually used only by power users and filterlist creators. Feel free to skip it.</p>
+
+  <h4 id="options">Specifying filter options</h4>
+
+  <p>Adblock Plus allows you to specify a number of options to modify the behavior of a filter. You list these options separated with commas after a dollar sign ($) at the end of the filter, for example:</p>
+
+  <pre>
+*/ads/*$script,match-case
+</pre>
+
+  <p>Here <code>*/ads/*</code> is the actual filter and <code>script</code> and <code>match-case</code> are its options. Currently the following options are supported:</p>
+
+  <ul>
+    <li>Type options: determine which types of elements a filter can block (or whitelist in case of an exception rule). Multiple type options can be specified to indicate that the filter should be applied to several types of elements. Possible types are:
+      <ul>
+        <li><code>script</code> — external scripts loaded via HTML script tag</li>
+        <li><code>image</code> — regular images, typically loaded via HTML img tag</li>
+        <li><code>stylesheet</code> — external CSS stylesheet files</li>
+        <li><code>object</code> — content handled by browser plugins, e.g. Flash or Java</li>
+        <li><code>xmlhttprequest</code> — requests started using the <a href="https://xhr.spec.whatwg.org/"><code>XMLHttpRequest</code> object</a> or <a href="https://fetch.spec.whatwg.org/"><code>fetch()</code> API</a></li>
+        <li><code>subdocument</code> — embedded pages, usually included via HTML frames</li>
+        <li><code>ping</code> — requests started by <a href="https://developer.mozilla.org/docs/Web/HTML/Element/a#attr-ping"><code>&lt;a ping&gt;</code></a> or <a href="https://developer.mozilla.org/docs/Web/API/Navigator/sendBeacon"><code>navigator.sendBeacon()</code></a> (Adblock Plus 2.7.1 or higher required)</li>
+        <li><code>websocket</code> — requests initiated via <a href="https://developer.mozilla.org/docs/Web/API/WebSocket"><code>WebSocket</code> object</a> (Adblock Plus 2.8 or higher required)</li>
+        <li><code>webrtc</code> — connections opened via <a href="https://developer.mozilla.org/docs/Web/API/RTCPeerConnection"><code>RTCPeerConnection</code> instances</a> to ICE servers (Adblock Plus 1.13.3 for Chrome and Opera, 3.0 for Firefox, or higher required)</li>
+        <li><code>document</code> — the page itself (only <a href="#whitelist">exception rules</a> can be applied to the page)</li>
+        <li><code>elemhide</code> — for exception rules only, similar to <code>document</code> but only disables <a href="#elemhide">element hiding rules</a> on the page rather than all filter rules (Adblock Plus 1.2 or higher required)</li>
+        <li><code>generichide</code> — for exception rules only, similar to <code>elemhide</code> but only disables <a href="#generic-specific">generic</a> element hiding rules on the page (Adblock Plus 2.6.12 or higher required)</li>
+        <li><code>genericblock</code> — for exception rules only, just like <code>generichide</code> but disables <a href="#generic-specific">generic</a> blocking rules (Adblock Plus 2.6.12 or higher required)</li>
+        <li><code>popup</code> — pages opened in a new tab or window</li>
+        <li><code>other</code> — types of requests not covered in the list above</li>
+      </ul>
+      The type options <code>background</code>,
+      <code>xbl</code> and <code>dtd</code> are outdated
+      and should no longer be used.
+    </li>
+    <li>Inverse type options: specify the element types the filter should <strong>not</strong> be applied to. Possible inverse type options: <code>~script</code>, <code>~image</code>, <code>~stylesheet</code>, <code>~object</code>, <code>~xmlhttprequest</code>, <code>~subdocument</code>, <code>~document</code>, <code>~elemhide</code>, <code>~other</code></li>
+    <li>Restriction to third-party/first-party requests: If the <code>third-party</code> option is specified, the filter is only applied to requests from a different origin than the currently viewed page. Similarly, <code>~third-party</code> restricts the filter to requests from the same origin as the currently viewed page.</li>
+    <li>Domain restrictions: The option <code>domain=example.com</code> means that the filter should only be applied on pages from &quot;example.com&quot; domain. Multiple domains can be specified using &quot;|&quot; as separator: with the option <code>domain=example.com|example.net</code> the filter will only be applied on pages from &quot;example.com&quot; or &quot;example.net&quot; domains. If a domain name is preceded with &quot;~&quot;, the filter should <strong>not</strong> be applied on pages from this domain. For example, <code>domain=~example.com</code> means that the filter should be applied on pages from any domain but &quot;example.com&quot; and <code>domain=example.com|~foo.example.com</code> restricts the filter to the &quot;example.com&quot; domain with the exception of &quot;foo.example.com&quot; subdomain.</li>
+    <li>
+      Sitekey restrictions: The option <code>sitekey=abcdsitekeydcba</code> means that the filter should only be applied on pages that provide a public key and a signature which can be verified by that very same public key that is also contained in the filter (but without the trailing =). Multiple sitekeys can be specified using &quot;|&quot; as separator: with the option <code>sitekey=abcdsitekeydcba|bcdesitekeyedcb</code> the filter will only be applied on pages providing either sitekey &quot;abcdsitekeydcba&quot; or &quot;bcdesitekeyedcb&quot;. This is similar to domain restrictions but allows covering scenarios where a single filter should apply to a very large number of domains. Note that sitekey restrictions require <a href="#sitekey_server">modifications on the server-side</a>.
+    </li>
+    <li>
+      Content Security Policies: The option <code>csp=script-src: &#39;none&#39;</code> causes a Content Security Policy header of <code>script-src: &#39;none&#39;</code> to be injected into HTTP responses for requested documents matching the filter — assuming that exception rules with the same option don&#39;t also match and that the document isn’t whitelisted. The Content Security Policy <code>script-src: &#39;none&#39;</code> would in turn block all scripts — including inline — for the document. This filter option should generally be avoided, except as a last resort to counter advanced circumvention. (Adblock Plus 3.1 or higher required.)
+    </li>
+    <li><code>match-case</code> — makes the filter only apply to addresses with matching letter case, e.g. the filter <code>*/BannerAd.gif$match-case</code> will block <code>http://example.com/BannerAd.gif</code> but not <code>http://example.com/bannerad.gif</code>.</li>
+  </ul>
+
+  <h4 id="regexps">Using regular expressions</h4>
+
+  <p>If you want even more control about what your filters match and what they don&#39;t match, you can use regular expressions. For example the filter <code>/banner\d+/</code> will match <code>banner123</code> and <code>banner321</code> but not <code>banners</code>. You can check out <a href="https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions#Writing_a_Regular_Expression_Pattern">documentation on regular expressions</a> to learn how to write them.</p>
+
+  <p><em>Note</em>: For performance reasons it is recommended not to use regular expressions if they can be avoided.</p>
+
+  <h2 id="elemhide">Element hiding</h2>
+
+  <h3 id="elemhide_basic">Basic rules</h3>
+
+  <p>Sometimes you will find advertisements that can&#39;t be blocked because they are embedded as text in the web page itself. If you look at the source code of the web page you might find something like this:</p>
+
+  <pre>&lt;div class=&quot;textad&quot;&gt;
+Cheapest tofu, only here and now!
+&lt;/div&gt;
+&lt;div id=&quot;sponsorad&quot;&gt;
+Really cheap tofu, click here!
+&lt;/div&gt;
+&lt;textad&gt;
+Only here you get the best tofu!
+&lt;/textad&gt;
+</pre>
+
+  <p>You need to download the web page so you will necessarily download the advertisements. All you can do here is to hide the advertisement so you don&#39;t need to see it. That&#39;s what element hiding is meant for.</p>
+
+  <p>The first advertisement above is contained inside an element with class attribute &quot;textad&quot;. The following rule will hide exactly any such element: <code>##.textad</code>. Here ## marks an element hiding rule while the rest is a selector identifying the elements that need to be hidden. You can hide elements by their id attribute similarly, <code>###sponsorad</code> will hide the second advertisement. And you can hide elements by element name, e.g. <code>##textad</code> for the third advertisement.</p>
+
+  <p>The <a href="/en/elemhidehelper" hreflang="en">Element Hiding Helper extension</a> helps selecting the correct element and writing the corresponding rule without having to view the source code of the page. Basic HTML knowledge is useful nevertheless.</p>
+
+  <p><em>Note</em>: Element hiding works very differently from normal filters. This has the implication that no wildcards are supported in element hiding rules.</p>
+
+  <h3 id="elemhide_domains">Limiting rules to certain domains</h3>
+
+  <p>Usually you want to hide a specific ad on one specific site, you don&#39;t want your rule to be applied on other sites. For example the rule <code>##.sponsor</code> might hide valid code on some sites. But if you write it as <code>example.com##.sponsor</code> it will be applied on <code>http://example.com/</code> and <code>http://something.example.com/</code> but not on <code>http://example.org/</code>. You can also specify multiple domains — simply separate them with commas: <code>domain1.example,domain2.example,domain3.example##.sponsor</code>.</p>
+
+  <p>If a domain name is preceded with &quot;~&quot;, the rule will <strong>not</strong> be applied on pages from this domain (requires Adblock Plus 1.1 or higher). For example, <code>~example.com##.sponsor</code> will be be applied on pages from any domain but &quot;example.com&quot; and <code>example.com,~foo.example.com##.sponsor</code> makes the rule apply on &quot;example.com&quot; domain with the exception of &quot;foo.example.com&quot; subdomain.</p>
+
+  <p><em>Note</em>: Due to the way how element hiding is implemented, you really can only limit it to full domain names. You cannot use any other part of the address and you cannot use <code>domain</code> as a replacement for <code>domain.example,domain.test</code>.</p>
+
+  <p><em>Note</em>: Element hiding rules with domain limitation can be used to hide browser&#39;s user interface elements as well. For example the filter rule <code>browser##menuitem#javascriptConsole</code> will hide the JavaScript Console entry in Firefox&#39;s Tools menu.</p>
+
+  <h3 id="elemhide_attributes">Attribute selectors</h3>
+
+  <p>Some advertisers don&#39;t make it easy for you — their text advertisements have neither an id nor a class attribute. You can use other attributes to hide those, for example <code>##table[width=&quot;80%&quot;]</code> will hide tables with width attribute set to 80%. If you don&#39;t want to specify the full value of the attribute, <code>##div[title*=&quot;adv&quot;]</code> will hide all div elements with title attribute containing the string &quot;adv&quot;. You can also check the beginning and the end of an attribute, for example <code>##div[title^=&quot;adv&quot;][title$=&quot;ert&quot;]</code> will hide div elements with title starting with &quot;adv&quot; and ending with &quot;ert&quot;. As you see, you can also use multiple conditions — <code>table[width=&quot;80%&quot;][bgcolor=&quot;white&quot;]</code> will match tables with width attribute set to 80% and bgcolor attribute set to white.</p>
+
+  <h3 id="elemhide_css">Advanced selectors</h3>
+
+  <p>In general, any CSS selector supported by Firefox can be used for element hiding. For example the following rule will hide anything following a div element with class &quot;adheader&quot;: <code>##.adheader + *</code>. For a full list of CSS list see <a href="https://www.w3.org/TR/selectors-3/">W3C CSS specification</a> (note that not all selectors are supported by Firefox yet). Please keep in mind that browsers are slower to process these selectors than selectors based on <code>class</code> or <code>id</code> attribute only.</p>
+
+  <p><em>Note</em>: This functionality is for advanced users only, you should be comfortable with CSS selectors to use it. Adblock Plus won&#39;t be able to check the syntax of the selector you are adding, if you use invalid CSS syntax you might break other (valid) rules you have. Check JavaScript Console for CSS errors.</p>
+
+<h3 id="elemhide-emulation">Extended CSS selectors (Adblock Plus specific)</h3>
+
+<p>
+  Sometimes the standard CSS selectors aren&#39;t powerful enough to hide an advertisement. For those cases we have added some new selectors, namely <code>:-abp-has()</code>, <code>:-abp-contains()</code> and <code>:-abp-properties()</code> (requires Adblock Plus 1.13.3 or higher for Chrome and Opera).
+</p>
+<p>
+  When writing an element hiding filter that makes use of these extended selectors you must use the <code>#?#</code> syntax, e.g. <code>example.com#?#selector</code>. But it&#39;s important to note that doing so carries a performance impact, so do so sparingly and make sure those filters are specific to as few domains and elements as possible.
+</p>
+<h4>:-abp-properties()</h4>
+<p>
+  <code>:-abp-properties(properties)</code> will select elements based upon stylesheet properties. For example <code>:-abp-properties(width:300px;height:250px;)</code> will select elements that have a corresponding CSS rule in a stylesheet which sets the <code>width</code> and <code>height</code> to the values <code>300px</code> and <code>250px</code> respectively. Property names are matched case-insensitively. Furthermore, wildcards can be used so that <code>:-abp-properties(width:*px;height:250px;)</code> will match any width specified in pixels and a height of 250 pixels.
+</p>
+<p>
+  You can also use <a href="https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions">regular expressions</a> by surrounding the properties expression with &quot;/&quot;. For example, <code>:-abp-properties(/width:30[2-8]px;height:250px;/)</code> will match widths between 302 and 308 pixels and a height of 250 pixels.
+</p>
+<p>
+  <em>Note</em>: The <a href="https://adblockplus.org/development-builds/new-css-property-filter-syntax">older syntax</a> for the CSS property filters is deprecated and will be automatically converted to the new format . The syntax to select the style properties remain the same. For example, <code>[-abp-properties=&#39;width:300px;height:250px;&#39;]</code> will be converted to <code>:-abp-properties(width:300px;height:250px;)</code>.
+</p>
+<p>
+  <code>:-abp-properties()</code> will also select elements using the style properties found in their pseudo-elements, like <code>::before</code> and <code>::after</code>. For example, <code>:-abp-properties(content:&#39;Advertisment&#39;)</code> will match elements where the string <em>Advertisment</em> is found in either their <code>::before</code> or <code>::after</code> pseudo element.
+</p>
+<h4>:-abp-has()</h4>
+<p>
+  <code>:-abp-has(selector)</code> will select elements based on their content. For example <code>:-abp-has(&gt; div &gt; a.advertiser)</code> will select elements that contain as a direct descendant a <code>&lt;div&gt;</code> that contains an <code>&lt;a&gt;</code> with the class <code>advertiser</code>. The inner selector can be relative to the element scope, and can use any of the pseudo-selectors, including <code>:-abp-has()</code> and will determine whether the selection will occur.
+</p>
+<h4>:-abp-contains()</h4>
+<p>
+  <code>:-abp-contains(text)</code> will select elements based on their text content. For example, <code>div.sidebar &gt; span:-abp-contains(Advertisment)</code> will select the  <code>&lt;span&gt;</code> elements within a <code>&lt;div&gt;</code>, with a class of <code>sidebar</code> that contains the word &quot;Advertisment&quot;. In practice, you&#39;d want to combine this with a <code>:-abp-has()</code> to select the outer container — something like <code>div.sidebar &gt; div:-abp-has(span:-abp-contains(Advertisment))</code> to select the container that would contain an advertisement label.
+</p>
+
+<h3 id="elemhide_exceptions">Exception rules</h3>
+
+<p>
+  Exception rules can disable existing rules on particular domains. These are mostly
+  useful to filter subscription authors who are extending another filter subscription that they
+  cannot change. For example, the rule <code>##.textad</code> can be
+  disabled on <code>example.com</code> using the exception rule
+  <code>example.com#@#.textad</code>. The combination of these two
+  rules has exactly the same effect as the single rule
+  <code>~example.com##.textad</code>. It is recommended that you use
+  exception rules only when you cannot change an overly general element hiding rule, in all the
+  other cases limiting this rule to the necessary domains is preferable.
+  These exceptions will be applied to <a href="#elemhide-emulation">advanced pseudo-selector rules</a> as well.
+</p>
+
+  <h3 id="generic-specific">Generic / Specific filters</h3>
+
+  <p>With the <code>$generichide</code> and <code>$genericblock</code> filter options the distinction between generic and specific filters becomes important.</p>
+  <p>We classify a filter to be <strong>specific</strong> if it matches one or more domains or matches a sitekey. If a filter has no domains specified (or only domain exceptions) and no sitekey then it counts as <strong>generic</strong>. For example, <code>example.com##.textad</code> is a specific filter, whereas both <code>##.textad</code> and <code>~example.com##.textad</code> are generic.</p>
+  <p>Note that with blocking rules the domain must be specified under the $domain option for them to be considered specific. For example, <code>||example.com^</code> is considered generic whereas <code>*/ads/*$domain=example.com</code> is site-specific.</p>
+
+  <h2 id="sitekey_server">Implementing a sitekey on the server</h2>
+
+<p>
+  For a <a href="#options">sitekey-restricted filter</a> to apply, a webpage needs to return base64-encoded versions of the public key and a signature which Adblock Plus can validate. Currently, this means including them in both the HTTP response header (<code>X-Adblock-Key: abcdpublickeydcba_abcdsignaturedcba</code>) and the root tag of the document (<code>&lt;html data-adblockkey=&quot;abcdpublickeydcba_abcdsignaturedcba&quot;&gt;</code>).
+</p>
+
+<p>
+  First you need to create a private RSA key (preferably 512 bit to keep the transfer volume low) and then a DER representation of the public key.
+</p>
+
+<p>
+  The data used for creating the signature is a concatenated list of request variables (namely URI, host and user agent) separated by the <code>NUL</code> character &quot;\0&quot;. For example:
+</p>
+
+<pre>
+  /index.html?q=foo\0www.example.com\0Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:30.0) Gecko/20100101 Firefox/30.0
+</pre>
+
+<p>
+  Finally, generate the signature for this string by using the signature algorithm SEC_OID_ISO_SHA_WITH_RSA_SIGNATURE (default when using OpenSSL).
+</p>
+
+      
+    </div>
+
+    
+
+<footer id="footer" class="content">
+  <div class="container">
+    <div class="row">
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Download</h5>
+        <ul>
+          <li><a href="/en/adblock-plus-chrome" hreflang="en">Adblock Plus for Chrome</a></li>
+          <li><a href="/en/adblock-plus-firefox" hreflang="en">Adblock Plus for Firefox</a></li>
+          <li><a href="/en/ad-blocker-safari" hreflang="en">Adblock Plus for Safari</a></li>
+          <li><a href="/en/adblock-plus-opera" hreflang="en">Adblock Plus for Opera</a></li>
+          <li><a href="/en/adblock-plus-edge" hreflang="en">Adblock Plus for Edge</a></li>
+          <li><a href="/en/android-install" hreflang="en">Adblock Browser for Android</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Resources</h5>
+        <ul>
+          
+            <li><a href="/en/acceptable-ads" hreflang="en">Acceptable Ads</a></li>
+          
+            <li><a href="/en/documentation" hreflang="en">Documentation</a></li>
+          
+            <li><a href="/en/deployments" hreflang="en">For admins</a></li>
+          
+            <li><a href="/en/bugs" hreflang="en">Report an issue</a></li>
+          
+          
+            <li><a href="/en/faq-privacy" hreflang="en">Privacy FAQ</a></li>
+          
+          <li><a href="https://help.eyeo.com/en/adblockplus/how-to-write-filters" target="_blank" hreflang="en">Writing Adblock Plus filters</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Community</h5>
+        <ul>
+          <li><a href="/en/contribute" hreflang="en">Contribute</a></li>
+          <li><a href="https://adblockplus.org/releases/" hreflang="en">Announcements</a></li>
+          <li><a href="https://adblockplus.org/blog/" hreflang="en">Blog</a></li>
+          <li><a href="https://adblockplus.org/forum/" hreflang="en">Forum</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Development</h5>
+        <ul>
+          <li><a href="https://gitlab.com/eyeo/adblockplus">Source Code</a></li>
+          
+  
+    <li><a href="/en/tools" hreflang="en">Tools</a></li>
+  
+
+          <li><a href="https://eyeo.com/jobs/" hreflang="en">Jobs</a></li>
+          <li><a href="/en/partner-integrations" hreflang="en">Partner Integrations</a></li>
+        </ul>
+      </nav>
+
+      <nav id="social-list" class="column">
+        <h5 class="footer-social-heading">Follow us on</h5>
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/AdblockPlus"
+              title="Follow Adblock Plus on Twitter"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-twitter-glyphicon.png?4218596109"
+                alt="Twitter glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/user/AdblockPlusOfficial"
+              title="Subscribe to Adblock Plus on YouTube"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-youtube-glyphicon.png?4218596109"
+                alt="YouTube glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/adblockplus"
+              title="Follow Adblock Plus on Facebook"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-facebook-glyphicon.png?4218596109"
+                alt="Facebook glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/adblockplus/"
+              title="Follow Adblock Plus on Instagram"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-instagram-glyphicon.png?4218596109"
+                alt="Instagram glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://vk.com/adblockplusofficial"
+              title="Follow Adblock Plus on VK"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-vk-glyphicon.png?4218596109"
+                alt="VK glyphicon">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div> 
+
+    <div id="footer-legal">
+      <p id="copyright-notice">Copyright © 2020 All rights reserved. Adblock Plus<sup>®</sup> is a registered trademark of <a href="https://eyeo.com">eyeo GmbH</a>.</p>
+      <ul id="legal-list">
+        
+          
+            <li><a href="/en/terms" hreflang="en">Terms of use</a></li>
+          
+            <li><a href="/en/privacy" hreflang="en">Privacy Policy</a></li>
+          
+            <li><a href="/en/imprint" hreflang="en">Imprint</a></li>
+          
+        
+      </ul>
+    </div> 
+  </div> 
+</footer> 
+    <div id="cookiebar" class="cookie cookiebar">
+  <div class="container">
+    <div class="row">
+
+      <div class="column two-thirds">
+        <p class="cookiebar-text">
+          <svg viewBox="0 0 37.796 41.279" width="38" height="42">
+            <title>Cookie notice</title>
+            <g transform="translate(-14.904 0)">
+              <g transform="translate(14.904 0)">
+                <path d="M52.468,31.165a6.029,6.029,0,0,1-1.514-4.908.935.935,0,0,0-.626-1.019,6.029,6.029,0,0,1-3.244-8.8A.935.935,0,0,0,47,15.368a6.039,6.039,0,0,1-1.112-5.609A.935.935,0,0,0,45.4,8.647,6.029,6.029,0,0,1,42.129,2.01.935.935,0,0,0,41.484.935a20.682,20.682,0,1,0,11.049,31.38A.935.935,0,0,0,52.468,31.165Zm-3.739,2.814A18.759,18.759,0,1,1,40.148,2.524,7.9,7.9,0,0,0,43.887,10a7.889,7.889,0,0,0,1.281,6.029A7.917,7.917,0,0,0,46.682,25.1a7.823,7.823,0,0,0,2.346,1.617,7.889,7.889,0,0,0,1.57,5.123A18.6,18.6,0,0,1,48.729,33.979Z" transform="translate(-14.904 0)"/>
+              </g>
+              <g transform="translate(24.556 12.199)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(34.81 18.817)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(33.212 32.212)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(36.652 9.03)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(23.509 25.912)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(42.765 27.23)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+            </g>
+          </svg>
+          <span>
+            We use some cookies to give you the best experience on our website. By using our site you are aware that we are using cookies and you can change this any time. <a href="/en/cookie-information" hreflang="en">Learn more</a>
+          </span>
+        </p>
+      </div>
+
+      <div class="column one-third text-end">
+        <ul class="cookiebar-nav">
+          <li>
+            <button
+              type="button"
+              class="cookies-submit button"
+              title="Dismiss cookie notification">
+              Ok, got it
+            </button>
+          </li>
+          <li class="dropup cookies-dropup">
+            <button
+              type="button"
+              class="cookies-settings button"
+              title="Edit cookie settings">
+              Settings &nbsp;
+              <svg viewBox="0 0 16.509 16.993" width="18" height="18">
+                <title>Settings icon</title>
+                <path d="M175.051,8.283V.478a.478.478,0,1,0-.955,0v7.8a2.425,2.425,0,0,0,0,4.755v3.474a.478.478,0,1,0,.955,0V13.038a2.425,2.425,0,0,0,0-4.755Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,174.574,12.129Z" transform="translate(-166.302 0)"/>
+                <path d="M9.751,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.479a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752ZM9.274,8.123a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,9.274,8.123Z" transform="translate(-6.85 0)"/>
+                <path d="M339.351,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.483a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,338.874,8.123Z" transform="translate(-324.789 0)"/>
+              </svg>
+            </button>
+            <div class="cookies-dropup-menu text-start" tabindex="1">
+               <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Necessary cookies</p>
+      <p>Used to remember your privacy preferences. They cannot be switched off.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking cookies</p>
+      <p>We use these to analyze website traffic.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B testing cookies</p>
+      <p>We use these Google Optimize cookies for A/B testing based on the analytics data.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Save cookie preferences">
+    Save preferences
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+              <span class="arrow"></span>
+            </div>
+          </li>
+        </ul>
+      </div><!-- .column -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+
+</div><!-- #cookies-large-bar -->
+  <form class="cookie cookieprompt">
+
+  <fieldset class="container">
+
+    <legend class="cookie-heading">
+      Cookie preferences
+    </legend>
+
+    <button
+      type="button"
+      class="cookies-close"
+      title="Dismiss cookie notification">
+      <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+        <title>Close icon</title>
+        <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+      </svg>
+    </button>
+
+    <p>
+      We use some cookies to give you the best experience on our website.
+      <a
+        href="/en/cookie-information" hreflang="en"
+        title="More information about cookies"
+        target="_blank">Read more</a>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-submit"
+        title="Dismiss cookie notification">
+        Ok, got it
+      </button>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-settings"
+        title="Edit cookie settings">
+        Change settings
+      </button>
+    </p>
+
+  </fieldset>
+
+</form>
+  <form class="cookie cookiepage">
+
+  <header class="bg-dark">
+    <div class="container">
+
+      <h4 class="cookie-heading">
+        Cookie preferences
+      </h4>
+
+      <button
+        type="button"
+        class="cookies-close"
+        title="Dismiss cookie notification">
+        <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+          <title>Close icon</title>
+          <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="bg-light">
+    <div class="container section">
+        We use some cookies to give you the best experience on our website. By using our site you are aware that we are using cookies and you can change this any time. <a href="/en/cookie-information" hreflang="en">Learn more</a>
+    </div>
+  </div>
+
+  <div class="container section">
+     <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Necessary cookies</p>
+      <p>Used to remember your privacy preferences. They cannot be switched off.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking cookies</p>
+      <p>We use these to analyze website traffic.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B testing cookies</p>
+      <p>We use these Google Optimize cookies for A/B testing based on the analytics data.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Save cookie preferences">
+    Save preferences
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+  </div>
+
+</form>
+    <script src="/js/testing/setup.js?1885094715"></script>
+    
+  <script src="/js/main.js?1885094715"></script>
+
+
+
+  </body>
+</html>

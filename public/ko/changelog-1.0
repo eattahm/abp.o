@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html 
+lang="ko"
+data-siteurl="https://adblockplus.org"
+dir="ltr"
+class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Adblock Plus 1.0의 세부적인 변경내역</title>
+
+<link rel="canonical" href="https://adblockplus.org/changelog-1.0">
+
+
+
+    
+<meta property="og:image" content="/img/adblockplus_promo.png">
+<meta property="og:title" content="Adblock Plus 1.0의 세부적인 변경내역">
+
+<meta property="og:locale" content="ko_KR">
+
+  
+    <meta property="og:locale:alternate" content="en_US">
+  
+
+  
+    <meta property="og:locale:alternate" content="fr_FR">
+  
+
+  
+
+<meta property="og:url" content="https://adblockplus.org/ko/changelog-1.0">
+
+
+<meta name="twitter:site" content="@AdblockPlus">
+<meta name="twitter:creator" content="@AdblockPlus">
+    
+  <link rel="stylesheet" href="/css/defaults.css?2573470009">
+  <link rel="stylesheet" href="/css/fonts.css?2573470009">
+  <link rel="stylesheet" href="/css/main.css?2573470009">
+  <link rel="stylesheet" href="/css/cookies.css?2573470009">
+
+
+
+
+
+    <script>
+  window.eyeo = {
+    
+    
+    
+    preventCookiePrompt: false,
+    userTesting: false,
+    userTestingVariants: false,
+    testAnalytics: false,
+    testOptimize: false
+  }
+
+  window.console = window.console || {warn: function(){}};
+</script>
+    
+    <!--[if IE 9]>
+  <script src="/js/vendor/es5-shim.js?1365669100"></script>
+  <script src="/js/vendor/dom4.js?1365669100"></script>
+<![endif]-->
+
+    
+      
+    
+  </head>
+
+  <body>
+    
+
+
+
+<nav id="navbar">
+  <div class="container">
+    <a href="/en/" hreflang="en" id="navbar-logo">
+      <img
+        src="/img/navbar-logo.svg?4260952636"
+        alt="">
+      <span>Adblock <strong>Plus</strong></span>
+    </a>
+    <a href="#" id="navbar-menu-toggle">
+      <img
+        src="/img/menu-toggle.svg?4260952636"
+        alt="">
+    </a>
+    <ul id="navbar-menu">
+      
+        <li class="uppercase ">
+          <a href="/en/download" hreflang="en">Download</a>
+        </li>
+      
+        <li class="uppercase ">
+          <a href="/en/about" hreflang="en">소개</a>
+        </li>
+      
+      <li class="uppercase">
+        <a href="https://help.eyeo.com" target="_blank">Help</a>
+      </li>
+      <li class="uppercase ">
+        <a href="/ko/donate" hreflang="ko">Donate</a>
+      </li>
+      <li id="navbar-locale-menubar">
+        <a id="navbar-locale-selected">
+          한국어 (KR)
+        </a>
+        <ul id="navbar-locale-menu">
+          
+            <li>
+              <a href="/en/changelog-1.0" hreflang="en">
+                English (US)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/fr/changelog-1.0" hreflang="fr">
+                Français (FR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ko/changelog-1.0" hreflang="ko">
+                한국어 (KR)
+              </a>
+            </li>
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+    <div id="content" class="container content False">
+      
+        <h1>Adblock Plus 1.0의 세부적인 변경내역</h1>
+      
+
+      
+        
+
+        
+        
+          <div class="toc">
+            
+          <ul>
+            
+              <li>
+                <a href="#issues">대표적인 문제</a>
+                
+              </li>
+            
+              <li>
+                <a href="#features">새로운 기능</a>
+                
+              </li>
+            
+              <li>
+                <a href="#interface">사용자 인터페이스</a>
+                
+          <ul>
+            
+              <li>
+                <a href="#blockable">차단 가능 목록</a>
+                
+              </li>
+            
+              <li>
+                <a href="#preferences">필터 설정 창</a>
+                
+              </li>
+            
+              <li>
+                <a href="#subscriptions">구독 필터 선택</a>
+                
+              </li>
+            
+              <li>
+                <a href="#other-ui">다른 사용자 인터페이스의 변경사항</a>
+                
+              </li>
+            
+          </ul>
+        
+              </li>
+            
+              <li>
+                <a href="#core">코어</a>
+                
+          <ul>
+            
+              <li>
+                <a href="#synchronizer">구독 필터 다운로드</a>
+                
+              </li>
+            
+          </ul>
+        
+              </li>
+            
+          </ul>
+        
+          </div>
+        
+      
+
+      
+        
+
+
+        <p>Adblock Plus 0.7.5.4와 비교해 주요한 변경사항은 다음과 같습니다.</p>
+
+        <h2 id="issues">대표적인 문제</h2>
+
+        <ul>
+               <li>필터 저장 형식을 변경해서 이전 버전으로 되돌아 가는 것은 필터를 내보내야 하고 다운그레이드 후 그것들을 다시 가져와야 함</li>
+               <li>Mac OS X : &quot;플래시/자바 차단 탭 보이기&quot;를 사용하면 플래시 무비가 알맞게 보이지 않음</li>
+               <li>일부 번역은 번역되지 않은 영어 문자열을 포함함</li>
+        </ul>
+
+        <h2 id="features">새로운 기능</h2>
+
+        <ul>
+               <li>새로운 필터 작성기 대화상자는 필터를 더 쉽게 추가할 수 있게 해줌</li>
+               <li>새로운 필터 옵션인 <code>$third-party</code>와 <code>$~third-party</code>로 외부/내부 요청을 제한함 (<a href="/forum/viewtopic.php?t=591">포럼 게시글</a>)</li>
+        </ul>
+
+        <h2 id="interface">사용자 인터페이스</h2>
+
+        <ul>
+               <li>번역 추가 : 아르메니아어, 갈리시아어, 인도네시아어</li>
+        </ul>
+
+        <h3 id="blockable">차단 가능 목록</h3>
+
+        <ul>
+               <li>툴팁은 필터 자체와 더불어 필터 그룹을 보여줌 (<a href="/forum/viewtopic.php?t=1705">포럼 게시글</a>)</li>
+               <li>문맥 메뉴에서 필터를 사용하지 않고, 다시 사용할 수 있음 (<a href="/forum/viewtopic.php?t=2204">포럼 게시글</a>)</li>
+               <li>차단된 항목에 대한 &quot;필터 편집&quot; 대신에 &quot;허용 필터 추가&quot;의 기본 동작을 변경함</li>
+               <li>기본 정렬 순서를 &quot;상태&quot;로 설정함 (차단된 항목이 먼저 보임)</li>
+               <li>다중 선택과 다중 주소/필터 복사 기능을 추가함 (<a href="/forum/viewtopic.php?t=1705">포럼 게시글</a>)</li>
+               <li>문맥 메뉴에 &quot;전체 선택&quot;을 추가함</li>
+               <li>문맥 메뉴에 &quot;필터 복사&quot; 항목을 추가함 (<a href="/forum/viewtopic.php?t=2498">포럼 게시글</a>)</li>
+               <li>(기본적으로 숨겨져 있는) &quot;크기&quot; 칼럼을 추가함. 같은 정보를 툴팁으로 보여줌</li>
+               <li>요소 숨김의 적용 횟수를 위한 필터 색깔을 변경함 (<a href="/forum/viewtopic.php?t=3071">포럼 게시글</a>)</li>
+               <li>고침 : 헤더가 전체 화면 모드에서 숨겨짐</li>
+        </ul>
+
+        <h3 id="preferences">필터 설정 창</h3>
+
+        <ul>
+               <li>창을 열 때 지연과 변경사항을 적용할 때 많은 지연을 없앰</li>
+               <li>Mac OS X: 필터 관리 메뉴를 창 내부에 유지도록 하기 위해 툴바로 변경함 (<a href="/forum/viewtopic.php?t=2431">포럼 게시글</a>)</li>
+               <li>사용자가 정의한 필터 그룹의 이름을 변경함 (<a href="/forum/viewtopic.php?t=1207">포럼 게시글</a>)</li>
+               <li>그룹/구독 필터의 이름은 굵은 텍스트를 사용함 (<a href="/forum/viewtopic.php?t=3061">포럼 게시글</a>)</li>
+               <li>보이는 칼럼과 정렬을 통제하기 위해 &quot;보기&quot; 메뉴를 추가함. 칼럼 피커를 제거함</li>
+               <li>목록 헤더를 위한 문맥 메뉴를 새로운 &quot;보기&quot; 메뉴로 만듦</li>
+               <li>사용자가 정의한 필터를 포함하는 그룹을 사용하지 않을 수 있음 (<a href="/forum/viewtopic.php?t=2654">포럼 게시글</a>)</li>
+               <li>&quot;사용&quot; 칼럼의 이미지를 더욱 분명하게 만듦 (<a href="/forum/viewtopic.php?t=1325">포럼 게시글</a>, <a href="/forum/viewtopic.php?t=3061">포럼 게시글</a>)</li>
+               <li>목록에서 &quot;필터 추가&quot; 더미를 제거함 (<a href="/forum/viewtopic.php?t=2654">포럼 게시글</a>)</li>
+               <li>모든 필터 그룹에서 &quot;광고 필터&quot;뿐만 아니라 주석 지원을 추가함</li>
+               <li>정렬을 함에도 불구하고 같은 필터 앞에 주석이 항상 유지됨 (또한 목록이 정렬될 때조차 마우스로 끌 수 있음)</li>
+               <li>잘못된 필터의 경우 툴팁은 필터가 타당하지 않은 이유를 설명함</li>
+               <li>필터 작성기에 의해 쓸모없게 된 사용자 인터페이스 요소를 제거함 : 정규 표현식 경고, <code>extensions.adblockplus.warnregexp</code>와 일치하는 설정, 필터 편집기에서 펼침 메뉴 목록(<a href="/forum/viewtopic.php?t=2571">포럼 게시글</a>)</li>
+               <li>필터 내보내기는 파일에 체크섬 주석을 삽입함 (<a href="/forum/viewtopic.php?t=2623">포럼 게시글</a>)</li>
+               <li>느낌표의 의미를 설명하는 툴팁을 추가함</li>
+               <li>문맥 메뉴에서 필터와 구독 필터의 사용 상태를 변경하는 방식을 추가함</li>
+               <li>&quot;필터 적용 횟수 초기화&quot;는 &quot;마지막 적용 날짜&quot;도 초기화함 (<a href="https://www.mozdev.org/bugs/show_bug.cgi?id=18650">버그 18650</a>)</li>
+               <li>고침 : 필터 관리 대화상자에서 검색바에 아이콘이 없음 (파이어폭스 3)</li>
+               <li>고침 : 데이터는 때때로 잘못된 문자 잉코딩을 사용함 (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=441370">버그 441370</a>)</li>
+               <li>고침 : &quot;유효한 필터편집&quot;은 필터가 사용하는 구독 필터에 존재하더라도 사용하지 않는 구독 필터에서 필터를 선택함 (<a href="http://forum.mozilla-russia.org/viewtopic.php?pid=260916#p260916">포럼 게시글</a>)</li>
+               <li>고침 : &#39;사용&#39; 칼럼을 두 번 클릭하면 필터 편집기가 시작됨</li>
+               <li>고침 : &quot;자동 다운로드&quot; 상태로 변경이 즉시 보이지 않음</li>
+               <li>스페이스가 있는 필터(특히 주석)를 붙여넣을 수 있음 (<a href="https://www.mozdev.org/bugs/show_bug.cgi?id=18920">버그 18920</a>)</li>
+        </ul>
+
+        <h3 id="subscriptions">구독 필터 선택</h3>
+
+        <ul>
+               <li>처음 시작 : 구독 필터 선택은 별도의 창이 아닌 새 탭으로 열림 (<a href="https://www.mozdev.org/bugs/show_bug.cgi?id=15786">버그 15786</a>)</li>
+               <li>처음 시작 : 구독 필터 선택은 다른 확장 프로그램이 이미 그것들이 유지하는 구독 필터를 추가하더라도 보임</li>
+               <li>필터 관리의 &quot;구독 필터 추가&quot;는 사용자 구독 필터의 대화상자가 아닌 구독 필터 선택을 불러옴.</li>
+               <li>Filterset.G가 설치되었을 때 자동 제거 옵션이 있는 경고를 추가함.</li>
+               <li>자동으로 제거하기 위한 옵션이 있는 Adblock 경고를 추가함 (이것은 이전에 별도의 질문 팝업이었음)</li>
+        </ul>
+
+        <h3 id="other-ui">다른 사용자 인터페이스의 변경사항</h3>
+
+        <ul>
+               <li>정규 표현식 경고를 최적화하기에 너무 짧은 필터에까지 확대함</li>
+               <li>Adblock Plus를 사용하지 않는 경고는 클릭 한 번으로 다시 사용할 수 있게 함</li>
+               <li>아주 오래된 (어디에서도 발견할 수 없고, 알려지지 않은) 끌어다 놓기 처리 코드를 제거함</li>
+               <li>고침 : &quot;현재 페이지에만 허용&quot;은 질의(query) 문자열이 있는 페이지에 작동하지 않음</li>
+               <li>Adblock Plus 정보 : 선택할 수 있는 버전 번호를 만들어 복사할 수 있게 함</li>
+               <li>Adblock Plus 정보 : 지역화할 수 있는 홈페이지 링크를 만듦 (그리고 독일/프랑스 로켈로 다르게 만듦, <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=17136">버그 17136</a>)</li>
+               <li>파이어폭스의 보기 메뉴에&quot;Adblock Plus: 차단 가능 목록&quot;을 추가함 (시몽키의 경우 보기 - 툴바 메뉴)</li>
+        </ul>
+
+        <h2 id="core">코어</h2>
+
+        <ul>
+               <li>코어의 많은 부분에 대한 더 나은 유지 보수성, 코드 문서, (<a href="https://developer.mozilla.org/en/Mochitest">Mochitest</a>에 기반한) 자동화된 테스트을 위해 다시 설계된 코어 코드가 추가됨</li>
+               <li>필터 작성이 성공적이지 않다면 필터 저장 파일은 덮어쓰지 않음 (<a href="https://www.mozdev.org/bugs/show_bug.cgi?id=16488">버그 16488</a>)</li>
+               <li>수행 개선 (디스크로부터 필터를 읽고, 대형 필터 목록로 필터를 저장함). 사용된 메모리의 양을 줄임</li>
+               <li>고침 : 파이어폭스 3에서 허용 규칙은 항상 요소 숨김에 적용되지 않음 (<a href="https://www.mozdev.org/bugs/show_bug.cgi?id=20034">버그 20034</a>)</li>
+               <li>파이어폭스 1.5, 선더버드 1.5, 시몽키 1.0, 송버드 0.5/0.6에서 더 이상 지원되지 않음 (몇몇 역호환 해크을 제거함)</li>
+               <li>플록 1.2/2.0과 송버드 0.7/1.0에서 지원함</li>
+               <li>프리즘 0.9에 대한 지원을 추가함 (<a href="/forum/viewtopic.php?t=2229">포럼 게시글</a>)</li>
+               <li>숨겨진 <a href="/ko/preferences#savestats" hreflang="ko">extensions.adblockplus.savestats</a> 설정은 필터 적용 횟수를 꺼두게 함 (patterns.ini을 버전 관리 시스템에 넣게 되면 유용함) (<a href="https://www.mozdev.org/bugs/show_bug.cgi?id=18650">버그 18650</a>)</li>
+               <li>파이어폭스 3.1에서 사생활 보호 브라우징 모드에 대한 지원을 추가함. 필터 적용 횟수를 자동으로 사용하지 않음</li>
+               <li>모든 처음 실행 동작은 <a href="/ko/preferences#currentversion" hreflang="ko">extensions.adblockplus.currentversion preference</a> 설정에 의해 통제됨 (<code>showsubscriptions</code>, <code>checkedtoolbar</code>, <code>checkedadblockinstalled</code> 설정을 교체함)</li>
+               <li>어떤 필터 그룹에 저장될 사용자가 정의한 주석을 허용하기 (그리고 잠재적으로 다른 필터 역시) 위해 patterns.ini 형식을 변경함</li>
+               <li>Adblock Plus 0.6 필터 관리는 더 이상 업그레이드를 위해 파일을 불러오지 않음</li>
+               <li>Adblock 필터 관리는 더 이상 업그레이드를 위해 파일 불러오지 않음 (필터 목록은 여전히 불러옴)</li>
+               <li>고침 : 프린트를 하는 중에 객체 차단 탭이 나타남 (<a href="https://www.mozdev.org/bugs/show_bug.cgi?id=19405">버그 19405</a>)</li>
+               <li>고침 : 오류 콘솔에 경고 &quot;getBoxObjectFor() is deprecated&quot; (<a href="https://www.mozdev.org/bugs/show_bug.cgi?id=19126">버그 19126</a>)</li>
+        </ul>
+
+        <h3 id="synchronizer">구독 필터 다운로드</h3>
+
+        <ul>
+               <li>구독 필터 다운로드의 경우 주석 &quot;! Checksum: abcd&quot;는 현재 해석되며, 잘못된 체크섬이 있는 파일은 깨진 다운로드를 막기 위해 거부됨 (<a href="/forum/viewtopic.php?t=2623">포럼 게시글</a>, <a href="https://hg.adblockplus.org/adblockplus/file/tip/addChecksum.pl">체크섬을 추가하기 위한 실행 참고</a>)</li>
+               <li>다운로드 실패 후 다음 시도는 서버의 부하를 막기 위해 한 시간 이후가 아닌 하루 이후에 이루어짐 (그에 맞춰 <a href="/ko/preferences#subscriptions_fallbackerrors" hreflang="ko">extensions.adblockplus.subscriptions_fallbackerrors</a> 설정을 조절함)</li>
+               <li>대체 요청은 더 이상 이용할 수 없는 구독 필터에 대한 자동 다운로드할 수 없게 함</li>
+               <li>고침 : 구독 필터 다운로드는 때때로 브라우저 캐시로 이동함</li>
+        </ul>
+
+        <p><a href="/ko/changelog-0.7.5.4" hreflang="ko">이전에 출시된 버전의 변경내역</a></p>
+
+      
+    </div>
+
+    
+
+<footer id="footer" class="content">
+  <div class="container">
+    <div class="row">
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Download</h5>
+        <ul>
+          <li><a href="/en/adblock-plus-chrome" hreflang="en">Adblock Plus for Chrome</a></li>
+          <li><a href="/en/adblock-plus-firefox" hreflang="en">Adblock Plus for Firefox</a></li>
+          <li><a href="/en/ad-blocker-safari" hreflang="en">Adblock Plus for Safari</a></li>
+          <li><a href="/en/adblock-plus-opera" hreflang="en">Adblock Plus for Opera</a></li>
+          <li><a href="/en/adblock-plus-edge" hreflang="en">Adblock Plus for Edge</a></li>
+          <li><a href="/en/android-install" hreflang="en">Adblock Browser for Android</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">정보</h5>
+        <ul>
+          
+            <li><a href="/en/acceptable-ads" hreflang="en">Acceptable Ads</a></li>
+          
+            <li><a href="/ko/documentation" hreflang="ko">문서</a></li>
+          
+            <li><a href="/en/deployments" hreflang="en">For admins</a></li>
+          
+            <li><a href="/ko/bugs" hreflang="ko">문제 보고</a></li>
+          
+          
+          <li><a href="https://help.eyeo.com/en/adblockplus/how-to-write-filters" target="_blank" hreflang="en">필터 작성 방법</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">커뮤니티</h5>
+        <ul>
+          <li><a href="/ko/contribute" hreflang="ko">공헌</a></li>
+          <li><a href="https://adblockplus.org/releases/" hreflang="en">공지사항</a></li>
+          <li><a href="https://adblockplus.org/blog/" hreflang="en">블로그</a></li>
+          <li><a href="https://adblockplus.org/forum/" hreflang="en">포럼</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">개발</h5>
+        <ul>
+          <li><a href="https://gitlab.com/eyeo/adblockplus">소스 코드</a></li>
+          
+  
+    <li><a href="/ko/tools" hreflang="ko">도구</a></li>
+  
+
+          <li><a href="https://eyeo.com/jobs/" hreflang="en">Jobs</a></li>
+          <li><a href="/en/partner-integrations" hreflang="en">Partner Integrations</a></li>
+        </ul>
+      </nav>
+
+      <nav id="social-list" class="column">
+        <h5 class="footer-social-heading">Follow us on</h5>
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/AdblockPlus"
+              title="Follow Adblock Plus on Twitter"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-twitter-glyphicon.png?4260952636"
+                alt="Twitter glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/user/AdblockPlusOfficial"
+              title="Subscribe to Adblock Plus on YouTube"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-youtube-glyphicon.png?4260952636"
+                alt="YouTube glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/adblockplus"
+              title="Follow Adblock Plus on Facebook"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-facebook-glyphicon.png?4260952636"
+                alt="Facebook glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/adblockplus/"
+              title="Follow Adblock Plus on Instagram"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-instagram-glyphicon.png?4260952636"
+                alt="Instagram glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://vk.com/adblockplusofficial"
+              title="Follow Adblock Plus on VK"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-vk-glyphicon.png?4260952636"
+                alt="VK glyphicon">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div> 
+
+    <div id="footer-legal">
+      <p id="copyright-notice">Copyright © 2020 All rights reserved. Adblock Plus<sup>®</sup> is a registered trademark of <a href="https://eyeo.com">eyeo GmbH</a>.</p>
+      <ul id="legal-list">
+        
+          
+            <li><a href="/en/terms" hreflang="en">Terms of use</a></li>
+          
+            <li><a href="/en/privacy" hreflang="en">개인 정보 보호 정책</a></li>
+          
+            <li><a href="/en/imprint" hreflang="en">법적 공지사항</a></li>
+          
+        
+      </ul>
+    </div> 
+  </div> 
+</footer> 
+    <div id="cookiebar" class="cookie cookiebar">
+  <div class="container">
+    <div class="row">
+
+      <div class="column two-thirds">
+        <p class="cookiebar-text">
+          <svg viewBox="0 0 37.796 41.279" width="38" height="42">
+            <title>Cookie notice</title>
+            <g transform="translate(-14.904 0)">
+              <g transform="translate(14.904 0)">
+                <path d="M52.468,31.165a6.029,6.029,0,0,1-1.514-4.908.935.935,0,0,0-.626-1.019,6.029,6.029,0,0,1-3.244-8.8A.935.935,0,0,0,47,15.368a6.039,6.039,0,0,1-1.112-5.609A.935.935,0,0,0,45.4,8.647,6.029,6.029,0,0,1,42.129,2.01.935.935,0,0,0,41.484.935a20.682,20.682,0,1,0,11.049,31.38A.935.935,0,0,0,52.468,31.165Zm-3.739,2.814A18.759,18.759,0,1,1,40.148,2.524,7.9,7.9,0,0,0,43.887,10a7.889,7.889,0,0,0,1.281,6.029A7.917,7.917,0,0,0,46.682,25.1a7.823,7.823,0,0,0,2.346,1.617,7.889,7.889,0,0,0,1.57,5.123A18.6,18.6,0,0,1,48.729,33.979Z" transform="translate(-14.904 0)"/>
+              </g>
+              <g transform="translate(24.556 12.199)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(34.81 18.817)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(33.212 32.212)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(36.652 9.03)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(23.509 25.912)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(42.765 27.23)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+            </g>
+          </svg>
+          <span>
+            We use some cookies to give you the best experience on our website. By using our site you are aware that we are using cookies and you can change this any time. <a href="/en/cookie-information" hreflang="en">Learn more</a>
+          </span>
+        </p>
+      </div>
+
+      <div class="column one-third text-end">
+        <ul class="cookiebar-nav">
+          <li>
+            <button
+              type="button"
+              class="cookies-submit button"
+              title="Dismiss cookie notification">
+              Ok, got it
+            </button>
+          </li>
+          <li class="dropup cookies-dropup">
+            <button
+              type="button"
+              class="cookies-settings button"
+              title="Edit cookie settings">
+              Settings &nbsp;
+              <svg viewBox="0 0 16.509 16.993" width="18" height="18">
+                <title>Settings icon</title>
+                <path d="M175.051,8.283V.478a.478.478,0,1,0-.955,0v7.8a2.425,2.425,0,0,0,0,4.755v3.474a.478.478,0,1,0,.955,0V13.038a2.425,2.425,0,0,0,0-4.755Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,174.574,12.129Z" transform="translate(-166.302 0)"/>
+                <path d="M9.751,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.479a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752ZM9.274,8.123a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,9.274,8.123Z" transform="translate(-6.85 0)"/>
+                <path d="M339.351,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.483a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,338.874,8.123Z" transform="translate(-324.789 0)"/>
+              </svg>
+            </button>
+            <div class="cookies-dropup-menu text-start" tabindex="1">
+               <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Necessary cookies</p>
+      <p>Used to remember your privacy preferences. They cannot be switched off.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking cookies</p>
+      <p>We use these to analyze website traffic.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B testing cookies</p>
+      <p>We use these Google Optimize cookies for A/B testing based on the analytics data.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Save cookie preferences">
+    Save preferences
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+              <span class="arrow"></span>
+            </div>
+          </li>
+        </ul>
+      </div><!-- .column -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+
+</div><!-- #cookies-large-bar -->
+  <form class="cookie cookieprompt">
+
+  <fieldset class="container">
+
+    <legend class="cookie-heading">
+      Cookie preferences
+    </legend>
+
+    <button
+      type="button"
+      class="cookies-close"
+      title="Dismiss cookie notification">
+      <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+        <title>Close icon</title>
+        <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+      </svg>
+    </button>
+
+    <p>
+      We use some cookies to give you the best experience on our website.
+      <a
+        href="/en/cookie-information" hreflang="en"
+        title="More information about cookies"
+        target="_blank">Read more</a>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-submit"
+        title="Dismiss cookie notification">
+        Ok, got it
+      </button>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-settings"
+        title="Edit cookie settings">
+        Change settings
+      </button>
+    </p>
+
+  </fieldset>
+
+</form>
+  <form class="cookie cookiepage">
+
+  <header class="bg-dark">
+    <div class="container">
+
+      <h4 class="cookie-heading">
+        Cookie preferences
+      </h4>
+
+      <button
+        type="button"
+        class="cookies-close"
+        title="Dismiss cookie notification">
+        <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+          <title>Close icon</title>
+          <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="bg-light">
+    <div class="container section">
+        We use some cookies to give you the best experience on our website. By using our site you are aware that we are using cookies and you can change this any time. <a href="/en/cookie-information" hreflang="en">Learn more</a>
+    </div>
+  </div>
+
+  <div class="container section">
+     <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Necessary cookies</p>
+      <p>Used to remember your privacy preferences. They cannot be switched off.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking cookies</p>
+      <p>We use these to analyze website traffic.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B testing cookies</p>
+      <p>We use these Google Optimize cookies for A/B testing based on the analytics data.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Save cookie preferences">
+    Save preferences
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+  </div>
+
+</form>
+    <script src="/js/testing/setup.js?1365669100"></script>
+    
+  <script src="/js/main.js?1365669100"></script>
+
+
+
+  </body>
+</html>

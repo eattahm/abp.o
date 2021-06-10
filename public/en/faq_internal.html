@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html 
+lang="en"
+data-siteurl="https://adblockplus.org"
+dir="ltr"
+class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>FAQ - Adblock Plus internals</title>
+
+<link rel="canonical" href="https://adblockplus.org/faq_internal">
+
+
+
+    
+<meta property="og:image" content="/img/adblockplus_promo.png">
+<meta property="og:title" content="FAQ - Adblock Plus internals">
+
+<meta property="og:locale" content="en_US">
+
+  
+    <meta property="og:locale:alternate" content="de_DE">
+  
+
+  
+
+  
+    <meta property="og:locale:alternate" content="es_ES">
+  
+
+  
+    <meta property="og:locale:alternate" content="fr_FR">
+  
+
+  
+    <meta property="og:locale:alternate" content="ko_KR">
+  
+
+  
+    <meta property="og:locale:alternate" content="nl_NL">
+  
+
+  
+    <meta property="og:locale:alternate" content="zh_CN">
+  
+
+  
+    <meta property="og:locale:alternate" content="zh_TW">
+  
+
+<meta property="og:url" content="https://adblockplus.org/en/faq_internal">
+
+
+<meta name="twitter:site" content="@AdblockPlus">
+<meta name="twitter:creator" content="@AdblockPlus">
+    
+  <link rel="stylesheet" href="/css/defaults.css?2257626170">
+  <link rel="stylesheet" href="/css/fonts.css?2257626170">
+  <link rel="stylesheet" href="/css/main.css?2257626170">
+  <link rel="stylesheet" href="/css/cookies.css?2257626170">
+
+
+
+
+
+    <script>
+  window.eyeo = {
+    
+    
+    
+    preventCookiePrompt: false,
+    userTesting: false,
+    userTestingVariants: false,
+    testAnalytics: false,
+    testOptimize: false
+  }
+
+  window.console = window.console || {warn: function(){}};
+</script>
+    
+    <!--[if IE 9]>
+  <script src="/js/vendor/es5-shim.js?247116680"></script>
+  <script src="/js/vendor/dom4.js?247116680"></script>
+<![endif]-->
+
+    
+      
+  <link rel="index" href="/en/faq?2257626170" hreflang="en">
+
+    
+  </head>
+
+  <body>
+    
+
+
+
+<nav id="navbar">
+  <div class="container">
+    <a href="/en/" hreflang="en" id="navbar-logo">
+      <img
+        src="/img/navbar-logo.svg?1168267004"
+        alt="">
+      <span>Adblock <strong>Plus</strong></span>
+    </a>
+    <a href="#" id="navbar-menu-toggle">
+      <img
+        src="/img/menu-toggle.svg?1168267004"
+        alt="">
+    </a>
+    <ul id="navbar-menu">
+      
+        <li class="uppercase ">
+          <a href="/en/download" hreflang="en">Download</a>
+        </li>
+      
+        <li class="uppercase ">
+          <a href="/en/about" hreflang="en">About</a>
+        </li>
+      
+      <li class="uppercase">
+        <a href="https://help.eyeo.com" target="_blank">Help</a>
+      </li>
+      <li class="uppercase ">
+        <a href="/en/donate" hreflang="en">Donate</a>
+      </li>
+      <li id="navbar-locale-menubar">
+        <a id="navbar-locale-selected">
+          English (US)
+        </a>
+        <ul id="navbar-locale-menu">
+          
+            <li>
+              <a href="/de/faq_internal" hreflang="de">
+                Deutsch (DE)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/en/faq_internal" hreflang="en">
+                English (US)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/es/faq_internal" hreflang="es">
+                Español (España) (ES)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/fr/faq_internal" hreflang="fr">
+                Français (FR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ko/faq_internal" hreflang="ko">
+                한국어 (KR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/nl/faq_internal" hreflang="nl">
+                Nederlands (NL)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_CN/faq_internal" hreflang="zh-CN">
+                中文(简体) (CN)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_TW/faq_internal" hreflang="zh-TW">
+                中文(台灣) (TW)
+              </a>
+            </li>
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+    <div id="content" class="container content False">
+      
+        <h1>FAQ - Adblock Plus internals</h1>
+      
+
+      
+        
+
+        
+        
+          <div class="toc">
+            
+          <ul>
+            
+              <li>
+                <a href="#preferences">Where do I find the meaning of all Adblock Plus preferences?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#policies">How does Adblock Plus block addresses?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#filters">How does Adblock Plus process its filters and which filters are faster?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#elemhide">How does element hiding work?</a>
+                
+              </li>
+            
+              <li>
+                <a href="#filtersfile">What can the first line of a filters file look like?</a>
+                
+              </li>
+            
+          </ul>
+        
+          </div>
+        
+      
+
+      
+        
+
+
+
+<main itemscope itemtype="https://schema.org/FAQPage">
+
+  <article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h2 id="preferences" itemprop="name">Where do I find the meaning of all Adblock Plus preferences?</h2>
+
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Adblock Plus uses a number of preferences that are accessible via <a href="http://kb.mozillazine.org/About:config">about:config</a>. All of them start with <code>extensions.adblockplus.</code> (this is different from Adblock and Adblock Plus 0.5 that use the prefix <code>adblock.</code>). A full list with explanations can be found <a href="/en/preferences" hreflang="en">here</a>.</p>
+    </div>
+  </article>
+
+  <article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h2 id="policies" itemprop="name">How does Adblock Plus block addresses?</h2>
+
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text">
+        <p>The hard work here is actually done by Gecko, the engine on top of which Firefox, Thunderbird and other applications are built. It allows something called &quot;content policies&quot;. A content policy is simply a JavaScript (or C++) object that gets called whenever the browser needs to load something. It can then look at the address that should be loaded and some other data and decide whether it should be allowed. There is a number of built-in content policies (when you define which sites shouldn&#39;t be allowed to load images in Firefox or SeaMonkey, you are actually configuring one of these built-in content policies) and any extension can register one. So all that Adblock Plus has to do is to register its content policy, other than that there is only application logic to decide which addresses to block and user interface code to allow configuration of filters.</p>
+
+        <p>For developers: to register a content policy you have to <a href="http://developer.mozilla.org/en/docs/How_to_Build_an_XPCOM_Component_in_Javascript">write an XPCOM component</a> that should implement the <a href="http://www.xulplanet.com/references/xpcomref/ifaces/nsIContentPolicy.html">nsIContentPolicy interface</a>. Make sure to adjust the module&#39;s registerSelf method to register your component in the &quot;content-policy&quot; category (use the <a href="http://www.xulplanet.com/references/xpcomref/ifaces/nsICategoryManager.html">category manager</a> for this). That&#39;s it, now your component&#39;s shouldLoad method will be called and you can decide whether the specific request should be accepted or not.</p>
+      </div>
+    </div>
+  </article>
+
+  <article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h2 id="filters" itemprop="name">How does Adblock Plus process its filters and which filters are faster?</h2>
+
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text">
+        <p>All filters a translated into <a href="/en/filters#regexps" hreflang="en">regular expressions</a> internally, even the ones that haven&#39;t been specified as such. For example, the filter <code>ad*banner.gif|</code> will be translated into the regular expression <code>/ad.*banner\.gif$/</code>. However, when Adblock Plus is given an address that should be checked against all filters it doesn&#39;t simply test all filters one after another — that would slow down the browsing unnecessarily.</p>
+
+        <p>Besides of translating filters into regular expressions Adblock Plus also tries to extract text information from them. What it needs is a unique string of eight characters (a &quot;shortcut&quot;) that must be present in every address matched by the filter (the length is arbitrary, eight just seems reasonable here). For example, if you have a filter <code>|http://ad.*</code> then Adblock Plus has the choice between &quot;http://a&quot;, &quot;ttp://ad&quot; and &quot;tp://ad.&quot;, any of these strings will always be present in whatever this filter will match. Unfortunately finding a shortcut for filters that simply don&#39;t have eight characters unbroken by wildcards or for filters that have been specified as regular expressions is impossible.</p>
+
+        <p>All shortcuts are put into a lookup table, Adblock Plus can find the filter by its shortcut very efficiently. Then, when a specific address has to be tested Adblock Plus will first look for known shortcuts there (this can be done very fast, the time needed is almost independent from the number of shortcuts). Only when a shortcut is found the string will be tested against the regular expression of the corresponding filter. However, filters without a shortcut still have to be tested one after another which is slow.</p>
+
+        <p>To sum up: which filters should be used to make a filter list fast? You should use as few regular expressions as possible, those are always slow. You also should make sure that simple filters have at least eight characters of unbroken text (meaning that these don&#39;t contain any characters with a special meaning like *), otherwise they will be just as slow as regular expressions. But with filters that qualify it doesn&#39;t matter how many filters you have, the processing time is always the same. That means that if you need 20 simple filters to replace one regular expression then it is still worth it. Speaking of which — the <a href="/en/deregifier" hreflang="en">deregifier</a> is very recommendable.</p>
+
+        <p><a href="/blog/investigating-filter-matching-algorithms">The filter matching algorithm in detail</a></p>
+      </div>
+    </div>
+  </article>
+
+  <article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h2 id="elemhide" itemprop="name">How does element hiding work?</h2>
+
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text">
+        <p>Element hiding rules are translated into <a href="http://www.w3.org/TR/CSS21/">CSS</a> and applied to all web pages the user is visiting. A rule like <code>example.com#div(evil_ad)</code> then looks like:</p>
+
+        <pre>
+@-moz-document domain(example.com)
+{
+  div#evil_ad, div.evil_ad
+  {
+    display: none !important;
+  }
+}
+</pre>
+
+        <p>@-moz-document is a proposed extension to the CSS standard, you can read more about it in the <a href="http://developer.mozilla.org/en/docs/CSS:%40-moz-document">Mozilla Developer Center</a>.</p>
+
+        <p>Rules that are not restricted to a certain domain will be restricted to the protocols http:// and https:// to prevent them from hiding elements of the browser&#39;s user interface (it is using the chrome:// protocol scheme). For example the rule <code>#div(evil_ad)</code> will be translated into:</p>
+
+        <pre>
+@-moz-document url-prefix(http://),url-prefix(https://)
+{
+  div#evil_ad, div.evil_ad
+  {
+    display: none !important;
+  }
+}
+</pre>
+
+        <p>For developers: Adblock Plus is using the <a href="https://developer.mozilla.org/en/XPCOM_Interface_Reference/nsIStyleSheetService">stylesheet service</a> here. This interface came with Gecko 1.8 and allows extensions to add user stylesheets dynamically (before that you could only modify userContent.css which requires you to restart the browser). User stylesheets will overwrite CSS code of all web sites, they have the highest possible <a href="http://www.w3.org/TR/CSS21/cascade.html#cascading-order">importance</a>.</p>
+
+      </div>
+    </div>
+  </article>
+
+  <article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h2 id="filtersfile" itemprop="name">What can the first line of a filters file look like?</h2>
+
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text">
+        <p>Usually the first line of a filters file is simply <code>[Adblock]</code>. However, you might have noticed that recent versions of Adblock Plus sometimes put a different text instead. This is done when you have filters in your list that use advanced filter syntax only supported by newer versions of Adblock Plus but not original Adblock. One example would be:</p>
+
+        <pre>
+(Adblock Plus 0.6.1.2 or higher required) [Adblock]
+</pre>
+
+        <p>This is simply a comment. Adblock (and Adblock Plus for that reason) will ignore anything before the actual mark. The required Adblock Plus version is not enforced because Adblock Plus 0.6.1.2 didn&#39;t support it. However, if you use even newer filter syntax, you might get something like:</p>
+
+        <pre>
+[Adblock Plus 0.7.1]
+</pre>
+
+        <p>This type of header is supported starting with Adblock Plus 0.7.1. Older Adblock Plus versions and Adblock cannot open files starting with this header. As to the current versions, they will check the version number in the header and compare it with their own version number. If the file happens to require a newer Adblock Plus, the user will be given a message on import asking him to upgrade. Subscriptions will still load files meant for newer Adblock Plus versions but display a warning in the preferences dialog.</p>
+
+        <p>Finally, if you want to require Adblock Plus but don&#39;t want to specify the version number you can start the file with <code>[Adblock Plus]</code>. Of course this file will only be accepted by Adblock Plus 0.7.1 or higher again.</p>
+      </div>
+    </div>
+  </article>
+
+</main>
+
+<script>
+  if (location.hash == "#checksum" || location.hash == "#subscription_redirect" || location.hash == "#subscription_update")
+    window.location.href = "/en/filters#special-comments";
+</script>
+
+      
+    </div>
+
+    
+
+<footer id="footer" class="content">
+  <div class="container">
+    <div class="row">
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Download</h5>
+        <ul>
+          <li><a href="/en/adblock-plus-chrome" hreflang="en">Adblock Plus for Chrome</a></li>
+          <li><a href="/en/adblock-plus-firefox" hreflang="en">Adblock Plus for Firefox</a></li>
+          <li><a href="/en/ad-blocker-safari" hreflang="en">Adblock Plus for Safari</a></li>
+          <li><a href="/en/adblock-plus-opera" hreflang="en">Adblock Plus for Opera</a></li>
+          <li><a href="/en/adblock-plus-edge" hreflang="en">Adblock Plus for Edge</a></li>
+          <li><a href="/en/android-install" hreflang="en">Adblock Browser for Android</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Resources</h5>
+        <ul>
+          
+            <li><a href="/en/acceptable-ads" hreflang="en">Acceptable Ads</a></li>
+          
+            <li><a href="/en/documentation" hreflang="en">Documentation</a></li>
+          
+            <li><a href="/en/deployments" hreflang="en">For admins</a></li>
+          
+            <li><a href="/en/bugs" hreflang="en">Report an issue</a></li>
+          
+          
+            <li><a href="/en/faq-privacy" hreflang="en">Privacy FAQ</a></li>
+          
+          <li><a href="https://help.eyeo.com/en/adblockplus/how-to-write-filters" target="_blank" hreflang="en">Writing Adblock Plus filters</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Community</h5>
+        <ul>
+          <li><a href="/en/contribute" hreflang="en">Contribute</a></li>
+          <li><a href="https://adblockplus.org/releases/" hreflang="en">Announcements</a></li>
+          <li><a href="https://adblockplus.org/blog/" hreflang="en">Blog</a></li>
+          <li><a href="https://adblockplus.org/forum/" hreflang="en">Forum</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Development</h5>
+        <ul>
+          <li><a href="https://gitlab.com/eyeo/adblockplus">Source Code</a></li>
+          
+  
+    <li><a href="/en/tools" hreflang="en">Tools</a></li>
+  
+
+          <li><a href="https://eyeo.com/jobs/" hreflang="en">Jobs</a></li>
+          <li><a href="/en/partner-integrations" hreflang="en">Partner Integrations</a></li>
+        </ul>
+      </nav>
+
+      <nav id="social-list" class="column">
+        <h5 class="footer-social-heading">Follow us on</h5>
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/AdblockPlus"
+              title="Follow Adblock Plus on Twitter"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-twitter-glyphicon.png?1168267004"
+                alt="Twitter glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/user/AdblockPlusOfficial"
+              title="Subscribe to Adblock Plus on YouTube"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-youtube-glyphicon.png?1168267004"
+                alt="YouTube glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/adblockplus"
+              title="Follow Adblock Plus on Facebook"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-facebook-glyphicon.png?1168267004"
+                alt="Facebook glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/adblockplus/"
+              title="Follow Adblock Plus on Instagram"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-instagram-glyphicon.png?1168267004"
+                alt="Instagram glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://vk.com/adblockplusofficial"
+              title="Follow Adblock Plus on VK"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-vk-glyphicon.png?1168267004"
+                alt="VK glyphicon">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div> 
+
+    <div id="footer-legal">
+      <p id="copyright-notice">Copyright © 2020 All rights reserved. Adblock Plus<sup>®</sup> is a registered trademark of <a href="https://eyeo.com">eyeo GmbH</a>.</p>
+      <ul id="legal-list">
+        
+          
+            <li><a href="/en/terms" hreflang="en">Terms of use</a></li>
+          
+            <li><a href="/en/privacy" hreflang="en">Privacy Policy</a></li>
+          
+            <li><a href="/en/imprint" hreflang="en">Imprint</a></li>
+          
+        
+      </ul>
+    </div> 
+  </div> 
+</footer> 
+    <div id="cookiebar" class="cookie cookiebar">
+  <div class="container">
+    <div class="row">
+
+      <div class="column two-thirds">
+        <p class="cookiebar-text">
+          <svg viewBox="0 0 37.796 41.279" width="38" height="42">
+            <title>Cookie notice</title>
+            <g transform="translate(-14.904 0)">
+              <g transform="translate(14.904 0)">
+                <path d="M52.468,31.165a6.029,6.029,0,0,1-1.514-4.908.935.935,0,0,0-.626-1.019,6.029,6.029,0,0,1-3.244-8.8A.935.935,0,0,0,47,15.368a6.039,6.039,0,0,1-1.112-5.609A.935.935,0,0,0,45.4,8.647,6.029,6.029,0,0,1,42.129,2.01.935.935,0,0,0,41.484.935a20.682,20.682,0,1,0,11.049,31.38A.935.935,0,0,0,52.468,31.165Zm-3.739,2.814A18.759,18.759,0,1,1,40.148,2.524,7.9,7.9,0,0,0,43.887,10a7.889,7.889,0,0,0,1.281,6.029A7.917,7.917,0,0,0,46.682,25.1a7.823,7.823,0,0,0,2.346,1.617,7.889,7.889,0,0,0,1.57,5.123A18.6,18.6,0,0,1,48.729,33.979Z" transform="translate(-14.904 0)"/>
+              </g>
+              <g transform="translate(24.556 12.199)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(34.81 18.817)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(33.212 32.212)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(36.652 9.03)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(23.509 25.912)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(42.765 27.23)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+            </g>
+          </svg>
+          <span>
+            We use some cookies to give you the best experience on our website. By using our site you are aware that we are using cookies and you can change this any time. <a href="/en/cookie-information" hreflang="en">Learn more</a>
+          </span>
+        </p>
+      </div>
+
+      <div class="column one-third text-end">
+        <ul class="cookiebar-nav">
+          <li>
+            <button
+              type="button"
+              class="cookies-submit button"
+              title="Dismiss cookie notification">
+              Ok, got it
+            </button>
+          </li>
+          <li class="dropup cookies-dropup">
+            <button
+              type="button"
+              class="cookies-settings button"
+              title="Edit cookie settings">
+              Settings &nbsp;
+              <svg viewBox="0 0 16.509 16.993" width="18" height="18">
+                <title>Settings icon</title>
+                <path d="M175.051,8.283V.478a.478.478,0,1,0-.955,0v7.8a2.425,2.425,0,0,0,0,4.755v3.474a.478.478,0,1,0,.955,0V13.038a2.425,2.425,0,0,0,0-4.755Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,174.574,12.129Z" transform="translate(-166.302 0)"/>
+                <path d="M9.751,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.479a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752ZM9.274,8.123a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,9.274,8.123Z" transform="translate(-6.85 0)"/>
+                <path d="M339.351,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.483a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,338.874,8.123Z" transform="translate(-324.789 0)"/>
+              </svg>
+            </button>
+            <div class="cookies-dropup-menu text-start" tabindex="1">
+               <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Necessary cookies</p>
+      <p>Used to remember your privacy preferences. They cannot be switched off.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking cookies</p>
+      <p>We use these to analyze website traffic.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B testing cookies</p>
+      <p>We use these Google Optimize cookies for A/B testing based on the analytics data.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Save cookie preferences">
+    Save preferences
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+              <span class="arrow"></span>
+            </div>
+          </li>
+        </ul>
+      </div><!-- .column -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+
+</div><!-- #cookies-large-bar -->
+  <form class="cookie cookieprompt">
+
+  <fieldset class="container">
+
+    <legend class="cookie-heading">
+      Cookie preferences
+    </legend>
+
+    <button
+      type="button"
+      class="cookies-close"
+      title="Dismiss cookie notification">
+      <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+        <title>Close icon</title>
+        <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+      </svg>
+    </button>
+
+    <p>
+      We use some cookies to give you the best experience on our website.
+      <a
+        href="/en/cookie-information" hreflang="en"
+        title="More information about cookies"
+        target="_blank">Read more</a>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-submit"
+        title="Dismiss cookie notification">
+        Ok, got it
+      </button>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-settings"
+        title="Edit cookie settings">
+        Change settings
+      </button>
+    </p>
+
+  </fieldset>
+
+</form>
+  <form class="cookie cookiepage">
+
+  <header class="bg-dark">
+    <div class="container">
+
+      <h4 class="cookie-heading">
+        Cookie preferences
+      </h4>
+
+      <button
+        type="button"
+        class="cookies-close"
+        title="Dismiss cookie notification">
+        <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+          <title>Close icon</title>
+          <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="bg-light">
+    <div class="container section">
+        We use some cookies to give you the best experience on our website. By using our site you are aware that we are using cookies and you can change this any time. <a href="/en/cookie-information" hreflang="en">Learn more</a>
+    </div>
+  </div>
+
+  <div class="container section">
+     <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Necessary cookies</p>
+      <p>Used to remember your privacy preferences. They cannot be switched off.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking cookies</p>
+      <p>We use these to analyze website traffic.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B testing cookies</p>
+      <p>We use these Google Optimize cookies for A/B testing based on the analytics data.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Save cookie preferences">
+    Save preferences
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+  </div>
+
+</form>
+    <script src="/js/testing/setup.js?247116680"></script>
+    
+  <script src="/js/main.js?247116680"></script>
+
+
+
+  </body>
+</html>

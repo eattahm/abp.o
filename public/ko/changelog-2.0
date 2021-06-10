@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html 
+lang="ko"
+data-siteurl="https://adblockplus.org"
+dir="ltr"
+class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>애드블록 플러스 2.0의 세부적인 변경사항</title>
+
+<link rel="canonical" href="https://adblockplus.org/changelog-2.0">
+
+
+
+    
+<meta property="og:image" content="/img/adblockplus_promo.png">
+<meta property="og:title" content="애드블록 플러스 2.0의 세부적인 변경사항">
+
+<meta property="og:locale" content="ko_KR">
+
+  
+    <meta property="og:locale:alternate" content="en_US">
+  
+
+  
+    <meta property="og:locale:alternate" content="es_ES">
+  
+
+  
+
+  
+    <meta property="og:locale:alternate" content="nl_NL">
+  
+
+  
+    <meta property="og:locale:alternate" content="ru_RU">
+  
+
+  
+    <meta property="og:locale:alternate" content="zh_CN">
+  
+
+  
+    <meta property="og:locale:alternate" content="zh_TW">
+  
+
+<meta property="og:url" content="https://adblockplus.org/ko/changelog-2.0">
+
+
+<meta name="twitter:site" content="@AdblockPlus">
+<meta name="twitter:creator" content="@AdblockPlus">
+    
+  <link rel="stylesheet" href="/css/defaults.css?1943114049">
+  <link rel="stylesheet" href="/css/fonts.css?1943114049">
+  <link rel="stylesheet" href="/css/main.css?1943114049">
+  <link rel="stylesheet" href="/css/cookies.css?1943114049">
+
+
+
+
+
+    <script>
+  window.eyeo = {
+    
+    
+    
+    preventCookiePrompt: false,
+    userTesting: false,
+    userTestingVariants: false,
+    testAnalytics: false,
+    testOptimize: false
+  }
+
+  window.console = window.console || {warn: function(){}};
+</script>
+    
+    <!--[if IE 9]>
+  <script src="/js/vendor/es5-shim.js?105746698"></script>
+  <script src="/js/vendor/dom4.js?105746698"></script>
+<![endif]-->
+
+    
+      
+    
+  </head>
+
+  <body>
+    
+
+
+
+<nav id="navbar">
+  <div class="container">
+    <a href="/en/" hreflang="en" id="navbar-logo">
+      <img
+        src="/img/navbar-logo.svg?2395961253"
+        alt="">
+      <span>Adblock <strong>Plus</strong></span>
+    </a>
+    <a href="#" id="navbar-menu-toggle">
+      <img
+        src="/img/menu-toggle.svg?2395961253"
+        alt="">
+    </a>
+    <ul id="navbar-menu">
+      
+        <li class="uppercase ">
+          <a href="/en/download" hreflang="en">Download</a>
+        </li>
+      
+        <li class="uppercase ">
+          <a href="/en/about" hreflang="en">소개</a>
+        </li>
+      
+      <li class="uppercase">
+        <a href="https://help.eyeo.com" target="_blank">Help</a>
+      </li>
+      <li class="uppercase ">
+        <a href="/ko/donate" hreflang="ko">Donate</a>
+      </li>
+      <li id="navbar-locale-menubar">
+        <a id="navbar-locale-selected">
+          한국어 (KR)
+        </a>
+        <ul id="navbar-locale-menu">
+          
+            <li>
+              <a href="/en/changelog-2.0" hreflang="en">
+                English (US)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/es/changelog-2.0" hreflang="es">
+                Español (España) (ES)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ko/changelog-2.0" hreflang="ko">
+                한국어 (KR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/nl/changelog-2.0" hreflang="nl">
+                Nederlands (NL)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ru/changelog-2.0" hreflang="ru">
+                Русский (RU)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_CN/changelog-2.0" hreflang="zh-CN">
+                中文(简体) (CN)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_TW/changelog-2.0" hreflang="zh-TW">
+                中文(台灣) (TW)
+              </a>
+            </li>
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+    <div id="content" class="container content False">
+      
+        <h1>애드블록 플러스 2.0의 세부적인 변경사항</h1>
+      
+
+      
+        
+
+        
+        
+          <div class="toc">
+            
+          <ul>
+            
+              <li>
+                <a href="#features">기능</a>
+                
+              </li>
+            
+              <li>
+                <a href="#interface">사용자 인터페이스</a>
+                
+              </li>
+            
+              <li>
+                <a href="#core">Core</a>
+                
+              </li>
+            
+          </ul>
+        
+          </div>
+        
+      
+
+      
+        
+
+
+<p>
+  다음의 목록은 Adblock Plus 1.3.10과 비교해 변경된 사항입니다.
+</p>
+
+<h2 id="features">기능</h2>
+
+<ul>
+  <li>
+    내장된 팝업 차단기가 실패할 경우를 보완한 실험적인 팝업 차단 기능 지원 (<a href="/forum/viewtopic.php?t=3986">포럼 게시글</a>).
+  </li>
+  <li>
+    새로운 필터 설정 대화상자는 사용자 필터와 구독 필터를 보다 쉽게 관리할 수 있음 (<a href="/forum/viewtopic.php?t=6035">포럼 게시글</a>).
+  </li>
+  <li>
+    사용자 필터가 필터 그룹으로 조직화됨.
+  </li>
+  <li>
+    백업과 복원 기능으로 사용자 필터뿐만 아니라 모든 필터 설정의 사본을 생성할 수 있음.
+  </li>
+  <li>
+    필터 설정에서 변경할 수 있는 &quot;비침입형 광고 허용&quot; 설정을 추가함 ( <a href="/en/acceptable-ads" hreflang="en">관련 문서</a>).
+  </li>
+</ul>
+
+<h2 id="interface">사용자 인터페이스</h2>
+
+<ul>
+  <li>
+    리투아니아어 번역을 다시 추가함.
+  </li>
+  <li>
+    애드블록 플러스 옵션을 부가 프로그램 관리자의 페이지에 바로 표시함.
+  </li>
+  <li>
+    &quot;페이스북으로 추천&quot; 버튼을 보다 일반적인 &quot;애드블록 플러스에 공헌&quot;으로 교체함.
+  </li>
+  <li>
+    차단 가능 목록 : &quot;필터 위치&quot; 열 추가 (기본값 - 숨김) ( <a href="/forum/viewtopic.php?t=5014">포럼 게시글</a>).
+  </li>
+  <li>
+    차단 가능 목록 : Searching by type now works both for localized type name as well as corresponding filter option (<a href="/forum/viewtopic.php?t=8871">포럼 게시글</a>).
+  </li>
+  <li>
+    필터 작성기 : 필터 옵션은 선택한 순서로 추가됨 (<a href="/forum/viewtopic.php?t=8473">포럼 게시글</a>).
+  </li>
+  <li>
+    필터 설정 : 사용 중지된 필터를 포함하는 구독 필터의 경우 경고 메시지가 표시됨 (<a href="/forum/viewtopic.php?t=8833">포럼 게시글</a>).
+  </li>
+  <li>
+    문제 보고 마법사 : Subscriptions that are local files aren&#39;t sent to server, for privacy reasons.
+  </li>
+  <li>
+    문제 보고 마법사 : Fixed check that the user is subscribed to a filter subscription (<a href="/forum/viewtopic.php?t=8634">포럼 게시글</a>).
+  </li>
+  <li>
+    애드블록 플러스 아이콘을 표시하는 단순화된 옵션을 보다 지속적으로 작동하게 만듦.
+  </li>
+  <li>
+    &quot;필터 적용 횟수 기록&quot;은 가시적인 옵션이 됨.
+  </li>
+  <li>
+    &quot;Collapse blocked elements&quot; option has been renamed into &quot;Hide placeholders of
+    blocked elements&quot;.
+  </li>
+  <li>
+    &quot;Adblock Plus&quot; entry in the Tools menu is now the same menu as displayed for the Adblock
+    Plus icon for accessibility reasons, the menu entry in the View menu has been removed.
+  </li>
+  <li>
+    고침 : 툴바 메뉴를 자체를 우클릭할 때 툴바 버튼의 문맥 메뉴가 열림 (<a href="/forum/viewtopic.php?t=8812">포럼 게시글</a>).
+  </li>
+  <li>
+    Fixed: Using context menu prevents a memory compartment from being released
+    (<a href="/forum/viewtopic.php?t=8866">forum topic</a>).
+  </li>
+</ul>
+
+<h2 id="core">Core</h2>
+
+<ul>
+  <li>
+    Minimal required Firefox version is now Firefox 3.6.12, older versions are no longer
+    supported. Similarly, at least Thunderbird 3.1.7 or SeaMonkey 2.1 are required, Songbird
+    and Prism are no longer supported.
+  </li>
+  <li>
+    <code>document</code> and <code>elemhide</code> filter options for
+    exception rules can now apply to frames as well, not only at the top level.
+  </li>
+  <li>
+    Added <code>sitekey</code> filter option to allow exceptions that apply to
+    multiple websites.
+  </li>
+  <li>
+    Filter options <code>xbl</code>, <code>dtd</code> and
+    <code>ping</code> are now considered synonymous to <code>other</code>,
+    the corresponding requests are very rare
+    (<a href="/forum/viewtopic.php?t=8244">forum topic</a>).
+  </li>
+  <li>
+    Simplified redirect tracking, removed a common source of memory issues and other problems
+    (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=672111">bug 672111</a>,
+    <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=653533">bug 653533</a>).
+  </li>
+  <li>
+    Comment <code>! Homepage: http://example.com/</code> in filter subscriptions is now
+    being recognized.
+  </li>
+</ul>
+
+<p><a href="/ko/changelog-1.3.10" hreflang="ko">이전에 출시된 버전의 변경사항</a></p>
+
+      
+    </div>
+
+    
+
+<footer id="footer" class="content">
+  <div class="container">
+    <div class="row">
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Download</h5>
+        <ul>
+          <li><a href="/en/adblock-plus-chrome" hreflang="en">Adblock Plus for Chrome</a></li>
+          <li><a href="/en/adblock-plus-firefox" hreflang="en">Adblock Plus for Firefox</a></li>
+          <li><a href="/en/ad-blocker-safari" hreflang="en">Adblock Plus for Safari</a></li>
+          <li><a href="/en/adblock-plus-opera" hreflang="en">Adblock Plus for Opera</a></li>
+          <li><a href="/en/adblock-plus-edge" hreflang="en">Adblock Plus for Edge</a></li>
+          <li><a href="/en/android-install" hreflang="en">Adblock Browser for Android</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">정보</h5>
+        <ul>
+          
+            <li><a href="/en/acceptable-ads" hreflang="en">Acceptable Ads</a></li>
+          
+            <li><a href="/ko/documentation" hreflang="ko">문서</a></li>
+          
+            <li><a href="/en/deployments" hreflang="en">For admins</a></li>
+          
+            <li><a href="/ko/bugs" hreflang="ko">문제 보고</a></li>
+          
+          
+          <li><a href="https://help.eyeo.com/en/adblockplus/how-to-write-filters" target="_blank" hreflang="en">필터 작성 방법</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">커뮤니티</h5>
+        <ul>
+          <li><a href="/ko/contribute" hreflang="ko">공헌</a></li>
+          <li><a href="https://adblockplus.org/releases/" hreflang="en">공지사항</a></li>
+          <li><a href="https://adblockplus.org/blog/" hreflang="en">블로그</a></li>
+          <li><a href="https://adblockplus.org/forum/" hreflang="en">포럼</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">개발</h5>
+        <ul>
+          <li><a href="https://gitlab.com/eyeo/adblockplus">소스 코드</a></li>
+          
+  
+    <li><a href="/ko/tools" hreflang="ko">도구</a></li>
+  
+
+          <li><a href="https://eyeo.com/jobs/" hreflang="en">Jobs</a></li>
+          <li><a href="/en/partner-integrations" hreflang="en">Partner Integrations</a></li>
+        </ul>
+      </nav>
+
+      <nav id="social-list" class="column">
+        <h5 class="footer-social-heading">Follow us on</h5>
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/AdblockPlus"
+              title="Follow Adblock Plus on Twitter"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-twitter-glyphicon.png?2395961253"
+                alt="Twitter glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/user/AdblockPlusOfficial"
+              title="Subscribe to Adblock Plus on YouTube"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-youtube-glyphicon.png?2395961253"
+                alt="YouTube glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/adblockplus"
+              title="Follow Adblock Plus on Facebook"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-facebook-glyphicon.png?2395961253"
+                alt="Facebook glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/adblockplus/"
+              title="Follow Adblock Plus on Instagram"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-instagram-glyphicon.png?2395961253"
+                alt="Instagram glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://vk.com/adblockplusofficial"
+              title="Follow Adblock Plus on VK"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-vk-glyphicon.png?2395961253"
+                alt="VK glyphicon">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div> 
+
+    <div id="footer-legal">
+      <p id="copyright-notice">Copyright © 2020 All rights reserved. Adblock Plus<sup>®</sup> is a registered trademark of <a href="https://eyeo.com">eyeo GmbH</a>.</p>
+      <ul id="legal-list">
+        
+          
+            <li><a href="/en/terms" hreflang="en">Terms of use</a></li>
+          
+            <li><a href="/en/privacy" hreflang="en">개인 정보 보호 정책</a></li>
+          
+            <li><a href="/en/imprint" hreflang="en">법적 공지사항</a></li>
+          
+        
+      </ul>
+    </div> 
+  </div> 
+</footer> 
+    <div id="cookiebar" class="cookie cookiebar">
+  <div class="container">
+    <div class="row">
+
+      <div class="column two-thirds">
+        <p class="cookiebar-text">
+          <svg viewBox="0 0 37.796 41.279" width="38" height="42">
+            <title>Cookie notice</title>
+            <g transform="translate(-14.904 0)">
+              <g transform="translate(14.904 0)">
+                <path d="M52.468,31.165a6.029,6.029,0,0,1-1.514-4.908.935.935,0,0,0-.626-1.019,6.029,6.029,0,0,1-3.244-8.8A.935.935,0,0,0,47,15.368a6.039,6.039,0,0,1-1.112-5.609A.935.935,0,0,0,45.4,8.647,6.029,6.029,0,0,1,42.129,2.01.935.935,0,0,0,41.484.935a20.682,20.682,0,1,0,11.049,31.38A.935.935,0,0,0,52.468,31.165Zm-3.739,2.814A18.759,18.759,0,1,1,40.148,2.524,7.9,7.9,0,0,0,43.887,10a7.889,7.889,0,0,0,1.281,6.029A7.917,7.917,0,0,0,46.682,25.1a7.823,7.823,0,0,0,2.346,1.617,7.889,7.889,0,0,0,1.57,5.123A18.6,18.6,0,0,1,48.729,33.979Z" transform="translate(-14.904 0)"/>
+              </g>
+              <g transform="translate(24.556 12.199)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(34.81 18.817)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(33.212 32.212)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(36.652 9.03)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(23.509 25.912)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(42.765 27.23)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+            </g>
+          </svg>
+          <span>
+            We use some cookies to give you the best experience on our website. By using our site you are aware that we are using cookies and you can change this any time. <a href="/en/cookie-information" hreflang="en">Learn more</a>
+          </span>
+        </p>
+      </div>
+
+      <div class="column one-third text-end">
+        <ul class="cookiebar-nav">
+          <li>
+            <button
+              type="button"
+              class="cookies-submit button"
+              title="Dismiss cookie notification">
+              Ok, got it
+            </button>
+          </li>
+          <li class="dropup cookies-dropup">
+            <button
+              type="button"
+              class="cookies-settings button"
+              title="Edit cookie settings">
+              Settings &nbsp;
+              <svg viewBox="0 0 16.509 16.993" width="18" height="18">
+                <title>Settings icon</title>
+                <path d="M175.051,8.283V.478a.478.478,0,1,0-.955,0v7.8a2.425,2.425,0,0,0,0,4.755v3.474a.478.478,0,1,0,.955,0V13.038a2.425,2.425,0,0,0,0-4.755Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,174.574,12.129Z" transform="translate(-166.302 0)"/>
+                <path d="M9.751,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.479a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752ZM9.274,8.123a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,9.274,8.123Z" transform="translate(-6.85 0)"/>
+                <path d="M339.351,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.483a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,338.874,8.123Z" transform="translate(-324.789 0)"/>
+              </svg>
+            </button>
+            <div class="cookies-dropup-menu text-start" tabindex="1">
+               <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Necessary cookies</p>
+      <p>Used to remember your privacy preferences. They cannot be switched off.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking cookies</p>
+      <p>We use these to analyze website traffic.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B testing cookies</p>
+      <p>We use these Google Optimize cookies for A/B testing based on the analytics data.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Save cookie preferences">
+    Save preferences
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+              <span class="arrow"></span>
+            </div>
+          </li>
+        </ul>
+      </div><!-- .column -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+
+</div><!-- #cookies-large-bar -->
+  <form class="cookie cookieprompt">
+
+  <fieldset class="container">
+
+    <legend class="cookie-heading">
+      Cookie preferences
+    </legend>
+
+    <button
+      type="button"
+      class="cookies-close"
+      title="Dismiss cookie notification">
+      <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+        <title>Close icon</title>
+        <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+      </svg>
+    </button>
+
+    <p>
+      We use some cookies to give you the best experience on our website.
+      <a
+        href="/en/cookie-information" hreflang="en"
+        title="More information about cookies"
+        target="_blank">Read more</a>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-submit"
+        title="Dismiss cookie notification">
+        Ok, got it
+      </button>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-settings"
+        title="Edit cookie settings">
+        Change settings
+      </button>
+    </p>
+
+  </fieldset>
+
+</form>
+  <form class="cookie cookiepage">
+
+  <header class="bg-dark">
+    <div class="container">
+
+      <h4 class="cookie-heading">
+        Cookie preferences
+      </h4>
+
+      <button
+        type="button"
+        class="cookies-close"
+        title="Dismiss cookie notification">
+        <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+          <title>Close icon</title>
+          <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="bg-light">
+    <div class="container section">
+        We use some cookies to give you the best experience on our website. By using our site you are aware that we are using cookies and you can change this any time. <a href="/en/cookie-information" hreflang="en">Learn more</a>
+    </div>
+  </div>
+
+  <div class="container section">
+     <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Necessary cookies</p>
+      <p>Used to remember your privacy preferences. They cannot be switched off.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking cookies</p>
+      <p>We use these to analyze website traffic.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B testing cookies</p>
+      <p>We use these Google Optimize cookies for A/B testing based on the analytics data.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Save cookie preferences">
+    Save preferences
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+  </div>
+
+</form>
+    <script src="/js/testing/setup.js?105746698"></script>
+    
+  <script src="/js/main.js?105746698"></script>
+
+
+
+  </body>
+</html>

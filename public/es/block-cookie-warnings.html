@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html 
+lang="es"
+data-siteurl="https://adblockplus.org"
+dir="ltr"
+class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Bloquea las notificaciones sobre cookies | Adblock Plus</title>
+
+  <meta name="description" content="Añade la característica &quot;I don&#39;t care about cookies&quot; a Adblock Plus para bloquear las notificaciones sobre cookies. Lograrás mayor control y velocidad de navegación, sin interrupciones.">
+
+<link rel="canonical" href="https://adblockplus.org/block-cookie-warnings">
+
+
+
+    
+<meta property="og:image" content="/img/abp-cookies-page-facebook.png">
+<meta property="og:title" content="Bloquea las notificaciones sobre cookies | Adblock Plus">
+
+  <meta property="og:description" content="Añade la característica &quot;I don&#39;t care about cookies&quot; a Adblock Plus para bloquear las notificaciones sobre cookies. Lograrás mayor control y velocidad de navegación, sin interrupciones.">
+
+<meta property="og:locale" content="es_ES">
+
+  
+    <meta property="og:locale:alternate" content="ar_AR">
+  
+
+  
+    <meta property="og:locale:alternate" content="de_DE">
+  
+
+  
+    <meta property="og:locale:alternate" content="el_GR">
+  
+
+  
+    <meta property="og:locale:alternate" content="en_US">
+  
+
+  
+
+  
+    <meta property="og:locale:alternate" content="fr_FR">
+  
+
+  
+    <meta property="og:locale:alternate" content="hu_HU">
+  
+
+  
+    <meta property="og:locale:alternate" content="it_IT">
+  
+
+  
+    <meta property="og:locale:alternate" content="ja_JP">
+  
+
+  
+    <meta property="og:locale:alternate" content="ko_KR">
+  
+
+  
+    <meta property="og:locale:alternate" content="nl_NL">
+  
+
+  
+    <meta property="og:locale:alternate" content="pl_PL">
+  
+
+  
+    <meta property="og:locale:alternate" content="pt_BR">
+  
+
+  
+    <meta property="og:locale:alternate" content="ru_RU">
+  
+
+  
+    <meta property="og:locale:alternate" content="tr_TR">
+  
+
+  
+    <meta property="og:locale:alternate" content="zh_CN">
+  
+
+<meta property="og:url" content="https://adblockplus.org/es/block-cookie-warnings">
+
+
+<meta name="twitter:site" content="@AdblockPlus">
+<meta name="twitter:creator" content="@AdblockPlus">
+    
+  <link rel="stylesheet" href="/css/defaults.css?4034861870">
+  <link rel="stylesheet" href="/css/fonts.css?4034861870">
+  <link rel="stylesheet" href="/css/main.css?4034861870">
+  <link rel="stylesheet" href="/css/cookies.css?4034861870">
+
+
+
+
+
+    <script>
+  window.eyeo = {
+    
+    
+    
+    preventCookiePrompt: false,
+    userTesting: false,
+    userTestingVariants: false,
+    testAnalytics: false,
+    testOptimize: false
+  }
+
+  window.console = window.console || {warn: function(){}};
+</script>
+    
+    <!--[if IE 9]>
+  <script src="/js/vendor/es5-shim.js?1982377966"></script>
+  <script src="/js/vendor/dom4.js?1982377966"></script>
+<![endif]-->
+
+    
+      
+  <style>
+    main .one-half {
+      width: 100%;
+    }
+
+    @media (min-width: 1366px) {
+      main .one-half {
+        width: 50%;
+      }
+    }
+
+    .hero.container {
+      margin-top: 1em;
+    }
+
+    @media (min-width: 768px) {
+      .hero.container {
+        width: 75%;
+        mrgin-top: 0;
+        margin-bottom: 6em;
+      }
+    }
+
+    @media (min-width: 1366px) {
+      main .container {
+        width: auto;
+      }
+
+      .hero.container {
+        width: 80%;
+        margin-top: 6em;
+        margin-bottom: 12em;
+      }
+    }
+
+    @media (min-width: 1920px) {
+      .hero.container {
+        width: 100%;
+      }
+    }
+
+    /* overrride - prevent full-width buttons */
+    .button {
+      display: inline-block;
+      width: auto;
+    }
+
+    .content a,
+    .content a:visited {
+      color: inherit;
+    }
+
+    a.button,
+    a.button:visited {
+      color: #fff;
+    }
+
+    .hero-image {
+      padding: 2em;
+      padding-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+      .hero-image {
+        height: 24em;
+        margin-top: 4em;
+      }
+    }
+
+    @media (min-width: 1366px) {
+      .hero-image {
+        height: 26em;
+        margin-top: 0.5em;
+      }
+    }
+
+    @media (min-width: 1920px) {
+      .hero-image {
+        margin-left: 24em;
+      }
+    }
+
+    @media (min-width: 1920px) {
+      [dir="rtl"] .hero-image {
+        margin-left: -22em;
+      }
+    }
+
+    .hero-text .note {
+      margin-top: 0;
+    }
+    .hero-text .note.hide {
+      display: none;
+    }
+
+    .hero-text .button {
+      padding: 0.6em 1em;
+      border-radius: 0.4em;
+      box-shadow: 0 3px 3px #ccc;
+      margin-bottom: 2em;
+    }
+
+    .hero-text .button-container {
+      margin-top: 2em;
+    }
+
+    .hero-text .download-abp {
+      margin-top: 3em;
+    }
+
+    .hero-text .button-container.hide {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      .hero-text .button-container {
+        display: inline-block;
+        margin-top: 2em;
+      }
+    }
+
+    @media (min-width: 1920px) {
+      .hero-text {
+        padding-right: 20em;
+      }
+
+      [dir="rtl"] .hero-text {
+        padding-right: 0;
+        padding-left: 20em;
+      }
+    }
+
+    .error-msg:not(.visible) {
+      display: none;
+    }
+
+    .button-text,
+    .button-image {
+      vertical-align: middle;
+    }
+
+    .button-text {
+      padding-left: 0.5em;
+    }
+
+    [dir="rtl"] .button-text {
+      padding-left: 0;
+      padding-right: 0.5em;
+    }
+
+    .button.add {
+      background-color: #503018;
+      margin-right: 2em;
+    }
+
+    [dir="rtl"] .button.add {
+      margin-right: 0;
+      margin-left: 2em;
+    }
+
+    .button.download {
+      background-color: #0aad03;
+    }
+
+    .button.add .button-image,
+    .button.download .button-image {
+      width: 2em;
+      height: 2em;
+    }
+
+    .download-abp {
+      position: relative;
+    }
+
+    .download-abp .prompt {
+      position: absolute;
+      top: -2em;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .download-abp .prompt {
+        text-align: left;
+        white-space: nowrap;
+      }
+
+      [dir="rtl"] .download-abp .prompt {
+        text-align: right;
+      }
+    }
+
+    .abp-installed .download-abp {
+      display: none;
+    }
+
+    .bg-curve {
+      position: absolute;
+      left: 0;
+      top: -2em;
+      width: 100%;
+      height: 2em;
+      background-image: url(/img/bg-curve.svg);
+      background-size: 100% 100%;
+    }
+
+    @media (min-width: 768px) {
+      .bg-curve {
+        height: 4em;
+        top: -4em;
+      }
+    }
+
+    @media (min-width: 1366px) {
+      .bg-curve {
+        top: -7em;
+        height: 7em;
+      }
+    }
+
+    @media (min-width: 1920px) {
+      .bg-curve {
+        top: -6em;
+        height: 6em;
+      }
+    }
+
+    .how-to .content h2 {
+      margin-bottom: 1em;
+    }
+
+    @media (min-width: 1920px) {
+      .how-to .content h2 {
+        margin-bottom: 0.75em;
+      }
+    }
+
+    .how-to-container {
+      margin: 0 auto;
+    }
+
+    @media (min-width: 768px) {
+      .how-to-container {
+        width: 42.5em;
+      }
+    }
+
+    @media (min-width: 1366px) {
+      .how-to-container {
+        width: 50em;
+      }
+    }
+
+    .how-to {
+      margin-top: 4em;
+    }
+
+    .bg-grey {
+      position: relative;
+      background-color: #ececec;
+    }
+
+    @media (min-width: 768px) {
+      .how-to-add img,
+      .how-to-remove img{
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    @media (min-width: 1366px) {
+      .how-to {
+        padding-bottom: 2em;
+      }
+
+      .how-to h2 {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .how-to-add {
+        margin-right: 1em;
+        margin-left: -1em;
+      }
+
+      [dir="rtl"] .how-to-add {
+        margin-left: 1em;
+        margin-right: -1em;
+      }
+
+      .how-to-add img {
+        display: inline;
+      }
+    }
+
+    @media (min-width: 768px) {
+      h2 {
+        padding: 0 4em;
+      }
+
+      .download-abp {
+        margin-top: 1em;
+      }
+    }
+
+    .more-filters {
+      padding: 1em 0;
+    }
+
+    @media (min-width: 768px) {
+      .more-filters {
+        width: 23.5em;
+        margin: 1em auto 4em auto;
+      }
+    }
+
+    @media (min-width: 1366px) {
+      .more-filters {
+        width: auto;
+        margin-left: -1em;
+        margin-bottom: 2em;
+      }
+
+      [dir="rtl"] .more-filters {
+        margin-left: 0;
+        margin-right: -1em;
+      }
+    }
+
+  </style>
+
+    
+  </head>
+
+  <body>
+    
+
+
+
+<nav id="navbar">
+  <div class="container">
+    <a href="/es/" hreflang="es" id="navbar-logo">
+      <img
+        src="/img/navbar-logo.svg?1236430895"
+        alt="">
+      <span>Adblock <strong>Plus</strong></span>
+    </a>
+    <a href="#" id="navbar-menu-toggle">
+      <img
+        src="/img/menu-toggle.svg?1236430895"
+        alt="">
+    </a>
+    <ul id="navbar-menu">
+      
+        <li class="uppercase ">
+          <a href="/es/download" hreflang="es">Descargar</a>
+        </li>
+      
+        <li class="uppercase ">
+          <a href="/es/about" hreflang="es">Acerca de</a>
+        </li>
+      
+      <li class="uppercase">
+        <a href="https://help.eyeo.com" target="_blank">Ayuda</a>
+      </li>
+      <li class="uppercase ">
+        <a href="/es/donate" hreflang="es">Donar</a>
+      </li>
+      <li id="navbar-locale-menubar">
+        <a id="navbar-locale-selected">
+          Español (España) (ES)
+        </a>
+        <ul id="navbar-locale-menu">
+          
+            <li>
+              <a href="/ar/block-cookie-warnings" hreflang="ar">
+                العربية (AR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/de/block-cookie-warnings" hreflang="de">
+                Deutsch (DE)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/el/block-cookie-warnings" hreflang="el">
+                Ελληνικά (GR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/en/block-cookie-warnings" hreflang="en">
+                English (US)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/es/block-cookie-warnings" hreflang="es">
+                Español (España) (ES)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/fr/block-cookie-warnings" hreflang="fr">
+                Français (FR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/hu/block-cookie-warnings" hreflang="hu">
+                Magyar (HU)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/it/block-cookie-warnings" hreflang="it">
+                Italiano (IT)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ja/block-cookie-warnings" hreflang="ja">
+                日本語 (JP)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ko/block-cookie-warnings" hreflang="ko">
+                한국어 (KR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/nl/block-cookie-warnings" hreflang="nl">
+                Nederlands (NL)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/pl/block-cookie-warnings" hreflang="pl">
+                Polski (PL)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/pt_BR/block-cookie-warnings" hreflang="pt-BR">
+                Português (Brasil) (BR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ru/block-cookie-warnings" hreflang="ru">
+                Русский (RU)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/tr/block-cookie-warnings" hreflang="tr">
+                Türkçe (TR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_CN/block-cookie-warnings" hreflang="zh-CN">
+                中文(简体) (CN)
+              </a>
+            </li>
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+    
+      
+
+
+
+
+
+
+
+<main>
+  <section class="container hero">
+    <div class="row">
+      <div class="column one-half content text-center">
+        <img alt="Icono de las cookies"
+          src="/img/cookie-notice.svg?1236430895" class="hero-image">
+      </div>
+      <div class="column one-half content hero-text">
+        <h1 class="hero-heading">¿Te cansa recibir notificaciones sobre cookies cada vez que consultas una nueva página web?</h1>
+        <p>Añade la conocida característica &quot;<a href="https://i-dont-care-about-cookies.eu/" target="_blank">I don&#39;t care about cookies</a>&quot; a Adblock Plus y gana aún más control sobre tu experiencia en línea.</p>
+        <p>Podrás bloquear las notificaciones sobre cookies y navegar con más rapidez y fluidez. Para poder disfrutar de esta excepcional característica, debes añadir primero la extensión Adblock Plus si aún no dispones de ella.</p>
+        <div class="error-msg">
+            <p><strong>Esta función todavía no está disponible para tu navegador. Mientras tanto, puedes seguir bloqueando anuncios molestos con Adblock Plus.</strong></p>
+            <a href="/es/" hreflang="es" class="button icon-button download" title="Ir a descargar">
+              <img class="button-image" src="/img/dl-button-safari.svg?1236430895" alt="">
+              <span class="button-text">¡DESCÁRGALA YA!</span>
+            </a>
+        </div>
+        <div class="subscribe-idcac button-container">
+          <a href="https://subscribe.adblockplus.org/?location=https%3A//www.i-dont-care-about-cookies.eu/abp/&amp;title=I%20don%27t%20care%20about%20cookies" target="_blank" class="button icon-button add" title="Añade la característica &quot;I don&#39;t care about cookies&quot; a Adblock Plus">
+            <img src="/img/cookie.svg?1236430895" alt="" class="button-image">
+            <span class="button-text">Añadir la función a ABP</span>
+          </a>
+        </div>
+
+        <div class="download-abp button-container">
+          <small class="prompt"><strong>¿Aún no usas la extensión Adblock Plus?</strong></small>
+            <a href="/es/" hreflang="es" class="button icon-button download" title="Ir a descargar">
+              <img class="button-image" src="/img/dl-button-chrome.svg?1236430895" alt="" hidden>
+              <span class="button-text">¡DESCÁRGALA YA!</span>
+            </a>
+        </div>
+        <p class="note"><small><strong>Nota:</strong> con esta característica que bloquea los avisos, renuncias al derecho a recibir notificaciones sobre el uso de cookies y no podrás editar individualmente los ajustes de cookies de cada</small></p>
+      </div>
+    </div>
+  </section>
+  <div class="bg-grey">
+    <div class="bg-curve"></div>
+    <div class="container how-to">
+      <div class="how-to-container">
+        <div class="row">
+          <section class="column one-half content how-to-add">
+            <h2 class="h1">Cómo añadir la característica</h2>
+            <img alt="Captura de pantalla con el cuadro de confirmación para añadir la característica a Adblock Plus" src="/img/how-to-add-feature.png?1236430895" srcset="/img/how-to-add-feature-2x.png 2x">
+          </section>
+
+          <section class="column one-half content how-to-remove">
+            <h2 class="h1">Cómo eliminarla</h2>
+            <img alt="Captura de pantalla que muestra el lugar de instalación de la característica" src="/img/how-to-remove-feature.png?1236430895" srcset="/img/how-to-remove-feature-2x.png 2x">
+          </section>
+        </div>
+        <div class="row">
+          <div class="column content">
+            <div class="more-filters">
+              Esta característica se guarda automáticamente en la sección MÁS FILTROS. Podrás encontrarla aquí cuando quieras eliminarla.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="/js/vendor/bowser.js?1982377966"></script>
+
+<script>
+
+addEventListener('load', function() {
+  var imgEl;
+
+  var browserNames = {
+    'Chrome': 'chrome',
+    'Firefox': 'firefox',
+    'Internet Explorer': 'ie',
+    'Microsoft Edge': 'edge',
+    'Opera': 'opera',
+    'Yandex Browser': 'yandex'
+  };
+
+  var browserName = browserNames[bowser.name];
+
+  if ((window.location.href.indexOf('utm_source=abp') !== -1) || !browserName) {
+    document.body.classList.add('abp-installed');
+
+  } else {
+    imgEl = document.querySelector('.download-abp .button-image');
+
+    if (navigator.userAgent.indexOf("Edg/") !== -1) {
+        browserName = 'edge';
+    }
+    imgEl.src = imgEl.src.split('/img/')[0] +
+    '/img/dl-button-' + browserName + '.svg';
+
+    imgEl.removeAttribute('hidden');
+  }
+
+  if (!(Object.values(browserNames).includes(browserName) && !bowser.mobile)) {
+      document.getElementsByClassName('error-msg')[0].classList.add('visible');
+      document.getElementsByClassName('subscribe-idcac')[0].classList.add('hide');
+      document.getElementsByClassName('download-abp')[0].classList.add('hide');
+      document.getElementsByClassName('note')[0].classList.add('hide');
+  }
+
+  function alignHeadings() {
+    var howToAdd = document.querySelector('.how-to-add h2');
+    var howToRemove = document.querySelector('.how-to-remove h2');
+
+    if (window.innerWidth < 1366) {
+      howToAdd.style.height = 'auto';
+      howToRemove.style.height = 'auto';
+
+    } else {
+
+      if (howToAdd.clientHeight > howToRemove.clientHeight) {
+        howToRemove.style.height = howToAdd.clientHeight + 'px';
+
+      } else if (howToAdd.clientHeight < howToRemove.clientHeight) {
+        howToAdd.style.height = howToRemove.clientHeight + 'px';
+      }
+    }
+  }
+
+  alignHeadings();
+
+  addEventListener('resize', alignHeadings);
+});
+
+</script>
+
+    
+
+    
+
+<footer id="footer" class="content">
+  <div class="container">
+    <div class="row">
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Descargar</h5>
+        <ul>
+          <li><a href="/en/adblock-plus-chrome" hreflang="en">Adblock Plus para Chrome</a></li>
+          <li><a href="/en/adblock-plus-firefox" hreflang="en">Adblock Plus para Firefox</a></li>
+          <li><a href="/en/ad-blocker-safari" hreflang="en">Adblock Plus para Safari</a></li>
+          <li><a href="/en/adblock-plus-opera" hreflang="en">Adblock Plus para Opera</a></li>
+          <li><a href="/en/adblock-plus-edge" hreflang="en">Adblock Plus for Edge</a></li>
+          <li><a href="/en/android-install" hreflang="en">Adblock Browser for Android</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Recursos</h5>
+        <ul>
+          
+            <li><a href="/es/acceptable-ads" hreflang="es">Anuncios Aceptables</a></li>
+          
+            <li><a href="/es/documentation" hreflang="es">Documentación</a></li>
+          
+            <li><a href="/es/deployments" hreflang="es">Para administradores</a></li>
+          
+            <li><a href="/es/bugs" hreflang="es">Informar de un problema</a></li>
+          
+          
+            <li><a href="/es/faq-privacy" hreflang="es">Preguntas frecuentes sobre privacidad</a></li>
+          
+          <li><a href="https://help.eyeo.com/en/adblockplus/how-to-write-filters" target="_blank" hreflang="en">Cómo escribir filtros para Adblock Plus</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Comunidad</h5>
+        <ul>
+          <li><a href="/es/contribute" hreflang="es">Contribuir</a></li>
+          <li><a href="https://adblockplus.org/releases/" hreflang="en">Anuncios</a></li>
+          <li><a href="https://adblockplus.org/blog/" hreflang="en">Blog</a></li>
+          <li><a href="https://adblockplus.org/forum/" hreflang="en">Foro</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Desarrollo</h5>
+        <ul>
+          <li><a href="https://gitlab.com/eyeo/adblockplus">Código fuente</a></li>
+          
+  
+    <li><a href="/es/tools" hreflang="es">Herramientas</a></li>
+  
+
+          <li><a href="https://eyeo.com/jobs/" hreflang="en">Empleo</a></li>
+          <li><a href="/en/partner-integrations" hreflang="en">Partner Integrations</a></li>
+        </ul>
+      </nav>
+
+      <nav id="social-list" class="column">
+        <h5 class="footer-social-heading">Síguenos en</h5>
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/AdblockPlus"
+              title="Seguir a Adblock Plus en Twitter"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-twitter-glyphicon.png?1236430895"
+                alt="Icono de Twitter">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/user/AdblockPlusOfficial"
+              title="Suscribirse a Adblock Plus en YouTube"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-youtube-glyphicon.png?1236430895"
+                alt="Icono de YouTube">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/adblockplus"
+              title="Seguir a Adblock Plus en Facebook"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-facebook-glyphicon.png?1236430895"
+                alt="Icono de Facebook">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/adblockplus/"
+              title="Seguir a Adblock Plus en Instagram"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-instagram-glyphicon.png?1236430895"
+                alt="Icono de Instagram">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://vk.com/adblockplusofficial"
+              title="Seguir a Adblock Plus en VK"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-vk-glyphicon.png?1236430895"
+                alt="Icono de VK">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div> 
+
+    <div id="footer-legal">
+      <p id="copyright-notice">Copyright © 2020 Todos los derechos reservados. Adblock Plus<sup>®</sup> es una marca registrada de <a href="https://eyeo.com">eyeo GmbH</a>.</p>
+      <ul id="legal-list">
+        
+          
+            <li><a href="/en/terms" hreflang="en">Términos de uso</a></li>
+          
+            <li><a href="/en/privacy" hreflang="en">Política de privacidad</a></li>
+          
+            <li><a href="/en/imprint" hreflang="en">Contacto</a></li>
+          
+        
+      </ul>
+    </div> 
+  </div> 
+</footer> 
+    <div id="cookiebar" class="cookie cookiebar">
+  <div class="container">
+    <div class="row">
+
+      <div class="column two-thirds">
+        <p class="cookiebar-text">
+          <svg viewBox="0 0 37.796 41.279" width="38" height="42">
+            <title>Aviso de &quot;cookies&quot;</title>
+            <g transform="translate(-14.904 0)">
+              <g transform="translate(14.904 0)">
+                <path d="M52.468,31.165a6.029,6.029,0,0,1-1.514-4.908.935.935,0,0,0-.626-1.019,6.029,6.029,0,0,1-3.244-8.8A.935.935,0,0,0,47,15.368a6.039,6.039,0,0,1-1.112-5.609A.935.935,0,0,0,45.4,8.647,6.029,6.029,0,0,1,42.129,2.01.935.935,0,0,0,41.484.935a20.682,20.682,0,1,0,11.049,31.38A.935.935,0,0,0,52.468,31.165Zm-3.739,2.814A18.759,18.759,0,1,1,40.148,2.524,7.9,7.9,0,0,0,43.887,10a7.889,7.889,0,0,0,1.281,6.029A7.917,7.917,0,0,0,46.682,25.1a7.823,7.823,0,0,0,2.346,1.617,7.889,7.889,0,0,0,1.57,5.123A18.6,18.6,0,0,1,48.729,33.979Z" transform="translate(-14.904 0)"/>
+              </g>
+              <g transform="translate(24.556 12.199)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(34.81 18.817)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(33.212 32.212)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(36.652 9.03)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(23.509 25.912)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(42.765 27.23)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+            </g>
+          </svg>
+          <span>
+            Utilizamos algunas &quot;cookies&quot; para ofrecerte la mejor experiencia en nuestro sitio web. Al navegar por nuestro sitio eres consciente de que utilizamos &quot;cookies&quot; y de que puedes cambiar esta configuración en cualquier momento. <a href="/es/cookie-information" hreflang="es">Saber más</a>
+          </span>
+        </p>
+      </div>
+
+      <div class="column one-third text-end">
+        <ul class="cookiebar-nav">
+          <li>
+            <button
+              type="button"
+              class="cookies-submit button"
+              title="Descartar la notificación de las &quot;cookies&quot;">
+              Entendido
+            </button>
+          </li>
+          <li class="dropup cookies-dropup">
+            <button
+              type="button"
+              class="cookies-settings button"
+              title="Editar la configuración de las &quot;cookies&quot;">
+              Ajustes &nbsp;
+              <svg viewBox="0 0 16.509 16.993" width="18" height="18">
+                <title>Icono de ajustes</title>
+                <path d="M175.051,8.283V.478a.478.478,0,1,0-.955,0v7.8a2.425,2.425,0,0,0,0,4.755v3.474a.478.478,0,1,0,.955,0V13.038a2.425,2.425,0,0,0,0-4.755Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,174.574,12.129Z" transform="translate(-166.302 0)"/>
+                <path d="M9.751,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.479a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752ZM9.274,8.123a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,9.274,8.123Z" transform="translate(-6.85 0)"/>
+                <path d="M339.351,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.483a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,338.874,8.123Z" transform="translate(-324.789 0)"/>
+              </svg>
+            </button>
+            <div class="cookies-dropup-menu text-start" tabindex="1">
+               <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">&quot;Cookies&quot; necesarias</p>
+      <p>Se utilizan para recordar tus preferencias de privacidad y no se pueden desactivar.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">&quot;Cookies&quot; de seguimiento</p>
+      <p>Se utilizan para analizar el tráfico del sitio web.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Pruebas A/B de &quot;cookies&quot;</p>
+      <p>Usamos estas &quot;cookies&quot; de Google Optimize para realizar pruebas A/B basándonos en los datos analíticos.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Guardar las preferencias para el uso de &quot;cookies&quot;">
+    Guardar preferencias
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+              <span class="arrow"></span>
+            </div>
+          </li>
+        </ul>
+      </div><!-- .column -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+
+</div><!-- #cookies-large-bar -->
+  <form class="cookie cookieprompt">
+
+  <fieldset class="container">
+
+    <legend class="cookie-heading">
+      Preferencias para el uso de &quot;cookies&quot;
+    </legend>
+
+    <button
+      type="button"
+      class="cookies-close"
+      title="Descartar la notificación de las &quot;cookies&quot;">
+      <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+        <title>Icono de cerrar</title>
+        <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+      </svg>
+    </button>
+
+    <p>
+      Utilizamos algunas &quot;cookies&quot; para ofrecerte la mejor experiencia en nuestro sitio web.
+      <a
+        href="/es/cookie-information" hreflang="es"
+        title="Más información acerca de las &quot;cookies&quot;"
+        target="_blank">Leer más</a>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-submit"
+        title="Descartar la notificación de las &quot;cookies&quot;">
+        Entendido
+      </button>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-settings"
+        title="Editar la configuración de las &quot;cookies&quot;">
+        Cambiar ajustes
+      </button>
+    </p>
+
+  </fieldset>
+
+</form>
+  <form class="cookie cookiepage">
+
+  <header class="bg-dark">
+    <div class="container">
+
+      <h4 class="cookie-heading">
+        Preferencias para el uso de &quot;cookies&quot;
+      </h4>
+
+      <button
+        type="button"
+        class="cookies-close"
+        title="Descartar la notificación de las &quot;cookies&quot;">
+        <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+          <title>Icono de cerrar</title>
+          <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="bg-light">
+    <div class="container section">
+        Utilizamos algunas &quot;cookies&quot; para ofrecerte la mejor experiencia en nuestro sitio web. Al navegar por nuestro sitio eres consciente de que utilizamos &quot;cookies&quot; y de que puedes cambiar esta configuración en cualquier momento. <a href="/es/cookie-information" hreflang="es">Saber más</a>
+    </div>
+  </div>
+
+  <div class="container section">
+     <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">&quot;Cookies&quot; necesarias</p>
+      <p>Se utilizan para recordar tus preferencias de privacidad y no se pueden desactivar.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">&quot;Cookies&quot; de seguimiento</p>
+      <p>Se utilizan para analizar el tráfico del sitio web.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Pruebas A/B de &quot;cookies&quot;</p>
+      <p>Usamos estas &quot;cookies&quot; de Google Optimize para realizar pruebas A/B basándonos en los datos analíticos.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Guardar las preferencias para el uso de &quot;cookies&quot;">
+    Guardar preferencias
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+  </div>
+
+</form>
+    <script src="/js/testing/setup.js?1982377966"></script>
+    
+  <script src="/js/main.js?1982377966"></script>
+
+
+
+  </body>
+</html>

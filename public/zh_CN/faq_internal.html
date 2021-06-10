@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html 
+lang="zh_CN"
+data-siteurl="https://adblockplus.org"
+dir="ltr"
+class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>常见问题 - Adblock Plus 内部详情</title>
+
+<link rel="canonical" href="https://adblockplus.org/faq_internal">
+
+
+
+    
+<meta property="og:image" content="/img/adblockplus_promo.png">
+<meta property="og:title" content="常见问题 - Adblock Plus 内部详情">
+
+<meta property="og:locale" content="zh_CN">
+
+  
+    <meta property="og:locale:alternate" content="de_DE">
+  
+
+  
+    <meta property="og:locale:alternate" content="en_US">
+  
+
+  
+    <meta property="og:locale:alternate" content="es_ES">
+  
+
+  
+    <meta property="og:locale:alternate" content="fr_FR">
+  
+
+  
+    <meta property="og:locale:alternate" content="ko_KR">
+  
+
+  
+    <meta property="og:locale:alternate" content="nl_NL">
+  
+
+  
+
+  
+    <meta property="og:locale:alternate" content="zh_TW">
+  
+
+<meta property="og:url" content="https://adblockplus.org/zh_CN/faq_internal">
+
+
+<meta name="twitter:site" content="@AdblockPlus">
+<meta name="twitter:creator" content="@AdblockPlus">
+    
+  <link rel="stylesheet" href="/css/defaults.css?3466492458">
+  <link rel="stylesheet" href="/css/fonts.css?3466492458">
+  <link rel="stylesheet" href="/css/main.css?3466492458">
+  <link rel="stylesheet" href="/css/cookies.css?3466492458">
+
+
+
+
+
+    <script>
+  window.eyeo = {
+    
+    
+    
+    preventCookiePrompt: false,
+    userTesting: false,
+    userTestingVariants: false,
+    testAnalytics: false,
+    testOptimize: false
+  }
+
+  window.console = window.console || {warn: function(){}};
+</script>
+    
+    <!--[if IE 9]>
+  <script src="/js/vendor/es5-shim.js?560253307"></script>
+  <script src="/js/vendor/dom4.js?560253307"></script>
+<![endif]-->
+
+    
+      
+  <link rel="index" href="/zh_CN/faq?3466492458" hreflang="zh_CN">
+
+    
+  </head>
+
+  <body>
+    
+
+
+
+<nav id="navbar">
+  <div class="container">
+    <a href="/zh_CN/" hreflang="zh-CN" id="navbar-logo">
+      <img
+        src="/img/navbar-logo.svg?2448296463"
+        alt="">
+      <span>Adblock <strong>Plus</strong></span>
+    </a>
+    <a href="#" id="navbar-menu-toggle">
+      <img
+        src="/img/menu-toggle.svg?2448296463"
+        alt="">
+    </a>
+    <ul id="navbar-menu">
+      
+        <li class="uppercase ">
+          <a href="/zh_CN/download" hreflang="zh-CN">下载</a>
+        </li>
+      
+        <li class="uppercase ">
+          <a href="/zh_CN/about" hreflang="zh-CN">关于</a>
+        </li>
+      
+      <li class="uppercase">
+        <a href="https://help.eyeo.com" target="_blank">帮助</a>
+      </li>
+      <li class="uppercase ">
+        <a href="/zh_CN/donate" hreflang="zh-CN">捐赠</a>
+      </li>
+      <li id="navbar-locale-menubar">
+        <a id="navbar-locale-selected">
+          中文(简体) (CN)
+        </a>
+        <ul id="navbar-locale-menu">
+          
+            <li>
+              <a href="/de/faq_internal" hreflang="de">
+                Deutsch (DE)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/en/faq_internal" hreflang="en">
+                English (US)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/es/faq_internal" hreflang="es">
+                Español (España) (ES)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/fr/faq_internal" hreflang="fr">
+                Français (FR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ko/faq_internal" hreflang="ko">
+                한국어 (KR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/nl/faq_internal" hreflang="nl">
+                Nederlands (NL)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_CN/faq_internal" hreflang="zh-CN">
+                中文(简体) (CN)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_TW/faq_internal" hreflang="zh-TW">
+                中文(台灣) (TW)
+              </a>
+            </li>
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+    <div id="content" class="container content False">
+      
+        <h1>常见问题 - Adblock Plus 内部详情</h1>
+      
+
+      
+        
+
+        
+        
+          <div class="toc">
+            
+          <ul>
+            
+              <li>
+                <a href="#preferences">我该如何了解 Adblock Plus 所有首选项的含义？</a>
+                
+              </li>
+            
+              <li>
+                <a href="#policies">Adblock Plus 是怎么过滤地址的？</a>
+                
+              </li>
+            
+              <li>
+                <a href="#filters">Adblock Plus 是怎么处理过滤规则的，什么样的规则处理得更快？</a>
+                
+              </li>
+            
+              <li>
+                <a href="#elemhide">元素隐藏功能是怎么实现的？</a>
+                
+              </li>
+            
+              <li>
+                <a href="#filtersfile">过滤规则文件的第一行表示什么？</a>
+                
+              </li>
+            
+          </ul>
+        
+          </div>
+        
+      
+
+      
+        
+
+
+
+<main itemscope itemtype="https://schema.org/FAQPage">
+
+  <article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h2 id="preferences" itemprop="name">我该如何了解 Adblock Plus 所有首选项的含义？</h2>
+
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Adblock Plus 在 <a href="http://kb.mozillazine.org/About:config">about:config</a> 中包含一系列以 <code>extensions.adblockplus.</code> 打头的首选项。（这有别于 Adblock 和 Adblock Plus 0.5 的首选项以 <code>adblock.</code> 打头）。 所有的首选项及其解释可以在<a href="/zh_CN/preferences" hreflang="zh_CN">这里</a>查阅。</p>
+    </div>
+  </article>
+
+  <article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h2 id="policies" itemprop="name">Adblock Plus 是怎么过滤地址的？</h2>
+
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text">
+        <p>实际上最难的事情是由 Firefox、Thunderbird 及其他应用程序所基于的底层引擎 — Gecko 来完成的。它支持一种称为 &quot;内容策略（content policies）&quot;的机制。所谓的内容策略简单来说就是一个 JavaScript（或 C++）对象，浏览器一旦需要加载内容就必须调用它。此时它会根据地址和其他数据来判断是否加载这些内容。Gecko 引擎内置了一些内容策略（当你在 Firefox 或者 Seamonkey 中定义哪些站点不允许加载图片的时候，实际上就是配置了一个内置的内容策略），任何扩展都可以注册自己的内容策略。因此，Adblock Plus 要做的就是注册自己的内容策略，剩下的就只有定义哪些地址需要被阻挡的程序逻辑和配置过滤规则的用户界面了。</p>
+
+        <p>对于开发人员来说，要注册一个内容策略，您编写的 <a href="http://developer.mozilla.org/cn/docs/How_to_Build_an_XPCOM_Component_in_Javascript">XPCOM 组件</a>需要实现 <a href="http://www.xulplanet.com/references/xpcomref/ifaces/nsIContentPolicy.html">nsIContentPolicy 接口</a>。通过模块的 registerSelf 方法在&quot;内容策略&quot;分类中注册您的组件（使用 <a href="http://www.xulplanet.com/references/xpcomref/ifaces/nsICategoryManager.html">category manager</a> 来实现）。然后，您就可以通过调用 shouldLoad 方法来决定是否接受指定的请求。</p>
+      </div>
+    </div>
+  </article>
+
+  <article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h2 id="filters" itemprop="name">Adblock Plus 是怎么处理过滤规则的，什么样的规则处理得更快？</h2>
+
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text">
+        <p>所有的过滤规则都会在内部转换为<a href="/zh_CN/filters#regexps" hreflang="zh_CN">正则表达式</a>，包括那些简单规则。例如，<code>ad*banner.gif|</code> 会被转换为 <code>/ad.*banner\.gif$/</code>。Adblock Plus 在处理给定地址时需要校验所有过滤规则，但此时它并不会简单地一条接着一条校验，因为这无疑会拖慢浏览速度。</p>
+
+        <p>除了转换过滤规则为正则表达式之外，Adblock Plus 还会尝试提取其中的文本信息得到唯一一个 8 字符的字符串（称为&quot;快捷方式，shortcut&quot;）。该字符串必须包含在每个匹配过滤规则的地址中（其实字符串长度可以是任意的，只是这里 8 字符最合理）。举例来说，对于过滤规则 <code>|http://ad.*</code>，Adblock Plus 可以选择 &quot;http://a&quot;、&quot;ttp://ad&quot; 或是 &quot;tp://ad.&quot;，这些字符串都包含在这条规则匹配的地址中。可惜的是目前我们还无法为不满足连续 8 个字符（不含通配符）的简单规则和正则表达式指定“快捷方式”。</p>
+
+        <p>所有快捷方式都存放在一个可查找的表中，Adblock Plus 可以通过快捷方式非常高效地查找到相应的规则。Adblock Plus 处理指定的地址时首先会查找这个表（查找速度非常快，几乎和快捷方式的数量无关）。只有匹配到快捷方式后才会应用相应的规则。处理没有快捷方式的规则（称为&quot;慢速规则&quot;）时，则需要对所有过滤规则一条一条地匹配。</p>
+
+        <p>总结： 什么样的过滤规则处理速度更快？尽量少使用处理速度较慢的正则表达式，同时保证简单规则至少包含 8 个连续字符（这里所说的&quot;连续&quot;是指不含 * 这样的特殊字符），否则等同于处理速度较慢的正则表达式。但只要简单规则符合要求，其处理时间都是一样的，与规则数量多少无关。这意味着就算您用 20 条简单规则代替一条正则表达式都是值得的。说到这里，建议使用这个<a href="/zh_CN/deregifier" hreflang="zh_CN">小工具</a>转换正则表达式为简单规则。</p>
+
+        <p><a href="/blog/investigating-filter-matching-algorithms">点击这里查阅详细的过滤规则匹配算法</a></p>
+      </div>
+    </div>
+  </article>
+
+  <article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h2 id="elemhide" itemprop="name">元素隐藏功能是怎么实现的？</h2>
+
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text">
+        <p>元素隐藏规则会被转换为 <a href="http://www.w3.org/TR/CSS21/">CSS</a> 并应用到所有用户正在访问的网页。像是 <code>example.com#div(evil_ad)</code> 这条规则会被转换为：</p>
+
+        <pre>
+@-moz-document domain(example.com)
+{
+  div#evil_ad, div.evil_ad
+  {
+    display: none !important;
+  }
+}
+</pre>
+
+        <p>@-moz-document 是一个 CSS 标准的推荐扩展规则，您可以查阅 <a href="https://developer.mozilla.org/en/CSS/@-moz-document">Mozilla 开发者中心</a>。</p>
+
+        <p>对于那些没有指定域名的规则会按照 http:// 和 https:// 进行处理，防止这些规则应用到浏览器的用户界面（它使用的是 chrome:// 协议模型）。例如，<code>#div(evil_ad)</code> 这条规则会被转换为：</p>
+
+        <pre>
+@-moz-document url-prefix(http://),url-prefix(https://)
+{
+  div#evil_ad, div.evil_ad
+  {
+    display: none !important;
+  }
+}
+</pre>
+
+        <p>对于开发人员来说， Adblock Plus 使用的是<a href="https://developer.mozilla.org/en/XPCOM_Interface_Reference/nsIStyleSheetService">这个</a>样式表服务实现元素隐藏功能。这个接口是在 Gecko 1.8 时引入的，它允许扩展动态加载用户自定义 CSS（在此之前只能通过修改 userContent.css 并重启浏览器才能生效）。用户自定义 CSS 会覆盖所有网站的 CSS 代码，因为它具有最高的<a href="http://www.w3.org/TR/CSS21/cascade.html#cascading-order">优先级</a>。</p>
+
+      </div>
+    </div>
+  </article>
+
+  <article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h2 id="filtersfile" itemprop="name">过滤规则文件的第一行表示什么？</h2>
+
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text">
+        <p>过滤规则文件的第一行通常都是 <code>[Adblock]</code>。但您可能发现在最近版本的 Adblock Plus 中过滤文件第一行有时显示为其他文字，这是由于您列表中部分过滤规则的语法只支持新版本 Adblock Plus 而不支持早期的 Adblock。例如：</p>
+
+        <pre>
+(Adblock Plus 0.6.1.2 or higher required) [Adblock]
+</pre>
+
+        <p>这里括号中的内容只是一个注释，Adblock 或 Adblock Plus 读取时会忽略实际标记之前的任何内容。由于 Adblock Plus 0.6.1.2 还不支持这种写法，因此这里 Adblock Plus 不会强制要求用户更新到新版本。然而，如果您使用更加新的过滤规则语法，则第一行有可能会变成：</p>
+
+        <pre>
+[Adblock Plus 0.7.1]
+</pre>
+
+        <p>上面这种写法是从 Adblock Plus 0.7.1 开始支持的，而之前版本的 Adblock Plus 以及 Adblock 则无法打开这种文件。Adblock Plus 会将文件第一行的版本号和扩展自身版本号进行比较，如果文件要求的版本号高于扩展当前版本号，则 Adblock Plus 会提示用户更新到新版本。对于过滤规则订阅，它仍会加载这个文件，但会在首选项对话框显示扩展更新提示。</p>
+
+        <p>最后，如果只想兼容 Adblock Plus 但不在乎其版本号，您可以将文件第一行修改为 <code>[Adblock Plus]</code>。当然这样的过滤规则文件只支持 Adblock Plus 0.7.1 及更高版本。</p>
+      </div>
+    </div>
+  </article>
+
+</main>
+
+<script>
+  if (location.hash == "#checksum" || location.hash == "#subscription_redirect" || location.hash == "#subscription_update")
+    window.location.href = "/en/filters#special-comments";
+</script>
+
+      
+    </div>
+
+    
+
+<footer id="footer" class="content">
+  <div class="container">
+    <div class="row">
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">下载</h5>
+        <ul>
+          <li><a href="/en/adblock-plus-chrome" hreflang="en">Adblock Plus for Chrome</a></li>
+          <li><a href="/en/adblock-plus-firefox" hreflang="en">Adblock Plus for Firefox</a></li>
+          <li><a href="/en/ad-blocker-safari" hreflang="en">Adblock Plus for Safari</a></li>
+          <li><a href="/en/adblock-plus-opera" hreflang="en">Adblock Plus for Opera</a></li>
+          <li><a href="/en/adblock-plus-edge" hreflang="en">Adblock Plus for Edge</a></li>
+          <li><a href="/en/android-install" hreflang="en">Adblock Browser for Android</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">资源</h5>
+        <ul>
+          
+            <li><a href="/zh_CN/acceptable-ads" hreflang="zh-CN">可接受广告</a></li>
+          
+            <li><a href="/zh_CN/documentation" hreflang="zh-CN">文档</a></li>
+          
+            <li><a href="/zh_CN/deployments" hreflang="zh-CN">管理员适用</a></li>
+          
+            <li><a href="/zh_CN/bugs" hreflang="zh-CN">报告问题</a></li>
+          
+          
+          <li><a href="https://help.eyeo.com/en/adblockplus/how-to-write-filters" target="_blank" hreflang="en">撰写 Adblock Plus 过滤规则</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">社区</h5>
+        <ul>
+          <li><a href="/zh_CN/contribute" hreflang="zh_CN">协助</a></li>
+          <li><a href="https://adblockplus.org/releases/" hreflang="en">通告</a></li>
+          <li><a href="https://adblockplus.org/blog/" hreflang="en">博客</a></li>
+          <li><a href="https://adblockplus.org/forum/" hreflang="en">论坛</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">开发</h5>
+        <ul>
+          <li><a href="https://gitlab.com/eyeo/adblockplus">源代码</a></li>
+          
+  
+    <li><a href="/zh_CN/tools" hreflang="zh-CN">工具</a></li>
+  
+
+          <li><a href="https://eyeo.com/jobs/" hreflang="en">工作</a></li>
+          <li><a href="/en/partner-integrations" hreflang="en">Partner Integrations</a></li>
+        </ul>
+      </nav>
+
+      <nav id="social-list" class="column">
+        <h5 class="footer-social-heading">关注我们的</h5>
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/AdblockPlus"
+              title="在 Twitter 上关注 Adblock Plus"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-twitter-glyphicon.png?2448296463"
+                alt="Twitter 图标">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/user/AdblockPlusOfficial"
+              title="在 YouTube 上订阅 Adblock Plus"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-youtube-glyphicon.png?2448296463"
+                alt="YouTube 图标">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/adblockplus"
+              title="在 Facebook 上关注 Adblock Plus"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-facebook-glyphicon.png?2448296463"
+                alt="Facebook 图标">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/adblockplus/"
+              title="在 Instagram 上关注 Adblock Plus"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-instagram-glyphicon.png?2448296463"
+                alt="Instagram 图标">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://vk.com/adblockplusofficial"
+              title="在 VK 上关注 Adblock Plus"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-vk-glyphicon.png?2448296463"
+                alt="VK 图标">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div> 
+
+    <div id="footer-legal">
+      <p id="copyright-notice">版权所有© 2020 保留所有权利。 Adblock Plus<sup>®</sup> 是 <a href="https://eyeo.com">eyeo GmbH</a> 的注册商标。</p>
+      <ul id="legal-list">
+        
+          
+            <li><a href="/en/terms" hreflang="en">使用条款</a></li>
+          
+            <li><a href="/en/privacy" hreflang="en">隐私策略</a></li>
+          
+            <li><a href="/en/imprint" hreflang="en">联系</a></li>
+          
+        
+      </ul>
+    </div> 
+  </div> 
+</footer> 
+    <div id="cookiebar" class="cookie cookiebar">
+  <div class="container">
+    <div class="row">
+
+      <div class="column two-thirds">
+        <p class="cookiebar-text">
+          <svg viewBox="0 0 37.796 41.279" width="38" height="42">
+            <title>Cookie 通知</title>
+            <g transform="translate(-14.904 0)">
+              <g transform="translate(14.904 0)">
+                <path d="M52.468,31.165a6.029,6.029,0,0,1-1.514-4.908.935.935,0,0,0-.626-1.019,6.029,6.029,0,0,1-3.244-8.8A.935.935,0,0,0,47,15.368a6.039,6.039,0,0,1-1.112-5.609A.935.935,0,0,0,45.4,8.647,6.029,6.029,0,0,1,42.129,2.01.935.935,0,0,0,41.484.935a20.682,20.682,0,1,0,11.049,31.38A.935.935,0,0,0,52.468,31.165Zm-3.739,2.814A18.759,18.759,0,1,1,40.148,2.524,7.9,7.9,0,0,0,43.887,10a7.889,7.889,0,0,0,1.281,6.029A7.917,7.917,0,0,0,46.682,25.1a7.823,7.823,0,0,0,2.346,1.617,7.889,7.889,0,0,0,1.57,5.123A18.6,18.6,0,0,1,48.729,33.979Z" transform="translate(-14.904 0)"/>
+              </g>
+              <g transform="translate(24.556 12.199)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(34.81 18.817)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(33.212 32.212)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(36.652 9.03)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(23.509 25.912)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(42.765 27.23)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+            </g>
+          </svg>
+          <span>
+            我们使用一些 cookie 来为您提供在我们网站上的最佳体验。使用我们的网站表示您知悉我们正在使用 cookie，并且您可以随时更改设置。<a href="/zh_CN/cookie-information" hreflang="zh_CN">了解更多</a>
+          </span>
+        </p>
+      </div>
+
+      <div class="column one-third text-end">
+        <ul class="cookiebar-nav">
+          <li>
+            <button
+              type="button"
+              class="cookies-submit button"
+              title="拒绝 cookie 通知">
+              好的，我知道了
+            </button>
+          </li>
+          <li class="dropup cookies-dropup">
+            <button
+              type="button"
+              class="cookies-settings button"
+              title="编辑 cookie 设置">
+              设置 &nbsp;
+              <svg viewBox="0 0 16.509 16.993" width="18" height="18">
+                <title>设置图标</title>
+                <path d="M175.051,8.283V.478a.478.478,0,1,0-.955,0v7.8a2.425,2.425,0,0,0,0,4.755v3.474a.478.478,0,1,0,.955,0V13.038a2.425,2.425,0,0,0,0-4.755Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,174.574,12.129Z" transform="translate(-166.302 0)"/>
+                <path d="M9.751,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.479a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752ZM9.274,8.123a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,9.274,8.123Z" transform="translate(-6.85 0)"/>
+                <path d="M339.351,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.483a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,338.874,8.123Z" transform="translate(-324.789 0)"/>
+              </svg>
+            </button>
+            <div class="cookies-dropup-menu text-start" tabindex="1">
+               <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">必要的 cookie</p>
+      <p>用于记住您的隐私偏好。不可关闭。</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">跟踪 cookie</p>
+      <p>我们使用这些来分析网站流量。</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B 测试 Cookie</p>
+      <p>我们根据分析数据使用这些 Google Optimize Cookie 进行 A/B 测试。</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="保存 cookie 偏好">
+    保存偏好
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+              <span class="arrow"></span>
+            </div>
+          </li>
+        </ul>
+      </div><!-- .column -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+
+</div><!-- #cookies-large-bar -->
+  <form class="cookie cookieprompt">
+
+  <fieldset class="container">
+
+    <legend class="cookie-heading">
+      Cookie 偏好
+    </legend>
+
+    <button
+      type="button"
+      class="cookies-close"
+      title="拒绝 cookie 通知">
+      <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+        <title>关闭图标</title>
+        <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+      </svg>
+    </button>
+
+    <p>
+      我们使用一些 cookie 来为您提供在我们网站上的最佳体验。
+      <a
+        href="/zh_CN/cookie-information" hreflang="zh_CN"
+        title="有关 cookie 的更多信息"
+        target="_blank">阅读更多</a>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-submit"
+        title="拒绝 cookie 通知">
+        好的，我知道了
+      </button>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-settings"
+        title="编辑 cookie 设置">
+        更改设置
+      </button>
+    </p>
+
+  </fieldset>
+
+</form>
+  <form class="cookie cookiepage">
+
+  <header class="bg-dark">
+    <div class="container">
+
+      <h4 class="cookie-heading">
+        Cookie 偏好
+      </h4>
+
+      <button
+        type="button"
+        class="cookies-close"
+        title="拒绝 cookie 通知">
+        <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+          <title>关闭图标</title>
+          <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="bg-light">
+    <div class="container section">
+        我们使用一些 cookie 来为您提供在我们网站上的最佳体验。使用我们的网站表示您知悉我们正在使用 cookie，并且您可以随时更改设置。<a href="/zh_CN/cookie-information" hreflang="zh_CN">了解更多</a>
+    </div>
+  </div>
+
+  <div class="container section">
+     <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">必要的 cookie</p>
+      <p>用于记住您的隐私偏好。不可关闭。</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">跟踪 cookie</p>
+      <p>我们使用这些来分析网站流量。</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B 测试 Cookie</p>
+      <p>我们根据分析数据使用这些 Google Optimize Cookie 进行 A/B 测试。</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="保存 cookie 偏好">
+    保存偏好
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+  </div>
+
+</form>
+    <script src="/js/testing/setup.js?560253307"></script>
+    
+  <script src="/js/main.js?560253307"></script>
+
+
+
+  </body>
+</html>

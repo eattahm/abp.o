@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html 
+lang="es"
+data-siteurl="https://adblockplus.org"
+dir="ltr"
+class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Styleguide</title>
+
+<link rel="canonical" href="https://adblockplus.org/styleguide">
+
+
+  <meta name="robots" content="none">
+
+
+    
+<meta property="og:image" content="/img/adblockplus_promo.png">
+<meta property="og:title" content="Styleguide">
+
+<meta property="og:locale" content="es_ES">
+
+  
+    <meta property="og:locale:alternate" content="en_US">
+  
+
+<meta property="og:url" content="https://adblockplus.org/en/styleguide">
+
+
+<meta name="twitter:site" content="@AdblockPlus">
+<meta name="twitter:creator" content="@AdblockPlus">
+    
+  <link rel="stylesheet" href="/css/defaults.css?1501901856">
+  <link rel="stylesheet" href="/css/fonts.css?1501901856">
+  <link rel="stylesheet" href="/css/main.css?1501901856">
+  <link rel="stylesheet" href="/css/cookies.css?1501901856">
+
+
+
+
+
+    <script>
+  window.eyeo = {
+    
+    
+    
+    preventCookiePrompt: false,
+    userTesting: false,
+    userTestingVariants: false,
+    testAnalytics: false,
+    testOptimize: false
+  }
+
+  window.console = window.console || {warn: function(){}};
+</script>
+    
+    <!--[if IE 9]>
+  <script src="/js/vendor/es5-shim.js?1604721569"></script>
+  <script src="/js/vendor/dom4.js?1604721569"></script>
+<![endif]-->
+
+    
+      
+    
+  </head>
+
+  <body>
+    
+
+
+
+<nav id="navbar">
+  <div class="container">
+    <a href="/es/" hreflang="es" id="navbar-logo">
+      <img
+        src="/img/navbar-logo.svg?2776023698"
+        alt="">
+      <span>Adblock <strong>Plus</strong></span>
+    </a>
+    <a href="#" id="navbar-menu-toggle">
+      <img
+        src="/img/menu-toggle.svg?2776023698"
+        alt="">
+    </a>
+    <ul id="navbar-menu">
+      
+        <li class="uppercase ">
+          <a href="/es/download" hreflang="es">Descargar</a>
+        </li>
+      
+        <li class="uppercase ">
+          <a href="/es/about" hreflang="es">Acerca de</a>
+        </li>
+      
+      <li class="uppercase">
+        <a href="https://help.eyeo.com" target="_blank">Ayuda</a>
+      </li>
+      <li class="uppercase ">
+        <a href="/es/donate" hreflang="es">Donar</a>
+      </li>
+      <li id="navbar-locale-menubar">
+        <a id="navbar-locale-selected">
+          Español (España) (ES)
+        </a>
+        <ul id="navbar-locale-menu">
+          
+            <li>
+              <a href="/en/styleguide" hreflang="en">
+                English (US)
+              </a>
+            </li>
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+    <div id="content" class="container content False">
+      
+        <h1>Styleguide</h1>
+      
+
+      
+        
+
+        
+        
+          <div class="toc">
+            
+          <ul>
+            
+              <li>
+                <a href="#typography">Typography</a>
+                
+          <ul>
+            
+              <li>
+                <a href="#headings">Headings</a>
+                
+              </li>
+            
+              <li>
+                <a href="#body-content">Body content</a>
+                
+              </li>
+            
+          </ul>
+        
+              </li>
+            
+              <li>
+                <a href="#lists">Lists</a>
+                
+          <ul>
+            
+              <li>
+                <a href="#ul-list">Unordered lists</a>
+                
+              </li>
+            
+          </ul>
+        
+              </li>
+            
+          </ul>
+        
+          </div>
+        
+      
+
+      
+        
+
+
+<style media="screen">
+  .info
+  {
+    color: #666;
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: normal;
+  }
+</style>
+
+<h2 id="typography">Typography</h2>
+
+<h3 id="headings">Headings</h3>
+
+<h1>Heading 1 <small class="info"></small></h1>
+<h2>Heading 2 <small class="info"></small></h2>
+<h3>Heading 3 <small class="info"></small></h3>
+<h4>Heading 4 <small class="info"></small></h4>
+<h5>Heading 5 <small class="info"></small></h5>
+<h6>Heading 6 <small class="info"></small></h6>
+
+<h3 id="body-content">Body content</h3>
+
+<p>This is normal text</p>
+<p>This is <small>small</small> text</p>
+<p>This is <strong>strong</strong> text</p>
+<p>This is a <a href="https://example.com/">link</a></p>
+
+<h2 id="lists">Lists</h2>
+
+<h3 id="ul-list">Unordered lists</h3>
+
+<ul>
+  <li>Item</li>
+  <li>Item</li>
+  <li>Item</li>
+  <ul>
+    <li>Item</li>
+    <li>Item</li>
+  </ul>
+  <li>Item</li>
+</ul>
+
+<script type="text/javascript">
+  // Show computed font-size values across breakpoints
+  var info = [].slice.call(document.querySelectorAll('.info'))
+
+  info.forEach(function(item, index) {
+    var css_prop = window.getComputedStyle(item.parentElement);
+    info[index].innerHTML = " ("+css_prop.fontSize+")";
+  })
+</script>
+
+      
+    </div>
+
+    
+
+<footer id="footer" class="content">
+  <div class="container">
+    <div class="row">
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Descargar</h5>
+        <ul>
+          <li><a href="/en/adblock-plus-chrome" hreflang="en">Adblock Plus para Chrome</a></li>
+          <li><a href="/en/adblock-plus-firefox" hreflang="en">Adblock Plus para Firefox</a></li>
+          <li><a href="/en/ad-blocker-safari" hreflang="en">Adblock Plus para Safari</a></li>
+          <li><a href="/en/adblock-plus-opera" hreflang="en">Adblock Plus para Opera</a></li>
+          <li><a href="/en/adblock-plus-edge" hreflang="en">Adblock Plus for Edge</a></li>
+          <li><a href="/en/android-install" hreflang="en">Adblock Browser for Android</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Recursos</h5>
+        <ul>
+          
+            <li><a href="/es/acceptable-ads" hreflang="es">Anuncios Aceptables</a></li>
+          
+            <li><a href="/es/documentation" hreflang="es">Documentación</a></li>
+          
+            <li><a href="/es/deployments" hreflang="es">Para administradores</a></li>
+          
+            <li><a href="/es/bugs" hreflang="es">Informar de un problema</a></li>
+          
+          
+            <li><a href="/es/faq-privacy" hreflang="es">Preguntas frecuentes sobre privacidad</a></li>
+          
+          <li><a href="https://help.eyeo.com/en/adblockplus/how-to-write-filters" target="_blank" hreflang="en">Cómo escribir filtros para Adblock Plus</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Comunidad</h5>
+        <ul>
+          <li><a href="/es/contribute" hreflang="es">Contribuir</a></li>
+          <li><a href="https://adblockplus.org/releases/" hreflang="en">Anuncios</a></li>
+          <li><a href="https://adblockplus.org/blog/" hreflang="en">Blog</a></li>
+          <li><a href="https://adblockplus.org/forum/" hreflang="en">Foro</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Desarrollo</h5>
+        <ul>
+          <li><a href="https://gitlab.com/eyeo/adblockplus">Código fuente</a></li>
+          
+  
+    <li><a href="/es/tools" hreflang="es">Herramientas</a></li>
+  
+
+          <li><a href="https://eyeo.com/jobs/" hreflang="en">Empleo</a></li>
+          <li><a href="/en/partner-integrations" hreflang="en">Partner Integrations</a></li>
+        </ul>
+      </nav>
+
+      <nav id="social-list" class="column">
+        <h5 class="footer-social-heading">Síguenos en</h5>
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/AdblockPlus"
+              title="Seguir a Adblock Plus en Twitter"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-twitter-glyphicon.png?2776023698"
+                alt="Icono de Twitter">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/user/AdblockPlusOfficial"
+              title="Suscribirse a Adblock Plus en YouTube"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-youtube-glyphicon.png?2776023698"
+                alt="Icono de YouTube">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/adblockplus"
+              title="Seguir a Adblock Plus en Facebook"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-facebook-glyphicon.png?2776023698"
+                alt="Icono de Facebook">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/adblockplus/"
+              title="Seguir a Adblock Plus en Instagram"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-instagram-glyphicon.png?2776023698"
+                alt="Icono de Instagram">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://vk.com/adblockplusofficial"
+              title="Seguir a Adblock Plus en VK"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-vk-glyphicon.png?2776023698"
+                alt="Icono de VK">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div> 
+
+    <div id="footer-legal">
+      <p id="copyright-notice">Copyright © 2020 Todos los derechos reservados. Adblock Plus<sup>®</sup> es una marca registrada de <a href="https://eyeo.com">eyeo GmbH</a>.</p>
+      <ul id="legal-list">
+        
+          
+            <li><a href="/en/terms" hreflang="en">Términos de uso</a></li>
+          
+            <li><a href="/en/privacy" hreflang="en">Política de privacidad</a></li>
+          
+            <li><a href="/en/imprint" hreflang="en">Contacto</a></li>
+          
+        
+      </ul>
+    </div> 
+  </div> 
+</footer> 
+    <div id="cookiebar" class="cookie cookiebar">
+  <div class="container">
+    <div class="row">
+
+      <div class="column two-thirds">
+        <p class="cookiebar-text">
+          <svg viewBox="0 0 37.796 41.279" width="38" height="42">
+            <title>Aviso de &quot;cookies&quot;</title>
+            <g transform="translate(-14.904 0)">
+              <g transform="translate(14.904 0)">
+                <path d="M52.468,31.165a6.029,6.029,0,0,1-1.514-4.908.935.935,0,0,0-.626-1.019,6.029,6.029,0,0,1-3.244-8.8A.935.935,0,0,0,47,15.368a6.039,6.039,0,0,1-1.112-5.609A.935.935,0,0,0,45.4,8.647,6.029,6.029,0,0,1,42.129,2.01.935.935,0,0,0,41.484.935a20.682,20.682,0,1,0,11.049,31.38A.935.935,0,0,0,52.468,31.165Zm-3.739,2.814A18.759,18.759,0,1,1,40.148,2.524,7.9,7.9,0,0,0,43.887,10a7.889,7.889,0,0,0,1.281,6.029A7.917,7.917,0,0,0,46.682,25.1a7.823,7.823,0,0,0,2.346,1.617,7.889,7.889,0,0,0,1.57,5.123A18.6,18.6,0,0,1,48.729,33.979Z" transform="translate(-14.904 0)"/>
+              </g>
+              <g transform="translate(24.556 12.199)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(34.81 18.817)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(33.212 32.212)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(36.652 9.03)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(23.509 25.912)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(42.765 27.23)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+            </g>
+          </svg>
+          <span>
+            Utilizamos algunas &quot;cookies&quot; para ofrecerte la mejor experiencia en nuestro sitio web. Al navegar por nuestro sitio eres consciente de que utilizamos &quot;cookies&quot; y de que puedes cambiar esta configuración en cualquier momento. <a href="/es/cookie-information" hreflang="es">Saber más</a>
+          </span>
+        </p>
+      </div>
+
+      <div class="column one-third text-end">
+        <ul class="cookiebar-nav">
+          <li>
+            <button
+              type="button"
+              class="cookies-submit button"
+              title="Descartar la notificación de las &quot;cookies&quot;">
+              Entendido
+            </button>
+          </li>
+          <li class="dropup cookies-dropup">
+            <button
+              type="button"
+              class="cookies-settings button"
+              title="Editar la configuración de las &quot;cookies&quot;">
+              Ajustes &nbsp;
+              <svg viewBox="0 0 16.509 16.993" width="18" height="18">
+                <title>Icono de ajustes</title>
+                <path d="M175.051,8.283V.478a.478.478,0,1,0-.955,0v7.8a2.425,2.425,0,0,0,0,4.755v3.474a.478.478,0,1,0,.955,0V13.038a2.425,2.425,0,0,0,0-4.755Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,174.574,12.129Z" transform="translate(-166.302 0)"/>
+                <path d="M9.751,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.479a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752ZM9.274,8.123a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,9.274,8.123Z" transform="translate(-6.85 0)"/>
+                <path d="M339.351,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.483a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,338.874,8.123Z" transform="translate(-324.789 0)"/>
+              </svg>
+            </button>
+            <div class="cookies-dropup-menu text-start" tabindex="1">
+               <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">&quot;Cookies&quot; necesarias</p>
+      <p>Se utilizan para recordar tus preferencias de privacidad y no se pueden desactivar.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">&quot;Cookies&quot; de seguimiento</p>
+      <p>Se utilizan para analizar el tráfico del sitio web.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Pruebas A/B de &quot;cookies&quot;</p>
+      <p>Usamos estas &quot;cookies&quot; de Google Optimize para realizar pruebas A/B basándonos en los datos analíticos.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Guardar las preferencias para el uso de &quot;cookies&quot;">
+    Guardar preferencias
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+              <span class="arrow"></span>
+            </div>
+          </li>
+        </ul>
+      </div><!-- .column -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+
+</div><!-- #cookies-large-bar -->
+  <form class="cookie cookieprompt">
+
+  <fieldset class="container">
+
+    <legend class="cookie-heading">
+      Preferencias para el uso de &quot;cookies&quot;
+    </legend>
+
+    <button
+      type="button"
+      class="cookies-close"
+      title="Descartar la notificación de las &quot;cookies&quot;">
+      <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+        <title>Icono de cerrar</title>
+        <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+      </svg>
+    </button>
+
+    <p>
+      Utilizamos algunas &quot;cookies&quot; para ofrecerte la mejor experiencia en nuestro sitio web.
+      <a
+        href="/es/cookie-information" hreflang="es"
+        title="Más información acerca de las &quot;cookies&quot;"
+        target="_blank">Leer más</a>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-submit"
+        title="Descartar la notificación de las &quot;cookies&quot;">
+        Entendido
+      </button>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-settings"
+        title="Editar la configuración de las &quot;cookies&quot;">
+        Cambiar ajustes
+      </button>
+    </p>
+
+  </fieldset>
+
+</form>
+  <form class="cookie cookiepage">
+
+  <header class="bg-dark">
+    <div class="container">
+
+      <h4 class="cookie-heading">
+        Preferencias para el uso de &quot;cookies&quot;
+      </h4>
+
+      <button
+        type="button"
+        class="cookies-close"
+        title="Descartar la notificación de las &quot;cookies&quot;">
+        <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+          <title>Icono de cerrar</title>
+          <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="bg-light">
+    <div class="container section">
+        Utilizamos algunas &quot;cookies&quot; para ofrecerte la mejor experiencia en nuestro sitio web. Al navegar por nuestro sitio eres consciente de que utilizamos &quot;cookies&quot; y de que puedes cambiar esta configuración en cualquier momento. <a href="/es/cookie-information" hreflang="es">Saber más</a>
+    </div>
+  </div>
+
+  <div class="container section">
+     <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">&quot;Cookies&quot; necesarias</p>
+      <p>Se utilizan para recordar tus preferencias de privacidad y no se pueden desactivar.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">&quot;Cookies&quot; de seguimiento</p>
+      <p>Se utilizan para analizar el tráfico del sitio web.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Pruebas A/B de &quot;cookies&quot;</p>
+      <p>Usamos estas &quot;cookies&quot; de Google Optimize para realizar pruebas A/B basándonos en los datos analíticos.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Guardar las preferencias para el uso de &quot;cookies&quot;">
+    Guardar preferencias
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+  </div>
+
+</form>
+    <script src="/js/testing/setup.js?1604721569"></script>
+    
+  <script src="/js/main.js?1604721569"></script>
+
+
+
+  </body>
+</html>

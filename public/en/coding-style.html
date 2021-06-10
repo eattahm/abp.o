@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html 
+lang="en"
+data-siteurl="https://adblockplus.org"
+dir="ltr"
+class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Coding Style</title>
+
+<link rel="canonical" href="https://adblockplus.org/coding-style">
+
+
+
+    
+<meta property="og:image" content="/img/adblockplus_promo.png">
+<meta property="og:title" content="Coding Style">
+
+<meta property="og:locale" content="en_US">
+
+  
+
+<meta property="og:url" content="https://adblockplus.org/en/coding-style">
+
+
+<meta name="twitter:site" content="@AdblockPlus">
+<meta name="twitter:creator" content="@AdblockPlus">
+    
+  <link rel="stylesheet" href="/css/defaults.css?3480784439">
+  <link rel="stylesheet" href="/css/fonts.css?3480784439">
+  <link rel="stylesheet" href="/css/main.css?3480784439">
+  <link rel="stylesheet" href="/css/cookies.css?3480784439">
+
+
+
+
+
+    <script>
+  window.eyeo = {
+    
+    
+    
+    preventCookiePrompt: false,
+    userTesting: false,
+    userTestingVariants: false,
+    testAnalytics: false,
+    testOptimize: false
+  }
+
+  window.console = window.console || {warn: function(){}};
+</script>
+    
+    <!--[if IE 9]>
+  <script src="/js/vendor/es5-shim.js?2680760316"></script>
+  <script src="/js/vendor/dom4.js?2680760316"></script>
+<![endif]-->
+
+    
+      
+    
+  </head>
+
+  <body>
+    
+
+
+
+<nav id="navbar">
+  <div class="container">
+    <a href="/en/" hreflang="en" id="navbar-logo">
+      <img
+        src="/img/navbar-logo.svg?407870529"
+        alt="">
+      <span>Adblock <strong>Plus</strong></span>
+    </a>
+    <a href="#" id="navbar-menu-toggle">
+      <img
+        src="/img/menu-toggle.svg?407870529"
+        alt="">
+    </a>
+    <ul id="navbar-menu">
+      
+        <li class="uppercase ">
+          <a href="/en/download" hreflang="en">Download</a>
+        </li>
+      
+        <li class="uppercase ">
+          <a href="/en/about" hreflang="en">About</a>
+        </li>
+      
+      <li class="uppercase">
+        <a href="https://help.eyeo.com" target="_blank">Help</a>
+      </li>
+      <li class="uppercase ">
+        <a href="/en/donate" hreflang="en">Donate</a>
+      </li>
+      <li id="navbar-locale-menubar">
+        <a id="navbar-locale-selected">
+          English (US)
+        </a>
+        <ul id="navbar-locale-menu">
+          
+            <li>
+              <a href="/en/coding-style" hreflang="en">
+                English (US)
+              </a>
+            </li>
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+    <div id="content" class="container content False">
+      
+        <h1>Coding Style</h1>
+      
+
+      
+        
+
+        
+        
+          <div class="toc">
+            
+          <ul>
+            
+              <li>
+                <a href="#precedence">Precedence</a>
+                
+              </li>
+            
+              <li>
+                <a href="#consistency">Consistency</a>
+                
+              </li>
+            
+              <li>
+                <a href="#general">General</a>
+                
+              </li>
+            
+              <li>
+                <a href="#javascript">JavaScript</a>
+                
+          <ul>
+            
+              <li>
+                <a href="#javascript-modern">Modern JavaScript (where supported)</a>
+                
+              </li>
+            
+          </ul>
+        
+              </li>
+            
+              <li>
+                <a href="#html-css">HTML and CSS</a>
+                
+              </li>
+            
+              <li>
+                <a href="#python">Python</a>
+                
+              </li>
+            
+              <li>
+                <a href="#java">Java</a>
+                
+              </li>
+            
+              <li>
+                <a href="#cpp">C++</a>
+                
+              </li>
+            
+              <li>
+                <a href="#objc">Objective-C</a>
+                
+              </li>
+            
+              <li>
+                <a href="#puppet">Puppet</a>
+                
+              </li>
+            
+          </ul>
+        
+          </div>
+        
+      
+
+      
+        
+
+
+<h2 id="precedence">Precedence</h2>
+
+<p>The Adblock Plus coding style is based on others. Our rules (both general and language specific) always overrule referenced style guides. The language specific sections overrule the general section.</p>
+
+<h2 id="consistency">Consistency</h2>
+
+<p>Consistency is most important: Be consistent within functions, files, modules and projects. Making existing code conform with this style guide is fine, but it should happen in dedicated commits, preferably for a whole module or project at once.</p>
+
+<h2 id="general">General</h2>
+<ul>
+  <li>Follow the Mozilla Coding Style&#39;s <a href="https://wiki.developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style$revision/1562743#General_C.2FC.2B.2B_Practices">general practices</a> and its <a href="https://wiki.developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style$revision/1562743#Naming_and_Formatting_code">naming and formatting rules</a>.</li>
+  <li>All files should have a <a href="/en/license-headers" hreflang="en">license header</a>, but no mode line comments.</li>
+  <li>Newline at end of file, otherwise no trailing whitespace.</li>
+  <li>Lines can be longer than the limit, if limiting line length would hurt readability in a particular case.</li>
+  <li>Opening braces always go on their own line.</li>
+  <li>No hungarian notation, no special variable name prefixes or suffixes denoting type or scope. All variable names start with a lower case letter.</li>
+  <li>Don&#39;t comment code out, delete it.</li>
+  <li>Don&#39;t add TODO comments, create an issue and reference it in a comment instead.</li>
+</ul>
+
+<h2 id="javascript">JavaScript</h2>
+<ul>
+  <li>Follow the Mozilla Coding Style&#39;s <a href="https://wiki.developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style$revision/1562743#JavaScript_practices">JavaScript practices</a>.</li>
+  <li>Always use <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Strict_mode">strict mode</a>.</li>
+  <li>When splitting overlong expressions into multiple lines the joining binary operators should be left at the end of the line, before the linebreak. This does not apply to member access operators, such as <code>.</code> which should be placed on the following line.</li>
+  <li>When an <code>if</code> statement, an <code>else</code> statement or a loop spans over more than one line always enclose it with braces.</li>
+  <li>In classes, prefix private functions with a single underscore to make them pseudo-private.</li>
+  <li>Don&#39;t add any spaces immediately after opening, or before closing, an object or array literal.</li>
+  <h3 id="javascript-modern">Modern JavaScript (where supported)</h3>
+  <ul>
+    <li>Always use <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/block#With_let_and_const">block-scoping</a> (<code>let</code> / <code>const</code>), except when sharing global variables between scripts cannot be avoided.</li>
+    <li>Use <code>const</code> for constant expressions that could as well have been inlined (e.g. static parameters, imported modules, etc.).</li>
+    <li>Use the <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions/Arrow_functions">arrow function</a> syntax when passing anonymous functions that don&#39;t require the binding of their own <code>this</code> or <code>arguments</code> variables.</li>
+    <li>Use the <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions/Method_definitions">method definition shorthand</a> syntax when defining methods on an object.</li>
+    <li>When iterating over arrays in the canonical order use the new <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/for...of"><code>for..of</code></a> syntax if the loop index isn&#39;t required. (Rather than using <code>for(;;)</code> or the <code>forEach()</code> method.)</li>
+    <li>Use the <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Map"><code>Map</code></a> or <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Set"><code>Set</code></a> objects, rather than misusing plain objects, when you need a hash table.</li>
+    <li>Run <a href="http://eslint.org">ESLint</a> with the <a href="https://gitlab.com/eyeo/auxiliary/eyeo-coding-style/tree/master/eslint-config-eyeo">eslint-config-eyeo</a> configuration and fix any warning.</li>
+  </ul>
+</ul>
+
+<h2 id="html-css">HTML and CSS</h2>
+<ul>
+  <li>Follow the <a href="https://google.github.io/styleguide/htmlcssguide.html">Google HTML/CSS Style Guide</a>.</li>
+  <li>Use double over single quotation marks.</li>
+  <li>Don&#39;t omit optional HTML tags.</li>
+  <li>CSS color values should be specified in hexadecimal where possible.</li>
+  <li>CSS shorthand properties usage is optional.</li>
+  <li>CSS rule declaration order should follow the <a href="https://make.wordpress.org/core/handbook/best-practices/coding-standards/css/#property-ordering">WordPress CSS Coding Standards</a>.</li>
+  <li>Don&#39;t omit the optional leading 0 for decimal numbers.</li>
+  <li>CSS declaration blocks with a single selector and a single rule can be written in a single line.</li>
+  <li>CSS font weight values should be specified in relative or numerical notation</li>
+</ul>
+
+<h2 id="python">Python</h2>
+<ul>
+  <li>Follow <a href="https://www.python.org/dev/peps/pep-0008/">PEP-8</a> and the recommendations in the offical Python documentation.</li>
+  <li>Make the code compatible with Python 3.5+.</li>
+  <li>Write string literals so that they match the behaviour of <a href="https://docs.python.org/3/library/functions.html#ascii"><code>ascii()</code></a>, i.e. use single quotes except to avoid escaping of embedded quotes and use <code>\u</code> escapes for non-ascii characters but don&#39;t prefix strings with <code>u</code>. For docstrings, however, follow <a href="https://www.python.org/dev/peps/pep-0257/">PEP-257</a>.</li>
+  <li>In modules, prefix private functions and variables with a single underscore.</li>
+  <li>Use the <code>+</code> operator when concatenating exactly two strings, use the <a href="https://docs.python.org/3/library/stdtypes.html#str.format"><code>format()</code> method</a> for more complex string formatting, use the <a href="https://docs.python.org/3/library/stdtypes.html#str.join"><code>join()</code> method</a> when concatenating pre-existing sequences.</li>
+  <li>Use tuples for data that have structure, use lists for data that have order.</li>
+  <li>Don&#39;t override builtins.</li>
+  <li>Use list comprehensions or generator expressions instead of calling <code>map()</code> or <code>filter()</code> with a lambda function.</li>
+  <li>The preferred way of wrapping long lines is by using Python&#39;s implied line continuation inside parentheses, brackets and braces. Long lines can be broken over multiple lines by wrapping expressions in parentheses:
+    <ol>
+      <li>aligning follow up lines with the opening parentheses and putting the closing parentheses at the end of the last line
+          (<a onclick="getElementById('python-multiline-a1-example').classList.toggle('hide');">example</a>), or
+        <pre class="hide" id="python-multiline-a1-example">
+    long_object_name.long_method_name(argument1, argument2,
+                                      keyword_argument=value)
+
+    very_long_variable = ['a list of', 'strings that does not',
+                          'fit into', 'one line']
+        </pre>
+      </li>
+      <li>breaking the line at the opening parentheses, indenting follow up lines by 4 spaces, and placing the closing parentheses on a separate line that is aligned with the line that contains the opening parentheses
+          (<a onclick="getElementById('python-multiline-a2-example').classList.toggle('hide');">example</a>).
+        <pre class="hide" id="python-multiline-a2-example">
+    long_object_name.long_method_name(
+        argument1,
+        argument2,
+        keyword_argument=value,
+    )
+
+    very_long_variable = [
+        'a list of',
+        'strings that does not',
+        'fit into',
+        'one line',
+    ]
+        </pre>
+      </li>
+    </ol>
+    When breaking lists of items separated by commas (e.g. lists, dicts, argument lists) using the second approach add a comma after the last element. This allows adding and rearranging items without touching unrelated lines.
+  </li>
+  <li>Use <a href="https://docs.python.org/2/library/re.html#re.search"><code>re.search()</code></a> instead of <code>re.match()</code> to avoid <a href="https://docs.python.org/2/library/re.html#search-vs-match">confusion</a> about implied beginning of the string but not the ending.</li>
+  <li>
+    Run <a href="https://pypi.python.org/pypi/flake8">flake8</a> with following extensions and fix all reported errors:
+    <ul>
+      <li><a href="https://gitlab.com/eyeo/auxiliary/eyeo-coding-style/tree/master/flake8-eyeo">flake8-eyeo</a></li>
+      <li><a href="https://pypi.python.org/pypi/flake8-docstrings">flake8-docstrings</a> (with <code>D1</code> ignored)</li>
+      <li><a href="https://pypi.python.org/pypi/flake8-commas">flake8-commas</a></li>
+      <li><a href="https://pypi.python.org/pypi/pep8-naming">pep8-naming</a></li>
+    </ul>
+  </li>
+  <li>Write tests and have them run along flake8 using <a href="https://pypi.python.org/pypi/tox">tox</a>.</li>
+</ul>
+
+<h2 id="java">Java</h2>
+<ul>
+  <li>Follow the Mozilla Coding Style&#39;s <a href="https://wiki.developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style$revision/1562743#Java_practices">Java practices</a>.</li>
+  <li>Imports should be organised consistently per file, we don&#39;t use global rules.</li>
+</ul>
+
+<h2 id="cpp">C++</h2>
+<ul>
+  <li>Follow the Mozilla Coding Style&#39;s <a href="https://wiki.developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style$revision/1562743#CC_practices">C++ practices</a>.</li>
+  <li>Indent namespace bodies.</li>
+  <li>Avoid manual memory management: Use references and values when possible, smart pointers when necessary, raw pointers only for weak references.</li>
+  <li>Don&#39;t use C-style casts unless its exact semantics are required.</li>
+  <li>We tend to use anonymous namespaces instead of static.</li>
+</ul>
+
+<h2 id="objc">Objective-C</h2>
+<ul>
+  <li>Follow Apple&#39;s <a href="https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Conventions/Conventions.html">conventions</a>.</li>
+</ul>
+
+<h2 id="puppet">Puppet</h2>
+<ul>
+  <li>Follow the <a href="https://puppet.com/docs/puppet/latest/style_guide.html">Puppet Style Guide</a>.</li>
+  <li>Opening braces don&#39;t go on their own line.</li>
+  <li>Arrows should not be aligned.</li>
+</ul>
+
+      
+    </div>
+
+    
+
+<footer id="footer" class="content">
+  <div class="container">
+    <div class="row">
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Download</h5>
+        <ul>
+          <li><a href="/en/adblock-plus-chrome" hreflang="en">Adblock Plus for Chrome</a></li>
+          <li><a href="/en/adblock-plus-firefox" hreflang="en">Adblock Plus for Firefox</a></li>
+          <li><a href="/en/ad-blocker-safari" hreflang="en">Adblock Plus for Safari</a></li>
+          <li><a href="/en/adblock-plus-opera" hreflang="en">Adblock Plus for Opera</a></li>
+          <li><a href="/en/adblock-plus-edge" hreflang="en">Adblock Plus for Edge</a></li>
+          <li><a href="/en/android-install" hreflang="en">Adblock Browser for Android</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Resources</h5>
+        <ul>
+          
+            <li><a href="/en/acceptable-ads" hreflang="en">Acceptable Ads</a></li>
+          
+            <li><a href="/en/documentation" hreflang="en">Documentation</a></li>
+          
+            <li><a href="/en/deployments" hreflang="en">For admins</a></li>
+          
+            <li><a href="/en/bugs" hreflang="en">Report an issue</a></li>
+          
+          
+            <li><a href="/en/faq-privacy" hreflang="en">Privacy FAQ</a></li>
+          
+          <li><a href="https://help.eyeo.com/en/adblockplus/how-to-write-filters" target="_blank" hreflang="en">Writing Adblock Plus filters</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Community</h5>
+        <ul>
+          <li><a href="/en/contribute" hreflang="en">Contribute</a></li>
+          <li><a href="https://adblockplus.org/releases/" hreflang="en">Announcements</a></li>
+          <li><a href="https://adblockplus.org/blog/" hreflang="en">Blog</a></li>
+          <li><a href="https://adblockplus.org/forum/" hreflang="en">Forum</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Development</h5>
+        <ul>
+          <li><a href="https://gitlab.com/eyeo/adblockplus">Source Code</a></li>
+          
+  
+    <li><a href="/en/tools" hreflang="en">Tools</a></li>
+  
+
+          <li><a href="https://eyeo.com/jobs/" hreflang="en">Jobs</a></li>
+          <li><a href="/en/partner-integrations" hreflang="en">Partner Integrations</a></li>
+        </ul>
+      </nav>
+
+      <nav id="social-list" class="column">
+        <h5 class="footer-social-heading">Follow us on</h5>
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/AdblockPlus"
+              title="Follow Adblock Plus on Twitter"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-twitter-glyphicon.png?407870529"
+                alt="Twitter glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/user/AdblockPlusOfficial"
+              title="Subscribe to Adblock Plus on YouTube"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-youtube-glyphicon.png?407870529"
+                alt="YouTube glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/adblockplus"
+              title="Follow Adblock Plus on Facebook"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-facebook-glyphicon.png?407870529"
+                alt="Facebook glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/adblockplus/"
+              title="Follow Adblock Plus on Instagram"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-instagram-glyphicon.png?407870529"
+                alt="Instagram glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://vk.com/adblockplusofficial"
+              title="Follow Adblock Plus on VK"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-vk-glyphicon.png?407870529"
+                alt="VK glyphicon">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div> 
+
+    <div id="footer-legal">
+      <p id="copyright-notice">Copyright © 2020 All rights reserved. Adblock Plus<sup>®</sup> is a registered trademark of <a href="https://eyeo.com">eyeo GmbH</a>.</p>
+      <ul id="legal-list">
+        
+          
+            <li><a href="/en/terms" hreflang="en">Terms of use</a></li>
+          
+            <li><a href="/en/privacy" hreflang="en">Privacy Policy</a></li>
+          
+            <li><a href="/en/imprint" hreflang="en">Imprint</a></li>
+          
+        
+      </ul>
+    </div> 
+  </div> 
+</footer> 
+    <div id="cookiebar" class="cookie cookiebar">
+  <div class="container">
+    <div class="row">
+
+      <div class="column two-thirds">
+        <p class="cookiebar-text">
+          <svg viewBox="0 0 37.796 41.279" width="38" height="42">
+            <title>Cookie notice</title>
+            <g transform="translate(-14.904 0)">
+              <g transform="translate(14.904 0)">
+                <path d="M52.468,31.165a6.029,6.029,0,0,1-1.514-4.908.935.935,0,0,0-.626-1.019,6.029,6.029,0,0,1-3.244-8.8A.935.935,0,0,0,47,15.368a6.039,6.039,0,0,1-1.112-5.609A.935.935,0,0,0,45.4,8.647,6.029,6.029,0,0,1,42.129,2.01.935.935,0,0,0,41.484.935a20.682,20.682,0,1,0,11.049,31.38A.935.935,0,0,0,52.468,31.165Zm-3.739,2.814A18.759,18.759,0,1,1,40.148,2.524,7.9,7.9,0,0,0,43.887,10a7.889,7.889,0,0,0,1.281,6.029A7.917,7.917,0,0,0,46.682,25.1a7.823,7.823,0,0,0,2.346,1.617,7.889,7.889,0,0,0,1.57,5.123A18.6,18.6,0,0,1,48.729,33.979Z" transform="translate(-14.904 0)"/>
+              </g>
+              <g transform="translate(24.556 12.199)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(34.81 18.817)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(33.212 32.212)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(36.652 9.03)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(23.509 25.912)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(42.765 27.23)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+            </g>
+          </svg>
+          <span>
+            We use some cookies to give you the best experience on our website. By using our site you are aware that we are using cookies and you can change this any time. <a href="/en/cookie-information" hreflang="en">Learn more</a>
+          </span>
+        </p>
+      </div>
+
+      <div class="column one-third text-end">
+        <ul class="cookiebar-nav">
+          <li>
+            <button
+              type="button"
+              class="cookies-submit button"
+              title="Dismiss cookie notification">
+              Ok, got it
+            </button>
+          </li>
+          <li class="dropup cookies-dropup">
+            <button
+              type="button"
+              class="cookies-settings button"
+              title="Edit cookie settings">
+              Settings &nbsp;
+              <svg viewBox="0 0 16.509 16.993" width="18" height="18">
+                <title>Settings icon</title>
+                <path d="M175.051,8.283V.478a.478.478,0,1,0-.955,0v7.8a2.425,2.425,0,0,0,0,4.755v3.474a.478.478,0,1,0,.955,0V13.038a2.425,2.425,0,0,0,0-4.755Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,174.574,12.129Z" transform="translate(-166.302 0)"/>
+                <path d="M9.751,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.479a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752ZM9.274,8.123a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,9.274,8.123Z" transform="translate(-6.85 0)"/>
+                <path d="M339.351,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.483a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,338.874,8.123Z" transform="translate(-324.789 0)"/>
+              </svg>
+            </button>
+            <div class="cookies-dropup-menu text-start" tabindex="1">
+               <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Necessary cookies</p>
+      <p>Used to remember your privacy preferences. They cannot be switched off.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking cookies</p>
+      <p>We use these to analyze website traffic.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B testing cookies</p>
+      <p>We use these Google Optimize cookies for A/B testing based on the analytics data.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Save cookie preferences">
+    Save preferences
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+              <span class="arrow"></span>
+            </div>
+          </li>
+        </ul>
+      </div><!-- .column -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+
+</div><!-- #cookies-large-bar -->
+  <form class="cookie cookieprompt">
+
+  <fieldset class="container">
+
+    <legend class="cookie-heading">
+      Cookie preferences
+    </legend>
+
+    <button
+      type="button"
+      class="cookies-close"
+      title="Dismiss cookie notification">
+      <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+        <title>Close icon</title>
+        <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+      </svg>
+    </button>
+
+    <p>
+      We use some cookies to give you the best experience on our website.
+      <a
+        href="/en/cookie-information" hreflang="en"
+        title="More information about cookies"
+        target="_blank">Read more</a>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-submit"
+        title="Dismiss cookie notification">
+        Ok, got it
+      </button>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-settings"
+        title="Edit cookie settings">
+        Change settings
+      </button>
+    </p>
+
+  </fieldset>
+
+</form>
+  <form class="cookie cookiepage">
+
+  <header class="bg-dark">
+    <div class="container">
+
+      <h4 class="cookie-heading">
+        Cookie preferences
+      </h4>
+
+      <button
+        type="button"
+        class="cookies-close"
+        title="Dismiss cookie notification">
+        <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+          <title>Close icon</title>
+          <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="bg-light">
+    <div class="container section">
+        We use some cookies to give you the best experience on our website. By using our site you are aware that we are using cookies and you can change this any time. <a href="/en/cookie-information" hreflang="en">Learn more</a>
+    </div>
+  </div>
+
+  <div class="container section">
+     <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Necessary cookies</p>
+      <p>Used to remember your privacy preferences. They cannot be switched off.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking cookies</p>
+      <p>We use these to analyze website traffic.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B testing cookies</p>
+      <p>We use these Google Optimize cookies for A/B testing based on the analytics data.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Save cookie preferences">
+    Save preferences
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+  </div>
+
+</form>
+    <script src="/js/testing/setup.js?2680760316"></script>
+    
+  <script src="/js/main.js?2680760316"></script>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html 
+lang="zh_TW"
+data-siteurl="https://adblockplus.org"
+dir="ltr"
+class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Adblock Plus 偏好設定</title>
+
+<link rel="canonical" href="https://adblockplus.org/preferences">
+
+
+
+    
+<meta property="og:image" content="/img/adblockplus_promo.png">
+<meta property="og:title" content="Adblock Plus 偏好設定">
+
+<meta property="og:locale" content="zh_TW">
+
+  
+    <meta property="og:locale:alternate" content="de_DE">
+  
+
+  
+    <meta property="og:locale:alternate" content="en_US">
+  
+
+  
+    <meta property="og:locale:alternate" content="es_ES">
+  
+
+  
+    <meta property="og:locale:alternate" content="fr_FR">
+  
+
+  
+    <meta property="og:locale:alternate" content="ko_KR">
+  
+
+  
+    <meta property="og:locale:alternate" content="nl_NL">
+  
+
+  
+    <meta property="og:locale:alternate" content="ru_RU">
+  
+
+  
+    <meta property="og:locale:alternate" content="zh_CN">
+  
+
+  
+
+<meta property="og:url" content="https://adblockplus.org/zh_TW/preferences">
+
+
+<meta name="twitter:site" content="@AdblockPlus">
+<meta name="twitter:creator" content="@AdblockPlus">
+    
+  <link rel="stylesheet" href="/css/defaults.css?3770517009">
+  <link rel="stylesheet" href="/css/fonts.css?3770517009">
+  <link rel="stylesheet" href="/css/main.css?3770517009">
+  <link rel="stylesheet" href="/css/cookies.css?3770517009">
+
+
+
+
+
+    <script>
+  window.eyeo = {
+    
+    
+    
+    preventCookiePrompt: false,
+    userTesting: false,
+    userTestingVariants: false,
+    testAnalytics: false,
+    testOptimize: false
+  }
+
+  window.console = window.console || {warn: function(){}};
+</script>
+    
+    <!--[if IE 9]>
+  <script src="/js/vendor/es5-shim.js?1137161369"></script>
+  <script src="/js/vendor/dom4.js?1137161369"></script>
+<![endif]-->
+
+    
+      
+    
+  </head>
+
+  <body>
+    
+
+
+
+<nav id="navbar">
+  <div class="container">
+    <a href="/en/" hreflang="en" id="navbar-logo">
+      <img
+        src="/img/navbar-logo.svg?3187823493"
+        alt="">
+      <span>Adblock <strong>Plus</strong></span>
+    </a>
+    <a href="#" id="navbar-menu-toggle">
+      <img
+        src="/img/menu-toggle.svg?3187823493"
+        alt="">
+    </a>
+    <ul id="navbar-menu">
+      
+        <li class="uppercase ">
+          <a href="/en/download" hreflang="en">Download</a>
+        </li>
+      
+        <li class="uppercase ">
+          <a href="/en/about" hreflang="en">關於</a>
+        </li>
+      
+      <li class="uppercase">
+        <a href="https://help.eyeo.com" target="_blank">Help</a>
+      </li>
+      <li class="uppercase ">
+        <a href="/en/donate" hreflang="en">Donate</a>
+      </li>
+      <li id="navbar-locale-menubar">
+        <a id="navbar-locale-selected">
+          中文(台灣) (TW)
+        </a>
+        <ul id="navbar-locale-menu">
+          
+            <li>
+              <a href="/de/preferences" hreflang="de">
+                Deutsch (DE)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/en/preferences" hreflang="en">
+                English (US)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/es/preferences" hreflang="es">
+                Español (España) (ES)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/fr/preferences" hreflang="fr">
+                Français (FR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ko/preferences" hreflang="ko">
+                한국어 (KR)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/nl/preferences" hreflang="nl">
+                Nederlands (NL)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/ru/preferences" hreflang="ru">
+                Русский (RU)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_CN/preferences" hreflang="zh-CN">
+                中文(简体) (CN)
+              </a>
+            </li>
+          
+            <li>
+              <a href="/zh_TW/preferences" hreflang="zh-TW">
+                中文(台灣) (TW)
+              </a>
+            </li>
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+    <div id="content" class="container content False">
+      
+        <h1>Adblock Plus 偏好設定</h1>
+      
+
+      
+        
+
+        
+        
+      
+
+      
+        
+
+<style type="text/css">
+#preftable th, #preftable td
+{
+  background-color: #fff;
+}
+
+#preftable td span
+{
+  display: block;
+}
+
+#preftable
+{
+  table-layout: fixed;
+  width: 99%;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+#preftable .section
+{
+  text-align: center;
+  font-weight: bold;
+}
+
+#preftable td, #preftable th
+{
+  border: 1px solid #ccc;
+  padding: 2px;
+  vertical-align: top;
+}
+
+.prefname
+{
+  font-weight: bold;
+}
+</style>
+
+<p>下面的表格列出了所有 Adblock Plus 的偏好設定。這些設定都可以經由 <a href="http://kb.mozillazine.org/About:config">about:config</a> 檢視並修改。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <table id="preftable">
+    <tbody>
+      <tr>
+        <th width="30%">偏好設定</th>
+        <th width="20%">預設值</th>
+        <th width="50%">註解</th>
+      </tr>
+      
+        <tr id="visible_options">
+          <td class="section" colspan="3">偏好設定中可見的設定值</td>
+        </tr>
+        
+          <tr id="enabled">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">enabled</span>
+            </td>
+            
+              <td>true</td>
+            
+            <td>
+「啟用 Adblock Plus」的設定值
+</td>
+          </tr>
+        
+          <tr id="frameobjects">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">frameobjects</span>
+            </td>
+            
+              <td>true</td>
+            
+            <td>
+「在 Flash 和 Java 物件上顯示頁籤」的設定值
+</td>
+          </tr>
+        
+          <tr id="savestats">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">savestats</span>
+            </td>
+            
+              <td>false</td>
+            
+            <td>
+選項「計算條件命中次數」的值
+</td>
+          </tr>
+        
+          <tr id="showinstatusbar">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">showinstatusbar</span>
+            </td>
+            
+              <td>false</td>
+            
+            <td>
+「顯示狀態列圖示」的設定值
+</td>
+          </tr>
+        
+      
+        <tr id="hidden_options">
+          <td class="section" colspan="3">隱藏設定</td>
+        </tr>
+        
+          <tr id="clearStatsOnHistoryPurge">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">clearStatsOnHistoryPurge</span>
+            </td>
+            
+              <td>true</td>
+            
+            <td>
+若設定成 <code>true</code> ，清除瀏覽紀錄時將會一併清除 Adblock Plus 的命中數統計。請記得命中數統計有助於使用者推導出最常造訪、何時造訪以及造訪網站的頻率。
+</td>
+          </tr>
+        
+          <tr id="composer_default">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">composer_default</span>
+            </td>
+            
+              <td>2</td>
+            
+            <td>
+當按下右鍵選單中「Adblock Plus:阻擋圖片...」時預設的阻擋範圍：<br>
+
+ <br>
+
+0 — 自訂格式<br>
+
+1 — 完整的網址<br>
+
+2 — 整個目錄<br>
+
+3 — 整個網站
+</td>
+          </tr>
+        
+          <tr id="data_directory">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">data_directory</span>
+            </td>
+            
+              <td>adblockplus</td>
+            
+            <td>
+Unused in Adblock Plus 2.9 and higher.
+</td>
+          </tr>
+        
+          <tr id="defaultstatusbaraction">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">defaultstatusbaraction</span>
+            </td>
+            
+              <td>0</td>
+            
+            <td>
+定義點擊狀態列圖示時的動作。完整的設定值請參考 <a href="#defaulttoolbaraction">defaulttoolbaraction</a> 。
+</td>
+          </tr>
+        
+          <tr id="defaulttoolbaraction">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">defaulttoolbaraction</span>
+            </td>
+            
+              <td>0</td>
+            
+            <td>
+定義點擊工具列按鈕時的動作。完整的設定值請參考<br>
+
+ <br>
+
+0 — 顯示目錄<br>
+
+1 — 開啟/關閉可阻擋項目<br>
+
+2 — 打開偏好設定<br>
+
+3 — 啟用/停用 Adblock Plus<br>
+
+其他值則沒有作用
+</td>
+          </tr>
+        
+          <tr id="enable_key">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">enable_key</span>
+            </td>
+            
+              <td><em>(空白)</em></td>
+            
+            <td>
+定義啟用/停用 Adblock Plus 的快捷鍵。完整的設定值請參考 <a href="#sidebar_key">sidebar_key</a> 。<br>
+
+ <br>
+
+ <em>備註</em>：您需要重新啟動瀏覽器以便設定值生效。
+</td>
+          </tr>
+        
+          <tr id="fastcollapse">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">fastcollapse</span>
+            </td>
+            
+              <td>false</td>
+            
+            <td>
+If set to <code>true</code> blocked elements will no longer be hidden. This might have the effect that
+placeholders will show up for blocked images for example, unless hidden by other means. This functionality was available
+as &quot;Hide placeholders of blocked elements&quot; before Adblock Plus 2.6.7.
+</td>
+          </tr>
+        
+          <tr id="filters_key">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">filters_key</span>
+            </td>
+            
+              <td>Accel Shift E, Accel Shift F, Accel Shift O</td>
+            
+            <td>
+定義開啟條件偏好設定視窗的快捷鍵。請參照 <a href="#sidebar_key">sidebar_key</a> 以取得所有可用的值。<br>
+
+ <br>
+
+ <em>備註</em>：您需要重新啟動瀏覽器以便設定值生效。
+</td>
+          </tr>
+        
+          <tr id="flash_scrolltoitem">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">flash_scrolltoitem</span>
+            </td>
+            
+              <td>true</td>
+            
+            <td>
+是否捲動至由「本頁可阻擋項目」中選中的物件。
+</td>
+          </tr>
+        
+          <tr id="patternsbackupinterval">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">patternsbackupinterval</span>
+            </td>
+            
+              <td>24</td>
+            
+            <td>
+備份過濾條件的間隔時間(單位:小時)。
+</td>
+          </tr>
+        
+          <tr id="patternsbackups">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">patternsbackups</span>
+            </td>
+            
+              <td>5</td>
+            
+            <td>
+patterns.ini 的備份檔數量，若設為 0 則不會備份。
+</td>
+          </tr>
+        
+          <tr id="patternsfile">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">patternsfile</span>
+            </td>
+            
+              <td><em>(空白)</em></td>
+            
+            <td>
+用來儲存過濾條件的檔案路徑，它可以是絕對路徑或者是個人設定檔中的相對路徑。
+</td>
+          </tr>
+        
+          <tr id="please_kill_startup_performance">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">please_kill_startup_performance</span>
+            </td>
+            
+              <td>false</td>
+            
+            <td>
+Unused in Adblock Plus 2.9 and higher.
+</td>
+          </tr>
+        
+          <tr id="previewimages">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">previewimages</span>
+            </td>
+            
+              <td>true</td>
+            
+            <td>
+是否在「本頁可阻擋項目中」預覽圖片。
+</td>
+          </tr>
+        
+          <tr id="sendReport_key">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">sendReport_key</span>
+            </td>
+            
+              <td><em>(空白)</em></td>
+            
+            <td>
+定義錯誤回報器的快捷鍵。 完整的設定值請參考 <a href="#sidebar_key">sidebar_key</a> 。
+<br><br>
+
+<em>備註</em>：您需要重新啟動瀏覽器以便設定值生效。
+</td>
+          </tr>
+        
+          <tr id="sidebar_key">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">sidebar_key</span>
+            </td>
+            
+              <td>Accel Shift V, Accel Shift U</td>
+            
+            <td>
+定義用來開啟「本頁可阻擋項目」的快捷鍵。這個值可以設定成 <em>modifier1 modifier2 key</em> 或留白。可用的 modifier 有 Shift，Accel(預設的快捷鍵按鈕，如 Windows 上的 Ctrl ， MAC OS X 上的 Command)，Ctrl/Control，Alt，Meta。也可以設定成其他按鍵像是 F7 或右方向鍵等等 (請參考 <a href="http://mxr.mozilla.org/mozilla/source/dom/public/idl/events/nsIDOMKeyEvent.idl">nsIDOMKeyEvent interface</a> 取得所有的特殊鍵)。 Adblock Plus 1.3.5 開始支援多個快捷鍵設定，請以逗點隔開。當第一組設定被佔用時將會自動改成下一組設定。<br>
+
+ <br>
+
+ <em>備註</em>：您需要重新啟動瀏覽器以便設定值生效。
+</td>
+          </tr>
+        
+          <tr id="subscriptions_autoupdate">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">subscriptions_autoupdate</span>
+            </td>
+            
+              <td>true</td>
+            
+            <td>
+定義條件集訂閱列表是否將自動更新。<br><br>
+
+<em>備註</em>：不建議停用更新功能。
+</td>
+          </tr>
+        
+          <tr id="subscriptions_exceptionscheckbox">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">subscriptions_exceptionscheckbox</span>
+            </td>
+            
+              <td>true</td>
+            
+            <td>
+若設為 <code>true</code>，則 <a href="/en/acceptable-ads" hreflang="en">非侵入式廣告</a> 列表將不會在條件集列表中出現，只會界面上顯示一個選取方塊。
+</td>
+          </tr>
+        
+      
+        <tr id="remembered_actions">
+          <td class="section" colspan="3">仍存在的設定</td>
+        </tr>
+        
+          <tr id="blockableItemsSize">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">blockableItemsSize</span>
+            </td>
+            
+              <td>{width: 200, height: 200}</td>
+            
+            <td>
+已儲存的可阻擋項目列表大小 (寬度的值只在設定為側邊欄時有效)
+</td>
+          </tr>
+        
+          <tr id="currentVersion">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">currentVersion</span>
+            </td>
+            
+              <td>0.0</td>
+            
+            <td>
+儲存最後使用的 Adblock Plus 版本，此動作將會觸發初次安裝或升級後的設定
+</td>
+          </tr>
+        
+          <tr id="detachsidebar">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">detachsidebar</span>
+            </td>
+            
+              <td>false</td>
+            
+            <td>
+儲存「本頁可阻擋項目」視窗分離的狀態 — <code>true</code> 表示分離
+</td>
+          </tr>
+        
+          <tr id="hideContributeButton">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">hideContributeButton</span>
+            </td>
+            
+              <td>false</td>
+            
+            <td>
+若使用者選擇隱藏贊助按鈕，則該值為 <code>true</code>。
+</td>
+          </tr>
+        
+          <tr id="notifications_ignoredcategories">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">notifications_ignoredcategories</span>
+            </td>
+            
+              <td>[]</td>
+            
+            <td>
+List of notification categories that the user opted out of.
+</td>
+          </tr>
+        
+          <tr id="notifications_showui">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">notifications_showui</span>
+            </td>
+            
+              <td>false</td>
+            
+            <td>
+Determines whether notification management UI should be displayed (only if the user opted out of notifications before).
+</td>
+          </tr>
+        
+          <tr id="recentReports">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">recentReports</span>
+            </td>
+            
+              <td>[]</td>
+            
+            <td>
+以 JSON 編碼的最新錯誤回報資料 (包含回報的頁面，網址，以及送交的時間)
+</td>
+          </tr>
+        
+      
+        <tr id="internal_preferences">
+          <td class="section" colspan="3">內部設定 (除非您真的知道在做什麼，否則請不要隨意修改)</td>
+        </tr>
+        
+          <tr id="analytics">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">analytics</span>
+            </td>
+            
+              <td>{
+          trustedHosts: [&#34;adblockplus.org&#34;, &#34;notification.adblockplus.org&#34;,
+                         &#34;easylist-downloads.adblockplus.org&#34;]
+        }</td>
+            
+            <td>
+Contains analytics data, for example the version of the first fetched resource, and a list of trusted hosts which that data can be shared with.
+</td>
+          </tr>
+        
+          <tr id="documentation_link">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">documentation_link</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+在 adblockplus.org 上開啟的文件網址。 這會轉向至由目前使用的語系所翻譯的文件。
+</td>
+          </tr>
+        
+          <tr id="notificationdata">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">notificationdata</span>
+            </td>
+            
+              <td>{}</td>
+            
+            <td>
+Current emergency notification data.
+</td>
+          </tr>
+        
+          <tr id="notificationurl">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">notificationurl</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Location of the file containing emergency notifications.
+</td>
+          </tr>
+        
+          <tr id="report_submiturl">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">report_submiturl</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+送交至 adblockplus.org 的錯誤回報網址。
+</td>
+          </tr>
+        
+          <tr id="subscriptions_antiadblockurl">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">subscriptions_antiadblockurl</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Location of the subscription that hides anti adblock messages.
+</td>
+          </tr>
+        
+          <tr id="subscriptions_exceptionsurl">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">subscriptions_exceptionsurl</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+<a href="/en/acceptable-ads" hreflang="en">允許非侵入式廣告</a> 的條件列表位置。
+</td>
+          </tr>
+        
+          <tr id="subscriptions_exceptionsurl_privacy">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">subscriptions_exceptionsurl_privacy</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Location of the filter list used to allow only nonintrusive ads that are privacy-friendly.
+</td>
+          </tr>
+        
+          <tr id="subscriptions_fallbackerrors">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">subscriptions_fallbackerrors</span>
+            </td>
+            
+              <td>5</td>
+            
+            <td>
+當條件集下載失敗幾次，才要查詢該條件集的新網址 (請參考 <a href="#subscriptions_fallbackurl">subscriptions_fallbackurl</a> )。請注意如果下載失敗， Adblock Plus 會在一天之內重試好幾次。
+</td>
+          </tr>
+        
+          <tr id="subscriptions_fallbackurl">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">subscriptions_fallbackurl</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+當過濾條件集下載失敗至一定次數時，將會查詢含有其他網址的指令 (請參考 <a href="#subscriptions_fallbackerrors">subscriptions_fallbackerrors</a> )。 %s 會被發生問題的條件集網址替換。如果發現該條件集的新網址，則該指令會印出類似 &quot;301 http://example.com/new_list.txt&quot; 的訊息。
+</td>
+          </tr>
+        
+          <tr id="subscriptions_listurl">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">subscriptions_listurl</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+完整的條件集訂閱列表。
+</td>
+          </tr>
+        
+          <tr id="whitelistschemes">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">whitelistschemes</span>
+            </td>
+            
+              <td>about chrome file irc moz-extension moz-safe-about news resource snews x-jsd addbook cid imap mailbox nntp pop data javascript moz-icon</td>
+            
+            <td>
+不應該阻擋的 URL 類型(適用於整個文件或項目位置)
+</td>
+          </tr>
+        
+      
+        <tr id="removed_preferences">
+          <td class="section" colspan="3">已經移除的設定</td>
+        </tr>
+        
+          <tr id="blocklocalpages">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">blocklocalpages</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Adblock Plus 0.7.5 以上版本不再使用
+</td>
+          </tr>
+        
+          <tr id="blocktypes">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">blocktypes</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Adblock Plus 0.7.5 以上版本不再使用
+</td>
+          </tr>
+        
+          <tr id="checkedadblockinstalled">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">checkedadblockinstalled</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Adblock Plus 1.0 以上版本不再使用
+</td>
+          </tr>
+        
+          <tr id="checkedadblockprefs">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">checkedadblockprefs</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Adblock Plus 0.7.5 以上版本不再使用
+</td>
+          </tr>
+        
+          <tr id="checkedadblocksync">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">checkedadblocksync</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Adblock Plus 0.7.5 以上版本不再使用
+</td>
+          </tr>
+        
+          <tr id="checktoolbar">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">checktoolbar</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Adblock Plus 1.0 以上版本不再使用
+</td>
+          </tr>
+        
+          <tr id="correctTypos">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">correctTypos</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Unused in Adblock Plus 2.3 and higher
+</td>
+          </tr>
+        
+          <tr id="correctTyposAsked">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">correctTyposAsked</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Unused in Adblock Plus 2.3 and higher
+</td>
+          </tr>
+        
+          <tr id="grouporder">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">grouporder</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Adblock Plus 0.7.5 以上版本不再使用
+</td>
+          </tr>
+        
+          <tr id="hideimagemanager">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">hideimagemanager</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Adblock Plus 2.1 以上版本不再使用
+</td>
+          </tr>
+        
+          <tr id="lastRuleUpdate">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">lastRuleUpdate</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Unused in Adblock Plus 2.3 and higher
+</td>
+          </tr>
+        
+          <tr id="linkcheck">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">linkcheck</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Adblock Plus 0.7.5.4 以上版本不再使用
+</td>
+          </tr>
+        
+          <tr id="linktypes">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">linktypes</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Adblock Plus 0.7.5 以上版本不再使用
+</td>
+          </tr>
+        
+          <tr id="localschemes">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">localschemes</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Adblock Plus 0.7.5 以上版本不再使用
+</td>
+          </tr>
+        
+          <tr id="noncollapsabletypes">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">noncollapsabletypes</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Adblock Plus 0.7.5 以上版本不再使用
+</td>
+          </tr>
+        
+          <tr id="patterns">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">patterns</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Adblock Plus 0.7.5 以上版本不再使用
+</td>
+          </tr>
+        
+          <tr id="protectchrome.*">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">protectchrome.*</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Adblock Plus 1.0 以上版本不再使用
+</td>
+          </tr>
+        
+          <tr id="settings_key">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">settings_key</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Adblock Plus 2.0 以上版本不再使用
+</td>
+          </tr>
+        
+          <tr id="showintoolbar">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">showintoolbar</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Adblock Plus 2.0 以上版本不再使用
+</td>
+          </tr>
+        
+          <tr id="showsubscriptions">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">showsubscriptions</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Adblock Plus 1.0 以上版本不再使用
+</td>
+          </tr>
+        
+          <tr id="synchronizationinterval">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">synchronizationinterval</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Adblock Plus 2.0 以上版本不再使用
+</td>
+          </tr>
+        
+          <tr id="warnregexp">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">warnregexp</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Adblock Plus 1.0 以上版本不再使用
+</td>
+          </tr>
+        
+          <tr id="whitelist">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">whitelist</span>
+            </td>
+            
+              <td>&nbsp;</td>
+            
+            <td>
+Unused in Adblock Plus 2.3 and higher
+</td>
+          </tr>
+        
+      
+        <tr id="preferences_for_administrators">
+          <td class="section" colspan="3">Preferences for administrators</td>
+        </tr>
+        
+          <tr id="suppress_first_run_page">
+            <td>
+              <span>extensions.</span>
+              <span>adblockplus.</span>
+              <span class="prefname">suppress_first_run_page</span>
+            </td>
+            
+              <td>false</td>
+            
+            <td>
+Suppresses the first run page Adblock Plus opens after the installation.
+</td>
+          </tr>
+        
+      
+    </tbody>
+  </table>
+
+      
+    </div>
+
+    
+
+<footer id="footer" class="content">
+  <div class="container">
+    <div class="row">
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">Download</h5>
+        <ul>
+          <li><a href="/en/adblock-plus-chrome" hreflang="en">Adblock Plus for Chrome</a></li>
+          <li><a href="/en/adblock-plus-firefox" hreflang="en">Adblock Plus for Firefox</a></li>
+          <li><a href="/en/ad-blocker-safari" hreflang="en">Adblock Plus for Safari</a></li>
+          <li><a href="/en/adblock-plus-opera" hreflang="en">Adblock Plus for Opera</a></li>
+          <li><a href="/en/adblock-plus-edge" hreflang="en">Adblock Plus for Edge</a></li>
+          <li><a href="/en/android-install" hreflang="en">Adblock Browser for Android</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">資源</h5>
+        <ul>
+          
+            <li><a href="/en/acceptable-ads" hreflang="en">Acceptable Ads</a></li>
+          
+            <li><a href="/zh_TW/documentation" hreflang="zh-TW">文件</a></li>
+          
+            <li><a href="/en/deployments" hreflang="en">For admins</a></li>
+          
+            <li><a href="/zh_TW/bugs" hreflang="zh-TW">回報問題</a></li>
+          
+          
+          <li><a href="https://help.eyeo.com/en/adblockplus/how-to-write-filters" target="_blank" hreflang="en">撰寫 Adblock Plus 過濾條件</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">社群</h5>
+        <ul>
+          <li><a href="/zh_TW/contribute" hreflang="zh_TW">贊助</a></li>
+          <li><a href="https://adblockplus.org/releases/" hreflang="en">公告</a></li>
+          <li><a href="https://adblockplus.org/blog/" hreflang="en">部落格</a></li>
+          <li><a href="https://adblockplus.org/forum/" hreflang="en">論壇</a></li>
+        </ul>
+      </nav>
+      <nav class="column one-fourth">
+        <h5 class="footer-heading">開發</h5>
+        <ul>
+          <li><a href="https://gitlab.com/eyeo/adblockplus">原始碼</a></li>
+          
+  
+    <li><a href="/zh_TW/tools" hreflang="zh-TW">工具</a></li>
+  
+
+          <li><a href="https://eyeo.com/jobs/" hreflang="en">Jobs</a></li>
+          <li><a href="/en/partner-integrations" hreflang="en">Partner Integrations</a></li>
+        </ul>
+      </nav>
+
+      <nav id="social-list" class="column">
+        <h5 class="footer-social-heading">Follow us on</h5>
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/AdblockPlus"
+              title="Follow Adblock Plus on Twitter"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-twitter-glyphicon.png?3187823493"
+                alt="Twitter glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/user/AdblockPlusOfficial"
+              title="Subscribe to Adblock Plus on YouTube"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-youtube-glyphicon.png?3187823493"
+                alt="YouTube glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/adblockplus"
+              title="Follow Adblock Plus on Facebook"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-facebook-glyphicon.png?3187823493"
+                alt="Facebook glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/adblockplus/"
+              title="Follow Adblock Plus on Instagram"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-instagram-glyphicon.png?3187823493"
+                alt="Instagram glyphicon">
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://vk.com/adblockplusofficial"
+              title="Follow Adblock Plus on VK"
+              target="_blank" rel="nofollow noopener">
+              <img
+                src="/img/footer-vk-glyphicon.png?3187823493"
+                alt="VK glyphicon">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div> 
+
+    <div id="footer-legal">
+      <p id="copyright-notice">Copyright © 2020 All rights reserved. Adblock Plus<sup>®</sup> is a registered trademark of <a href="https://eyeo.com">eyeo GmbH</a>.</p>
+      <ul id="legal-list">
+        
+          
+            <li><a href="/en/terms" hreflang="en">Terms of use</a></li>
+          
+            <li><a href="/en/privacy" hreflang="en">隱私權政策</a></li>
+          
+            <li><a href="/en/imprint" hreflang="en">法律聲明</a></li>
+          
+        
+      </ul>
+    </div> 
+  </div> 
+</footer> 
+    <div id="cookiebar" class="cookie cookiebar">
+  <div class="container">
+    <div class="row">
+
+      <div class="column two-thirds">
+        <p class="cookiebar-text">
+          <svg viewBox="0 0 37.796 41.279" width="38" height="42">
+            <title>Cookie notice</title>
+            <g transform="translate(-14.904 0)">
+              <g transform="translate(14.904 0)">
+                <path d="M52.468,31.165a6.029,6.029,0,0,1-1.514-4.908.935.935,0,0,0-.626-1.019,6.029,6.029,0,0,1-3.244-8.8A.935.935,0,0,0,47,15.368a6.039,6.039,0,0,1-1.112-5.609A.935.935,0,0,0,45.4,8.647,6.029,6.029,0,0,1,42.129,2.01.935.935,0,0,0,41.484.935a20.682,20.682,0,1,0,11.049,31.38A.935.935,0,0,0,52.468,31.165Zm-3.739,2.814A18.759,18.759,0,1,1,40.148,2.524,7.9,7.9,0,0,0,43.887,10a7.889,7.889,0,0,0,1.281,6.029A7.917,7.917,0,0,0,46.682,25.1a7.823,7.823,0,0,0,2.346,1.617,7.889,7.889,0,0,0,1.57,5.123A18.6,18.6,0,0,1,48.729,33.979Z" transform="translate(-14.904 0)"/>
+              </g>
+              <g transform="translate(24.556 12.199)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(34.81 18.817)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(33.212 32.212)">
+                <circle cx="1.598" cy="1.598" r="1.598"/>
+              </g>
+              <g transform="translate(36.652 9.03)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(23.509 25.912)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+              <g transform="translate(42.765 27.23)">
+                <circle cx="1.047" cy="1.047" r="1.047"/>
+              </g>
+            </g>
+          </svg>
+          <span>
+            We use some cookies to give you the best experience on our website. By using our site you are aware that we are using cookies and you can change this any time. <a href="/en/cookie-information" hreflang="en">Learn more</a>
+          </span>
+        </p>
+      </div>
+
+      <div class="column one-third text-end">
+        <ul class="cookiebar-nav">
+          <li>
+            <button
+              type="button"
+              class="cookies-submit button"
+              title="Dismiss cookie notification">
+              Ok, got it
+            </button>
+          </li>
+          <li class="dropup cookies-dropup">
+            <button
+              type="button"
+              class="cookies-settings button"
+              title="Edit cookie settings">
+              Settings &nbsp;
+              <svg viewBox="0 0 16.509 16.993" width="18" height="18">
+                <title>Settings icon</title>
+                <path d="M175.051,8.283V.478a.478.478,0,1,0-.955,0v7.8a2.425,2.425,0,0,0,0,4.755v3.474a.478.478,0,1,0,.955,0V13.038a2.425,2.425,0,0,0,0-4.755Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,174.574,12.129Z" transform="translate(-166.302 0)"/>
+                <path d="M9.751,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.479a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752ZM9.274,8.123a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,9.274,8.123Z" transform="translate(-6.85 0)"/>
+                <path d="M339.351,4.278V.478a.478.478,0,0,0-.955,0v3.8a2.425,2.425,0,0,0,0,4.755v7.483a.478.478,0,0,0,.955,0V9.029a2.423,2.423,0,0,0,0-4.752Zm-.478,3.846a1.468,1.468,0,1,1,1.468-1.468A1.469,1.469,0,0,1,338.874,8.123Z" transform="translate(-324.789 0)"/>
+              </svg>
+            </button>
+            <div class="cookies-dropup-menu text-start" tabindex="1">
+               <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Necessary cookies</p>
+      <p>Used to remember your privacy preferences. They cannot be switched off.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking cookies</p>
+      <p>We use these to analyze website traffic.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B testing cookies</p>
+      <p>We use these Google Optimize cookies for A/B testing based on the analytics data.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Save cookie preferences">
+    Save preferences
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+              <span class="arrow"></span>
+            </div>
+          </li>
+        </ul>
+      </div><!-- .column -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+
+</div><!-- #cookies-large-bar -->
+  <form class="cookie cookieprompt">
+
+  <fieldset class="container">
+
+    <legend class="cookie-heading">
+      Cookie preferences
+    </legend>
+
+    <button
+      type="button"
+      class="cookies-close"
+      title="Dismiss cookie notification">
+      <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+        <title>Close icon</title>
+        <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+      </svg>
+    </button>
+
+    <p>
+      We use some cookies to give you the best experience on our website.
+      <a
+        href="/en/cookie-information" hreflang="en"
+        title="More information about cookies"
+        target="_blank">Read more</a>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-submit"
+        title="Dismiss cookie notification">
+        Ok, got it
+      </button>
+    </p>
+
+    <p>
+      <button
+        type="button"
+        class="cookies-settings"
+        title="Edit cookie settings">
+        Change settings
+      </button>
+    </p>
+
+  </fieldset>
+
+</form>
+  <form class="cookie cookiepage">
+
+  <header class="bg-dark">
+    <div class="container">
+
+      <h4 class="cookie-heading">
+        Cookie preferences
+      </h4>
+
+      <button
+        type="button"
+        class="cookies-close"
+        title="Dismiss cookie notification">
+        <svg viewBox="0 0 23.313 23.313" width="15" height="15">
+          <title>Close icon</title>
+          <path fill="#fff" class="a" d="M21.763,23.044C19.816,21.1,15.74,17.021,11.656,12.936L1.548,23.044a.9.9,0,0,1-1.279,0,.893.893,0,0,1,0-1.278c1.947-1.948,6.023-6.025,10.108-10.11L.269,1.547a.893.893,0,0,1,0-1.278.9.9,0,0,1,1.279,0L11.655,10.377,21.763.269a.905.905,0,0,1,1.283,1.278L12.935,11.657l10.11,10.11a.908.908,0,0,1-.64,1.547A.909.909,0,0,1,21.763,23.044Z"/>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="bg-light">
+    <div class="container section">
+        We use some cookies to give you the best experience on our website. By using our site you are aware that we are using cookies and you can change this any time. <a href="/en/cookie-information" hreflang="en">Learn more</a>
+    </div>
+  </div>
+
+  <div class="container section">
+     <div class="cookies-settings-form">
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Necessary cookies</p>
+      <p>Used to remember your privacy preferences. They cannot be switched off.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">Tracking cookies</p>
+      <p>We use these to analyze website traffic.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="tracking-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cookies-setting row">
+    <div class="column three-fourths">
+      <p class="cookies-setting-title">A/B testing cookies</p>
+      <p>We use these Google Optimize cookies for A/B testing based on the analytics data.</p>
+    </div>
+    <div class="column one-fourth text-end">
+      <label class="switch">
+        <input class="testing-cookies" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="link-button cookies-save"
+    title="Save cookie preferences">
+    Save preferences
+  </button>
+
+  <span class="arrow"></span>
+
+</div><!-- .cookies-settings-form -->
+  </div>
+
+</form>
+    <script src="/js/testing/setup.js?1137161369"></script>
+    
+  <script src="/js/main.js?1137161369"></script>
+
+
+
+  </body>
+</html>
